@@ -1,0 +1,398 @@
+{
+  "source": "UCT Faculty of Humanities Undergraduate Handbook 2026",
+  "programmes": {
+    "regular_ba_bsocsc": {
+      "name": "BA / BSocSc regular programme",
+      "qualification_codes": [
+        "HB003",
+        "HB001"
+      ],
+      "source_rules": [
+        "FB2",
+        "FB3",
+        "FB4",
+        "FB5",
+        "FB7",
+        "FB8"
+      ],
+      "minimum_duration_years": 3,
+      "minimum_nqf_credits": 360,
+      "minimum_nqf_level_7_credits": 120,
+      "minimum_semester_courses": 20,
+      "minimum_senior_semester_courses": 10,
+      "minimum_majors": 2,
+      "minimum_humanities_semester_courses": 12,
+      "max_semester_courses_per_year": 8,
+      "max_semester_courses_per_semester": 4.5,
+      "recommended_curriculum_structure": [
+        {
+          "year": 1,
+          "semester_courses": "8",
+          "credits": "120 to 144"
+        },
+        {
+          "year": 2,
+          "semester_courses": "6 to 8",
+          "credits": "120 to 160"
+        },
+        {
+          "year": 3,
+          "semester_courses": "4 to 6",
+          "credits": "120 to 180"
+        }
+      ],
+      "readmission_minimums": [
+        {
+          "by_end_of_year": 1,
+          "minimum_passed_courses": 5
+        },
+        {
+          "by_end_of_year": 2,
+          "minimum_passed_courses": 9
+        },
+        {
+          "by_end_of_year": 3,
+          "minimum_passed_courses": 13,
+          "minimum_senior_courses": 2
+        },
+        {
+          "by_end_of_year": 4,
+          "must_have_met_degree_requirements": true
+        }
+      ]
+    },
+    "extended_ba_bsocsc": {
+      "name": "BA / BSocSc extended programme",
+      "qualification_codes": [
+        "HB061",
+        "HB062"
+      ],
+      "source_rules": [
+        "FB2",
+        "FB3",
+        "FB4",
+        "FB5",
+        "FB9",
+        "FB10"
+      ],
+      "minimum_duration_years": 4,
+      "minimum_nqf_credits": 360,
+      "minimum_nqf_level_7_credits": 120,
+      "minimum_semester_courses": 20,
+      "minimum_senior_semester_courses": 10,
+      "minimum_majors": 2,
+      "minimum_humanities_semester_courses": 12,
+      "introductory_humanities_courses_required": 2,
+      "augmenting_courses_required": 3,
+      "max_semester_courses_per_semester": 3,
+      "recommended_curriculum_structure": [
+        {
+          "year": 1,
+          "semester_courses": "4 plus 2 introductory Humanities courses plus available augmenting courses",
+          "credits": "148 to 214"
+        },
+        {
+          "year": 2,
+          "semester_courses": "6 plus available augmenting courses",
+          "credits": "130 to 140"
+        },
+        {
+          "year": 3,
+          "semester_courses": "6",
+          "credits": "144"
+        },
+        {
+          "year": 4,
+          "semester_courses": "4",
+          "credits": "108"
+        }
+      ],
+      "readmission_minimums": [
+        {
+          "by_end_of_year": 1,
+          "minimum_passed_courses": 4
+        },
+        {
+          "by_end_of_year": 2,
+          "minimum_passed_courses": 8
+        },
+        {
+          "by_end_of_year": 3,
+          "minimum_passed_courses": 12,
+          "minimum_senior_courses": 2
+        },
+        {
+          "by_end_of_year": 4,
+          "minimum_passed_courses": 15,
+          "minimum_senior_courses": 4
+        },
+        {
+          "by_end_of_year": 5,
+          "must_have_met_degree_requirements": true
+        }
+      ]
+    }
+  },
+  "credit_valuation_rules": {
+    "source": "UCT Humanities Handbook 2026, Abbreviations and Definitions",
+    "one_nqf_credit_equals_notional_hours": 10,
+    "bachelors_3_year_minimum_nqf_credits": 360,
+    "bachelors_3_year_minimum_level_7_credits": 120,
+    "semester_course_equivalents": {
+      "F": 1,
+      "S": 1,
+      "FS": 1,
+      "SF": 1,
+      "H": 0.5,
+      "W": 2,
+      "P": 1,
+      "U": 1,
+      "L": 1,
+      "Z": 1
+    },
+    "notes": [
+      "F and S are single-semester courses.",
+      "FS and SF codes usually indicate that the same semester course may be offered in either semester.",
+      "W is a whole-year course and counts as two semester courses.",
+      "H is a half-course taught throughout the year and counts as half a semester course.",
+      "P, U, L and Z are non-standard period courses; this prototype counts them as one semester-course equivalent unless a departmental rule says otherwise."
+    ]
+  },
+  "degree_classification_rules": {
+    "minimum_majors": 2,
+    "at_least_one_humanities_major": true,
+    "humanities_includes_school_of_economics": true,
+    "if_both_majors_are_ba": {
+      "degree": "Bachelor of Arts",
+      "qualification_code": "HB003"
+    },
+    "if_both_majors_are_bsocsc": {
+      "degree": "Bachelor of Social Science",
+      "qualification_code": "HB001"
+    },
+    "if_one_ba_and_one_bsocsc": {
+      "degree": "Bachelor of Arts or Bachelor of Social Science",
+      "student_may_choose": true
+    },
+    "if_one_major_is_non_humanities": {
+      "degree": "Degree follows the Humanities Faculty major",
+      "note": "Student must still take at least one major offered by Humanities."
+    }
+  },
+  "major_categories": {
+    "ba": {
+      "degree_label": "Bachelor of Arts",
+      "majors": [
+        "history"
+      ]
+    },
+    "bsocsc": {
+      "degree_label": "Bachelor of Social Science",
+      "majors": [
+        "economics",
+        "philosophy",
+        "politics_governance",
+        "sociology"
+      ]
+    },
+    "non_humanities": {
+      "degree_label": "Non-Humanities major recognised by Humanities",
+      "majors": []
+    }
+  },
+  "forbidden_major_combinations": [
+    [
+      "french",
+      "business_french"
+    ],
+    [
+      "sociology",
+      "industrial_sociology"
+    ],
+    [
+      "economics",
+      "industrial_organisational_psychology"
+    ],
+    [
+      "economics",
+      "informatics"
+    ],
+    [
+      "industrial_organisational_psychology",
+      "informatics"
+    ]
+  ],
+  "majors": {
+    "history": {
+      "name": "History",
+      "department": "Historical Studies",
+      "category": "ba",
+      "humanities_major": true,
+      "required_courses": [
+        "HST1013F",
+        "HST1014S",
+        "HST2040FS",
+        "HST3043F"
+      ],
+      "choice_groups": [
+        {
+          "name": "Second-year History option",
+          "choose": 1,
+          "courses": [
+            "HST2039FS",
+            "HST2042FS",
+            "HST2047FS"
+          ],
+          "note": "HST2044FS is listed in the handbook but not offered in 2026, so it is not included here."
+        },
+        {
+          "name": "Third-year History option",
+          "choose": 1,
+          "courses": [
+            "HST3037S",
+            "HST3045S",
+            "HST3046S"
+          ],
+          "note": "HST3044FS is listed in the handbook but not offered in 2026, so it is not included here."
+        }
+      ]
+    },
+    "economics": {
+      "name": "Economics",
+      "department": "School of Economics",
+      "category": "bsocsc",
+      "humanities_major": true,
+      "required_courses": [
+        "ECO1010F",
+        "ECO1011S",
+        "STA1000S",
+        "MAM1010F",
+        "ECO2003F",
+        "ECO2004S",
+        "ECO3020F"
+      ],
+      "choice_groups": [
+        {
+          "name": "Second-year Economics elective",
+          "choose": 1,
+          "courses": [
+            "ECO2007S",
+            "ECO2008S"
+          ],
+          "note": "Choose one second-year elective for the Economics major."
+        },
+        {
+          "name": "Third-year Economics electives",
+          "choose": 2,
+          "courses": [
+            "ECO3009F",
+            "ECO3016F",
+            "ECO3021S",
+            "ECO3022S",
+            "ECO3023S",
+            "ECO3024F",
+            "ECO3025S"
+          ],
+          "note": "Students should ensure degree-level 7 credit requirements are met when selecting electives."
+        }
+      ]
+    },
+    "philosophy": {
+      "name": "Philosophy",
+      "department": "Philosophy",
+      "category": "bsocsc",
+      "humanities_major": true,
+      "required_courses": [
+        "PHI1024F",
+        "PHI1010S",
+        "PHI2041S",
+        "PHI3023F",
+        "PHI3024S"
+      ],
+      "choice_groups": [
+        {
+          "name": "Second-year Philosophy elective",
+          "choose": 1,
+          "courses": [
+            "PHI2012F",
+            "PHI2016S",
+            "PHI2037F",
+            "PHI2040S",
+            "PHI2042F",
+            "PHI2044F",
+            "PHI2045S"
+          ],
+          "note": "PHI2043FS Business Ethics does not count towards the Philosophy major."
+        }
+      ]
+    },
+    "politics_governance": {
+      "name": "Politics & Governance",
+      "department": "Political Studies",
+      "category": "bsocsc",
+      "humanities_major": true,
+      "required_courses": [
+        "POL1004F",
+        "POL1005S"
+      ],
+      "choice_groups": [
+        {
+          "name": "Second-year Politics & Governance courses",
+          "choose": 2,
+          "courses": [
+            "POL2002F",
+            "POL2038F",
+            "POL2039F",
+            "POL2042S",
+            "POL2043S"
+          ]
+        },
+        {
+          "name": "Third-year Politics & Governance courses",
+          "choose": 2,
+          "courses": [
+            "POL3029F",
+            "POL3030F",
+            "POL3045S",
+            "POL3037F",
+            "POL3038S",
+            "POL3046S"
+          ]
+        }
+      ]
+    },
+    "sociology": {
+      "name": "Sociology",
+      "department": "Sociology",
+      "category": "bsocsc",
+      "humanities_major": true,
+      "required_courses": [
+        "SOC3007F",
+        "SOC3031S"
+      ],
+      "choice_groups": [
+        {
+          "name": "First-year Sociology foundation",
+          "choose": 1,
+          "courses": [
+            "SOC1001F",
+            "SOC1005S"
+          ]
+        },
+        {
+          "name": "Second-year Sociology courses",
+          "choose": 2,
+          "courses": [
+            "PBL2800F",
+            "SOC2004S",
+            "SOC2015S",
+            "SOC2019S",
+            "SOC2030F",
+            "SOC2032F",
+            "SOC2036F"
+          ]
+        }
+      ]
+    }
+  }
+}

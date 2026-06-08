@@ -1,0 +1,9 @@
+from pathlib import Path
+from pypdf import PdfReader
+
+pdf_path = Path(r"C:\Users\Lukho Nqose\Downloads\2026-hum-handbook-9a-final-web.pdf")
+reader = PdfReader(str(pdf_path))
+for page_num in [158, 363, 370, 398]:
+    print('\n' + '='*20 + f' PAGE {page_num} ' + '='*20)
+    text = reader.pages[page_num - 1].extract_text() or ''
+    print(text[:10000])

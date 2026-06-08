@@ -1,0 +1,1067 @@
+[
+  {
+    "code": "HST1013F",
+    "name": "Connections and Interruptions, 1500 - 1800",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_core"
+    ],
+    "description": "First-year History course exploring global connections and interruptions."
+  },
+  {
+    "code": "HST1014S",
+    "name": "Empires and Modernities",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_core"
+    ],
+    "description": "First-year History course on empires, modernity, and the modern world."
+  },
+  {
+    "code": "HST2040FS",
+    "name": "Historical Methods",
+    "credits": 20,
+    "prerequisites": [
+      "HST1013F",
+      "HST1014S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_core"
+    ],
+    "description": "Second-year History course on research methods and historical analysis."
+  },
+  {
+    "code": "HST2039FS",
+    "name": "Africa Since 1800: From Colonial Rule to Independence",
+    "credits": 20,
+    "prerequisites": [
+      "HST1013F",
+      "HST1014S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "Second-year History option on African history since 1800."
+  },
+  {
+    "code": "HST2042FS",
+    "name": "Conflict and Conquest: Southern Africa to 1900",
+    "credits": 20,
+    "prerequisites": [
+      "HST1013F",
+      "HST1014S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "Second-year History option on southern Africa before 1900."
+  },
+  {
+    "code": "HST2047FS",
+    "name": "Gender & History",
+    "credits": 20,
+    "prerequisites": [
+      "HST1013F",
+      "HST1014S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "History course examining gender, sexuality, and social change."
+  },
+  {
+    "code": "HST3037S",
+    "name": "Memory, Identity and History",
+    "credits": 30,
+    "prerequisites": [
+      "HST2040FS"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "Third-year History option on memory, identity, trauma, and public history."
+  },
+  {
+    "code": "HST3043F",
+    "name": "Debates in Modern African Intellectual History",
+    "credits": 30,
+    "prerequisites": [
+      "HST2040FS"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_core"
+    ],
+    "description": "Required third-year History course on modern African intellectual history."
+  },
+  {
+    "code": "HST3045S",
+    "name": "African Economic History",
+    "credits": 30,
+    "prerequisites": [
+      "HST2040FS"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "Third-year History option on African economic and social history."
+  },
+  {
+    "code": "HST3046S",
+    "name": "Subjects to Citizens?: South Africa since 1900",
+    "credits": 30,
+    "prerequisites": [
+      "HST2040FS"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "History",
+    "satisfies": [
+      "history_major_elective"
+    ],
+    "description": "Third-year History option on twentieth-century South African history."
+  },
+  {
+    "code": "ECO1010F",
+    "name": "Microeconomics I",
+    "credits": 18,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Economics course introducing microeconomic principles."
+  },
+  {
+    "code": "ECO1011S",
+    "name": "Macroeconomics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F"
+    ],
+    "year_level": 1,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Economics course introducing macroeconomic models and policy."
+  },
+  {
+    "code": "PHI1010S",
+    "name": "Ethics",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "ba_core"
+    ],
+    "description": "First-year Philosophy course introducing ethical theory and moral reasoning."
+  },
+  {
+    "code": "POL1005S",
+    "name": "Introduction to Politics B",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Politics course covering political systems and behaviour."
+  },
+  {
+    "code": "SOC1001F",
+    "name": "Introduction to Sociology",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Sociology course introducing society, culture and social structure."
+  },
+  {
+    "code": "STA1000S",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Statistics",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "Introductory Statistics course required for Economics and social science majors."
+  },
+  {
+    "code": "MAM1010F",
+    "name": "Mathematics 1010",
+    "credits": 18,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Mathematics",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "University-level introductory mathematics course required for Economics."
+  },
+  {
+    "code": "ECO2003F",
+    "name": "Microeconomics II",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F",
+      "MAM1010F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Second-year Economics course building on microeconomic analysis."
+  },
+  {
+    "code": "ECO2004S",
+    "name": "Macroeconomics II",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1011S",
+      "MAM1010F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Second-year Economics course extending macroeconomic theory and policy."
+  },
+  {
+    "code": "ECO2007S",
+    "name": "Cooperation and Competition",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Second-year Economics elective focusing on game theory and market interaction."
+  },
+  {
+    "code": "ECO2008S",
+    "name": "Development Economics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1011S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Second-year Economics elective on development challenges and policy."
+  },
+  {
+    "code": "ECO3020F",
+    "name": "Advanced Macroeconomics and Microeconomics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "MAM1010F"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics core course in advanced macro and micro theory."
+  },
+  {
+    "code": "ECO3009F",
+    "name": "Natural Resource Economics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective on resource allocation and environmental policy."
+  },
+  {
+    "code": "ECO3016F",
+    "name": "History of Economic Thought",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective studying the development of economic ideas."
+  },
+  {
+    "code": "ECO3021S",
+    "name": "Quantitative Methods in Economics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "MAM1010F",
+      "STA1000S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective on quantitative techniques for economic analysis."
+  },
+  {
+    "code": "ECO3022S",
+    "name": "Advanced Labour Economics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective focused on labour markets and policy."
+  },
+  {
+    "code": "ECO3023S",
+    "name": "Public Sector Economics",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective on government and public finance."
+  },
+  {
+    "code": "ECO3024F",
+    "name": "International Trade and Finance",
+    "credits": 18,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective on trade theory and international financial flows."
+  },
+  {
+    "code": "ECO3025S",
+    "name": "Applied International Trade Bargaining",
+    "credits": 18,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1011S",
+      "ECO2003F",
+      "ECO2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Economics",
+    "satisfies": [
+      "economics_major"
+    ],
+    "description": "Third-year Economics elective on trade negotiation and policy."
+  },
+  {
+    "code": "PHI1024F",
+    "name": "Introduction to Philosophy",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "First-year Philosophy course introducing key philosophical questions and methods."
+  },
+  {
+    "code": "PHI2041S",
+    "name": "Great Philosophers",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy course engaging with major philosophical thinkers."
+  },
+  {
+    "code": "PHI2012F",
+    "name": "Philosophy of Psychology and Mind",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on the philosophy of mind and psychology."
+  },
+  {
+    "code": "PHI2016S",
+    "name": "Philosophy of Art and Literature",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on aesthetics, art, and literature."
+  },
+  {
+    "code": "PHI2037F",
+    "name": "Applied Ethics",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on ethical theory and real-world applications."
+  },
+  {
+    "code": "PHI2040S",
+    "name": "Philosophy of Science",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on the nature and practice of science."
+  },
+  {
+    "code": "PHI2042F",
+    "name": "Political Philosophy",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective exploring justice, power, and political theory."
+  },
+  {
+    "code": "PHI2044F",
+    "name": "Philosophy of Mathematics",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on mathematical foundations and philosophy of mathematics."
+  },
+  {
+    "code": "PHI2045S",
+    "name": "Philosophy of Race",
+    "credits": 20,
+    "prerequisites": [
+      "PHI1024F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Second-year Philosophy elective on race, identity, and political thought."
+  },
+  {
+    "code": "PHI3023F",
+    "name": "Logic and Language",
+    "credits": 30,
+    "prerequisites": [
+      "PHI2041S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Third-year Philosophy course on logic, language, and meaning."
+  },
+  {
+    "code": "PHI3024S",
+    "name": "Metaphysics and Epistemology",
+    "credits": 30,
+    "prerequisites": [
+      "PHI2041S",
+      "PHI3023F"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Philosophy",
+    "satisfies": [
+      "philosophy_major"
+    ],
+    "description": "Third-year Philosophy course on the nature of reality and knowledge."
+  },
+  {
+    "code": "POL1004F",
+    "name": "Introduction to Politics",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Politics course introducing political concepts and systems."
+  },
+  {
+    "code": "POL2002F",
+    "name": "Political Theory",
+    "credits": 20,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Second-year Politics course on major traditions in political theory."
+  },
+  {
+    "code": "POL2038F",
+    "name": "Comparative Politics",
+    "credits": 20,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Second-year Politics course comparing political systems and institutions."
+  },
+  {
+    "code": "POL2039F",
+    "name": "International Political Economy",
+    "credits": 20,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Second-year Politics course exploring the intersection of politics and economics globally."
+  },
+  {
+    "code": "POL2042S",
+    "name": "Comparative Public Institutions",
+    "credits": 20,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Second-year Politics course on public institutions and governance models."
+  },
+  {
+    "code": "POL2043S",
+    "name": "South African Politics",
+    "credits": 20,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Second-year Politics course on South African political institutions and history."
+  },
+  {
+    "code": "POL3029F",
+    "name": "Politics of Africa and the Global South",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course on African politics and the Global South."
+  },
+  {
+    "code": "POL3030F",
+    "name": "Conflict in World Politics",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course on conflict, security and world politics."
+  },
+  {
+    "code": "POL3037F",
+    "name": "South African Public Policy Analysis",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course analysing South African public policy."
+  },
+  {
+    "code": "POL3038S",
+    "name": "Urban Politics and Administration",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course on urban governance and administration."
+  },
+  {
+    "code": "POL3045S",
+    "name": "Global Governance",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course exploring global governance institutions and norms."
+  },
+  {
+    "code": "POL3046S",
+    "name": "South African Political Thought",
+    "credits": 30,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Political Studies",
+    "satisfies": [
+      "politics_major"
+    ],
+    "description": "Third-year Politics course on South African political ideas and thinkers."
+  },
+  {
+    "code": "SOC1005S",
+    "name": "Individual and Society",
+    "credits": 15,
+    "prerequisites": [],
+    "year_level": 1,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "bsocsc_core"
+    ],
+    "description": "First-year Sociology course exploring individuals in social contexts."
+  },
+  {
+    "code": "PBL2800F",
+    "name": "Crime and Deviance in South African Cities",
+    "credits": 24,
+    "prerequisites": [],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology elective on crime, deviance and urban society in South Africa."
+  },
+  {
+    "code": "SOC2004S",
+    "name": "Race, Class, Gender & Sexuality",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on inequalities and identity."
+  },
+  {
+    "code": "SOC2015S",
+    "name": "Comparative Industrial & Labour Studies",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on labour and industrial relations."
+  },
+  {
+    "code": "SOC2019S",
+    "name": "Social Theory",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on key theories about society."
+  },
+  {
+    "code": "SOC2030F",
+    "name": "Poverty, Development & Globalisation",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on poverty, development, and globalisation."
+  },
+  {
+    "code": "SOC2032F",
+    "name": "Culture and Social Life",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on culture and everyday social life."
+  },
+  {
+    "code": "SOC2036F",
+    "name": "Power and Society",
+    "credits": 20,
+    "prerequisites": [
+      "SOC1001F"
+    ],
+    "year_level": 2,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Second-year Sociology course on power relations and social structures."
+  },
+  {
+    "code": "SOC3007F",
+    "name": "Social Research",
+    "credits": 30,
+    "prerequisites": [
+      "SOC2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Third-year Sociology course on social research methods and projects."
+  },
+  {
+    "code": "SOC3031S",
+    "name": "Social Justice and Inequality",
+    "credits": 30,
+    "prerequisites": [
+      "SOC2004S"
+    ],
+    "year_level": 3,
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Sociology",
+    "satisfies": [
+      "sociology_major"
+    ],
+    "description": "Third-year Sociology course on social justice, inequality and public policy."
+  }
+]
