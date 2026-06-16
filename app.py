@@ -1,4 +1,4 @@
-﻿import json
+import json
 from html import escape
 from pathlib import Path
 
@@ -17,71 +17,105 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap');
 
     html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-    .stApp { background-color: #F4F7F3; }
     #MainMenu, footer, header { visibility: hidden; }
     .block-container { padding-top: 2rem; padding-bottom: 4rem; max-width: 820px; }
 
+    /* ── Adaptive tokens ───────────────────────────────────────────────────────
+       These pull from Streamlit's own CSS variables so they flip automatically
+       between light and dark mode.
+       --background-color and --text-color are set by Streamlit on :root.
+       We define our own semantic tokens on top of them.
+    */
+    :root {
+        --ca-accent:       #2F7A62;
+        --ca-accent-warm:  #A65332;
+        --ca-border:       rgba(128,128,128,0.2);
+        --ca-surface:      rgba(128,128,128,0.06);
+        --ca-surface-card: rgba(128,128,128,0.08);
+        --ca-text:         var(--text-color, #173B3A);
+        --ca-text-muted:   rgba(128,128,128,0.75);
+        --ca-warn-bg:      rgba(166,83,50,0.1);
+        --ca-warn-text:    var(--ca-accent-warm);
+        --ca-err-bg:       rgba(200,64,64,0.1);
+        --ca-err-text:     #C84040;
+        --ca-prog-track:   rgba(128,128,128,0.18);
+        --ca-tag-bg:       rgba(47,122,98,0.15);
+        --ca-tag-border:   rgba(47,122,98,0.35);
+    }
+
+    /* ── Step bar ──────────────────────────────────────────────────────────── */
     .step-bar { display: flex; align-items: center; gap: 0; margin-bottom: 2.5rem; }
     .step {
         display: flex; align-items: center; gap: 8px;
-        font-size: 0.8rem; font-weight: 500; color: #7C8A82;
+        font-size: 0.8rem; font-weight: 500;
+        color: var(--ca-text-muted);
         letter-spacing: 0.03em; text-transform: uppercase;
     }
-    .step.active { color: #173B3A; }
-    .step.done { color: #A65332; }
+    .step.active { color: var(--ca-text); }
+    .step.done   { color: var(--ca-accent); }
     .step-dot {
-        width: 28px; height: 28px; border-radius: 50%; background: #DDE7DF;
+        width: 28px; height: 28px; border-radius: 50%;
+        background: var(--ca-surface);
+        border: 1px solid var(--ca-border);
         display: flex; align-items: center; justify-content: center;
-        font-size: 0.75rem; font-weight: 600; color: #7C8A82; flex-shrink: 0;
+        font-size: 0.75rem; font-weight: 600;
+        color: var(--ca-text-muted); flex-shrink: 0;
     }
-    .step.active .step-dot { background: #173B3A; color: #F4F7F3; }
-    .step.done .step-dot { background: #A65332; color: #fff; }
-    .step-line { flex: 1; height: 1px; background: #DDE7DF; min-width: 24px; }
+    .step.active .step-dot { background: var(--ca-accent);      color: #fff; border-color: var(--ca-accent); }
+    .step.done   .step-dot { background: var(--ca-accent-warm); color: #fff; border-color: var(--ca-accent-warm); }
+    .step-line { flex: 1; height: 1px; background: var(--ca-border); min-width: 24px; }
 
+    /* ── Page heading ──────────────────────────────────────────────────────── */
     .page-title {
         font-family: 'Sora', sans-serif; font-size: 1.75rem; font-weight: 700;
-        color: #173B3A; margin: 0 0 0.25rem 0;
+        color: var(--ca-text); margin: 0 0 0.25rem 0;
     }
-    .page-subtitle { font-size: 0.95rem; color: #52645B; margin-bottom: 2rem; }
+    .page-subtitle { font-size: 0.95rem; color: var(--ca-text-muted); margin-bottom: 2rem; }
 
+    /* ── Cards ─────────────────────────────────────────────────────────────── */
     .card {
-        background: #FFFFFF; border-radius: 8px; padding: 1.25rem 1.5rem;
-        margin-bottom: 1rem; border: 1px solid #DDE7DF;
+        background: var(--ca-surface-card);
+        border-radius: 8px; padding: 1.25rem 1.5rem;
+        margin-bottom: 1rem; border: 1px solid var(--ca-border);
     }
     .card-label {
         font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
-        letter-spacing: 0.08em; color: #6B7B72; margin-bottom: 0.3rem;
+        letter-spacing: 0.08em; color: var(--ca-text-muted); margin-bottom: 0.3rem;
     }
-    .card-value { font-size: 1.05rem; font-weight: 600; color: #173B3A; }
+    .card-value { font-size: 1.05rem; font-weight: 600; color: var(--ca-text); }
 
+    /* ── Progress bars ─────────────────────────────────────────────────────── */
     .prog-row {
         display: flex; justify-content: space-between; align-items: center;
-        margin-bottom: 0.3rem; font-size: 0.875rem; color: #173B3A;
+        margin-bottom: 0.3rem; font-size: 0.875rem; color: var(--ca-text);
     }
     .prog-track {
-        width: 100%; height: 6px; background: #DDE7DF;
+        width: 100%; height: 6px; background: var(--ca-prog-track);
         border-radius: 99px; margin-bottom: 1rem; overflow: hidden;
     }
-    .prog-fill { height: 100%; border-radius: 99px; background: #A65332; }
-    .prog-fill.complete { background: #2F7A62; }
+    .prog-fill          { height: 100%; border-radius: 99px; background: var(--ca-accent-warm); }
+    .prog-fill.complete { background: var(--ca-accent); }
 
+    /* ── Section header ────────────────────────────────────────────────────── */
     .major-header {
         font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 700;
-        color: #173B3A; margin: 1.5rem 0 0.75rem 0;
-        padding-bottom: 0.5rem; border-bottom: 2px solid #DDE7DF;
+        color: var(--ca-text); margin: 1.5rem 0 0.75rem 0;
+        padding-bottom: 0.5rem; border-bottom: 2px solid var(--ca-border);
     }
 
+    /* ── Inline alerts ─────────────────────────────────────────────────────── */
     .inline-warn {
-        background: #FFF4E8; border-left: 3px solid #A65332;
+        background: var(--ca-warn-bg); border-left: 3px solid var(--ca-accent-warm);
         border-radius: 0 6px 6px 0; padding: 0.6rem 1rem;
-        font-size: 0.85rem; color: #6B351F; margin: 0.5rem 0;
+        font-size: 0.85rem; color: var(--ca-warn-text); margin: 0.5rem 0;
     }
     .inline-err {
-        background: #FEF0F0; border-left: 3px solid #C84040;
+        background: var(--ca-err-bg); border-left: 3px solid var(--ca-err-text);
         border-radius: 0 6px 6px 0; padding: 0.6rem 1rem;
-        font-size: 0.85rem; color: #7A1A1A; margin: 0.5rem 0;
+        font-size: 0.85rem; color: var(--ca-err-text); margin: 0.5rem 0;
     }
 
+    /* ── Buttons ───────────────────────────────────────────────────────────── */
     .stButton > button {
         border-radius: 8px; font-weight: 600; font-size: 0.9rem;
         padding: 0.55rem 1.5rem; border: none; transition: opacity 0.15s;
@@ -89,46 +123,44 @@ st.markdown(
     .stButton > button:hover { opacity: 0.88; }
     div[data-testid="column"] .stButton > button { width: 100%; }
 
-    .divider { height: 1px; background: #DDE7DF; margin: 1.5rem 0; }
+    /* ── Divider ───────────────────────────────────────────────────────────── */
+    .divider { height: 1px; background: var(--ca-border); margin: 1.5rem 0; }
 
+    /* ── Summary grid ──────────────────────────────────────────────────────── */
     .focus-summary {
         display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;
         margin: 1.25rem 0 1.5rem 0;
     }
     .summary-item {
-        background: #FFFFFF; border: 1px solid #DDE7DF; border-radius: 8px;
+        background: var(--ca-surface-card);
+        border: 1px solid var(--ca-border); border-radius: 8px;
         padding: 0.9rem 1rem;
     }
     .summary-number {
         font-family: 'Sora', sans-serif; font-size: 1.35rem; font-weight: 700;
-        color: #173B3A; line-height: 1.1;
+        color: var(--ca-text); line-height: 1.1;
     }
-    .summary-label {
-        font-size: 0.76rem; color: #52645B; margin-top: 0.25rem;
-    }
+    .summary-label { font-size: 0.76rem; color: var(--ca-text-muted); margin-top: 0.25rem; }
+
+    /* ── Course rows ───────────────────────────────────────────────────────── */
     .course-row {
-        background: #FFFFFF; border: 1px solid #DDE7DF; border-radius: 8px;
+        background: var(--ca-surface-card);
+        border: 1px solid var(--ca-border); border-radius: 8px;
         padding: 0.9rem 1rem; margin-bottom: 0.65rem;
     }
-    .course-title {
-        color: #173B3A; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.2rem;
-    }
-    .course-meta {
-        color: #52645B; font-size: 0.82rem; margin-bottom: 0.45rem;
-    }
-    .course-desc {
-        color: #263B34; font-size: 0.9rem; line-height: 1.45;
-    }
-    .missing-prereq {
-        color: #7A1A1A; font-size: 0.86rem; margin-top: 0.2rem;
-    }
-    div[data-baseweb="select"] *, div[data-baseweb="popover"] * {
-        filter: none !important; opacity: 1 !important; text-shadow: none !important;
-    }
+    .course-title  { color: var(--ca-text);       font-weight: 700; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .course-meta   { color: var(--ca-text-muted);  font-size: 0.82rem; margin-bottom: 0.45rem; }
+    .course-desc   { color: var(--ca-text);        font-size: 0.9rem; line-height: 1.45; }
+    .missing-prereq{ color: var(--ca-err-text);    font-size: 0.86rem; margin-top: 0.2rem; }
+
+    /* ── Multiselect tags ──────────────────────────────────────────────────── */
     div[data-baseweb="tag"] {
-        background-color: #E8F1EC !important; border: 1px solid #BDD3C8 !important;
+        background-color: var(--ca-tag-bg)     !important;
+        border:       1px solid var(--ca-tag-border) !important;
     }
-    div[data-baseweb="tag"] span { color: #173B3A !important; }
+    div[data-baseweb="tag"] span { color: var(--ca-text) !important; }
+
+    /* ── Responsive ────────────────────────────────────────────────────────── */
     @media (max-width: 640px) {
         .focus-summary { grid-template-columns: 1fr; }
         .step { font-size: 0.68rem; gap: 5px; }
@@ -139,7 +171,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-#  Data loading 
+# ── Data loading ───────────────────────────────────────────────────────────────
 BASE = Path(__file__).parent
 
 
@@ -159,7 +191,7 @@ majors = rules.get("majors", {})
 programmes = rules.get("programmes", {})
 
 
-#  Helpers 
+# ── Helpers ────────────────────────────────────────────────────────────────────
 def get_nqf_level(course):
     if "nqf_level" in course:
         return course["nqf_level"]
@@ -295,7 +327,7 @@ def render_degree_requirements(programme, completed_courses):
         )
 
 
-#  Session state 
+# ── Session state ──────────────────────────────────────────────────────────────
 defaults = {
     "step": 1,
     "programme_key": list(programmes.keys())[0] if programmes else None,
@@ -326,7 +358,9 @@ def render_steps():
     st.markdown(f'<div class="step-bar">{"".join(parts)}</div>', unsafe_allow_html=True)
 
 
-# STEP 1  Programme & Majors
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 1 — Programme & Majors
+# ══════════════════════════════════════════════════════════════════════════════
 def step_1():
     render_steps()
     st.markdown('<p class="page-title">Build your student profile</p>', unsafe_allow_html=True)
@@ -335,7 +369,6 @@ def step_1():
         unsafe_allow_html=True,
     )
 
-    #  Programme selectbox 
     prog_keys = list(programmes.keys())
     current_idx = prog_keys.index(st.session_state.programme_key) \
         if st.session_state.programme_key in prog_keys else 0
@@ -352,7 +385,6 @@ def step_1():
 
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
-    #  Number of majors 
     st.markdown("**Number of majors**")
     major_count = st.radio(
         "Number of majors",
@@ -363,7 +395,6 @@ def step_1():
     )
     st.session_state.major_count = major_count
 
-    #  Major picker 
     st.markdown("**Majors**")
     major_options = list(majors.keys())
     safe_defaults = [m for m in st.session_state.selected_majors if m in major_options]
@@ -379,7 +410,6 @@ def step_1():
     )
     st.session_state.selected_majors = selected
 
-    #  Validation 
     forbidden = has_forbidden_combo(selected)
     if forbidden:
         names = [majors.get(k, {"name": k})["name"] for k in forbidden]
@@ -411,7 +441,6 @@ def step_1():
 
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
-    #  Electives 
     st.markdown("**Electives** *(optional)*")
     st.caption("Courses outside your majors - taken or planned.")
 
@@ -451,12 +480,14 @@ def step_1():
         st.caption(f"Select exactly {major_count} valid major(s) to continue.")
 
 
-# STEP 2  Major progress (scoped to majors + electives only)
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 2 — Mark completed courses
+# ══════════════════════════════════════════════════════════════════════════════
 def step_2():
     render_steps()
     st.markdown('<p class="page-title">Major progress</p>', unsafe_allow_html=True)
     st.markdown(
-        '<p class="page-subtitle">Mark completed courses for the selected majors first. Electives stay separate.</p>',
+        '<p class="page-subtitle">Mark completed courses for each major. Electives stay separate.</p>',
         unsafe_allow_html=True,
     )
 
@@ -533,6 +564,9 @@ def step_2():
             st.rerun()
 
 
+# ══════════════════════════════════════════════════════════════════════════════
+# STEP 3 — Pathway dashboard
+# ══════════════════════════════════════════════════════════════════════════════
 def step_3():
     render_steps()
 
@@ -606,7 +640,7 @@ def step_3():
                 for c in available:
                     render_course_row(c)
             else:
-                st.caption("No major courses are available yet. Check the blocked list for missing prerequisites.")
+                st.caption("No major courses available yet. Check the blocked list for missing prerequisites.")
 
             with st.expander(f"Blocked in this major ({len(blocked_items)})", expanded=False):
                 if not blocked_items:
@@ -645,12 +679,11 @@ def step_3():
             st.session_state.step = 1
             st.rerun()
 
-#  Router 
+
+# ── Router ─────────────────────────────────────────────────────────────────────
 if st.session_state.step == 1:
     step_1()
 elif st.session_state.step == 2:
     step_2()
 elif st.session_state.step == 3:
     step_3()
-    
-
