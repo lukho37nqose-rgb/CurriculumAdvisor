@@ -1063,5 +1063,770 @@
       "sociology_major"
     ],
     "description": "Third-year Sociology course on social justice, inequality and public policy."
+  },
+  {
+    "code": "AFS1100S",
+    "name": "Understanding Gender",
+    "department": "African Feminist Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AFS2100F",
+    "name": "Gender, Sexuality and Politics",
+    "department": "African Feminist Studies",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AFS2102S",
+    "name": "Gender and the Politics of Development",
+    "department": "African Feminist Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AFS3100F",
+    "name": "Theories, Politics and Action",
+    "department": "African Feminist Studies",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AFS3101S",
+    "name": "Politics of Gendered Knowledge",
+    "department": "African Feminist Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL1201S",
+    "name": "Representations of Africa",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL2202F",
+    "name": "African Political Thought",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL2200S",
+    "name": "Culture, Identity and Globalisation in Africa",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL3200F",
+    "name": "Political Economy of Africa",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL3201S",
+    "name": "Language, Power and Freedom in Africa",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL1300F",
+    "name": "Introduction to Language Studies",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL1301S",
+    "name": "Introduction to Sociolinguistics",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ASL2300F",
+    "name": "Understanding Language: Meaning and Structure A",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "ASL1300F"
+    ]
+  },
+  {
+    "code": "ASL2301S",
+    "name": "Understanding Language: Meaning and Structure B",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "ASL2300F"
+    ]
+  },
+  {
+    "code": "ASL3300F",
+    "name": "Language: Theoretical and Applied Perspectives A",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "ASL2300F",
+      "ASL2301S"
+    ]
+  },
+  {
+    "code": "ASL3301S",
+    "name": "Language: Theoretical and Applied Perspectives B",
+    "department": "African Studies and Linguistics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "ASL3300F"
+    ]
+  },
+  {
+    "code": "ANS1400F",
+    "name": "Words, Deeds, Bones and Things",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ANS1401S",
+    "name": "Introduction to Anthropology",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ANS2401F",
+    "name": "Medical Anthropology",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ANS2402S",
+    "name": "Anthropology of Power and Wealth",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ANS2404S",
+    "name": "Anthropology of Rural Environment",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "ANS3400F",
+    "name": "The Challenge of Culture",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "ANS2401F",
+      "ANS2402S"
+    ]
+  },
+  {
+    "code": "ANS3401S",
+    "name": "Anthropology through Ethnography",
+    "department": "Anthropology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "ANS3400F"
+    ]
+  },
+  {
+    "code": "ANS2400Z",
+    "name": "Anthropological Fieldwork",
+    "department": "Anthropology",
+    "offered": [
+      "Full Year"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AGE1002S",
+    "name": "The Human Planet: Prehistory to Present",
+    "department": "Archaeology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AGE2011S",
+    "name": "Human Evolution",
+    "department": "Archaeology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AGE2012F",
+    "name": "The First People",
+    "department": "Archaeology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "AGE3013H",
+    "name": "Archaeology in Practice",
+    "department": "Archaeology",
+    "offered": [
+      "Full Year"
+    ],
+    "prerequisites": [
+      "AGE2011S",
+      "AGE2012F"
+    ]
+  },
+  {
+    "code": "AGE3011F",
+    "name": "The Roots of Recent African Identities",
+    "department": "Archaeology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "AGE2011S"
+    ]
+  },
+  {
+    "code": "AGE3012S",
+    "name": "Global Interaction and the Archaeology of the Historical Past",
+    "department": "Archaeology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "AGE2011S"
+    ]
+  },
+  {
+    "code": "PSY1009F",
+    "name": "Introduction to Psychology Part 1",
+    "department": "Psychology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "PSY1010S",
+    "name": "Introduction to Psychology Part 2",
+    "department": "Psychology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "PSY2013F",
+    "name": "Social and Developmental Psychology",
+    "department": "Psychology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "PSY1009F",
+      "PSY1010S"
+    ]
+  },
+  {
+    "code": "PSY2014S",
+    "name": "Cognitive Neuroscience and Abnormal Psychology",
+    "department": "Psychology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "PSY1009F",
+      "PSY1010S"
+    ]
+  },
+  {
+    "code": "PSY2015F",
+    "name": "Research in Psychology I",
+    "department": "Psychology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "PSY1009F",
+      "PSY1010S"
+    ]
+  },
+  {
+    "code": "PSY3005F",
+    "name": "Critical Psychology",
+    "department": "Psychology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "PSY2013F"
+    ]
+  },
+  {
+    "code": "PSY3007S",
+    "name": "Research in Psychology II",
+    "department": "Psychology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "PSY2015F"
+    ]
+  },
+  {
+    "code": "PSY3009F",
+    "name": "Applied Cognitive Science",
+    "department": "Psychology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "PSY2014S"
+    ]
+  },
+  {
+    "code": "PSY3010S",
+    "name": "Introduction to Clinical Neuropsychology",
+    "department": "Psychology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "PSY2014S"
+    ]
+  },
+  {
+    "code": "PSY3011S",
+    "name": "Clinical Psychology II",
+    "department": "Psychology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "PSY2013F"
+    ]
+  },
+  {
+    "code": "SWK1006S",
+    "name": "Basic Professional Interaction",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "SWK1013F",
+    "name": "Community Connections",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "SWK2001F",
+    "name": "Introduction to Social Development",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "SWK2013S",
+    "name": "Community & Youth Development",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "SWK3001F",
+    "name": "Principles and Application of Social Development",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "SWK2001F"
+    ]
+  },
+  {
+    "code": "SWK3066S",
+    "name": "Contemporary Social Work Issues",
+    "department": "Social Work and Social Development",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "SOC3027F",
+    "name": "Social Research (Industrial Sociology)",
+    "department": "Sociology",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "SOC2015S"
+    ]
+  },
+  {
+    "code": "SOC3029S",
+    "name": "Industrial Society & Change",
+    "department": "Sociology",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "SOC2015S"
+    ]
+  },
+  {
+    "code": "MAM1031F",
+    "name": "Mathematics 1031",
+    "department": "Mathematics and Applied Mathematics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "MAM1032S",
+    "name": "Mathematics 1032",
+    "department": "Mathematics and Applied Mathematics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "MAM1031F"
+    ]
+  },
+  {
+    "code": "MAM1004F",
+    "name": "Mathematics 1004",
+    "department": "Mathematics and Applied Mathematics",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "MAM1008S",
+    "name": "Introduction to Discrete Mathematics",
+    "department": "Mathematics and Applied Mathematics",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "STA1007S",
+    "name": "Introductory Statistics for Scientists",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "STA2007H",
+    "name": "Study Design and Data Analysis for Scientists",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Full Year"
+    ],
+    "prerequisites": [
+      "STA1007S"
+    ]
+  },
+  {
+    "code": "STA2020FS",
+    "name": "Applied Statistics",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "STA1000S"
+    ]
+  },
+  {
+    "code": "STA2030S",
+    "name": "Statistical Theory",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "STA2020FS"
+    ]
+  },
+  {
+    "code": "STA3030F",
+    "name": "Statistical Inference & Modelling",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "STA2030S"
+    ]
+  },
+  {
+    "code": "STA3036S",
+    "name": "Operational Research Techniques",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "STA2030S"
+    ]
+  },
+  {
+    "code": "STA1006S",
+    "name": "Mathematical Statistics I",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "MAM1031F"
+    ]
+  },
+  {
+    "code": "STA2004F",
+    "name": "Statistical Theory & Inference",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "STA1006S"
+    ]
+  },
+  {
+    "code": "STA2005S",
+    "name": "Linear Models",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "STA2004F"
+    ]
+  },
+  {
+    "code": "STA3041F",
+    "name": "Stochastic Processes & Time Series",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "STA2005S"
+    ]
+  },
+  {
+    "code": "STA3043S",
+    "name": "Decision Theory & Bayesian Inference",
+    "department": "Statistical Sciences",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "STA2005S"
+    ]
+  },
+  {
+    "code": "TDP1045S",
+    "name": "South African Performance Genealogies",
+    "department": "Theatre, Dance and Performance Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "TDP2010F",
+    "name": "Global performances: Mutations and Migrations",
+    "department": "Theatre, Dance and Performance Studies",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "TDP1027F"
+    ]
+  },
+  {
+    "code": "TDP2014S",
+    "name": "Introduction to Theatre in Education",
+    "department": "Theatre, Dance and Performance Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "TDP1027F"
+    ]
+  },
+  {
+    "code": "TDP3010F",
+    "name": "Contemporary Performance",
+    "department": "Theatre, Dance and Performance Studies",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "TDP2010F"
+    ]
+  },
+  {
+    "code": "TDP3018S",
+    "name": "Production Processes",
+    "department": "Theatre, Dance and Performance Studies",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "TDP3010F"
+    ]
+  },
+  {
+    "code": "REL1002F",
+    "name": "Religions Past and Present",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL1006S",
+    "name": "Judaism, Christianity and Islam",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL1017S",
+    "name": "African Religious Traditions",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL2040F",
+    "name": "Religion and Society",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL2047F",
+    "name": "Religion, Sexuality and Gender",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL2048S",
+    "name": "Psychology of Religion",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": []
+  },
+  {
+    "code": "REL3037F",
+    "name": "Religion and Politics",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 1"
+    ],
+    "prerequisites": [
+      "REL2040F"
+    ]
+  },
+  {
+    "code": "REL3042S",
+    "name": "Religion and Media",
+    "department": "The Study of Religions",
+    "offered": [
+      "Semester 2"
+    ],
+    "prerequisites": [
+      "REL2040F"
+    ]
   }
 ]

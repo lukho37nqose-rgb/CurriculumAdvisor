@@ -11,7 +11,7 @@ A beginner-friendly Streamlit app for UCT Humanities curriculum guidance.
 ## Run locally
 ```bash
 python -m pip install -r requirements.txt
-python -m streamlit run app.py
+python app.py
 ```
 
 ## Deploy to Streamlit Community Cloud (recommended)
