@@ -7,3 +7,16 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Local data / PDFs
+*.pdf
+*.txt
+*.jsonl
+tmp/
+temp/
