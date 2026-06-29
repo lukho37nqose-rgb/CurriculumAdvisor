@@ -27,11 +27,13 @@ def _nqf_level_from_code(code: str) -> int:
 
 
 def load_catalogue(
+    faculty_key: str = "uct_humanities",
     courses_path: Path | None = None,
     requirements_path: Path | None = None,
 ) -> Catalogue:
-    courses_path = courses_path or _BASE / "courses.json"
-    requirements_path = requirements_path or _BASE / "degree_requirements.json"
+    data_dir = _BASE / "data" / faculty_key
+    courses_path = courses_path or data_dir / "courses.json"
+    requirements_path = requirements_path or data_dir / "degree_requirements.json"
 
     with open(courses_path, encoding="utf-8") as f:
         raw_courses = json.load(f)

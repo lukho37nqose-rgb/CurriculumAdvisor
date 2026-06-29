@@ -112,3 +112,17 @@ def _infer_programme_key(programme_name: str) -> str:
     elif "extended" in name:
         return "extended_ba_bsocsc"
     return "regular_ba_bsocsc"
+
+
+def _infer_faculty_key(programme_name: str) -> str:
+    """Map the student's programme string to the correct faculty key."""
+    name = programme_name.lower()
+    if "commerce" in name or "bcom" in name:
+        return "uct_commerce"
+    elif "science" in name or "bsc" in name:
+        return "uct_science"
+    elif "law" in name or "llb" in name:
+        return "uct_law"
+    elif "engineering" in name or "bsc(eng)" in name:
+        return "uct_engineering"
+    return "uct_humanities"

@@ -27,6 +27,7 @@ from engine.models import StudentRecord, CourseResult
 from engine.knowledge_graph import KnowledgeGraph
 from engine.reasoner import GraduateGoal, HonoursReadinessGoal, CompleteMajorGoal
 from engine.simulator import SimulationEngine
+from engine.utils import _infer_faculty_key
 
 app = FastAPI(title="CurriculumAdvisor API", version="2.0")
 
@@ -40,9 +41,25 @@ app.add_middleware(
 _BASE = Path(__file__).parent
 _STATIC = _BASE / "static"
 
-# Load catalogue once at startup
-_catalogue = load_catalogue()
-_graph = KnowledgeGraph(_catalogue)
+# Cache loaded catalogues and graphs
+_catalogues: dict[str, Catalogue] = {}
+_graphs: dict[str, KnowledgeGraph] = {}
+
+
+def get_catalogue_and_graph(faculty_key: str) -> tuple[Catalogue, KnowledgeGraph]:
+    if faculty_key not in _catalogues:
+        try:
+            cat = load_catalogue(faculty_key)
+            _catalogues[faculty_key] = cat
+            _graphs[faculty_key] = KnowledgeGraph(cat)
+        except Exception:
+            # Fallback to humanities
+            if "uct_humanities" not in _catalogues:
+                cat = load_catalogue("uct_humanities")
+                _catalogues["uct_humanities"] = cat
+                _graphs["uct_humanities"] = KnowledgeGraph(cat)
+            return _catalogues["uct_humanities"], _graphs["uct_humanities"]
+    return _catalogues[faculty_key], _graphs[faculty_key]
 
 
 def _to_dict(obj: Any) -> Any:
@@ -60,7 +77,8 @@ def _to_dict(obj: Any) -> Any:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "courses_loaded": len(_catalogue.courses)}
+    cat, _ = get_catalogue_and_graph("uct_humanities")
+    return {"status": "ok", "courses_loaded": len(cat.courses)}
 
 
 @app.get("/")
@@ -74,12 +92,14 @@ def index():
 
 @app.get("/catalogue")
 def get_catalogue():
-    return _to_dict(_catalogue.courses)
+    cat, _ = get_catalogue_and_graph("uct_humanities")
+    return _to_dict(cat.courses)
 
 
 @app.get("/majors")
 def get_majors():
-    return _to_dict(_catalogue.majors)
+    cat, _ = get_catalogue_and_graph("uct_humanities")
+    return _to_dict(cat.majors)
 
 
 @app.post("/analyse")
@@ -102,7 +122,9 @@ async def analyse_pdf(file: UploadFile = File(...)):
     finally:
         os.unlink(tmp_path)
 
-    report = compute_report(student, _catalogue)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, _ = get_catalogue_and_graph(faculty_key)
+    report = compute_report(student, catalogue)
     return JSONResponse(_to_dict(report))
 
 
@@ -113,7 +135,9 @@ async def analyse_text(body: dict):
     if not text.strip():
         raise HTTPException(status_code=400, detail="No transcript text provided.")
     student = parse_transcript_text(text)
-    report = compute_report(student, _catalogue)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, _ = get_catalogue_and_graph(faculty_key)
+    report = compute_report(student, catalogue)
     return JSONResponse(_to_dict(report))
 
 
@@ -156,7 +180,9 @@ async def analyse_json(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    report = compute_report(student, _catalogue)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, _ = get_catalogue_and_graph(faculty_key)
+    report = compute_report(student, catalogue)
     return JSONResponse(_to_dict(report))
 
 
@@ -199,7 +225,9 @@ async def simulate_fail(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    simulator = SimulationEngine(student, _catalogue, _graph)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, graph = get_catalogue_and_graph(faculty_key)
+    simulator = SimulationEngine(student, catalogue, graph)
     report, blocked = simulator.simulate_fail_course(course_code)
     return JSONResponse({
         "report": _to_dict(report),
@@ -244,7 +272,9 @@ async def simulate_pass(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    simulator = SimulationEngine(student, _catalogue, _graph)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, graph = get_catalogue_and_graph(faculty_key)
+    simulator = SimulationEngine(student, catalogue, graph)
     report = simulator.simulate_pass_course(course_code, mark)
     return JSONResponse(_to_dict(report))
 
@@ -284,7 +314,9 @@ async def simulate_switch(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    simulator = SimulationEngine(student, _catalogue, _graph)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, graph = get_catalogue_and_graph(faculty_key)
+    simulator = SimulationEngine(student, catalogue, graph)
     report = simulator.simulate_switch_majors(new_majors)
     return JSONResponse(_to_dict(report))
 
@@ -324,7 +356,9 @@ async def simulate_semester(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    simulator = SimulationEngine(student, _catalogue, _graph)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, graph = get_catalogue_and_graph(faculty_key)
+    simulator = SimulationEngine(student, catalogue, graph)
     report = simulator.simulate_future_semester(courses_to_take)
     return JSONResponse(_to_dict(report))
 
@@ -363,17 +397,19 @@ async def evaluate_goals(body: dict):
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
     # Evaluate Graduate Goal
-    grad_goal = GraduateGoal(student, _catalogue, _graph)
+    faculty_key = _infer_faculty_key(student.programme)
+    catalogue, graph = get_catalogue_and_graph(faculty_key)
+    grad_goal = GraduateGoal(student, catalogue, graph)
     grad_report = grad_goal.evaluate()
 
     # Evaluate Honours Readiness for each declared major
     honours_reports = []
     for major in student.declared_majors:
         # Normalise major name to key
-        from engine.rule_engine import _normalise_major_keys
-        norm_keys = _normalise_major_keys([major], _catalogue)
+        from engine.utils import _normalise_major_keys
+        norm_keys = _normalise_major_keys([major], catalogue)
         if norm_keys:
-            honours_goal = HonoursReadinessGoal(student, _catalogue, _graph, norm_keys[0])
+            honours_goal = HonoursReadinessGoal(student, catalogue, graph, norm_keys[0])
             honours_reports.append(honours_goal.evaluate())
 
     return JSONResponse({
