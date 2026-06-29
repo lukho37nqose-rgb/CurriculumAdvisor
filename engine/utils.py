@@ -165,6 +165,13 @@ def _infer_faculty_key(programme_name: str) -> str:
         return "uct_commerce"
     elif "engineering" in name or "bsc(eng)" in name or "bsc (eng)" in name:
         return "uct_ebe"
+    elif (
+        "social science" in name
+        or "social work" in name
+        or "bachelor of arts" in name
+        or "bachelor of social" in name
+    ):
+        return "uct_humanities"
     elif "science" in name or "bsc" in name:
         return "uct_science"
     elif "law" in name or "llb" in name:
