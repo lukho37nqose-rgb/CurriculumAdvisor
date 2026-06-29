@@ -419,23 +419,26 @@ async def evaluate_goals(body: dict):
 
 
 @app.get("/dependencies")
-def get_dependencies(start: str, end: str):
+def get_dependencies(start: str, end: str, faculty_key: str = "uct_humanities"):
     """Get the dependency path between two courses."""
-    path = _graph.get_dependency_path(start.upper(), end.upper())
+    _, graph = get_catalogue_and_graph(faculty_key)
+    path = graph.get_dependency_path(start.upper(), end.upper())
     return {"path": path}
 
 
 @app.get("/dependencies/unlocked")
-def get_unlocked(course_code: str):
+def get_unlocked(course_code: str, faculty_key: str = "uct_humanities"):
     """Get all courses unlocked by passing this course."""
-    unlocked = _graph.get_all_unlocked_courses(course_code.upper())
+    _, graph = get_catalogue_and_graph(faculty_key)
+    unlocked = graph.get_all_unlocked_courses(course_code.upper())
     return {"unlocked": sorted(list(unlocked))}
 
 
 @app.get("/dependencies/blocked")
-def get_blocked(course_code: str):
+def get_blocked(course_code: str, faculty_key: str = "uct_humanities"):
     """Get all courses blocked by failing this course."""
-    blocked = _graph.get_blocked_courses({course_code.upper()})
+    _, graph = get_catalogue_and_graph(faculty_key)
+    blocked = graph.get_blocked_courses({course_code.upper()})
     return {"blocked": sorted(list(blocked))}
 
 

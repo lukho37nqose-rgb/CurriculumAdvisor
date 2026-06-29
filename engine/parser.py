@@ -130,7 +130,9 @@ def parse_transcript_pdf(pdf_path) -> StudentRecord:
         raise ImportError("pypdf is required: pip install pypdf")
 
     reader = PdfReader(str(pdf_path))
-    full_text = reader.pages[0].extract_text() or ""
+    full_text = ""
+    for page in reader.pages:
+        full_text += (page.extract_text() or "") + "\n"
     return parse_transcript_text(full_text)
 
 

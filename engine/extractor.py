@@ -395,23 +395,100 @@ def main():
         json.dump(courses, f, indent=2, ensure_ascii=False)
     print(f"Saved {len(courses)} courses to {courses_file}")
     
+    # Determine faculty-specific programme rules
+    pdf_name_lower = pdf_path.name.lower()
+    if "commerce" in pdf_name_lower:
+        prog_rules = {
+            "name": "Commerce Undergraduate Programme",
+            "qualification_codes": ["CB001", "CB015", "CB018"],
+            "minimum_duration_years": 3,
+            "minimum_nqf_credits": 360,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 20,
+            "minimum_senior_semester_courses": 10,
+            "minimum_majors": 1,
+            "minimum_humanities_semester_courses": 0,
+            "minimum_humanities_majors": 0,
+            "required_courses": []
+        }
+    elif "ebe" in pdf_name_lower:
+        prog_rules = {
+            "name": "EBE Undergraduate Programme",
+            "qualification_codes": ["EB001", "EB002", "EB009", "EB015", "EB017", "EB022"],
+            "minimum_duration_years": 4,
+            "minimum_nqf_credits": 576,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 32,
+            "minimum_senior_semester_courses": 20,
+            "minimum_majors": 1,
+            "minimum_humanities_semester_courses": 0,
+            "minimum_humanities_majors": 0,
+            "required_courses": []
+        }
+    elif "law" in pdf_name_lower:
+        prog_rules = {
+            "name": "Law LLB Programme",
+            "qualification_codes": ["LB002", "LP001"],
+            "minimum_duration_years": 4,
+            "minimum_nqf_credits": 480,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 28,
+            "minimum_senior_semester_courses": 18,
+            "minimum_majors": 1,
+            "minimum_humanities_semester_courses": 0,
+            "minimum_humanities_majors": 0,
+            "required_courses": []
+        }
+    elif "sci" in pdf_name_lower:
+        prog_rules = {
+            "name": "Science Undergraduate Programme",
+            "qualification_codes": ["MAM01", "CSC08", "STA01"],
+            "minimum_duration_years": 3,
+            "minimum_nqf_credits": 360,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 18,
+            "minimum_senior_semester_courses": 8,
+            "minimum_majors": 2,
+            "minimum_humanities_semester_courses": 0,
+            "minimum_humanities_majors": 0,
+            "required_courses": []
+        }
+    elif "fhs" in pdf_name_lower:
+        prog_rules = {
+            "name": "Health Sciences Undergraduate Programme",
+            "qualification_codes": ["MB014", "MB020", "MB001"],
+            "minimum_duration_years": 4,
+            "minimum_nqf_credits": 480,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 32,
+            "minimum_senior_semester_courses": 20,
+            "minimum_majors": 1,
+            "minimum_humanities_semester_courses": 0,
+            "minimum_humanities_majors": 0,
+            "required_courses": []
+        }
+    else:
+        # Default to Humanities
+        prog_rules = {
+            "name": "Regular Programme",
+            "qualification_codes": ["HB001"],
+            "minimum_duration_years": 3,
+            "minimum_nqf_credits": 360,
+            "minimum_nqf_level_7_credits": 120,
+            "minimum_semester_courses": 20,
+            "minimum_senior_semester_courses": 10,
+            "minimum_majors": 2,
+            "minimum_humanities_semester_courses": 12,
+            "minimum_humanities_majors": 1,
+            "required_courses": []
+        }
+
     # Save degree_requirements.json template
     reqs_file = output_dir / "degree_requirements.json"
     reqs_data = {
         "source": f"UCT Handbook Extracted from {pdf_path.name}",
         "programmes": {
-            "regular_programme": {
-                "name": "Regular Programme",
-                "qualification_codes": ["HB001"],
-                "minimum_duration_years": 3,
-                "minimum_nqf_credits": 360,
-                "minimum_nqf_level_7_credits": 120,
-                "minimum_semester_courses": 20,
-                "minimum_senior_semester_courses": 10,
-                "minimum_majors": 2,
-                "minimum_humanities_semester_courses": 12,
-                "required_courses": []
-            }
+            "regular_programme": prog_rules
         },
         "majors": majors
     }

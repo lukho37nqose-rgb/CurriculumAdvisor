@@ -111,7 +111,7 @@ def _infer_programme_key(programme_name: str) -> str:
         return "advanced_certificate_ip"
     elif "extended" in name:
         return "extended_ba_bsocsc"
-    return "regular_ba_bsocsc"
+    return "regular_programme"
 
 
 def _infer_faculty_key(programme_name: str) -> str:

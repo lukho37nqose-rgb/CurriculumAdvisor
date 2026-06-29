@@ -276,6 +276,7 @@ def _compute_distinction(
     """
     subjects: list[SubjectDistinction] = []
     qualification_eligible = True
+    is_provisional = False
 
     for key in major_keys:
         major_def = catalogue.majors.get(key)
@@ -304,7 +305,9 @@ def _compute_distinction(
             continue
 
         avg = sum(marks) / len(marks)
-        provisional = len(marks) < len(senior_codes)
+        if len(marks) < len(senior_codes):
+            is_provisional = True
+            
         if avg < 75:
             qualification_eligible = False
 
@@ -314,20 +317,9 @@ def _compute_distinction(
             senior_courses_assessed=len(marks),
         ))
 
-    provisional = any(
-        len([r for r in student.results
-             if r.code in {c for c in (catalogue.majors.get(k).required_courses if catalogue.majors.get(k) else [])
-                           + [c for g in (catalogue.majors.get(k).choice_groups if catalogue.majors.get(k) else []) for c in g.courses]}
-             and _is_senior(r.code) and r.mark is not None])
-        < len([c for c in (catalogue.majors.get(k).required_courses if catalogue.majors.get(k) else [])
-               + [c for g in (catalogue.majors.get(k).choice_groups if catalogue.majors.get(k) else []) for c in g.courses]
-               if _is_senior(c)])
-        for k in major_keys if catalogue.majors.get(k)
-    )
-
     return Distinction(
         qualification_eligible=qualification_eligible and len(subjects) > 0,
-        provisional=provisional,
+        provisional=is_provisional,
         subjects=subjects,
     )
 
@@ -472,7 +464,27 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
     # We infer years from the number of courses attempted
     attempted_count = len(student.attempted_codes())
     inferred_years = max(1, (attempted_count + 7) // 8)  # ~8 courses/year
-    min_years = prog.key == "extended_ba_bsocsc" and 4 or 3 if prog else 3
+    
+    # Fallback values if programme rules are not found
+    min_years = 3
+    total_nqf_credits = 360
+    level_7_nqf_credits = 120
+    semester_course_equivalents = 20
+    senior_course_equivalents = 10
+    humanities_course_equivalents = 12
+    required_majors = 2
+    required_humanities_majors = 1
+
+    if prog:
+        min_years = 4 if "extended" in prog.key or "augmented" in prog.key or prog.key == "bsw" else 3
+        total_nqf_credits = prog.total_nqf_credits
+        level_7_nqf_credits = prog.level_7_nqf_credits
+        semester_course_equivalents = prog.semester_course_equivalents
+        senior_course_equivalents = prog.senior_course_equivalents
+        humanities_course_equivalents = prog.humanities_course_equivalents
+        required_majors = prog.required_majors
+        required_humanities_majors = prog.required_humanities_majors
+
     duration_ok = inferred_years >= min_years
 
     # --- Requirements list ---
@@ -488,76 +500,86 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         Requirement(
             id="courses",
             label="Semester course equivalents",
-            complete=sce_total >= 20,
+            complete=sce_total >= semester_course_equivalents,
             current=sce_total,
-            required=20,
-            detail=f"{sce_total:.1f} of 20 required semester-course equivalents passed",
+            required=float(semester_course_equivalents),
+            detail=f"{sce_total:.1f} of {semester_course_equivalents} required semester-course equivalents passed",
         ),
         Requirement(
             id="senior",
             label="Senior semester courses (2000/3000-level)",
-            complete=senior_sce >= 10,
+            complete=senior_sce >= senior_course_equivalents,
             current=senior_sce,
-            required=10,
-            detail=f"{senior_sce:.1f} of 10 required senior courses passed",
+            required=float(senior_course_equivalents),
+            detail=f"{senior_sce:.1f} of {senior_course_equivalents} required senior courses passed",
         ),
-        Requirement(
+    ]
+    
+    if humanities_course_equivalents > 0:
+        requirements.append(Requirement(
             id="humanities",
             label="Humanities semester courses",
-            complete=humanities_sce >= 12,
+            complete=humanities_sce >= humanities_course_equivalents,
             current=humanities_sce,
-            required=12,
-            detail=f"{humanities_sce:.1f} of 12 required Humanities courses passed",
-        ),
+            required=float(humanities_course_equivalents),
+            detail=f"{humanities_sce:.1f} of {humanities_course_equivalents} required Humanities courses passed",
+        ))
+        
+    requirements.extend([
         Requirement(
             id="credits",
             label="NQF credits",
-            complete=credits_completed >= 360,
+            complete=credits_completed >= total_nqf_credits,
             current=float(credits_completed),
-            required=360,
-            detail=f"{credits_completed} of 360 NQF credits completed",
+            required=float(total_nqf_credits),
+            detail=f"{credits_completed} of {total_nqf_credits} NQF credits completed",
         ),
         Requirement(
             id="level7",
             label="NQF Level 7 credits",
-            complete=level_7_credits >= 120,
+            complete=level_7_credits >= level_7_nqf_credits,
             current=float(level_7_credits),
-            required=120,
-            detail=f"{level_7_credits} of 120 NQF Level 7 credits completed",
+            required=float(level_7_nqf_credits),
+            detail=f"{level_7_credits} of {level_7_nqf_credits} NQF Level 7 credits completed",
         ),
         Requirement(
             id="majors",
             label="Completed majors",
-            complete=majors_complete >= 2,
+            complete=majors_complete >= required_majors,
             current=float(majors_complete),
-            required=2,
-            detail=f"{majors_complete} of 2 majors completed",
+            required=float(required_majors),
+            detail=f"{majors_complete} of {required_majors} majors completed",
         ),
-        Requirement(
+    ])
+    
+    if required_humanities_majors > 0:
+        requirements.append(Requirement(
             id="humanities_major",
             label="At least one Humanities major",
-            complete=humanities_majors_complete >= 1,
+            complete=humanities_majors_complete >= required_humanities_majors,
             current=float(humanities_majors_complete),
-            required=1,
+            required=float(required_humanities_majors),
             detail="At least one major must be offered by the Humanities Faculty",
-        ),
+        ))
+        
+    requirements.extend([
         Requirement(
             id="major_combination",
             label="Valid major combination",
             complete=forbidden_ok,
             current=1.0 if forbidden_ok else 0.0,
-            required=1,
+            required=1.0,
             detail="" if forbidden_ok else "Selected majors cannot be combined",
         ),
         Requirement(
             id="qualification_match",
             label="Qualification type",
             complete=True,  # mixed BA/BSocSc is allowed (student chooses)
-            current=1,
-            required=1,
+            current=1.0,
+            required=1.0,
             detail="BA, BSocSc, or mixed (student may choose)",
         ),
-    ]
+    ])
 
     graduation_eligible = all(r.complete for r in requirements)
 

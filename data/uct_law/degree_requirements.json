@@ -2,17 +2,19 @@
   "source": "UCT Handbook Extracted from 2026-law-handbook-10-final-web.pdf",
   "programmes": {
     "regular_programme": {
-      "name": "Regular Programme",
+      "name": "Law LLB Programme",
       "qualification_codes": [
-        "HB001"
+        "LB002",
+        "LP001"
       ],
-      "minimum_duration_years": 3,
-      "minimum_nqf_credits": 360,
+      "minimum_duration_years": 4,
+      "minimum_nqf_credits": 480,
       "minimum_nqf_level_7_credits": 120,
-      "minimum_semester_courses": 20,
-      "minimum_senior_semester_courses": 10,
-      "minimum_majors": 2,
-      "minimum_humanities_semester_courses": 12,
+      "minimum_semester_courses": 28,
+      "minimum_senior_semester_courses": 18,
+      "minimum_majors": 1,
+      "minimum_humanities_semester_courses": 0,
+      "minimum_humanities_majors": 0,
       "required_courses": []
     }
   },

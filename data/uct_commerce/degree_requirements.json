@@ -2,17 +2,20 @@
   "source": "UCT Handbook Extracted from 2026-commerce-handbook-6a-final-web.pdf",
   "programmes": {
     "regular_programme": {
-      "name": "Regular Programme",
+      "name": "Commerce Undergraduate Programme",
       "qualification_codes": [
-        "HB001"
+        "CB001",
+        "CB015",
+        "CB018"
       ],
       "minimum_duration_years": 3,
       "minimum_nqf_credits": 360,
       "minimum_nqf_level_7_credits": 120,
       "minimum_semester_courses": 20,
       "minimum_senior_semester_courses": 10,
-      "minimum_majors": 2,
-      "minimum_humanities_semester_courses": 12,
+      "minimum_majors": 1,
+      "minimum_humanities_semester_courses": 0,
+      "minimum_humanities_majors": 0,
       "required_courses": []
     }
   },
