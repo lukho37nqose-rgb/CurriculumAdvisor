@@ -70,43 +70,61 @@ def _is_humanities(code: str, catalogue: Catalogue) -> bool:
 
 
 def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str]:
-    """Convert declared major names to catalogue keys."""
+    """Convert declared major names to catalogue keys using a multi-tiered matching strategy."""
     keys = []
     for name in declared:
         name_clean = name.lower().strip()
-        # Remove common suffixes like "specialisation", "specialization", "major", "stream"
-        name_clean = re.sub(r"\s+(specialisation|specialization|major|stream)\b", "", name_clean)
+        # Remove common suffixes like "specialisation", "specialization", "major", "stream", "programme"
+        name_clean = re.sub(r"\s+(specialisation|specialization|major|stream|programme)\b", "", name_clean)
         
+        # Tier 1: Static mapping lookup
         key = _MAJOR_NAME_TO_KEY.get(name_clean)
         if key is not None:
             keys.append(key)
             continue
             
-        # Try direct key lookup
+        # Tier 2: Direct key lookup
         direct_key = name_clean.replace(" ", "_").replace("&", "and").replace(":", "").replace(",", "").replace("(", "").replace(")", "")
         direct_key = re.sub(r"_+", "_", direct_key)
         if direct_key in catalogue.majors:
             keys.append(direct_key)
             continue
             
-        # Try substring matching against catalogue major names
-        found = False
-        for m_key, m_def in catalogue.majors.items():
-            m_name_lower = m_def.name.lower()
-            if name_clean in m_name_lower or m_name_lower in name_clean:
-                keys.append(m_key)
-                found = True
-                break
-        if found:
-            continue
-            
-        # Try matching by code if the name contains a code
+        # Tier 3: Code-based lookup (e.g. if the declared name is a qualification code)
+        found_code = False
         for m_key, m_def in catalogue.majors.items():
             if v := m_def.__dict__.get("code"):
                 if v.lower() == name_clean:
                     keys.append(m_key)
-                    found = True
+                    found_code = True
                     break
+        if found_code:
+            continue
+            
+        # Tier 4: Word overlap matching (prioritizes highest similarity to avoid substring collisions)
+        best_key = None
+        best_score = 0.0
+        # Clean up special characters to ensure words are split correctly
+        name_clean_spaced = name_clean.replace("(", " ").replace(")", " ").replace(":", " ").replace("-", " ").replace(",", " ").replace("&", " and ")
+        name_words = set(name_clean_spaced.split())
+        for m_key, m_def in catalogue.majors.items():
+            m_name_clean = re.sub(r"\s+(specialisation|specialization|major|stream|programme)\b", "", m_def.name.lower())
+            m_name_spaced = m_name_clean.replace("(", " ").replace(")", " ").replace(":", " ").replace("-", " ").replace(",", " ").replace("&", " and ")
+            m_words = set(m_name_spaced.split())
+            intersection = name_words.intersection(m_words)
+            if intersection:
+                # Jaccard-like similarity score
+                score = len(intersection) / max(len(name_words), len(m_words))
+                if score > best_score:
+                    best_score = score
+                    best_key = m_key
+                    
+        if best_score >= 0.3:  # Match threshold
+            keys.append(best_key)
+        else:
+            # Fallback: skip (will generate a warning in the report)
+            pass
+            
     return keys
 
 

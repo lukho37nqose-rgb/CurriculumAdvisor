@@ -21,7 +21,7 @@ from .models import StudentRecord, CourseResult
 _NAME_RE = re.compile(r"^Name:\s+(.+)", re.IGNORECASE)
 _ID_RE = re.compile(r"^Campus\s+ID:\s+([A-Z0-9]+)", re.IGNORECASE)
 _PROG_RE = re.compile(r"^Programme:\s+(.+)", re.IGNORECASE)
-_SPEC_RE = re.compile(r"^Specialisation:\s+(.+?)(?:\s+Major|\s+Specialisation)?\s*$", re.IGNORECASE)
+_SPEC_RE = re.compile(r"^Specialisation:\s+(.+)$", re.IGNORECASE)
 
 _COURSE_RE = re.compile(
     r"^([A-Z]{2,4})\s+(\d{4}[A-Z]{1,2})\s+(.+?)\s+"
@@ -81,6 +81,8 @@ def parse_transcript_text(text: str) -> StudentRecord:
         m = _SPEC_RE.match(line)
         if m:
             major_name = m.group(1).strip()
+            # Clean up common trailing noise words
+            major_name = re.sub(r"\s+(Major|Specialisation|Specialization|Stream|Programme)\s*$", "", major_name, flags=re.IGNORECASE)
             if major_name not in declared_majors:
                 declared_majors.append(major_name)
             continue
