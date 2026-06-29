@@ -73,14 +73,40 @@ def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str
     """Convert declared major names to catalogue keys."""
     keys = []
     for name in declared:
-        key = _MAJOR_NAME_TO_KEY.get(name.lower().strip())
-        if key is None:
-            # Try direct key lookup
-            if name.lower().replace(" ", "_") in catalogue.majors:
-                keys.append(name.lower().replace(" ", "_"))
-            # else: skip (will generate a warning)
-        else:
+        name_clean = name.lower().strip()
+        # Remove common suffixes like "specialisation", "specialization", "major", "stream"
+        name_clean = re.sub(r"\s+(specialisation|specialization|major|stream)\b", "", name_clean)
+        
+        key = _MAJOR_NAME_TO_KEY.get(name_clean)
+        if key is not None:
             keys.append(key)
+            continue
+            
+        # Try direct key lookup
+        direct_key = name_clean.replace(" ", "_").replace("&", "and").replace(":", "").replace(",", "").replace("(", "").replace(")", "")
+        direct_key = re.sub(r"_+", "_", direct_key)
+        if direct_key in catalogue.majors:
+            keys.append(direct_key)
+            continue
+            
+        # Try substring matching against catalogue major names
+        found = False
+        for m_key, m_def in catalogue.majors.items():
+            m_name_lower = m_def.name.lower()
+            if name_clean in m_name_lower or m_name_lower in name_clean:
+                keys.append(m_key)
+                found = True
+                break
+        if found:
+            continue
+            
+        # Try matching by code if the name contains a code
+        for m_key, m_def in catalogue.majors.items():
+            if v := m_def.__dict__.get("code"):
+                if v.lower() == name_clean:
+                    keys.append(m_key)
+                    found = True
+                    break
     return keys
 
 
@@ -119,10 +145,10 @@ def _infer_faculty_key(programme_name: str) -> str:
     name = programme_name.lower()
     if "commerce" in name or "bcom" in name:
         return "uct_commerce"
+    elif "engineering" in name or "bsc(eng)" in name or "bsc (eng)" in name:
+        return "uct_ebe"
     elif "science" in name or "bsc" in name:
         return "uct_science"
     elif "law" in name or "llb" in name:
         return "uct_law"
-    elif "engineering" in name or "bsc(eng)" in name:
-        return "uct_engineering"
     return "uct_humanities"

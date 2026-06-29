@@ -21,7 +21,7 @@ from .models import StudentRecord, CourseResult
 _NAME_RE = re.compile(r"^Name:\s+(.+)", re.IGNORECASE)
 _ID_RE = re.compile(r"^Campus\s+ID:\s+([A-Z0-9]+)", re.IGNORECASE)
 _PROG_RE = re.compile(r"^Programme:\s+(.+)", re.IGNORECASE)
-_SPEC_RE = re.compile(r"^Specialisation:\s+(.+?)\s+Major\s*$", re.IGNORECASE)
+_SPEC_RE = re.compile(r"^Specialisation:\s+(.+?)(?:\s+Major|\s+Specialisation)?\s*$", re.IGNORECASE)
 
 _COURSE_RE = re.compile(
     r"^([A-Z]{2,4})\s+(\d{4}[A-Z]{1,2})\s+(.+?)\s+"

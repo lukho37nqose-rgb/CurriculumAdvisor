@@ -442,6 +442,40 @@ def get_blocked(course_code: str, faculty_key: str = "uct_humanities"):
     return {"blocked": sorted(list(blocked))}
 
 
+@app.get("/debug/student")
+def debug_student(faculty_key: str = "uct_ebe"):
+    """Debug endpoint to inspect raw parsed student record and catalogue majors."""
+    from pathlib import Path
+    from engine.utils import _normalise_major_keys
+    
+    # Search for the transcript in downloads
+    downloads_path = Path("C:/Users/Lukho Nqose/Downloads")
+    pdf_files = list(downloads_path.glob("*.pdf"))
+    
+    target_pdf = None
+    for f in pdf_files:
+        if "thapelo" in f.name.lower() or "mapengo" in f.name.lower() or "uct_sr_unoff" in f.name.lower():
+            target_pdf = f
+            break
+            
+    if not target_pdf:
+        raise HTTPException(status_code=404, detail="Student transcript PDF not found in Downloads.")
+        
+    try:
+        student = parse_transcript_pdf(target_pdf)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error parsing transcript: {e}")
+        
+    cat, _ = get_catalogue_and_graph(faculty_key)
+    
+    return {
+        "transcript_file": target_pdf.name,
+        "student_record": _to_dict(student),
+        "normalised_majors": _normalise_major_keys(student.declared_majors, cat),
+        "catalogue_majors": {k: v.name for k, v in cat.majors.items()}
+    }
+
+
 if __name__ == "__main__":
     import uvicorn
     import os
