@@ -13,6 +13,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Optional
 from .models import StudentRecord, Catalogue, MajorDefinition, CourseFact
+from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph
 from .utils import _course_weight, _is_senior, _is_humanities, _normalise_major_keys, _infer_programme_key
 
 
@@ -28,6 +29,13 @@ class Requirement:
     current: float
     required: float
     detail: str = ""
+    evidence: list[Evidence] = field(default_factory=list)
+    applied_rules: list[str] = field(default_factory=list)
+    explanation: str = ""
+    status: str = "verified"
+    confidence: float = 1.0
+    assumptions: list[str] = field(default_factory=list)
+    depends_on: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -95,31 +103,34 @@ class Report:
 
 def _compute_major_progress(
     major_def: MajorDefinition,
-    passed: set[str],
+    student: StudentRecord,
 ) -> MajorProgress:
     completed_reqs: list[str] = []
     outstanding_reqs: list[str] = []
+    graph = build_major_completion_graph(student, major_def)
 
     # Required courses
     for code in major_def.required_courses:
-        if code in passed:
+        requirement = graph.conclusions[f"major_required_course:{major_def.key}:{code}"]
+        if requirement.result:
             completed_reqs.append(f"Pass {code}")
         else:
             outstanding_reqs.append(f"Pass {code}")
 
     # Choice groups
-    for group in major_def.choice_groups:
-        satisfied = [c for c in group.courses if c in passed]
+    for index, group in enumerate(major_def.choice_groups):
+        requirement = graph.conclusions[f"major_choice_group:{major_def.key}:{index}"]
+        satisfied = int(requirement.current)
         needed = group.required
         label = group.label or "Elective"
-        if len(satisfied) >= needed:
-            completed_reqs.append(f"{label}: {len(satisfied)}/{needed}")
+        if requirement.result:
+            completed_reqs.append(f"{label}: {satisfied}/{needed}")
         else:
             outstanding_reqs.append(
-                f"{label}: {len(satisfied)}/{needed} — need {needed - len(satisfied)} more from {group.courses}"
+                f"{label}: {satisfied}/{needed} - need {needed - satisfied} more from {group.courses}"
             )
 
-    complete = len(outstanding_reqs) == 0
+    complete = graph.conclusions[f"major_complete:{major_def.key}"].result
     return MajorProgress(
         key=major_def.key,
         name=major_def.name,
@@ -436,7 +447,7 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
     for key in major_keys:
         major_def = catalogue.majors.get(key)
         if major_def:
-            major_progresses.append(_compute_major_progress(major_def, passed))
+            major_progresses.append(_compute_major_progress(major_def, student))
 
     majors_complete = sum(1 for m in major_progresses if m.complete)
     humanities_majors_complete = sum(
@@ -486,6 +497,17 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         required_humanities_majors = prog.required_humanities_majors
 
     duration_ok = inferred_years >= min_years
+    programme_name = prog.name if prog else programme_key
+    total_credits_graph = build_total_nqf_credits_graph(
+        student=student,
+        required_credits=total_nqf_credits,
+        programme_key=programme_key,
+        programme_name=programme_name,
+        assumptions=["Programme rules inferred from programme title."],
+    )
+    total_credits_conclusion = total_credits_graph.conclusions[
+        f"{programme_key.upper()}_TOTAL_NQF_CREDITS"
+    ]
 
     # --- Requirements list ---
     requirements = [
@@ -529,10 +551,17 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         Requirement(
             id="credits",
             label="NQF credits",
-            complete=credits_completed >= total_nqf_credits,
-            current=float(credits_completed),
-            required=float(total_nqf_credits),
+            complete=total_credits_conclusion.result,
+            current=total_credits_conclusion.current,
+            required=total_credits_conclusion.required,
             detail=f"{credits_completed} of {total_nqf_credits} NQF credits completed",
+            evidence=total_credits_conclusion.evidence,
+            applied_rules=total_credits_conclusion.applied_rules,
+            explanation=total_credits_conclusion.explanation,
+            status=total_credits_conclusion.status,
+            confidence=total_credits_conclusion.confidence,
+            assumptions=total_credits_conclusion.assumptions,
+            depends_on=total_credits_conclusion.depends_on,
         ),
         Requirement(
             id="level7",
