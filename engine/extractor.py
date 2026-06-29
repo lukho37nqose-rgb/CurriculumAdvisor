@@ -168,13 +168,30 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
     current_major_key = None
     
     # Regex for specialisation code
-    _PROG_CODE_RE = re.compile(r"\[([A-Z0-9]{5,12})\]")
+    _PROG_CODE_RE = re.compile(r"\[([A-Z0-9/]{5,20})\]")
     
     print("Parsing pages...")
     for page_num, page in enumerate(reader.pages, start=1):
         text = page.extract_text() or ""
         lines = text.splitlines()
         
+        # Determine if we are in the undergraduate curriculum section based on page number
+        is_undergrad_section = True
+        pdf_name_lower = pdf_path.name.lower()
+        if "sci" in pdf_name_lower and page_num > 34:
+            is_undergrad_section = False
+        elif "ebe" in pdf_name_lower and page_num > 71:
+            is_undergrad_section = False
+        elif "law" in pdf_name_lower and page_num > 53:
+            is_undergrad_section = False
+        elif "fhs" in pdf_name_lower and page_num > 70:
+            is_undergrad_section = False
+        elif "commerce" in pdf_name_lower and page_num > 137:
+            is_undergrad_section = False
+            
+        if not is_undergrad_section:
+            current_major_key = None
+            
         # Try to track department from page headers
         if lines and len(lines[0].strip()) < 50:
             header = lines[0].strip()
@@ -309,15 +326,17 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
                             "choice_groups": []
                         }
 
-            # 2b. Check for Specialisation Requirements (Commerce, EBE, Law)
+            # 2b. Check for Specialisation Requirements (Commerce, EBE, Law, Science, Health)
             prog_match = _PROG_CODE_RE.search(line)
             if prog_match:
                 if "..." in line or ".." in line:
                     continue
+                if not is_undergrad_section:
+                    continue
                 prog_code = prog_match.group(1)
-                if prog_code.startswith(("CB", "EB", "LB", "LP")):
-                    # Strip the bracketed code from the line to see if there's a name on the same line
-                    name_on_line = re.sub(r"\[[A-Z0-9]{5,12}\]", "", line).strip()
+                if prog_code.startswith(("CB", "EB", "LB", "LP", "MB", "MU", "MZ")) or re.match(r"^[A-Z]{3}\d{2}$", prog_code):
+                    # Strip all bracketed text from the line to see if there's a name on the same line
+                    name_on_line = re.sub(r"\[.*?\]", "", line).strip()
                     if name_on_line and len(name_on_line) > 5:
                         major_name = name_on_line.title()
                     else:
@@ -333,6 +352,10 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
                         category = "ebe"
                     elif prog_code.startswith(("LB", "LP")):
                         category = "law"
+                    elif prog_code.startswith(("MB", "MU", "MZ")):
+                        category = "health"
+                    elif re.match(r"^[A-Z]{3}\d{2}$", prog_code):
+                        category = "science"
                     else:
                         category = "bcom" if "commerce" in str(pdf_path).lower() else "bsc"
                         
