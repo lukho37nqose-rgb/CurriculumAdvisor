@@ -1,0 +1,4290 @@
+[
+  {
+    "code": "STA3041F",
+    "name": "Stochastic Processes & Time Series",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2000W",
+      "MAM2004H",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2014S",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA3041F."
+  },
+  {
+    "code": "STA3045F",
+    "name": "Stochastic Processes And Distribution",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA3045F."
+  },
+  {
+    "code": "STA3047S",
+    "name": "Introduction To Machine Learning",
+    "credits": 6,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2000W",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA3047S."
+  },
+  {
+    "code": "STA3048S",
+    "name": "Statistical Modelling & Bayesian Analysis",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2000W",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA3048S."
+  },
+  {
+    "code": "BUS3018F",
+    "name": "Actuarial  Science Ii Models",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BUS1003H",
+      "BUS2016H",
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2014S",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for BUS3018F."
+  },
+  {
+    "code": "BUS3024S",
+    "name": "Actuarial  Science Ii Contingencies",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BUS2016H",
+      "MAM2010F",
+      "MAM2011F",
+      "STA2004F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for BUS3024S."
+  },
+  {
+    "code": "ECO1010F",
+    "name": "Microeconomics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO1010F."
+  },
+  {
+    "code": "ECO1010S",
+    "name": "Microeconomics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO1010S."
+  },
+  {
+    "code": "ECO1011F",
+    "name": "Macroeconomics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1010S",
+      "ECO1011F",
+      "ECO1011S",
+      "ECO1110F",
+      "ECO1110S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO1011F."
+  },
+  {
+    "code": "ECO1011S",
+    "name": "Macroeconomics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1010S",
+      "ECO1011F",
+      "ECO1011S",
+      "ECO1110F",
+      "ECO1110S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO1011S."
+  },
+  {
+    "code": "ACC1006F",
+    "name": "Financial Accounting",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC1006F."
+  },
+  {
+    "code": "ACC1011S",
+    "name": "Financial Reporting I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ACC1006F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC1011S."
+  },
+  {
+    "code": "BUS2016H",
+    "name": "Financial Mathematics",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for BUS2016H."
+  },
+  {
+    "code": "FTX2024F",
+    "name": "Financial Management",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1011S",
+      "ACC1022Z",
+      "MAM1010F",
+      "MAM1010S",
+      "STA1000F",
+      "STA1000S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for FTX2024F."
+  },
+  {
+    "code": "FTX2024S",
+    "name": "Financial Management",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1011S",
+      "ACC1022Z",
+      "MAM1010F",
+      "MAM1010S",
+      "STA1000F",
+      "STA1000S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for FTX2024S."
+  },
+  {
+    "code": "STA2004F",
+    "name": "Statistical Theory & Inference",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1006H",
+      "MAM1012S",
+      "MAM1032S",
+      "MAM1034S",
+      "STA1006S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA2004F."
+  },
+  {
+    "code": "STA2005S",
+    "name": "Linear Models",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for STA2005S."
+  },
+  {
+    "code": "MAM3010F",
+    "name": "Metric Spaces (3Ms)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3010F."
+  },
+  {
+    "code": "MAM3011F",
+    "name": "Modern Abstract Algebra (3Al)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3011F."
+  },
+  {
+    "code": "MAM3012F",
+    "name": "Discrete  Mathematics (3Dm)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3012F."
+  },
+  {
+    "code": "MAM3013S",
+    "name": "Topics  In Algebra (3Ta)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3013S."
+  },
+  {
+    "code": "MAM3014S",
+    "name": "Topics  In Analysis (3Tn)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM3010F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3014S."
+  },
+  {
+    "code": "MAM3015S",
+    "name": "Complex  Analysis (3Ca)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for MAM3015S."
+  },
+  {
+    "code": "FTX3044F",
+    "name": "Investment  Management A",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for FTX3044F."
+  },
+  {
+    "code": "FTX3045S",
+    "name": "Investment  Management B",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ACC1011S",
+      "ACC1020H",
+      "ACC1022Z",
+      "ECO1010F",
+      "ECO1010S",
+      "ECO1011F",
+      "ECO1011S",
+      "ECO1110F",
+      "ECO1110S",
+      "FTX2024F",
+      "FTX2024S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for FTX3045S."
+  },
+  {
+    "code": "ECO3009F",
+    "name": "Natural Resource Economics",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3009F."
+  },
+  {
+    "code": "ECO3016F",
+    "name": "History  Of Economic Thought",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003",
+      "ECO2004"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3016F."
+  },
+  {
+    "code": "ECO3020F",
+    "name": "Advanced Macro And Microeconomics",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003",
+      "ECO2004",
+      "MAM1010",
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3020F."
+  },
+  {
+    "code": "ECO3021S",
+    "name": "Quantitative  Methods In Economics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3021S."
+  },
+  {
+    "code": "ECO3022S",
+    "name": "Advanced Labour Economics",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003",
+      "ECO2004"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3022S."
+  },
+  {
+    "code": "ECO3023S",
+    "name": "Public Economics",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003",
+      "ECO2004"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3023S."
+  },
+  {
+    "code": "ECO3024F",
+    "name": "International  Trade And Finance",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO2003",
+      "ECO2004"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3024F."
+  },
+  {
+    "code": "ECO3025S",
+    "name": "Applied  International Trade Bargaining",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ECO1010",
+      "ECO1011"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ECO3025S."
+  },
+  {
+    "code": "ACC3004W",
+    "name": "Taxation Ii",
+    "credits": 32,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ACC2023H",
+      "ACC3009W",
+      "ACC3020W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3004W."
+  },
+  {
+    "code": "ACC3009W",
+    "name": "Financial Reporting  Iii",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3009W."
+  },
+  {
+    "code": "ACC3022W",
+    "name": "Governance,  Audit And Assurance Ii",
+    "credits": 26,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ACC2012W",
+      "ACC2018S",
+      "INF2004F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3022W."
+  },
+  {
+    "code": "ACC3023W",
+    "name": "Management Accounting Ii",
+    "credits": 26,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ACC1011S",
+      "ACC2022H",
+      "FTX2020",
+      "FTX2024"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3023W."
+  },
+  {
+    "code": "ACC3001F",
+    "name": "Business Analysis & Governance I",
+    "credits": 13,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3001F."
+  },
+  {
+    "code": "ACC3002S",
+    "name": "Business Analysis & Governance Ii",
+    "credits": 11,
+    "nqf_level": 7,
+    "prerequisites": [
+      "ACC3001F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for ACC3002S."
+  },
+  {
+    "code": "CML2001F",
+    "name": "Company Law",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for CML2001F."
+  },
+  {
+    "code": "CML2010Z",
+    "name": "Business Law  Ii",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "18  General Information",
+    "description": "Course outline for CML2010Z."
+  },
+  {
+    "code": "BUS1036F",
+    "name": "Evidence-Based Management",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for BUS1036F."
+  },
+  {
+    "code": "CSC1015F",
+    "name": "Computer  Science 1015",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CSC1010H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for CSC1015F."
+  },
+  {
+    "code": "CSC1015S",
+    "name": "Computer  Science 1015",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CSC1010H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for CSC1015S."
+  },
+  {
+    "code": "INF1002F",
+    "name": "Foundations Of Information Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1022F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for INF1002F."
+  },
+  {
+    "code": "INF1002S",
+    "name": "Foundations Of Information Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1022F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for INF1002S."
+  },
+  {
+    "code": "MAM1031F",
+    "name": "Mathematics  1031",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM1031F."
+  },
+  {
+    "code": "MAM1032S",
+    "name": "Mathematics 1032",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1031F",
+      "MAM1033F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM1032S."
+  },
+  {
+    "code": "BUS1003H",
+    "name": "Introduction To Actuarial Science",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for BUS1003H."
+  },
+  {
+    "code": "STA1006S",
+    "name": "Mathematical Statistics I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1005H",
+      "MAM1006H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1012F",
+      "MAM1012S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1021S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1033F",
+      "MAM1034S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for STA1006S."
+  },
+  {
+    "code": "CML1001F",
+    "name": "Business Law I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for CML1001F."
+  },
+  {
+    "code": "ECO2003F",
+    "name": "Microeconomics  Ii",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ECO1010",
+      "MAM1010",
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for ECO2003F."
+  },
+  {
+    "code": "MAM2010F",
+    "name": "Advanced Calculus (2Ac)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1012S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM2010F."
+  },
+  {
+    "code": "MAM2011F",
+    "name": "Linear Algebra (2La)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1012S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM2011F."
+  },
+  {
+    "code": "MAM2012S",
+    "name": "Differential Equations (2De)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F",
+      "MAM2011F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM2012S."
+  },
+  {
+    "code": "MAM2014S",
+    "name": "Real  Analysis (2Ra)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for MAM2014S."
+  },
+  {
+    "code": "ECO2004S",
+    "name": "Macroeconomics Ii",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ECO1010",
+      "ECO1011",
+      "ECO2003F",
+      "ECO2004S",
+      "MAM1010",
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for ECO2004S."
+  },
+  {
+    "code": "BUS3039F",
+    "name": "People Management",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for BUS3039F."
+  },
+  {
+    "code": "BUS3039S",
+    "name": "People Management",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for BUS3039S."
+  },
+  {
+    "code": "PHI2043S",
+    "name": "Business Ethics",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "44  Bachelor Of Business Science",
+    "description": "Course outline for PHI2043S."
+  },
+  {
+    "code": "BUS4028F",
+    "name": "Actuarial  Science Iii: Financial Economics",
+    "credits": 21,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS4028F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  45",
+    "description": "Course outline for BUS4028F."
+  },
+  {
+    "code": "BUS4027W",
+    "name": "Actuarial  Science Iii: Assets",
+    "credits": 54,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS2016H",
+      "BUS3018F",
+      "BUS3024S",
+      "STA3041F",
+      "STA3043S",
+      "STA3045F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  45",
+    "description": "Course outline for BUS4027W."
+  },
+  {
+    "code": "BUS4050H",
+    "name": "Strategic Thinking",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS4050W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  45",
+    "description": "Course outline for BUS4050H."
+  },
+  {
+    "code": "BUS4029H",
+    "name": "Actuarial  Research Project",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  45",
+    "description": "Course outline for BUS4029H."
+  },
+  {
+    "code": "BUS4034S",
+    "name": "Professional  Communication (Actuarial Science)",
+    "credits": 27,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS2016H",
+      "BUS3018F",
+      "BUS3024S",
+      "BUS4028F",
+      "STA3041F",
+      "STA3043S",
+      "STA3045F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  45",
+    "description": "Course outline for BUS4034S."
+  },
+  {
+    "code": "FTX4086F",
+    "name": "Alternative Investments",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "FTX3044F",
+      "FTX3045S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for FTX4086F."
+  },
+  {
+    "code": "BUS4053H",
+    "name": "Quantitative  Finance Research Project",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for BUS4053H."
+  },
+  {
+    "code": "BUS4087S",
+    "name": "Quantitative  Finance Selected Topics",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "FTX3044F",
+      "FTX3045S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for BUS4087S."
+  },
+  {
+    "code": "FTX4056S",
+    "name": "Applied Investments",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "FTX3044F",
+      "FTX3045S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for FTX4056S."
+  },
+  {
+    "code": "ACC1021F",
+    "name": "Accounting For Business I",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for ACC1021F."
+  },
+  {
+    "code": "ACC1022Z",
+    "name": "Accounting  For Business Ii",
+    "credits": 9,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ACC1021F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for ACC1022Z."
+  },
+  {
+    "code": "CSC1016S",
+    "name": "Computer Science 1016",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1017S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for CSC1016S."
+  },
+  {
+    "code": "STA1000S",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "46  Bachelor Of Business Science",
+    "description": "Course outline for STA1000S."
+  },
+  {
+    "code": "BUS2010F",
+    "name": "Marketing I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for BUS2010F."
+  },
+  {
+    "code": "CML1001S",
+    "name": "Business Law I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for CML1001S."
+  },
+  {
+    "code": "STA2020F",
+    "name": "Applied  Statistics",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000L",
+      "STA1000P",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA2020F."
+  },
+  {
+    "code": "STA2020S",
+    "name": "Applied  Statistics",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000L",
+      "STA1000P",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA2020S."
+  },
+  {
+    "code": "STA2030S",
+    "name": "Statistical Theory",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "STA2004F",
+      "STA2005S",
+      "STA2007F",
+      "STA2007H",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA2030S."
+  },
+  {
+    "code": "FTX2020F",
+    "name": "Business Finance",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1006F",
+      "ACC1021F",
+      "MAM1010F",
+      "MAM1010S",
+      "STA1000F",
+      "STA1000S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for FTX2020F."
+  },
+  {
+    "code": "BUS2033S",
+    "name": "Professional  Communication",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for BUS2033S."
+  },
+  {
+    "code": "CSC2001F",
+    "name": "Computer Science 2001",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1010H",
+      "CSC1011H",
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for CSC2001F."
+  },
+  {
+    "code": "CSC2002S",
+    "name": "Computer Science 2002",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC2001F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for CSC2002S."
+  },
+  {
+    "code": "INF2006F",
+    "name": "Business  Intelligence And Analytics",
+    "credits": 6,
+    "nqf_level": 6,
+    "prerequisites": [
+      "INF1002F",
+      "INF1002S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for INF2006F."
+  },
+  {
+    "code": "INF2007F",
+    "name": "Applying  Database Principles",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC2001F",
+      "INF2003F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for INF2007F."
+  },
+  {
+    "code": "STA3022F",
+    "name": "Applied  Multivariate Data Analysis",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "STA2005S",
+      "STA2007F",
+      "STA2007H",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA3022F."
+  },
+  {
+    "code": "STA3030F",
+    "name": "Statistical Inference & Modelling",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM1006S",
+      "MAM1012F",
+      "MAM1012S",
+      "MAM1021F",
+      "MAM1021S",
+      "MAM1032",
+      "MAM1034S",
+      "MAM1112S",
+      "STA2004F",
+      "STA2005S",
+      "STA2007F",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S",
+      "STA2030S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA3030F."
+  },
+  {
+    "code": "STA3036S",
+    "name": "Operational Research Techniques",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM1032S",
+      "STA2005S",
+      "STA2007F",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S",
+      "STA3036S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA3036S."
+  },
+  {
+    "code": "STA4010W",
+    "name": "Operational Research, Statistics & Data Science Honours",
+    "credits": 142,
+    "nqf_level": 8,
+    "prerequisites": [
+      "STA3030F",
+      "STA3036S",
+      "STA3041F",
+      "STA3043S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  47",
+    "description": "Course outline for STA4010W."
+  },
+  {
+    "code": "MAM1010F",
+    "name": "Mathematics  1010",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for MAM1010F."
+  },
+  {
+    "code": "BUS1036S",
+    "name": "Evidence-Based Management",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for BUS1036S."
+  },
+  {
+    "code": "MAM1012S",
+    "name": "Mathematics 1012",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1110F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for MAM1012S."
+  },
+  {
+    "code": "ACC2022H",
+    "name": "Management  Accounting I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1006"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for ACC2022H."
+  },
+  {
+    "code": "ECO2007S",
+    "name": "Cooperation And Competition",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ECO1010",
+      "MAM1010"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for ECO2007S."
+  },
+  {
+    "code": "BUS2033F",
+    "name": "Professional  Communication",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48  Bachelor Of Business Science",
+    "description": "Course outline for BUS2033F."
+  },
+  {
+    "code": "FTX4057F",
+    "name": "Applied Corporate Finance",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for FTX4057F."
+  },
+  {
+    "code": "FTX4051H",
+    "name": "Finance Research Project",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "FTX3044F",
+      "FTX3045S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for FTX4051H."
+  },
+  {
+    "code": "FTX4087S",
+    "name": "Topics In Banking And Treasury Management",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO2003F",
+      "ECO2004S",
+      "FTX3044F",
+      "FTX3045S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for FTX4087S."
+  },
+  {
+    "code": "ACC1015S",
+    "name": "Business  Acumen For Accountants",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for ACC1015S."
+  },
+  {
+    "code": "ACC2023H",
+    "name": "Taxation I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1011S",
+      "ACC1015"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for ACC2023H."
+  },
+  {
+    "code": "INF2004F",
+    "name": "Information Technology In Business",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for INF2004F."
+  },
+  {
+    "code": "ACC2012W",
+    "name": "Financial Reporting  Ii",
+    "credits": 36,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1011",
+      "ACC1015",
+      "ACC2022",
+      "ACC2023",
+      "MAM1010"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for ACC2012W."
+  },
+  {
+    "code": "ACC2018H",
+    "name": "Governance,  Audit And Assurance I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ACC1015",
+      "ACC2012W",
+      "INF1002"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  49",
+    "description": "Course outline for ACC2018H."
+  },
+  {
+    "code": "INF2009F",
+    "name": "Systems Analysis",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "50  Bachelor Of Business Science",
+    "description": "Course outline for INF2009F."
+  },
+  {
+    "code": "INF2011S",
+    "name": "Systems Design & Development",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1016",
+      "CSC2001",
+      "INF2003",
+      "INF2007",
+      "INF2008",
+      "INF2009"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "50  Bachelor Of Business Science",
+    "description": "Course outline for INF2011S."
+  },
+  {
+    "code": "CSC2004Z",
+    "name": "Programming Assessment",
+    "credits": 0,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1010H",
+      "CSC1011H",
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50  Bachelor Of Business Science",
+    "description": "Course outline for CSC2004Z."
+  },
+  {
+    "code": "MAM1004F",
+    "name": "Mathematics 1004",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "50  Bachelor Of Business Science",
+    "description": "Course outline for MAM1004F."
+  },
+  {
+    "code": "MAM1008S",
+    "name": "Introduction To Discrete Mathematics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "50  Bachelor Of Business Science",
+    "description": "Course outline for MAM1008S."
+  },
+  {
+    "code": "CSC3002F",
+    "name": "Networks  And Operating Systems",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2002S",
+      "CSC2004Z",
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1008S",
+      "MAM1031F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC3002F."
+  },
+  {
+    "code": "BUS3038S",
+    "name": "Introduction To Project Management",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for BUS3038S."
+  },
+  {
+    "code": "BUS2010S",
+    "name": "Marketing I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for BUS2010S."
+  },
+  {
+    "code": "CSC3003S",
+    "name": "Advanced Programming & Algorithms",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC3003S."
+  },
+  {
+    "code": "CSC4019Z",
+    "name": "Research And Innovation",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4019Z."
+  },
+  {
+    "code": "CSC4020Z",
+    "name": "Functional Programming",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4020Z."
+  },
+  {
+    "code": "CSC4021Z",
+    "name": "Compilers 1",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4021Z."
+  },
+  {
+    "code": "CSC4002W",
+    "name": "Computer Science Honours Project",
+    "credits": 60,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4002W."
+  },
+  {
+    "code": "CSC4007Z",
+    "name": "Selected Honours Module In Computer Science",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4007Z."
+  },
+  {
+    "code": "CSC4010Z",
+    "name": "Advanced Topics In Computer Science Honours 2",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4010Z."
+  },
+  {
+    "code": "CSC4023Z",
+    "name": "Big Data Management And Analysis",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4023Z."
+  },
+  {
+    "code": "CSC4024Z",
+    "name": "Human Computer Interaction",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4024Z."
+  },
+  {
+    "code": "CSC4025Z",
+    "name": "Artificial Intelligence",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4025Z."
+  },
+  {
+    "code": "CSC4026Z",
+    "name": "Network And Internetwork Security",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4026Z."
+  },
+  {
+    "code": "CSC4027Z",
+    "name": "Computer Game Design",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4027Z."
+  },
+  {
+    "code": "CSC4028Z",
+    "name": "High Performance Computing",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4028Z."
+  },
+  {
+    "code": "CSC4029Z",
+    "name": "Introduction To Computer Graphics",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for CSC4029Z."
+  },
+  {
+    "code": "STA4026S",
+    "name": "Analytics",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  51",
+    "description": "Course outline for STA4026S."
+  },
+  {
+    "code": "INF2003F",
+    "name": "Commercial Programming",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1017F",
+      "INF1002F",
+      "INF1002N",
+      "INF1002S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF2003F."
+  },
+  {
+    "code": "INF2010S",
+    "name": "Information & Communication Technologies",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF2010S."
+  },
+  {
+    "code": "INF3014F",
+    "name": "Electronic Commerce",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF3014F."
+  },
+  {
+    "code": "INF3003W",
+    "name": "Systems Development Project I",
+    "credits": 48,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF3003W."
+  },
+  {
+    "code": "INF3012S",
+    "name": "Bpm & Enterprise Systems",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F",
+      "INF2011S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF3012S."
+  },
+  {
+    "code": "INF4026F",
+    "name": "Application & Technical Development",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF4026F."
+  },
+  {
+    "code": "INF4027W",
+    "name": "System Development Project Ii",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF4027W."
+  },
+  {
+    "code": "INF4024W",
+    "name": "Information Systems Research Project",
+    "credits": 60,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF4024W."
+  },
+  {
+    "code": "INF4025S",
+    "name": "Information Systems Management",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "52  Bachelor Of Business Science",
+    "description": "Course outline for INF4025S."
+  },
+  {
+    "code": "ECO4006F",
+    "name": "Macroeconomics",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4112F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  53",
+    "description": "Course outline for ECO4006F."
+  },
+  {
+    "code": "ECO4007F",
+    "name": "Microeconomics",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4112F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4007F."
+  },
+  {
+    "code": "ECO4016F",
+    "name": "Econometrics",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4112F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4016F."
+  },
+  {
+    "code": "ECO4112F",
+    "name": "Mathematics  And Statistics For Economists",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4112F."
+  },
+  {
+    "code": "ECO4021W",
+    "name": "Research &  Writing I",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F",
+      "ECO4021W",
+      "ECO4112F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4021W."
+  },
+  {
+    "code": "ECO4013S",
+    "name": "International  Finance",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4013S."
+  },
+  {
+    "code": "ECO4020S",
+    "name": "Economic Challenges In Africa",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4020S."
+  },
+  {
+    "code": "ECO4026S",
+    "name": "The Economy & Its Financial Markets",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4026S."
+  },
+  {
+    "code": "ECO4027S",
+    "name": "The Analysis Of Survey Data",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4027S."
+  },
+  {
+    "code": "ECO4028S",
+    "name": "Policy Analysis",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4028S."
+  },
+  {
+    "code": "ECO4029S",
+    "name": "Experiments  In Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4029S."
+  },
+  {
+    "code": "ECO4032S",
+    "name": "Economics Of Industry, Regulation And Firms",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4032S."
+  },
+  {
+    "code": "ECO4051S",
+    "name": "Development  Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4051S."
+  },
+  {
+    "code": "ECO4052S",
+    "name": "Environmental Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4052S."
+  },
+  {
+    "code": "ECO4053S",
+    "name": "Financial  Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4053S."
+  },
+  {
+    "code": "ECO4113S",
+    "name": "Labour Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4113S."
+  },
+  {
+    "code": "ECO4114S",
+    "name": "The  Economics Of Conflict, War And Peace",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4114S."
+  },
+  {
+    "code": "ECO4131S",
+    "name": "Digital Economics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4131S."
+  },
+  {
+    "code": "ECO4132S",
+    "name": "Economics Of Inequality: Causes, Consequences & Policy",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4132S."
+  },
+  {
+    "code": "ECO4200S",
+    "name": "Time Series Econometrics",
+    "credits": 14,
+    "nqf_level": 8,
+    "prerequisites": [
+      "ECO4006F",
+      "ECO4007F",
+      "ECO4016F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54  Bachelor Of Business Science",
+    "description": "Course outline for ECO4200S."
+  },
+  {
+    "code": "PVL1003W",
+    "name": "Foundations  Of South African Law",
+    "credits": 36,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PBL2000W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2002H",
+      "PVL2003H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PVL1003W."
+  },
+  {
+    "code": "PVL1004F",
+    "name": "South African Private Law: System And Context",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PVL1004F."
+  },
+  {
+    "code": "PVL1008H",
+    "name": "Law Of Persons And Family",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PVL1008H."
+  },
+  {
+    "code": "PBL2000W",
+    "name": "Constitutional  Law",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PBL2001H",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2002H",
+      "PVL2003H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PBL2000W."
+  },
+  {
+    "code": "PVL2002H",
+    "name": "Law Of  Property",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PBL2000W",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2003H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PVL2002H."
+  },
+  {
+    "code": "PVL2003H",
+    "name": "Law Of  Succession",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PBL2000W",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2002H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  55",
+    "description": "Course outline for PVL2003H."
+  },
+  {
+    "code": "BUS3041F",
+    "name": "Marketing Iia",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BUS2010F",
+      "BUS2010S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS3041F."
+  },
+  {
+    "code": "BUS3008W",
+    "name": "Marketing Research I",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BUS2010F",
+      "BUS2010S",
+      "STA2020F",
+      "STA2020S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS3008W."
+  },
+  {
+    "code": "BUS3043S",
+    "name": "Marketing  Iib",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BUS2010F",
+      "BUS2010S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS3043S."
+  },
+  {
+    "code": "BUS4026W",
+    "name": "Marketing Iii",
+    "credits": 72,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS4026W."
+  },
+  {
+    "code": "BUS4052H",
+    "name": "Marketing Research Project",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS3008W",
+      "BUS3041F",
+      "BUS3043S",
+      "BUS4026W",
+      "BUS4050W",
+      "STA3022F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS4052H."
+  },
+  {
+    "code": "BUS4058F",
+    "name": "Strategic Marketing Management",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS3008W",
+      "BUS3041F",
+      "BUS3043S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS4058F."
+  },
+  {
+    "code": "PSY1009F",
+    "name": "Introduction To Psychology Part 1",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for PSY1009F."
+  },
+  {
+    "code": "BUS1007S",
+    "name": "Introduction To Industrial And Organisational Psychology",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS1007S."
+  },
+  {
+    "code": "PSY1010S",
+    "name": "Introduction To Psychology Part 2",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for PSY1010S."
+  },
+  {
+    "code": "BUS2024F",
+    "name": "Psychology Of Human Resource Management",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science  57",
+    "description": "Course outline for BUS2024F."
+  },
+  {
+    "code": "BUS2023S",
+    "name": "Organisational Behaviour",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "58  Bachelor Of Business Science",
+    "description": "Course outline for BUS2023S."
+  },
+  {
+    "code": "BUS3003F",
+    "name": "Research Design In Industrial And Organisational Psychology",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "58  Bachelor Of Business Science",
+    "description": "Course outline for BUS3003F."
+  },
+  {
+    "code": "PSY2013F",
+    "name": "Social And Developmental Psychology",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "58  Bachelor Of Business Science",
+    "description": "Course outline for PSY2013F."
+  },
+  {
+    "code": "PSY2014S",
+    "name": "Cognitive  Neuroscience And Abnormal Psychology",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1009F",
+      "PSY1010S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "58  Bachelor Of Business Science",
+    "description": "Course outline for PSY2014S."
+  },
+  {
+    "code": "BUS4030H",
+    "name": "Organisational  Psychology Research Paper",
+    "credits": 60,
+    "nqf_level": 8,
+    "prerequisites": [
+      "BUS4006W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "58  Bachelor Of Business Science",
+    "description": "Course outline for BUS4030H."
+  },
+  {
+    "code": "ACC1106F",
+    "name": "Financial Accounting",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ACC1106F."
+  },
+  {
+    "code": "DOC1103F",
+    "name": "Harnessing  Personal Capital For Growth",
+    "credits": 2,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for DOC1103F."
+  },
+  {
+    "code": "DOC1103S",
+    "name": "Harnessing  Personal Capital For Growth",
+    "credits": 2,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for DOC1103S."
+  },
+  {
+    "code": "INF1102F",
+    "name": "Foundations Of Information Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1022F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for INF1102F."
+  },
+  {
+    "code": "INF1102S",
+    "name": "Foundations Of Information Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1022F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for INF1102S."
+  },
+  {
+    "code": "ECO1110F",
+    "name": "Microeconomics  I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ECO1110F."
+  },
+  {
+    "code": "ECO1110S",
+    "name": "Microeconomics  I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ECO1110S."
+  },
+  {
+    "code": "ACC1111S",
+    "name": "Financial Reporting I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ACC1106F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ACC1111S."
+  },
+  {
+    "code": "ECO1111F",
+    "name": "Macroeconomics  I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1010S",
+      "ECO1110F",
+      "ECO1110S",
+      "ECO1111F",
+      "ECO1111S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ECO1111F."
+  },
+  {
+    "code": "ECO1111S",
+    "name": "Macroeconomics  I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "ECO1010F",
+      "ECO1010S",
+      "ECO1110F",
+      "ECO1110S",
+      "ECO1111F",
+      "ECO1111S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for ECO1111S."
+  },
+  {
+    "code": "STA1106H",
+    "name": "Mathematical Statistics I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  59",
+    "description": "Course outline for STA1106H."
+  },
+  {
+    "code": "STA1100S",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  61",
+    "description": "Course outline for STA1100S."
+  },
+  {
+    "code": "MAM1110F",
+    "name": "Mathematics 1110 For Cadp",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  63",
+    "description": "Course outline for MAM1110F."
+  },
+  {
+    "code": "MAM1112S",
+    "name": "Mathematics 1112 For Cadp",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1010J",
+      "MAM1010S",
+      "MAM1110F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Business Science Augmented  63",
+    "description": "Course outline for MAM1112S."
+  },
+  {
+    "code": "PHI2043F",
+    "name": "Business Ethics",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Business Science Augmented  73",
+    "description": "Course outline for PHI2043F."
+  },
+  {
+    "code": "CSC1010H",
+    "name": "Computer  Science 1010",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "74  Bachelor Of Business Science Extended",
+    "description": "Course outline for CSC1010H."
+  },
+  {
+    "code": "MAM1005H",
+    "name": "Mathematics 1005",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "74  Bachelor Of Business Science Extended",
+    "description": "Course outline for MAM1005H."
+  },
+  {
+    "code": "MAM1006H",
+    "name": "Mathematics 1006",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1006H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "74  Bachelor Of Business Science Extended",
+    "description": "Course outline for MAM1006H."
+  },
+  {
+    "code": "CSC1011H",
+    "name": "Computer  Science 1011",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CSC1010H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "76  Bachelor Of Business Science Extended",
+    "description": "Course outline for CSC1011H."
+  },
+  {
+    "code": "MAM1110H",
+    "name": "Mathematics 1010",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "STA1001F",
+      "STA1001H",
+      "STA1001S",
+      "STA1101F",
+      "STA1101H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "78  Bachelor Of Business Science Extended",
+    "description": "Course outline for MAM1110H."
+  },
+  {
+    "code": "STA1000F",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "78  Bachelor Of Business Science Extended",
+    "description": "Course outline for STA1000F."
+  },
+  {
+    "code": "ACC3020W",
+    "name": "Financial Reporting And Analysis",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "80  Bachelor Of Business Science Extended",
+    "description": "Course outline for ACC3020W."
+  },
+  {
+    "code": "ACC1015F",
+    "name": "Business  Acumen For Accountants",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "90  Bachelor Of Commerce",
+    "description": "Course outline for ACC1015F."
+  },
+  {
+    "code": "INF3011F",
+    "name": "It Project Management",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F",
+      "INF2011S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  93",
+    "description": "Course outline for INF3011F."
+  },
+  {
+    "code": "PHI1024F",
+    "name": "Introduction To Philosophy",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI1024F."
+  },
+  {
+    "code": "POL1004F",
+    "name": "Introduction To Politics",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL1004F."
+  },
+  {
+    "code": "MAM1010S",
+    "name": "Mathematics 1010",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for MAM1010S."
+  },
+  {
+    "code": "POL1005S",
+    "name": "Introduction To Politics B",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [
+      "POL1004F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL1005S."
+  },
+  {
+    "code": "PHI1010S",
+    "name": "Ethics",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI1010S."
+  },
+  {
+    "code": "PHI2042F",
+    "name": "Political Philosophy",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI2042F."
+  },
+  {
+    "code": "PHI2041S",
+    "name": "Great Philosophers",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI2041S."
+  },
+  {
+    "code": "POL2038F",
+    "name": "Comparative Politics",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL2038F."
+  },
+  {
+    "code": "POL2039F",
+    "name": "International  Political Economy",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL2039F."
+  },
+  {
+    "code": "POL2042S",
+    "name": "Comparative Public Administration",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL2042S."
+  },
+  {
+    "code": "POL2043S",
+    "name": "South African Politics",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "POL1004F",
+      "POL1005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL2043S."
+  },
+  {
+    "code": "PHI3023F",
+    "name": "Logic And Language",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PHI2041S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI3023F."
+  },
+  {
+    "code": "PHI3024S",
+    "name": "Metaphysics And Epistemology",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for PHI3024S."
+  },
+  {
+    "code": "POL3030F",
+    "name": "Conflict In World Politics",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL3030F."
+  },
+  {
+    "code": "POL3046S",
+    "name": "South African Political Thought",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL3046S."
+  },
+  {
+    "code": "POL3029F",
+    "name": "Politics Of Africa & The Global South",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for POL3029F."
+  },
+  {
+    "code": "ECO2008S",
+    "name": "Development  Economics",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "ECO1010",
+      "ECO1011"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  95",
+    "description": "Course outline for ECO2008S."
+  },
+  {
+    "code": "MAM2004H",
+    "name": "Mathematics 2004H****",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Bachelor Of Commerce  97",
+    "description": "Course outline for MAM2004H."
+  },
+  {
+    "code": "MAM1110S",
+    "name": "Mathematics 1110 For Cadp",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "112 Bachelor Of Commerce Augmented",
+    "description": "Course outline for MAM1110S."
+  },
+  {
+    "code": "FTX2020S",
+    "name": "Business Finance",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "116 Bachelor Of Commerce Augmented",
+    "description": "Course outline for FTX2020S."
+  },
+  {
+    "code": "STA1100F",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "130 Bachelor Of Commerce Extended",
+    "description": "Course outline for STA1100F."
+  },
+  {
+    "code": "FTX1005F",
+    "name": "Managerial Finance",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "168  Department Of Finance And Tax",
+    "description": "Course outline for FTX1005F."
+  },
+  {
+    "code": "FTX1005S",
+    "name": "Managerial Finance",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "168  Department Of Finance And Tax",
+    "description": "Course outline for FTX1005S."
+  },
+  {
+    "code": "FTX2000S",
+    "name": "Personal Financial Management",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "168  Department Of Finance And Tax",
+    "description": "Course outline for FTX2000S."
+  },
+  {
+    "code": "FTX4058Z",
+    "name": "Quantitative  Methods For Finance",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Department Of Finance And Tax  171",
+    "description": "Course outline for FTX4058Z."
+  },
+  {
+    "code": "INF2008F",
+    "name": "Database Systems",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC2001F",
+      "INF2003F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Information Systems  179",
+    "description": "Course outline for INF2008F."
+  },
+  {
+    "code": "BUS1004F",
+    "name": "Introduction To Strategy And Marketing",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "186  School Of Management Studies",
+    "description": "Course outline for BUS1004F."
+  },
+  {
+    "code": "BUS2024S",
+    "name": "Psychology Of Human Resource Management",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "188  School Of Management Studies",
+    "description": "Course outline for BUS2024S."
+  },
+  {
+    "code": "BUS3095S",
+    "name": "Social  Impact Enterprise",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "School Of Management Studies",
+    "description": "Course outline for BUS3095S."
+  },
+  {
+    "code": "GSB3002F",
+    "name": "Leadership And Communication",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3002F."
+  },
+  {
+    "code": "GSB3002S",
+    "name": "Leadership And Communication",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3002S."
+  },
+  {
+    "code": "GSB3002X",
+    "name": "Leadership And Communication",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3002X."
+  },
+  {
+    "code": "GSB3002Z",
+    "name": "Leadership And Communication",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3002Z."
+  },
+  {
+    "code": "GSB3003F",
+    "name": "Economics  Of Emerging Markets",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3003F."
+  },
+  {
+    "code": "GSB3003S",
+    "name": "Economics  Of Emerging Markets",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3003S."
+  },
+  {
+    "code": "GSB3003X",
+    "name": "Economics  Of Emerging Markets",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3003X."
+  },
+  {
+    "code": "GSB3003Z",
+    "name": "Economics  Of Emerging Markets",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3003Z."
+  },
+  {
+    "code": "GSB3004F",
+    "name": "Finance And Accounting Management",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3004F."
+  },
+  {
+    "code": "GSB3004S",
+    "name": "Finance And Accounting Management",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3004S."
+  },
+  {
+    "code": "GSB3004X",
+    "name": "Finance And Accounting Management",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3004X."
+  },
+  {
+    "code": "GSB3004Z",
+    "name": "Finance And Accounting Management",
+    "credits": 20,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "200  Graduate School Of Business",
+    "description": "Course outline for GSB3004Z."
+  },
+  {
+    "code": "GSB3005F",
+    "name": "Marketing Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3005F."
+  },
+  {
+    "code": "GSB3005S",
+    "name": "Marketing Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3005S."
+  },
+  {
+    "code": "GSB3005X",
+    "name": "Marketing Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3005X."
+  },
+  {
+    "code": "GSB3005Z",
+    "name": "Marketing Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3005Z."
+  },
+  {
+    "code": "GSB3006F",
+    "name": "Human Resources Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3006F."
+  },
+  {
+    "code": "GSB3006S",
+    "name": "Human Resources Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3006S."
+  },
+  {
+    "code": "GSB3006X",
+    "name": "Human Resources Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3006X."
+  },
+  {
+    "code": "GSB3006Z",
+    "name": "Human Resources Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3006Z."
+  },
+  {
+    "code": "GSB3007F",
+    "name": "Operations Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3007F."
+  },
+  {
+    "code": "GSB3007S",
+    "name": "Operations Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3007S."
+  },
+  {
+    "code": "GSB3007X",
+    "name": "Operations Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3007X."
+  },
+  {
+    "code": "GSB3007Z",
+    "name": "Operations Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Graduate School Of Business 201",
+    "description": "Course outline for GSB3007Z."
+  },
+  {
+    "code": "GSB3008F",
+    "name": "Strategy  And Innovation Lab",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "202  Graduate School Of Business",
+    "description": "Course outline for GSB3008F."
+  },
+  {
+    "code": "GSB3008S",
+    "name": "Strategy  And Innovation Lab",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "202  Graduate School Of Business",
+    "description": "Course outline for GSB3008S."
+  },
+  {
+    "code": "GSB3008X",
+    "name": "Strategy  And Innovation Lab",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "202  Graduate School Of Business",
+    "description": "Course outline for GSB3008X."
+  },
+  {
+    "code": "GSB3008Z",
+    "name": "Strategy  And Innovation Lab",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "202  Graduate School Of Business",
+    "description": "Course outline for GSB3008Z."
+  },
+  {
+    "code": "CML2005F",
+    "name": "Labour  Law",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Commercial Law  203",
+    "description": "Course outline for CML2005F."
+  },
+  {
+    "code": "CML1001P",
+    "name": "Business Law  I - Summer Term",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Department Of Commercial Law  205",
+    "description": "Course outline for CML1001P."
+  },
+  {
+    "code": "CML2010P",
+    "name": "Business Law Ii - Summer Term",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Department Of Commercial Law  205",
+    "description": "Course outline for CML2010P."
+  },
+  {
+    "code": "CSC1017S",
+    "name": "Introduction To Programming",
+    "credits": 16,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Department Of Computer Science  207",
+    "description": "Course outline for CSC1017S."
+  },
+  {
+    "code": "CSC2005F",
+    "name": "Independent  Research In Computer Science",
+    "credits": 24,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1016S",
+      "CSC2001F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Computer Science  209",
+    "description": "Course outline for CSC2005F."
+  },
+  {
+    "code": "CSC2005S",
+    "name": "Independent  Research In Computer Science",
+    "credits": 24,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1016S",
+      "CSC2001F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Department Of Computer Science  209",
+    "description": "Course outline for CSC2005S."
+  },
+  {
+    "code": "CSC2041F",
+    "name": "Introduction To Ai 1: Knowledge Representation",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S",
+      "MAM1008S",
+      "MAM1019H",
+      "MAM1031F",
+      "MAM1032S",
+      "STA1000X"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Computer Science  209",
+    "description": "Course outline for CSC2041F."
+  },
+  {
+    "code": "CSC2042S",
+    "name": "Introduction To Ai 2: Machine Learning",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S",
+      "MAM1004F",
+      "MAM1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "210  Department Of Computer Science",
+    "description": "Course outline for CSC2042S."
+  },
+  {
+    "code": "CSC3024S",
+    "name": "Introduction To C++ Programming",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2002S",
+      "CSC2004Z",
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1008S",
+      "MAM1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Department Of Computer Science  211",
+    "description": "Course outline for CSC3024S."
+  },
+  {
+    "code": "CSC3041F",
+    "name": "Ai:  Automated Planning And Control",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Computer Science  211",
+    "description": "Course outline for CSC3041F."
+  },
+  {
+    "code": "CSC3042F",
+    "name": "Ai: Deep Learning",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Computer Science  211",
+    "description": "Course outline for CSC3042F."
+  },
+  {
+    "code": "CSC3043S",
+    "name": "Ai: Reasoning In Ai",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S",
+      "CSC3042F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for CSC3043S."
+  },
+  {
+    "code": "CSC3044S",
+    "name": "Ai:  Ai Systems",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S",
+      "CSC3041F",
+      "CSC3042F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for CSC3044S."
+  },
+  {
+    "code": "EGS1005F",
+    "name": "Creating  Sustainable Impact",
+    "credits": 12,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS1005F."
+  },
+  {
+    "code": "EGS1007S",
+    "name": "Human & Physical Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS1007S."
+  },
+  {
+    "code": "EGS2016F",
+    "name": "Geographies  Across Space",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "EGS1003S",
+      "EGS1007S",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS2016F."
+  },
+  {
+    "code": "EGS2017S",
+    "name": "Geographies Across Time",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "EGS1003S",
+      "EGS1007S",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS2017S."
+  },
+  {
+    "code": "EGS3012S",
+    "name": "Atmospheric Science",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS3012S."
+  },
+  {
+    "code": "EGS3021F",
+    "name": "Sustainability & Environment",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS3021F."
+  },
+  {
+    "code": "EGS3022S",
+    "name": "Geographic  Thought",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS3022S."
+  },
+  {
+    "code": "EGS3023F",
+    "name": "Anthropocene  Environments In Perspective",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for EGS3023F."
+  },
+  {
+    "code": "MAM1004S",
+    "name": "Mathematics 1004",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for MAM1004S."
+  },
+  {
+    "code": "MAM1012F",
+    "name": "Mathematics  1012",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for MAM1012F."
+  },
+  {
+    "code": "MAM1019H",
+    "name": "Fundamentals Of Mathematics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for MAM1019H."
+  },
+  {
+    "code": "MAM2013S",
+    "name": "Introductory Algebra (2Ia)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "212  Department Of Computer Science",
+    "description": "Course outline for MAM2013S."
+  },
+  {
+    "code": "PHI2040S",
+    "name": "Philosophy Of Science",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Department Of Philosophy  227",
+    "description": "Course outline for PHI2040S."
+  },
+  {
+    "code": "PHI2044F",
+    "name": "Philosophy Of Mathematics",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "228  Department Of Philosophy",
+    "description": "Course outline for PHI2044F."
+  },
+  {
+    "code": "POL2002F",
+    "name": "Political Theory",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "230  Department Of Political Studies",
+    "description": "Course outline for POL2002F."
+  },
+  {
+    "code": "POL3038S",
+    "name": "Urban Politics And Administration",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "234  Department Of Political Studies",
+    "description": "Course outline for POL3038S."
+  },
+  {
+    "code": "POL3045S",
+    "name": "Global Governance",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "234  Department Of Political Studies",
+    "description": "Course outline for POL3045S."
+  },
+  {
+    "code": "PSY2015F",
+    "name": "Research  In Psychology I",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1009F",
+      "PSY1010S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Department Of Psychology  239",
+    "description": "Course outline for PSY2015F."
+  },
+  {
+    "code": "PSY3011S",
+    "name": "Clinical  Psychology Ii",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PSY2014S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Department Of Psychology  241",
+    "description": "Course outline for PSY3011S."
+  },
+  {
+    "code": "STA1000P",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "STA1000F",
+      "STA1000S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Department Of Statistical Sciences  247",
+    "description": "Course outline for STA1000P."
+  },
+  {
+    "code": "STA1000L",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "STA1000F",
+      "STA1000S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Department Of Statistical Sciences  247",
+    "description": "Course outline for STA1000L."
+  }
+]
