@@ -23,7 +23,7 @@ from fastapi.staticfiles import StaticFiles
 from engine.catalogue import load_catalogue
 from engine.parser import parse_transcript_pdf, parse_transcript_text
 from engine.rule_engine import compute_report, Report
-from engine.models import StudentRecord, CourseResult
+from engine.models import StudentRecord, CourseResult, Catalogue
 from engine.knowledge_graph import KnowledgeGraph
 from engine.reasoner import GraduateGoal, HonoursReadinessGoal, CompleteMajorGoal
 from engine.simulator import SimulationEngine
