@@ -1,0 +1,3554 @@
+[
+  {
+    "code": "CML4504S",
+    "name": "Trademarks And Unlawful Competition",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Courses In The Faculty    33",
+    "description": "Course outline for CML4504S."
+  },
+  {
+    "code": "CML5697X",
+    "name": "International Taxation I Research Task",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Courses In The Faculty    35",
+    "description": "Course outline for CML5697X."
+  },
+  {
+    "code": "CML3001W",
+    "name": "Corporation Law",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for CML3001W."
+  },
+  {
+    "code": "PBL3001F",
+    "name": "International Law",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PBL3001F."
+  },
+  {
+    "code": "PBL3801W",
+    "name": "Criminal Law",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PBL3801W."
+  },
+  {
+    "code": "PVL3003S",
+    "name": "African Customary Law",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL3003S."
+  },
+  {
+    "code": "PVL3003F",
+    "name": "Law Of Delict",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL3003F."
+  },
+  {
+    "code": "PVL3005W",
+    "name": "Law Of Contract",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL3005W."
+  },
+  {
+    "code": "PVL3006S",
+    "name": "Jurisprudence",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL3006S."
+  },
+  {
+    "code": "PVL1003W",
+    "name": "Foundations Of South African Law",
+    "credits": 36,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL1003W."
+  },
+  {
+    "code": "PVL1004F",
+    "name": "South African Private Law: System And Context",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL1004F."
+  },
+  {
+    "code": "PVL1008H",
+    "name": "Law Of Persons And Family",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL1008H."
+  },
+  {
+    "code": "PBL2000W",
+    "name": "Constitutional Law",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PBL2001H",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2002H",
+      "PVL2003H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PBL2000W."
+  },
+  {
+    "code": "PVL2002H",
+    "name": "Law Of Property",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PBL2000W",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2003H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL2002H."
+  },
+  {
+    "code": "PVL2003H",
+    "name": "Law Of Succession",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PBL2000W",
+      "PVL1003W",
+      "PVL1004F",
+      "PVL1008H",
+      "PVL2002H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    41",
+    "description": "Course outline for PVL2003H."
+  },
+  {
+    "code": "DOL3001X",
+    "name": "Community Service",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for DOL3001X."
+  },
+  {
+    "code": "DOL3002X",
+    "name": "Intermediate Year Skills Component",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for DOL3002X."
+  },
+  {
+    "code": "CML4004S",
+    "name": "Labour Law",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for CML4004S."
+  },
+  {
+    "code": "CML4006W",
+    "name": "Commercial Transactions Law",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for CML4006W."
+  },
+  {
+    "code": "PBL4001W",
+    "name": "Administrative Law",
+    "credits": 36,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for PBL4001W."
+  },
+  {
+    "code": "PBL4801F",
+    "name": "Law Of Evidence",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for PBL4801F."
+  },
+  {
+    "code": "PBL4802F",
+    "name": "Criminal Procedure",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for PBL4802F."
+  },
+  {
+    "code": "PVL4008H",
+    "name": "Civil Procedure",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for PVL4008H."
+  },
+  {
+    "code": "DOL4000H",
+    "name": "Integrative Assessment Moot",
+    "credits": 0,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "42    Course Outlines (Llb)",
+    "description": "Course outline for DOL4000H."
+  },
+  {
+    "code": "MAM1013F",
+    "name": "Law That Counts",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    43",
+    "description": "Course outline for MAM1013F."
+  },
+  {
+    "code": "ELL1013F",
+    "name": "Literature: How And Why?",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "54    Course Outlines (Llb)",
+    "description": "Course outline for ELL1013F."
+  },
+  {
+    "code": "ELL1016S",
+    "name": "Image, Voice, Word",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "54    Course Outlines (Llb)",
+    "description": "Course outline for ELL1016S."
+  },
+  {
+    "code": "DOL3000X",
+    "name": "Moot Competition",
+    "credits": 9,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    57",
+    "description": "Course outline for DOL3000X."
+  },
+  {
+    "code": "CML4501S",
+    "name": "Dispute Resolution",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    65",
+    "description": "Course outline for CML4501S."
+  },
+  {
+    "code": "CML4502F",
+    "name": "Insurance Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    65",
+    "description": "Course outline for CML4502F."
+  },
+  {
+    "code": "CML4503F",
+    "name": "Copyright & Patents",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    65",
+    "description": "Course outline for CML4503F."
+  },
+  {
+    "code": "CML4505F",
+    "name": "International Trade And Maritime Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "66    Course Outlines (Llb)",
+    "description": "Course outline for CML4505F."
+  },
+  {
+    "code": "CML4506F",
+    "name": "Fundamental Principles Of Tax Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "66    Course Outlines (Llb)",
+    "description": "Course outline for CML4506F."
+  },
+  {
+    "code": "CML4507S",
+    "name": "Statutory Tax Law Of Entities And Transactions",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "66    Course Outlines (Llb)",
+    "description": "Course outline for CML4507S."
+  },
+  {
+    "code": "CML4508S",
+    "name": "Trusts And Estate Planning",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    67",
+    "description": "Course outline for CML4508S."
+  },
+  {
+    "code": "CML4509S",
+    "name": "Ways Of Doing Business",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    67",
+    "description": "Course outline for CML4509S."
+  },
+  {
+    "code": "CML4510F",
+    "name": "Cyberlaw",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    67",
+    "description": "Course outline for CML4510F."
+  },
+  {
+    "code": "CML4601F",
+    "name": "Theory And Practice Of Commercial Regulation And",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "68    Course Outlines (Llb)",
+    "description": "Course outline for CML4601F."
+  },
+  {
+    "code": "CML4602S",
+    "name": "Competition Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "68    Course Outlines (Llb)",
+    "description": "Course outline for CML4602S."
+  },
+  {
+    "code": "CML4603S",
+    "name": "Banking Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "68    Course Outlines (Llb)",
+    "description": "Course outline for CML4603S."
+  },
+  {
+    "code": "CML4604F",
+    "name": "Current Developments In Company Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    69",
+    "description": "Course outline for CML4604F."
+  },
+  {
+    "code": "CML4605F",
+    "name": "Law, Development, Labour And Social Policy",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    69",
+    "description": "Course outline for CML4605F."
+  },
+  {
+    "code": "CML4629S",
+    "name": "Law And Regional Integration In Africa",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "70    Course Outlines (Llb)",
+    "description": "Course outline for CML4629S."
+  },
+  {
+    "code": "DOL4500F",
+    "name": "Legal Practice",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "70    Course Outlines (Llb)",
+    "description": "Course outline for DOL4500F."
+  },
+  {
+    "code": "DOL4500S",
+    "name": "Legal Practice",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "70    Course Outlines (Llb)",
+    "description": "Course outline for DOL4500S."
+  },
+  {
+    "code": "PBL4501F",
+    "name": "Criminology: Selected Issues",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    71",
+    "description": "Course outline for PBL4501F."
+  },
+  {
+    "code": "PBL4502F",
+    "name": "Environmental Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    71",
+    "description": "Course outline for PBL4502F."
+  },
+  {
+    "code": "PBL4503F",
+    "name": "European Union Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    71",
+    "description": "Course outline for PBL4503F."
+  },
+  {
+    "code": "PBL4504F",
+    "name": "International Criminal Law And Africa",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    71",
+    "description": "Course outline for PBL4504F."
+  },
+  {
+    "code": "PBL4505S",
+    "name": "International Human Rights Law And The",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "72    Course Outlines (Llb)",
+    "description": "Course outline for PBL4505S."
+  },
+  {
+    "code": "PBL4506F",
+    "name": "Refugee And Immigration Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "72    Course Outlines (Llb)",
+    "description": "Course outline for PBL4506F."
+  },
+  {
+    "code": "PBL4508F",
+    "name": "Local Government Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    73",
+    "description": "Course outline for PBL4508F."
+  },
+  {
+    "code": "PBL4601S",
+    "name": "Constitutional Litigation",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    73",
+    "description": "Course outline for PBL4601S."
+  },
+  {
+    "code": "PBL4602F",
+    "name": "Criminal Justice And The Constitution",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    73",
+    "description": "Course outline for PBL4602F."
+  },
+  {
+    "code": "PBL4604F",
+    "name": "Social Justice And The Constitution",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "74    Course Outlines (Llb)",
+    "description": "Course outline for PBL4604F."
+  },
+  {
+    "code": "PBL4605F",
+    "name": "Women And Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "74    Course Outlines (Llb)",
+    "description": "Course outline for PBL4605F."
+  },
+  {
+    "code": "PTY4008S",
+    "name": "Medicina Forensis",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "74    Course Outlines (Llb)",
+    "description": "Course outline for PTY4008S."
+  },
+  {
+    "code": "PVL4504S",
+    "name": "South African Mineral Law: Theory, Context And",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PVL2002H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    75",
+    "description": "Course outline for PVL4504S."
+  },
+  {
+    "code": "PVL4505F",
+    "name": "The Law Of Cession",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    75",
+    "description": "Course outline for PVL4505F."
+  },
+  {
+    "code": "PVL4507F",
+    "name": "Conflict Of Laws",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Llb)    75",
+    "description": "Course outline for PVL4507F."
+  },
+  {
+    "code": "PVL4511F",
+    "name": "Unjustified Enrichment",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "76    Course Outlines (Llb)",
+    "description": "Course outline for PVL4511F."
+  },
+  {
+    "code": "PVL4512S",
+    "name": "Advanced Studies In African Customary Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PVL3003S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "76    Course Outlines (Llb)",
+    "description": "Course outline for PVL4512S."
+  },
+  {
+    "code": "PVL4513F",
+    "name": "Advanced Contract Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PVL3005W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "76    Course Outlines (Llb)",
+    "description": "Course outline for PVL4513F."
+  },
+  {
+    "code": "PVL4601S",
+    "name": "Advanced Property Law: Capita Selecta",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PVL2002H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    77",
+    "description": "Course outline for PVL4601S."
+  },
+  {
+    "code": "PVL4602S",
+    "name": "Civil Justice Reform",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    77",
+    "description": "Course outline for PVL4602S."
+  },
+  {
+    "code": "PVL4603F",
+    "name": "Jurisprudence And South African Law",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "78    Course Outlines (Llb)",
+    "description": "Course outline for PVL4603F."
+  },
+  {
+    "code": "PVL4604S",
+    "name": "Rhetoric, Law And Society",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "78    Course Outlines (Llb)",
+    "description": "Course outline for PVL4604S."
+  },
+  {
+    "code": "PVL4606F",
+    "name": "Spatial Justice, Ubuntu And The Nomos Of Apartheid",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "78    Course Outlines (Llb)",
+    "description": "Course outline for PVL4606F."
+  },
+  {
+    "code": "PVL4608S",
+    "name": "The South African Law Of Delict In Theoretical And",
+    "credits": 9,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Llb)    79",
+    "description": "Course outline for PVL4608S."
+  },
+  {
+    "code": "PBL4849F",
+    "name": "Law In Action - Research Methods",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    101",
+    "description": "Course outline for PBL4849F."
+  },
+  {
+    "code": "PBL4820F",
+    "name": "Theories Of Crime And Social Order",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    101",
+    "description": "Course outline for PBL4820F."
+  },
+  {
+    "code": "PBL4815S",
+    "name": "Punishment And Human Rights",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    101",
+    "description": "Course outline for PBL4815S."
+  },
+  {
+    "code": "PBL4847S",
+    "name": "Forensics And The Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    101",
+    "description": "Course outline for PBL4847S."
+  },
+  {
+    "code": "CML4631S",
+    "name": "Mediation",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for CML4631S."
+  },
+  {
+    "code": "CML4641S",
+    "name": "Commercial Arbitration",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for CML4641S."
+  },
+  {
+    "code": "CML4671F",
+    "name": "Negotiation",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for CML4671F."
+  },
+  {
+    "code": "PBL4640F",
+    "name": "Principles Of Environmental Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4640F."
+  },
+  {
+    "code": "PBL4619S",
+    "name": "International Environmental Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4619S."
+  },
+  {
+    "code": "PBL4641F",
+    "name": "Land Use Planning Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4641F."
+  },
+  {
+    "code": "PBL4642S",
+    "name": "Natural Resources Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4642S."
+  },
+  {
+    "code": "PBL4643S",
+    "name": "Pollution Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "102    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4643S."
+  },
+  {
+    "code": "PBL4661F",
+    "name": "Judicial Skills And Practical Jurisprudence",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4661F."
+  },
+  {
+    "code": "PBL4662S",
+    "name": "Judging In A Constitutional Democracy",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4662S."
+  },
+  {
+    "code": "PBL4663S",
+    "name": "Practical Approach To Evidence Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4663S."
+  },
+  {
+    "code": "PBL4664F",
+    "name": "Practical Court Processes",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4664F."
+  },
+  {
+    "code": "PBL4665S",
+    "name": "Environmental Law For Judicial Officers",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4665S."
+  },
+  {
+    "code": "PBL4666S",
+    "name": "Independent Research Paper In Judicial Studies",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for PBL4666S."
+  },
+  {
+    "code": "CML4613S",
+    "name": "Collective Labour Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for CML4613S."
+  },
+  {
+    "code": "CML4651F",
+    "name": "Individual Employment Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    103",
+    "description": "Course outline for CML4651F."
+  },
+  {
+    "code": "PBL4607F",
+    "name": "International Law Of The Sea",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "104    Postgraduate Study Programmes",
+    "description": "Course outline for PBL4607F."
+  },
+  {
+    "code": "CML4625F",
+    "name": "Maritime Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "104    Postgraduate Study Programmes",
+    "description": "Course outline for CML4625F."
+  },
+  {
+    "code": "CML4626S",
+    "name": "Carriage Of Goods By Sea",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "104    Postgraduate Study Programmes",
+    "description": "Course outline for CML4626S."
+  },
+  {
+    "code": "CML4693S",
+    "name": "Marine Insurance Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "104    Postgraduate Study Programmes",
+    "description": "Course outline for CML4693S."
+  },
+  {
+    "code": "CML4624F",
+    "name": "Admiralty Jurisdiction And Practice",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "104    Postgraduate Study Programmes",
+    "description": "Course outline for CML4624F."
+  },
+  {
+    "code": "CML4661F",
+    "name": "General Tax Law Provisions",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    105",
+    "description": "Course outline for CML4661F."
+  },
+  {
+    "code": "CML4661S",
+    "name": "Specific Tax Law Provisions",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    105",
+    "description": "Course outline for CML4661S."
+  },
+  {
+    "code": "CML4662F",
+    "name": "Tax Treaty Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    105",
+    "description": "Course outline for CML4662F."
+  },
+  {
+    "code": "CML4662S",
+    "name": "Tax Policy In A Developmental Context",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    105",
+    "description": "Course outline for CML4662S."
+  },
+  {
+    "code": "CML5601F",
+    "name": "Advanced Company Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5601F."
+  },
+  {
+    "code": "CML5613S",
+    "name": "Collective Labour Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5613S."
+  },
+  {
+    "code": "CML5619F",
+    "name": "Law Of International Trade",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5619F."
+  },
+  {
+    "code": "CML5624F",
+    "name": "Admiralty Jurisdiction And Practice",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5624F."
+  },
+  {
+    "code": "CML5625F",
+    "name": "Maritime Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5625F."
+  },
+  {
+    "code": "CML5626S",
+    "name": "Carriage Of Goods By Sea",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5626S."
+  },
+  {
+    "code": "CML5641S",
+    "name": "Commercial Arbitration",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5641S."
+  },
+  {
+    "code": "CML5651F",
+    "name": "Individual Employment Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5651F."
+  },
+  {
+    "code": "CML5654S",
+    "name": "Competition Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5654S."
+  },
+  {
+    "code": "CML5658S",
+    "name": "Electronic Transactions Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5658S."
+  },
+  {
+    "code": "CML5668F",
+    "name": "Fundamental Principles Of Tax Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5668F."
+  },
+  {
+    "code": "CML5664F",
+    "name": "Law, Regional Integration And Development In",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5664F."
+  },
+  {
+    "code": "CML5665S",
+    "name": "Tax Policy In A Developmental Context",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5665S."
+  },
+  {
+    "code": "CML5666F",
+    "name": "Comparative Business Law In Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5666F."
+  },
+  {
+    "code": "CML5667S",
+    "name": "Corporate Law And Governance",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5667S."
+  },
+  {
+    "code": "CML5672S",
+    "name": "The Legal Aspects Of Corporate Financing",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5672S."
+  },
+  {
+    "code": "CML5673S",
+    "name": "International Commercial Transactions Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5673S."
+  },
+  {
+    "code": "CML5676S",
+    "name": "Workplace Discrimination And Equality Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5676S."
+  },
+  {
+    "code": "CML5677F",
+    "name": "Islamic Law And Finance",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5677F."
+  },
+  {
+    "code": "CML5687S",
+    "name": "Chinese Law And Investments In Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5687S."
+  },
+  {
+    "code": "CML5693S",
+    "name": "Marine Insurance Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5693S."
+  },
+  {
+    "code": "PBL5602F",
+    "name": "International Law Of The Sea",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5602F."
+  },
+  {
+    "code": "PVL5620S",
+    "name": "Advanced Contract Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5620S."
+  },
+  {
+    "code": "PVL5633S",
+    "name": "Resource Revenue Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5633S."
+  },
+  {
+    "code": "PVL5635F",
+    "name": "Law Of Trusts",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5635F."
+  },
+  {
+    "code": "CML5696S",
+    "name": "Law Of Banking, Finance And Payments",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5696S."
+  },
+  {
+    "code": "CML5695F",
+    "name": "Banking, Finance Law And Regulations",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5695F."
+  },
+  {
+    "code": "CML5601X",
+    "name": "Advanced Company Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5601X."
+  },
+  {
+    "code": "CML5613X",
+    "name": "Collective Labour Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5613X."
+  },
+  {
+    "code": "CML5619X",
+    "name": "Law Of International Trade - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5619X."
+  },
+  {
+    "code": "CML5625X",
+    "name": "Maritime Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5625X."
+  },
+  {
+    "code": "CML5626X",
+    "name": "Carriage Of Goods By Sea - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5626X."
+  },
+  {
+    "code": "CML5641X",
+    "name": "Commercial Arbitration - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5641X."
+  },
+  {
+    "code": "CML5651X",
+    "name": "Individual Employment Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5651X."
+  },
+  {
+    "code": "CML5654X",
+    "name": "Competition Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5654X."
+  },
+  {
+    "code": "CML5658X",
+    "name": "Electronic Transactions Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5658X."
+  },
+  {
+    "code": "CML5668X",
+    "name": "Fundamental Principles Of Tax Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5668X."
+  },
+  {
+    "code": "CML5665X",
+    "name": "Tax Policy - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5665X."
+  },
+  {
+    "code": "CML5666X",
+    "name": "Comparative Law And Business In Africa - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5666X."
+  },
+  {
+    "code": "CML5667X",
+    "name": "Corporate Law And Governance - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5667X."
+  },
+  {
+    "code": "CML5673X",
+    "name": "International Commercial Transactions Law -",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Postgraduate Study Programmes",
+    "description": "Course outline for CML5673X."
+  },
+  {
+    "code": "CML5676X",
+    "name": "Workplace Discrimination And Equality Law -",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for CML5676X."
+  },
+  {
+    "code": "CML5687X",
+    "name": "Chinese Law And Investments In Africa - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for CML5687X."
+  },
+  {
+    "code": "CML5693X",
+    "name": "Marine Insurance Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for CML5693X."
+  },
+  {
+    "code": "PBL5602X",
+    "name": "International Law Of The Sea - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for PBL5602X."
+  },
+  {
+    "code": "PVL5620X",
+    "name": "Advanced Contract Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for PVL5620X."
+  },
+  {
+    "code": "PVL5633X",
+    "name": "Resource Revenue Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for PVL5633X."
+  },
+  {
+    "code": "PVL5635X",
+    "name": "Law Of Trusts – Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for PVL5635X."
+  },
+  {
+    "code": "CML5696X",
+    "name": "Law Of Banking, Finance And Payments - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for CML5696X."
+  },
+  {
+    "code": "CML5695X",
+    "name": "Banking & Finance Law And Regulations - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    107",
+    "description": "Course outline for CML5695X."
+  },
+  {
+    "code": "CML5631S",
+    "name": "Mediation",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for CML5631S."
+  },
+  {
+    "code": "CML5671F",
+    "name": "Negotiation",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for CML5671F."
+  },
+  {
+    "code": "CML5631X",
+    "name": "Mediation - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for CML5631X."
+  },
+  {
+    "code": "CML5671X",
+    "name": "Negotiation - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for CML5671X."
+  },
+  {
+    "code": "PBL5640F",
+    "name": "Principles Of Environmental Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5640F."
+  },
+  {
+    "code": "PBL5619S",
+    "name": "International Environmental Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5619S."
+  },
+  {
+    "code": "PBL5641F",
+    "name": "Land Use Planning Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5641F."
+  },
+  {
+    "code": "PBL5642S",
+    "name": "Natural Resources Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5642S."
+  },
+  {
+    "code": "PBL5643S",
+    "name": "Pollution Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "108    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5643S."
+  },
+  {
+    "code": "PBL5640X",
+    "name": "Principles Of Environmental Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for PBL5640X."
+  },
+  {
+    "code": "PBL5619X",
+    "name": "International Environmental Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for PBL5619X."
+  },
+  {
+    "code": "PBL5641X",
+    "name": "Land Use Planning Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for PBL5641X."
+  },
+  {
+    "code": "PBL5642X",
+    "name": "Natural Resources Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for PBL5642X."
+  },
+  {
+    "code": "PBL5643X",
+    "name": "Pollution Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for PBL5643X."
+  },
+  {
+    "code": "CML5678F",
+    "name": "Principles Of Intellectual Property Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5678F."
+  },
+  {
+    "code": "CML5657F",
+    "name": "Electronic Intellectual Property Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5657F."
+  },
+  {
+    "code": "CML5680S",
+    "name": "Advanced Intellectual Property Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [
+      "CML5678F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5680S."
+  },
+  {
+    "code": "CML5691S",
+    "name": "Intellectual Property Law, Development And",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [
+      "CML5678F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5691S."
+  },
+  {
+    "code": "CML5678X",
+    "name": "Principles Of Intellectual Property Law - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5678X."
+  },
+  {
+    "code": "CML5657X",
+    "name": "Electronic Intellectual Property Law - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5657X."
+  },
+  {
+    "code": "CML5680X",
+    "name": "Advanced Intellectual Property Law - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    109",
+    "description": "Course outline for CML5680X."
+  },
+  {
+    "code": "PVL5630F",
+    "name": "Comparative Mineral Law In Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    111",
+    "description": "Course outline for PVL5630F."
+  },
+  {
+    "code": "PVL5631S",
+    "name": "Negotiating Extractive Agreements And Mining",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    111",
+    "description": "Course outline for PVL5631S."
+  },
+  {
+    "code": "PVL5625S",
+    "name": "Property Law In A Constitutional Order",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5625S."
+  },
+  {
+    "code": "PVL5632F",
+    "name": "Oil And Gas Law In South Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5632F."
+  },
+  {
+    "code": "PVL5636F",
+    "name": "Extractives Law And The Energy Transition",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5636F."
+  },
+  {
+    "code": "PVL5630X",
+    "name": "Comparative Mineral Law In Africa - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5630X."
+  },
+  {
+    "code": "PVL5625X",
+    "name": "Property Law In A Constitutional Order - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5625X."
+  },
+  {
+    "code": "PVL5632X",
+    "name": "Oil And Gas Law In South Africa - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5632X."
+  },
+  {
+    "code": "PVL5636X",
+    "name": "Extractives Law & The Energy Transition - Research",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "112    Postgraduate Study Programmes",
+    "description": "Course outline for PVL5636X."
+  },
+  {
+    "code": "CML5640F",
+    "name": "Principles Of Environmental Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    113",
+    "description": "Course outline for CML5640F."
+  },
+  {
+    "code": "CML5661S",
+    "name": "Statutory Tax Law Of Entities And Transactions",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [
+      "CML5661F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "114    Postgraduate Study Programmes",
+    "description": "Course outline for CML5661S."
+  },
+  {
+    "code": "CML5669F",
+    "name": "Tax Treaty Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "114    Postgraduate Study Programmes",
+    "description": "Course outline for CML5669F."
+  },
+  {
+    "code": "CML5669X",
+    "name": "Tax Treaty Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "114    Postgraduate Study Programmes",
+    "description": "Course outline for CML5669X."
+  },
+  {
+    "code": "FTX5034F",
+    "name": "International Tax I",
+    "credits": 60,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    115",
+    "description": "Course outline for FTX5034F."
+  },
+  {
+    "code": "FTX5033S",
+    "name": "International Tax Ii",
+    "credits": 60,
+    "nqf_level": 9,
+    "prerequisites": [
+      "FTX5034F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    115",
+    "description": "Course outline for FTX5033S."
+  },
+  {
+    "code": "CML5698X",
+    "name": "International Taxation Ii Research Task",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    115",
+    "description": "Course outline for CML5698X."
+  },
+  {
+    "code": "CML5606W",
+    "name": "Commercial Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "116    Postgraduate Study Programmes",
+    "description": "Course outline for CML5606W."
+  },
+  {
+    "code": "CML5688W",
+    "name": "Comparative Law In Africa Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    117",
+    "description": "Course outline for CML5688W."
+  },
+  {
+    "code": "PBL5623F",
+    "name": "Governing Under The Constitution: Law And Practice",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Postgraduate Study Programmes    117",
+    "description": "Course outline for PBL5623F."
+  },
+  {
+    "code": "PBL5658S",
+    "name": "Administrative Justice And Open Government",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    117",
+    "description": "Course outline for PBL5658S."
+  },
+  {
+    "code": "PBL5628F",
+    "name": "International Rights Of The Child",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5628F."
+  },
+  {
+    "code": "PBL5653F",
+    "name": "Refugee Law And Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5653F."
+  },
+  {
+    "code": "PBL5661S",
+    "name": "Litigating South African Bill Of Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5661S."
+  },
+  {
+    "code": "PBL5848F",
+    "name": "Law And Society In Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5848F."
+  },
+  {
+    "code": "PBL5664S",
+    "name": "Comparative Constitutional Law In Africa",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5664S."
+  },
+  {
+    "code": "PBL5602W",
+    "name": "Constitutional And Administrative Law Minor",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5602W."
+  },
+  {
+    "code": "PBL5849F",
+    "name": "Law In Action",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5849F."
+  },
+  {
+    "code": "PBL5820F",
+    "name": "Theories Of Crime And Social Order",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5820F."
+  },
+  {
+    "code": "PBL5644S",
+    "name": "Sexual Offences And The Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5644S."
+  },
+  {
+    "code": "PBL5815S",
+    "name": "Punishment And Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5815S."
+  },
+  {
+    "code": "PBL5822S",
+    "name": "Victims And Victimology",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5822S."
+  },
+  {
+    "code": "PBL5844S",
+    "name": "Police And Policing: Explorations In Security",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5844S."
+  },
+  {
+    "code": "PBL5847S",
+    "name": "Forensics And The Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5847S."
+  },
+  {
+    "code": "PBL5851S",
+    "name": "Criminal Process And Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "118    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5851S."
+  },
+  {
+    "code": "PBL5850W",
+    "name": "Criminology, Law And Society Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    119",
+    "description": "Course outline for PBL5850W."
+  },
+  {
+    "code": "CML5632W",
+    "name": "Dispute Resolution Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    119",
+    "description": "Course outline for CML5632W."
+  },
+  {
+    "code": "PBL5654W",
+    "name": "Environmental Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "120    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5654W."
+  },
+  {
+    "code": "PBL5631F",
+    "name": "International Protection Of Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [
+      "PBL4631F",
+      "PBL5631F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "120    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5631F."
+  },
+  {
+    "code": "PBL5651S",
+    "name": "International Protection Of Women'S Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "120    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5651S."
+  },
+  {
+    "code": "PBL5615F",
+    "name": "Fundamentals Of International Law In Theory And",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "120    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5615F."
+  },
+  {
+    "code": "PBL5618S",
+    "name": "The Use Of Force And International Criminal Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [
+      "PBL5615F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "120    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5618S."
+  },
+  {
+    "code": "PBL5626W",
+    "name": "Human Rights Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    121",
+    "description": "Course outline for PBL5626W."
+  },
+  {
+    "code": "CML5681W",
+    "name": "Intellectual Property Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    121",
+    "description": "Course outline for CML5681W."
+  },
+  {
+    "code": "PBL5627W",
+    "name": "International Public Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "122    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5627W."
+  },
+  {
+    "code": "FTX4036S",
+    "name": "Research Methods In Taxation",
+    "credits": 0,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "122    Postgraduate Study Programmes",
+    "description": "Course outline for FTX4036S."
+  },
+  {
+    "code": "CML5694W",
+    "name": "International Taxation Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "122    Postgraduate Study Programmes",
+    "description": "Course outline for CML5694W."
+  },
+  {
+    "code": "CML5674W",
+    "name": "International Trade Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    123",
+    "description": "Course outline for CML5674W."
+  },
+  {
+    "code": "CML5614W",
+    "name": "Labour Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "124    Postgraduate Study Programmes",
+    "description": "Course outline for CML5614W."
+  },
+  {
+    "code": "PBL5624W",
+    "name": "Marine & Environmental Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "124    Postgraduate Study Programmes",
+    "description": "Course outline for PBL5624W."
+  },
+  {
+    "code": "PBL5601W",
+    "name": "Public Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Postgraduate Study Programmes    125",
+    "description": "Course outline for PBL5601W."
+  },
+  {
+    "code": "CML5616W",
+    "name": "Shipping Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "126    Postgraduate Study Programmes",
+    "description": "Course outline for CML5616W."
+  },
+  {
+    "code": "CML5611W",
+    "name": "Tax Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "126    Postgraduate Study Programmes",
+    "description": "Course outline for CML5611W."
+  },
+  {
+    "code": "CML4673S",
+    "name": "International Commercial Transactions Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    131",
+    "description": "Course outline for CML4673S."
+  },
+  {
+    "code": "CML4676S",
+    "name": "Workplace Discrimination And Equality Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    131",
+    "description": "Course outline for CML4676S."
+  },
+  {
+    "code": "CML5000X",
+    "name": "Commercial Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "132    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5000X."
+  },
+  {
+    "code": "CML5600W",
+    "name": "Commercial Law Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "132    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5600W."
+  },
+  {
+    "code": "CML5624X",
+    "name": "Admiralty Jurisdiction & Practice - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "136    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5624X."
+  },
+  {
+    "code": "CML5661X",
+    "name": "Statutory Tax Law Of Entities And Transactions -",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "142    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5661X."
+  },
+  {
+    "code": "CML5664X",
+    "name": "Law, Regional Integration And Development In",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "142    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5664X."
+  },
+  {
+    "code": "CML5672X",
+    "name": "The Legal Aspects Of Corporate Financing",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "146    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5672X."
+  },
+  {
+    "code": "CML5677X",
+    "name": "Islamic Law And Finance - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "148    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5677X."
+  },
+  {
+    "code": "CML5691X",
+    "name": "Intellectual Property Law, Development &",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    151",
+    "description": "Course outline for CML5691X."
+  },
+  {
+    "code": "CML5692F",
+    "name": "Company Law, Corporate Governance And",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "152    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5692F."
+  },
+  {
+    "code": "CML5692X",
+    "name": "Company Law, Corporate Governance And",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "152    Course Outlines (Postgraduate)",
+    "description": "Course outline for CML5692X."
+  },
+  {
+    "code": "CML6700W",
+    "name": "Commercial Law Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    155",
+    "description": "Course outline for CML6700W."
+  },
+  {
+    "code": "FTX4036F",
+    "name": "Research Methods In Taxation",
+    "credits": 0,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    155",
+    "description": "Course outline for FTX4036F."
+  },
+  {
+    "code": "PBL4615F",
+    "name": "Fundamentals Of International Law In Theory And",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    157",
+    "description": "Course outline for PBL4615F."
+  },
+  {
+    "code": "PBL4618S",
+    "name": "The Use Of Force And International Criminal Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PBL4615F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    157",
+    "description": "Course outline for PBL4618S."
+  },
+  {
+    "code": "PBL4623F",
+    "name": "Governing Under The Constitution: Law And Practice",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "158    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL4623F."
+  },
+  {
+    "code": "PBL4631F",
+    "name": "International Protection Of Human Rights",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [
+      "PBL4631F",
+      "PBL5631F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "158    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL4631F."
+  },
+  {
+    "code": "PBL4658S",
+    "name": "Administrative Justice And Open Government",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    161",
+    "description": "Course outline for PBL4658S."
+  },
+  {
+    "code": "PBL4659S",
+    "name": "Human Rights, Legal Pluralism, Religion And Culture",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    161",
+    "description": "Course outline for PBL4659S."
+  },
+  {
+    "code": "PBL4667S",
+    "name": "Law And Technology For Judicial Officers",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "164    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL4667S."
+  },
+  {
+    "code": "PBL4668S",
+    "name": "Regional Instruments, Courts And Cases For Judicial",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    165",
+    "description": "Course outline for PBL4668S."
+  },
+  {
+    "code": "PBL4822S",
+    "name": "Victims And Victimology: Theory, Policy And Practice",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "166    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL4822S."
+  },
+  {
+    "code": "PBL4844S",
+    "name": "Police And Policing: Explorations In Security",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "166    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL4844S."
+  },
+  {
+    "code": "PBL5000X",
+    "name": "Public Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    167",
+    "description": "Course outline for PBL5000X."
+  },
+  {
+    "code": "PBL5045S",
+    "name": "Environmental Law For Non-Lawyers",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "168    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL5045S."
+  },
+  {
+    "code": "PBL5600W",
+    "name": "Public Law Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "168    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL5600W."
+  },
+  {
+    "code": "PBL5625W",
+    "name": "Constitutional Law Minor Dissertation",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "172    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL5625W."
+  },
+  {
+    "code": "PBL5659S",
+    "name": "Human Rights, Legal Pluralism, Religion And Culture",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "178    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL5659S."
+  },
+  {
+    "code": "PBL5663S",
+    "name": "Transparency Law & Governance: Global And Local",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    179",
+    "description": "Course outline for PBL5663S."
+  },
+  {
+    "code": "PBL5800W",
+    "name": "Criminology Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    183",
+    "description": "Course outline for PBL5800W."
+  },
+  {
+    "code": "PBL5809W",
+    "name": "Criminal Justice Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "184    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL5809W."
+  },
+  {
+    "code": "PBL6700W",
+    "name": "Public Law Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "184    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL6700W."
+  },
+  {
+    "code": "PBL6703W",
+    "name": "Criminal Justice Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "184    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL6703W."
+  },
+  {
+    "code": "PBL6704W",
+    "name": "Criminology Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "184    Course Outlines (Postgraduate)",
+    "description": "Course outline for PBL6704W."
+  },
+  {
+    "code": "PVL4624F",
+    "name": "Human Rights And Private Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    185",
+    "description": "Course outline for PVL4624F."
+  },
+  {
+    "code": "PVL4625S",
+    "name": "Property Law In A Constitutional Order",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    185",
+    "description": "Course outline for PVL4625S."
+  },
+  {
+    "code": "PVL4630F",
+    "name": "Comparative Mineral Law In Africa",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    185",
+    "description": "Course outline for PVL4630F."
+  },
+  {
+    "code": "PVL4631S",
+    "name": "Negotiating Extractive Agreements And Mining",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "186    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL4631S."
+  },
+  {
+    "code": "PVL4632F",
+    "name": "Oil And Gas Law In South Africa",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "186    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL4632F."
+  },
+  {
+    "code": "PVL4633S",
+    "name": "Resource Revenue Law",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "186    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL4633S."
+  },
+  {
+    "code": "PVL4636F",
+    "name": "Extractives Law & The Energy Transition",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    187",
+    "description": "Course outline for PVL4636F."
+  },
+  {
+    "code": "PVL5000X",
+    "name": "Private Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    187",
+    "description": "Course outline for PVL5000X."
+  },
+  {
+    "code": "PVL5606W",
+    "name": "Private Law Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "188    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5606W."
+  },
+  {
+    "code": "PVL5607W",
+    "name": "Rhetoric Studies Dissertation",
+    "credits": 240,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "188    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5607W."
+  },
+  {
+    "code": "PVL5624F",
+    "name": "Human Rights And Private Law",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    189",
+    "description": "Course outline for PVL5624F."
+  },
+  {
+    "code": "PVL5624X",
+    "name": "Human Rights And Private Law - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Course Outlines (Postgraduate)    189",
+    "description": "Course outline for PVL5624X."
+  },
+  {
+    "code": "PVL5626S",
+    "name": "Human Rights, Gender And Family",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "190    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5626S."
+  },
+  {
+    "code": "PVL5626X",
+    "name": "Human Rights, Gender, And Family - Research Task",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "190    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5626X."
+  },
+  {
+    "code": "PVL5627S",
+    "name": "Delict, Unjustified Enrichment, And Human Rights",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "190    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5627S."
+  },
+  {
+    "code": "PVL5627X",
+    "name": "Delict, Unjustified Enrichment, And Human Rights -",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    191",
+    "description": "Course outline for PVL5627X."
+  },
+  {
+    "code": "PVL5631X",
+    "name": "Negotiating Extractive Agreements And Mining",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "192    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5631X."
+  },
+  {
+    "code": "PVL5634W",
+    "name": "The Law Of Mineral And Petroleum Extraction And",
+    "credits": 120,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "194    Course Outlines (Postgraduate)",
+    "description": "Course outline for PVL5634W."
+  },
+  {
+    "code": "PVL6700W",
+    "name": "Private Law Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    195",
+    "description": "Course outline for PVL6700W."
+  },
+  {
+    "code": "PVL6703W",
+    "name": "Rhetoric Studies Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Course Outlines (Postgraduate)    195",
+    "description": "Course outline for PVL6703W."
+  },
+  {
+    "code": "PBL2000F",
+    "name": "Constitutional Law (Part A)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "198    Exchange Courses",
+    "description": "Course outline for PBL2000F."
+  },
+  {
+    "code": "PBL3801F",
+    "name": "Criminal Law (Part A)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "198    Exchange Courses",
+    "description": "Course outline for PBL3801F."
+  },
+  {
+    "code": "PVL1003F",
+    "name": "Foundations Of South African Law (Part A And B)",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for PVL1003F."
+  },
+  {
+    "code": "PVL1003S",
+    "name": "Foundations Of South African Law (Part A And B)",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for PVL1003S."
+  },
+  {
+    "code": "CML1001F",
+    "name": "Business Law I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML1001F."
+  },
+  {
+    "code": "CML1001S",
+    "name": "Business Law I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML1001S."
+  },
+  {
+    "code": "CML2001F",
+    "name": "Company Law",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML2001F."
+  },
+  {
+    "code": "CML2005F",
+    "name": "Labour Law",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML2005F."
+  },
+  {
+    "code": "CML2010Z",
+    "name": "Business Law Ii",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML2010Z."
+  },
+  {
+    "code": "CML4607F",
+    "name": "Law For Engineers",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML4607F."
+  },
+  {
+    "code": "CML1001P",
+    "name": "Business Law I - Summer Term",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML1001P."
+  },
+  {
+    "code": "CML2010P",
+    "name": "Business Law Ii - Summer Term",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Exchange Courses    199",
+    "description": "Course outline for CML2010P."
+  }
+]

@@ -168,7 +168,7 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
     current_major_key = None
     
     # Regex for specialisation code
-    _PROG_CODE_RE = re.compile(r"^\[([A-Z0-9]{8,12})\]$")
+    _PROG_CODE_RE = re.compile(r"\[([A-Z0-9]{5,12})\]")
     
     print("Parsing pages...")
     for page_num, page in enumerate(reader.pages, start=1):
@@ -180,10 +180,6 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
             header = lines[0].strip()
             if header.isupper() and not any(x in header for x in ["RULES", "CURRICULA", "HANDBOOK"]):
                 current_dept = header.title()
-            
-            # Clear current major if we leave the curriculum section
-            if "bachelor" not in header.lower():
-                current_major_key = None
 
         for i, line in enumerate(lines):
             line = line.strip()
@@ -219,6 +215,9 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
             # 1b. Check for Prose Course Header (description pages)
             m = _COURSE_HEADER_RE.match(line)
             if m:
+                # We have entered the course description section, so clear the current major
+                current_major_key = None
+                
                 raw_code, name = m.groups()
                 name = name.strip()
                 
@@ -310,21 +309,38 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
                             "choice_groups": []
                         }
 
-            # 2b. Check for Commerce Specialisation Requirements
-            prog_match = _PROG_CODE_RE.match(line)
+            # 2b. Check for Specialisation Requirements (Commerce, EBE, Law)
+            prog_match = _PROG_CODE_RE.search(line)
             if prog_match:
+                if "..." in line or ".." in line:
+                    continue
                 prog_code = prog_match.group(1)
-                if prog_code.startswith("CB"):
-                    major_name = reconstruct_specialisation_name(lines, i).title()
-                    major_key = major_name.lower().replace(" ", "_").replace("&", "and").replace(":", "").replace(",", "")
+                if prog_code.startswith(("CB", "EB", "LB", "LP")):
+                    # Strip the bracketed code from the line to see if there's a name on the same line
+                    name_on_line = re.sub(r"\[[A-Z0-9]{5,12}\]", "", line).strip()
+                    if name_on_line and len(name_on_line) > 5:
+                        major_name = name_on_line.title()
+                    else:
+                        major_name = reconstruct_specialisation_name(lines, i).title()
+                        
+                    major_key = major_name.lower().replace(" ", "_").replace("&", "and").replace(":", "").replace(",", "").replace("(", "").replace(")", "")
                     major_key = re.sub(r"_+", "_", major_key)
                     
                     current_major_key = major_key
+                    
+                    # Determine category
+                    if prog_code.startswith("EB"):
+                        category = "ebe"
+                    elif prog_code.startswith(("LB", "LP")):
+                        category = "law"
+                    else:
+                        category = "bcom" if "commerce" in str(pdf_path).lower() else "bsc"
+                        
                     majors[major_key] = {
                         "name": major_name,
                         "code": prog_code,
                         "department": current_dept,
-                        "category": "bcom" if "commerce" in str(pdf_path).lower() else "bsc",
+                        "category": category,
                         "humanities_major": False,
                         "required_courses": [],
                         "choice_groups": []

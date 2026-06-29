@@ -1,0 +1,86 @@
+{
+  "source": "UCT Handbook Extracted from 2026-law-handbook-10-final-web.pdf",
+  "programmes": {
+    "regular_programme": {
+      "name": "Regular Programme",
+      "qualification_codes": [
+        "HB001"
+      ],
+      "minimum_duration_years": 3,
+      "minimum_nqf_credits": 360,
+      "minimum_nqf_level_7_credits": 120,
+      "minimum_semester_courses": 20,
+      "minimum_senior_semester_courses": 10,
+      "minimum_majors": 2,
+      "minimum_humanities_semester_courses": 12,
+      "required_courses": []
+    }
+  },
+  "majors": {
+    "graduate_llb_stream": {
+      "name": "Graduate Llb Stream",
+      "code": "LP001",
+      "department": "Course Outlines (Llb)    41",
+      "category": "law",
+      "humanities_major": false,
+      "required_courses": [
+        "CML3001W",
+        "PBL3001F",
+        "PBL3801W",
+        "PVL3003S",
+        "PVL3003F",
+        "PVL3005W",
+        "PVL3006S",
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "PBL2000W",
+        "PVL2002H",
+        "PVL2003H",
+        "DOL3001X",
+        "DOL3002X",
+        "CML4004S",
+        "CML4006W",
+        "PBL4001W",
+        "PBL4801F",
+        "PBL4802F",
+        "PVL4008H",
+        "DOL4000H"
+      ],
+      "choice_groups": []
+    },
+    "four-year_undergraduate_llb_stream": {
+      "name": "Four-Year Undergraduate Llb Stream",
+      "code": "LB002",
+      "department": "Course Outlines (Llb)    43",
+      "category": "law",
+      "humanities_major": false,
+      "required_courses": [
+        "PVL1003W",
+        "PVL1004F",
+        "PVL1008H",
+        "MAM1013F",
+        "PBL2000W",
+        "PVL2002H",
+        "PVL2003H",
+        "CML3001W",
+        "PBL3001F",
+        "PBL3801W",
+        "PVL3003S",
+        "PVL3003F",
+        "PVL3005W",
+        "PVL3006S",
+        "DOL3001X",
+        "DOL3002X",
+        "CML4004S",
+        "CML4006W",
+        "PBL4001W",
+        "PBL4801F",
+        "PBL4802F",
+        "PVL4008H",
+        "DOL4000H"
+      ],
+      "choice_groups": []
+    }
+  }
+}
