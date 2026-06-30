@@ -108,19 +108,13 @@ async def analyse_pdf(file: UploadFile = File(...)):
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are accepted.")
 
-    # Save to a temp file
-    import tempfile, os
+    import io
     content = await file.read()
-    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
-        tmp.write(content)
-        tmp_path = tmp.name
 
     try:
-        student = parse_transcript_pdf(tmp_path)
+        student = parse_transcript_pdf(io.BytesIO(content))
     except Exception as e:
         raise HTTPException(status_code=422, detail=f"Could not parse transcript: {e}")
-    finally:
-        os.unlink(tmp_path)
 
     faculty_key = _infer_faculty_key(student.programme)
     catalogue, _ = get_catalogue_and_graph(faculty_key)
