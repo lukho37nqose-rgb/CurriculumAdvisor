@@ -9,7 +9,6 @@ exclusion risk, distinction eligibility, and warnings.
 
 No conclusions are stored in the JSON. Everything is derived here.
 """
-import re
 from dataclasses import dataclass, field
 from typing import Optional
 from .models import StudentRecord, Catalogue, MajorDefinition, CourseFact
