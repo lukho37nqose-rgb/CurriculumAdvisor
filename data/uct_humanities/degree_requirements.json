@@ -500,14 +500,33 @@
       "humanities_major": true,
       "required_courses": [
         "POL1004F",
-        "POL1005S",
-        "POL2002F",
-        "POL2038F",
-        "POL2039F",
-        "POL2042S",
-        "POL2043S"
+        "POL1005S"
       ],
-      "choice_groups": []
+      "choice_groups": [
+        {
+          "label": "Any TWO of the following:",
+          "required": 2,
+          "courses": [
+            "POL2002F",
+            "POL2038F",
+            "POL2039F",
+            "POL2042S",
+            "POL2043S"
+          ]
+        },
+        {
+          "label": "Any TWO of the following:",
+          "required": 2,
+          "courses": [
+            "POL3029F",
+            "POL3030F",
+            "POL3037F",
+            "POL3038S",
+            "POL3045S",
+            "POL3046S"
+          ]
+        }
+      ]
     },
     "psychology": {
       "name": "Psychology",

@@ -1,680 +1,15 @@
 [
   {
-    "code": "MAM1000W",
-    "name": "Mathematics 1000",
-    "credits": 36,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1000W."
-  },
-  {
-    "code": "MAM1031F",
-    "name": "Mathematics 1031",
-    "credits": 18,
+    "code": "ACC1021F",
+    "name": "Accounting For Business I",
+    "credits": 15,
     "nqf_level": 5,
     "prerequisites": [],
     "offered": [
       "Semester 1"
     ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1031F."
-  },
-  {
-    "code": "MAM1032S",
-    "name": "Mathematics 1032",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1004F",
-      "MAM1031F",
-      "MAM1033F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1032S."
-  },
-  {
-    "code": "MAM1043H",
-    "name": "Modelling & Applied Computing",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1043H."
-  },
-  {
-    "code": "MAM1044H",
-    "name": "Dynamics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1044H."
-  },
-  {
-    "code": "MAM2010F",
-    "name": "Advanced Calculus (2Ac)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1010F",
-      "MAM1012S",
-      "MAM1031F",
-      "MAM1032S",
-      "MAM2010F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2010F."
-  },
-  {
-    "code": "MAM2011F",
-    "name": "Linear Algebra (2La)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1010F",
-      "MAM1012S",
-      "MAM1031F",
-      "MAM1032S",
-      "MAM2010F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2011F."
-  },
-  {
-    "code": "MAM2012S",
-    "name": "Differential Equations (2De)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "MAM2010F",
-      "MAM2011F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2012S."
-  },
-  {
-    "code": "MAM2013S",
-    "name": "Introductory Algebra (2Ia)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2013S."
-  },
-  {
-    "code": "MAM2040F",
-    "name": "Ordinary Differential Equations (2Od)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "MAM1043H",
-      "MAM1044H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2040F."
-  },
-  {
-    "code": "MAM2041F",
-    "name": "Numerical Analysis (2Na)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "MAM1043H",
-      "MAM1044H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2041F."
-  },
-  {
-    "code": "MAM2042S",
-    "name": "Non-Linear Dynamics (2Nd)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "MAM1043H",
-      "MAM1044H",
-      "MAM2010F",
-      "MAM2011F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2042S."
-  },
-  {
-    "code": "MAM2043S",
-    "name": "Boundary-Value Problems (2Bp)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "MAM1043H",
-      "MAM1044H",
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2040F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM2043S."
-  },
-  {
-    "code": "MAM3043S",
-    "name": "Methods Of Mathematical Physics (3Mp)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2040F",
-      "MAM2041F",
-      "MAM2042S",
-      "MAM2043S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3043S."
-  },
-  {
-    "code": "MAM3012F",
-    "name": "Discrete Mathematics (3Dm)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2013S",
-      "MAM2014S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3012F."
-  },
-  {
-    "code": "MAM3042F",
-    "name": "Advanced Numerical Methods (3An)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2040F",
-      "MAM2041F",
-      "MAM2042S",
-      "MAM2043S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3042F."
-  },
-  {
-    "code": "MAM3044F",
-    "name": "Functions Of A Complex Variable (3Cv)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2040F",
-      "MAM2041F",
-      "MAM2042S",
-      "MAM2043S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3044F."
-  },
-  {
-    "code": "MAM3045S",
-    "name": "Introduction To General Relativity (3Gr)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2040F",
-      "MAM2041F",
-      "MAM2042S",
-      "MAM2043S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3045S."
-  },
-  {
-    "code": "MAM3046S",
-    "name": "Fluid Dynamics (3Fd)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2040F",
-      "MAM2041F",
-      "MAM2042S",
-      "MAM2043S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "20    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM3046S."
-  },
-  {
-    "code": "STA1007S",
-    "name": "Introductory Statistics For Scientists",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1031F",
-      "MAM1033F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA1007S."
-  },
-  {
-    "code": "STA1000F",
-    "name": "Introductory Statistics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA1000F."
-  },
-  {
-    "code": "STA1000S",
-    "name": "Introductory Statistics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA1000S."
-  },
-  {
-    "code": "STA1000P",
-    "name": "Introductory Statistics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "STA1000F",
-      "STA1000S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA1000P."
-  },
-  {
-    "code": "STA1000L",
-    "name": "Introductory Statistics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "STA1000F",
-      "STA1000S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA1000L."
-  },
-  {
-    "code": "STA2007F",
-    "name": "Study Design & Data Analysis For Scientists",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H",
-      "STA1000F",
-      "STA1000S",
-      "STA1006S",
-      "STA1007S",
-      "STA1008F",
-      "STA1008S",
-      "STA1100S",
-      "STA1106H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2007F."
-  },
-  {
-    "code": "STA2007S",
-    "name": "Study Design & Data Analysis For Scientists",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H",
-      "STA1000F",
-      "STA1000S",
-      "STA1006S",
-      "STA1007S",
-      "STA1008F",
-      "STA1008S",
-      "STA1100S",
-      "STA1106H"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2007S."
-  },
-  {
-    "code": "STA2007H",
-    "name": "Study Design & Data Analysis For Scientists",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H",
-      "STA1000F",
-      "STA1000S",
-      "STA1006S",
-      "STA1007S",
-      "STA1008F",
-      "STA1008S",
-      "STA1100S",
-      "STA1106H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2007H."
-  },
-  {
-    "code": "STA2020F",
-    "name": "Applied Statistics",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H",
-      "STA1000F",
-      "STA1000L",
-      "STA1000P",
-      "STA1000S",
-      "STA1006S",
-      "STA1007S",
-      "STA1008F",
-      "STA1008S",
-      "STA1100S",
-      "STA1106H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2020F."
-  },
-  {
-    "code": "STA2020S",
-    "name": "Applied Statistics",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1004S",
-      "MAM1005H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1031F",
-      "MAM1033F",
-      "MAM1110F",
-      "MAM1110H",
-      "STA1000F",
-      "STA1000L",
-      "STA1000P",
-      "STA1000S",
-      "STA1006S",
-      "STA1007S",
-      "STA1008F",
-      "STA1008S",
-      "STA1100S",
-      "STA1106H"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2020S."
-  },
-  {
-    "code": "STA2030S",
-    "name": "Statistical Theory",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "STA2004F",
-      "STA2005S",
-      "STA2007F",
-      "STA2007H",
-      "STA2007S",
-      "STA2020F",
-      "STA2020S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA2030S."
-  },
-  {
-    "code": "STA3030F",
-    "name": "Statistical Inference & Modelling",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM1006S",
-      "MAM1012F",
-      "MAM1012S",
-      "MAM1021F",
-      "MAM1021S",
-      "MAM1032",
-      "MAM1034S",
-      "MAM1112S",
-      "STA2004F",
-      "STA2005S",
-      "STA2007F",
-      "STA2007S",
-      "STA2020F",
-      "STA2020S",
-      "STA2030S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA3030F."
-  },
-  {
-    "code": "STA3022F",
-    "name": "Applied Multivariate Data Analysis",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "STA2005S",
-      "STA2007F",
-      "STA2007H",
-      "STA2007S",
-      "STA2020F",
-      "STA2020S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA3022F."
-  },
-  {
-    "code": "STA3036S",
-    "name": "Operational Research Techniques",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "STA2005S",
-      "STA2007F",
-      "STA2007S",
-      "STA2020F",
-      "STA2020S",
-      "STA3036S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for STA3036S."
-  },
-  {
-    "code": "GEO1009F",
-    "name": "Geosystems: An Introduction To Earth &",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    21",
-    "description": "Course outline for GEO1009F."
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for ACC1021F."
   },
   {
     "code": "AGE1002S",
@@ -687,6 +22,19 @@
     ],
     "department": "Degrees Offered In The Faculty    21",
     "description": "Course outline for AGE1002S."
+  },
+  {
+    "code": "AGE1005L",
+    "name": "Towards A Decolonised Science In South Africa",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "58    Departments In The Faculty",
+    "description": "Course outline for AGE1005L."
   },
   {
     "code": "AGE2011S",
@@ -718,8 +66,8 @@
     "description": "Course outline for AGE2012F."
   },
   {
-    "code": "AGE3013H",
-    "name": "Archaeology In Practice",
+    "code": "AGE3006H",
+    "name": "Directed Reading & Research",
     "credits": 36,
     "nqf_level": 7,
     "prerequisites": [],
@@ -727,8 +75,8 @@
       "Semester 1",
       "Semester 2"
     ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for AGE3013H."
+    "department": "60    Departments In The Faculty",
+    "description": "Course outline for AGE3006H."
   },
   {
     "code": "AGE3011F",
@@ -746,204 +94,96 @@
     "description": "Course outline for AGE3011F."
   },
   {
-    "code": "CSC1015F",
-    "name": "Computer Science 1015",
-    "credits": 18,
-    "nqf_level": 5,
+    "code": "AGE3012S",
+    "name": "Archaeologies Of Dominance And Resistance In The",
+    "credits": 36,
+    "nqf_level": 7,
     "prerequisites": [
-      "CSC1010H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC1015F."
-  },
-  {
-    "code": "CSC1015S",
-    "name": "Computer Science 1015",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "CSC1010H"
+      "AGE2011S",
+      "AGE2012F"
     ],
     "offered": [
       "Semester 2"
     ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC1015S."
+    "department": "60    Departments In The Faculty",
+    "description": "Course outline for AGE3012S."
   },
   {
-    "code": "CSC1016S",
-    "name": "Computer Science 1016",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1017S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC1016S."
-  },
-  {
-    "code": "MAM1019H",
-    "name": "Fundamentals Of Mathematics",
-    "credits": 18,
-    "nqf_level": 5,
+    "code": "AGE3013H",
+    "name": "Archaeology In Practice",
+    "credits": 36,
+    "nqf_level": 7,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
     "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1019H."
+    "description": "Course outline for AGE3013H."
   },
   {
-    "code": "CSC2001F",
-    "name": "Computer Science 2001",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CSC1010H",
-      "CSC1011H",
-      "CSC1015F",
-      "CSC1015S",
-      "CSC1016S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC2001F."
-  },
-  {
-    "code": "CSC2041F",
-    "name": "Introduction To Ai 1: Knowledge Representation",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1015S",
-      "CSC1016S",
-      "MAM1008S",
-      "MAM1019H",
-      "MAM1031F",
-      "MAM1032S",
-      "STA1000X"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC2041F."
-  },
-  {
-    "code": "CSC2042S",
-    "name": "Introduction To Ai 2: Machine Learning",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1015S",
-      "CSC1016S",
-      "MAM1004F",
-      "MAM1031F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC2042S."
-  },
-  {
-    "code": "CSC3041F",
-    "name": "Ai: Automated Planning And Control",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC2001F",
-      "CSC2041F",
-      "CSC2042S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC3041F."
-  },
-  {
-    "code": "CSC3042F",
-    "name": "Ai: Deep Learning",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC2001F",
-      "CSC2042S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC3042F."
-  },
-  {
-    "code": "CSC3043S",
-    "name": "Ai: Reasoning In Ai",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC2001F",
-      "CSC2041F",
-      "CSC2042S",
-      "CSC3042F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC3043S."
-  },
-  {
-    "code": "CSC3044S",
-    "name": "Ai: Ai Systems",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC2001F",
-      "CSC2041F",
-      "CSC2042S",
-      "CSC3041F",
-      "CSC3042F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC3044S."
-  },
-  {
-    "code": "PHY1004W",
-    "name": "Matter & Interactions",
-    "credits": 36,
-    "nqf_level": 5,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1015S",
-      "MAM1000W",
-      "MAM1031F",
-      "MAM1032S",
-      "PHY1023H",
-      "PHY1031F"
-    ],
+    "code": "AGE4000W",
+    "name": "Archaeology Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "22    Degrees Offered In The Faculty",
-    "description": "Course outline for PHY1004W."
+    "department": "Departments In The Faculty    61",
+    "description": "Course outline for AGE4000W."
+  },
+  {
+    "code": "AGE4001W",
+    "name": "Archaeology & Environmental Science Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "62    Departments In The Faculty",
+    "description": "Course outline for AGE4001W."
+  },
+  {
+    "code": "AGE5000W",
+    "name": "Archaeology Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "62    Departments In The Faculty",
+    "description": "Course outline for AGE5000W."
+  },
+  {
+    "code": "AGE6000W",
+    "name": "Archaeology Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "62    Departments In The Faculty",
+    "description": "Course outline for AGE6000W."
+  },
+  {
+    "code": "ASL5205F",
+    "name": "Rethinking Africa'S Development",
+    "credits": 24,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for ASL5205F."
   },
   {
     "code": "AST1000S",
@@ -1001,19 +241,6 @@
     "description": "Course outline for AST2003H."
   },
   {
-    "code": "PHY2004W",
-    "name": "Intermediate Physics",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for PHY2004W."
-  },
-  {
     "code": "AST3002F",
     "name": "Stellar Astrophysics",
     "credits": 36,
@@ -1050,6 +277,108 @@
     "description": "Course outline for AST3003S."
   },
   {
+    "code": "AST4007W",
+    "name": "Astrophysics & Space Science Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AST3002F",
+      "AST3003S",
+      "MAM3040W",
+      "PHY3004W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    67",
+    "description": "Course outline for AST4007W."
+  },
+  {
+    "code": "AST5000W",
+    "name": "Astronomy Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "68    Departments In The Faculty",
+    "description": "Course outline for AST5000W."
+  },
+  {
+    "code": "AST5001W",
+    "name": "Astrophysics & Space Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "AST5003F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "68    Departments In The Faculty",
+    "description": "Course outline for AST5001W."
+  },
+  {
+    "code": "AST5003F",
+    "name": "Astrophysics & Space Science Coursework",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "AST4007W",
+      "PHY4000W",
+      "PHY4001W",
+      "PHY4002W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "68    Departments In The Faculty",
+    "description": "Course outline for AST5003F."
+  },
+  {
+    "code": "AST5004Z",
+    "name": "Data Science For Astronomy",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for AST5004Z."
+  },
+  {
+    "code": "AST5005W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for AST5005W."
+  },
+  {
+    "code": "AST6000W",
+    "name": "Astronomy Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    69",
+    "description": "Course outline for AST6000W."
+  },
+  {
     "code": "BIO1000F",
     "name": "Cell Biology",
     "credits": 18,
@@ -1064,37 +393,20 @@
     "description": "Course outline for BIO1000F."
   },
   {
-    "code": "CEM1000W",
-    "name": "Chemistry 1000",
-    "credits": 36,
+    "code": "BIO1000H",
+    "name": "Cell Biology",
+    "credits": 18,
     "nqf_level": 5,
     "prerequisites": [
-      "CEM1000W"
+      "BIO1000F",
+      "BIO1000H"
     ],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for CEM1000W."
-  },
-  {
-    "code": "MAM1004F",
-    "name": "Mathematics 1004",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1014F",
-      "MAM1015S",
-      "MAM1022F",
-      "MAM1025F",
-      "MAM1026F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MAM1004F."
+    "department": "76    Departments In The Faculty",
+    "description": "Course outline for BIO1000H."
   },
   {
     "code": "BIO1004S",
@@ -1107,103 +419,6 @@
     ],
     "department": "Degrees Offered In The Faculty    23",
     "description": "Course outline for BIO1004S."
-  },
-  {
-    "code": "MCB2020F",
-    "name": "Biological Information Transfer",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "BIO1000F",
-      "CEM1000W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB2020F."
-  },
-  {
-    "code": "MCB2021F",
-    "name": "Molecular Bioscience",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "BIO1000F",
-      "CEM1000W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB2021F."
-  },
-  {
-    "code": "MCB2022S",
-    "name": "Metabolism & Bioengineering",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB2022S."
-  },
-  {
-    "code": "MCB3012Z",
-    "name": "Research Project In Molecular & Cell Biology",
-    "credits": 0,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MCB3023S",
-      "MCB3024S",
-      "MCB3025F",
-      "MCB3026F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB3012Z."
-  },
-  {
-    "code": "MCB3024S",
-    "name": "Defence & Disease",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F",
-      "MCB2022S",
-      "MCB2023S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB3024S."
-  },
-  {
-    "code": "MCB3025F",
-    "name": "Structural & Chemical Biology",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F",
-      "MCB2022S",
-      "MCB2023S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    23",
-    "description": "Course outline for MCB3025F."
   },
   {
     "code": "BIO2014F",
@@ -1270,6 +485,21 @@
     ],
     "department": "24    Degrees Offered In The Faculty",
     "description": "Course outline for BIO2017S."
+  },
+  {
+    "code": "BIO3002F",
+    "name": "Marine Ecosystems",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "BIO2014F",
+      "SEA2004F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "30    Degrees Offered In The Faculty",
+    "description": "Course outline for BIO3002F."
   },
   {
     "code": "BIO3013F",
@@ -1346,194 +576,211 @@
     "description": "Course outline for BIO3022S."
   },
   {
-    "code": "MAM1008S",
-    "name": "Introduction To Discrete Mathematics",
+    "code": "BIO4000W",
+    "name": "Biological Sciences Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [
+      "STA2007",
+      "STA5014Z"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "82    Departments In The Faculty",
+    "description": "Course outline for BIO4000W."
+  },
+  {
+    "code": "BIO4001W",
+    "name": "Marine Biology Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [
+      "STA2007",
+      "STA5014Z"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    83",
+    "description": "Course outline for BIO4001W."
+  },
+  {
+    "code": "BIO5007H",
+    "name": "Conservation Biology Coursework",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    83",
+    "description": "Course outline for BIO5007H."
+  },
+  {
+    "code": "BIO5008W",
+    "name": "Conservation Biology Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "BIO5007H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "84    Departments In The Faculty",
+    "description": "Course outline for BIO5008W."
+  },
+  {
+    "code": "BIO5009W",
+    "name": "Conservation Biology Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "84    Departments In The Faculty",
+    "description": "Course outline for BIO5009W."
+  },
+  {
+    "code": "BIO5010W",
+    "name": "Biological Sciences Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "84    Departments In The Faculty",
+    "description": "Course outline for BIO5010W."
+  },
+  {
+    "code": "BIO5012W",
+    "name": "Applied Ocean Sciences Coursework",
+    "credits": 0,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "84    Departments In The Faculty",
+    "description": "Course outline for BIO5012W."
+  },
+  {
+    "code": "BIO5013Z",
+    "name": "Fundamentals Of Applied Ocean Sciences",
+    "credits": 40,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    85",
+    "description": "Course outline for BIO5013Z."
+  },
+  {
+    "code": "BIO5014Z",
+    "name": "Applied Marine Biology",
+    "credits": 50,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "86    Departments In The Faculty",
+    "description": "Course outline for BIO5014Z."
+  },
+  {
+    "code": "BIO5015W",
+    "name": "Applied Ocean Sciences Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "86    Departments In The Faculty",
+    "description": "Course outline for BIO5015W."
+  },
+  {
+    "code": "BIO6002W",
+    "name": "Conservation Biology Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    87",
+    "description": "Course outline for BIO6002W."
+  },
+  {
+    "code": "BIO6003W",
+    "name": "Biological Sciences Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    87",
+    "description": "Course outline for BIO6003W."
+  },
+  {
+    "code": "CEM1000W",
+    "name": "Chemistry 1000",
+    "credits": 36,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CEM1000W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for CEM1000W."
+  },
+  {
+    "code": "CEM1009H",
+    "name": "Chemistry 1009",
     "credits": 18,
     "nqf_level": 5,
     "prerequisites": [],
     "offered": [
+      "Semester 1",
       "Semester 2"
     ],
-    "department": "24    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1008S."
+    "department": "Departments In The Faculty    93",
+    "description": "Course outline for CEM1009H."
   },
   {
-    "code": "MAM1004S",
-    "name": "Mathematics 1004",
+    "code": "CEM1010H",
+    "name": "Chemistry 1010",
     "credits": 18,
     "nqf_level": 5,
     "prerequisites": [
-      "MAM1014F",
-      "MAM1015S",
-      "MAM1022F",
-      "MAM1025F",
-      "MAM1026F"
+      "CEM1009H"
     ],
     "offered": [
+      "Semester 1",
       "Semester 2"
     ],
-    "department": "24    Degrees Offered In The Faculty",
-    "description": "Course outline for MAM1004S."
-  },
-  {
-    "code": "ACC1021F",
-    "name": "Accounting For Business I",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for ACC1021F."
-  },
-  {
-    "code": "FTX1005F",
-    "name": "Managerial Finance",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for FTX1005F."
-  },
-  {
-    "code": "FTX1005S",
-    "name": "Managerial Finance",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for FTX1005S."
-  },
-  {
-    "code": "INF2009F",
-    "name": "Systems Analysis",
-    "credits": 18,
-    "nqf_level": 6,
-    "prerequisites": [
-      "INF1003F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF2009F."
-  },
-  {
-    "code": "INF2006F",
-    "name": "Business Intelligence And Analytics",
-    "credits": 6,
-    "nqf_level": 6,
-    "prerequisites": [
-      "INF1002"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF2006F."
-  },
-  {
-    "code": "INF2011S",
-    "name": "Systems Design & Development",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC1016",
-      "CSC2001",
-      "INF1003",
-      "INF2007",
-      "INF2008",
-      "INF2009"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF2011S."
-  },
-  {
-    "code": "INF3011F",
-    "name": "I.T. Project Management",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "INF2003F",
-      "INF2009F",
-      "INF2011S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF3011F."
-  },
-  {
-    "code": "INF3012S",
-    "name": "Bpm & Enterprise Systems",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "INF2003F",
-      "INF2009F",
-      "INF2011S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF3012S."
-  },
-  {
-    "code": "INF3014F",
-    "name": "Electronic Commerce",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "INF2003F",
-      "INF2009F",
-      "INF2011S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for INF3014F."
-  },
-  {
-    "code": "PHY1031F",
-    "name": "General Physics A",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "PHY1023H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for PHY1031F."
-  },
-  {
-    "code": "PHY1032S",
-    "name": "General Physics B",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "PHY1023H",
-      "PHY1031F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    25",
-    "description": "Course outline for PHY1032S."
+    "department": "94    Departments In The Faculty",
+    "description": "Course outline for CEM1010H."
   },
   {
     "code": "CEM2005W",
@@ -1575,78 +822,182 @@
     "description": "Course outline for CEM3005W."
   },
   {
-    "code": "EEE2041F",
-    "name": "Introduction To Electrical Engineering & Power",
-    "credits": 16,
-    "nqf_level": 6,
+    "code": "CEM4000W",
+    "name": "Chemistry Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    95",
+    "description": "Course outline for CEM4000W."
+  },
+  {
+    "code": "CEM5000W",
+    "name": "Chemistry Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "96    Departments In The Faculty",
+    "description": "Course outline for CEM5000W."
+  },
+  {
+    "code": "CEM5002W",
+    "name": "Computational Science Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "96    Departments In The Faculty",
+    "description": "Course outline for CEM5002W."
+  },
+  {
+    "code": "CEM5004W",
+    "name": "Tertiary Chemistry Education Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    97",
+    "description": "Course outline for CEM5004W."
+  },
+  {
+    "code": "CEM6000W",
+    "name": "Chemistry Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    97",
+    "description": "Course outline for CEM6000W."
+  },
+  {
+    "code": "CEM6001W",
+    "name": "Tertiary Chemistry Education Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    97",
+    "description": "Course outline for CEM6001W."
+  },
+  {
+    "code": "CEM6002W",
+    "name": "Computational Science Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "98    Departments In The Faculty",
+    "description": "Course outline for CEM6002W."
+  },
+  {
+    "code": "CSC1010H",
+    "name": "Computer Science 1010",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    101",
+    "description": "Course outline for CSC1010H."
+  },
+  {
+    "code": "CSC1011H",
+    "name": "Computer Science 1011",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    101",
+    "description": "Course outline for CSC1011H."
+  },
+  {
+    "code": "CSC1015F",
+    "name": "Computer Science 1015",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1008S",
-      "MAM1021S",
-      "PHY1004W",
-      "PHY1013F",
-      "PHY1013S",
-      "PHY1032S"
+      "CSC1010H"
     ],
     "offered": [
       "Semester 1"
     ],
-    "department": "26    Degrees Offered In The Faculty",
-    "description": "Course outline for EEE2041F."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC1015F."
   },
   {
-    "code": "EEE2042S",
-    "name": "Introduction To Analogue And Digital Electronics",
-    "credits": 8,
-    "nqf_level": 6,
+    "code": "CSC1015S",
+    "name": "Computer Science 1015",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [
-      "EEE2041F",
-      "MAM1000W",
-      "MAM1004F",
-      "MAM1008S",
-      "MAM1021F",
-      "MAM1021S",
-      "PHY1004W",
-      "PHY1013F",
-      "PHY1013S",
-      "PHY1032S"
+      "CSC1010H"
     ],
     "offered": [
       "Semester 2"
     ],
-    "department": "26    Degrees Offered In The Faculty",
-    "description": "Course outline for EEE2042S."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC1015S."
   },
   {
-    "code": "EEE2050F",
-    "name": "Embedded Systems I For Science Students",
+    "code": "CSC1016S",
+    "name": "Computer Science 1016",
     "credits": 18,
-    "nqf_level": 6,
+    "nqf_level": 5,
     "prerequisites": [
       "CSC1015F",
-      "CSC1015S",
-      "EEE2042S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "26    Degrees Offered In The Faculty",
-    "description": "Course outline for EEE2050F."
-  },
-  {
-    "code": "EEE3095S",
-    "name": "Embedded Systems Ii For Science Students",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "EEE2050F"
+      "CSC1017S"
     ],
     "offered": [
       "Semester 2"
     ],
-    "department": "26    Degrees Offered In The Faculty",
-    "description": "Course outline for EEE3095S."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC1016S."
+  },
+  {
+    "code": "CSC2001F",
+    "name": "Computer Science 2001",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1010H",
+      "CSC1011H",
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC2001F."
   },
   {
     "code": "CSC2002S",
@@ -1682,6 +1033,77 @@
     "description": "Course outline for CSC2004Z."
   },
   {
+    "code": "CSC2005F",
+    "name": "Independent Research In Computer Science",
+    "credits": 24,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1016S",
+      "CSC2001F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "104    Departments In The Faculty",
+    "description": "Course outline for CSC2005F."
+  },
+  {
+    "code": "CSC2005S",
+    "name": "Independent Research In Computer Science",
+    "credits": 24,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1016S",
+      "CSC2001F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "104    Departments In The Faculty",
+    "description": "Course outline for CSC2005S."
+  },
+  {
+    "code": "CSC2041F",
+    "name": "Introduction To Ai 1: Knowledge Representation",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S",
+      "MAM1008S",
+      "MAM1019H",
+      "MAM1031F",
+      "MAM1032S",
+      "STA1000X"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC2041F."
+  },
+  {
+    "code": "CSC2042S",
+    "name": "Introduction To Ai 2: Machine Learning",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "CSC1016S",
+      "MAM1004F",
+      "MAM1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC2042S."
+  },
+  {
     "code": "CSC3002F",
     "name": "Networks And Operating Systems",
     "credits": 36,
@@ -1714,643 +1136,90 @@
     "description": "Course outline for CSC3003S."
   },
   {
-    "code": "EGS1007S",
-    "name": "Human & Physical Systems",
+    "code": "CSC3024S",
+    "name": "Introduction To C++ Programming",
     "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS1007S."
-  },
-  {
-    "code": "EGS2016F",
-    "name": "Geographies Across Space",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "EGS1003S",
-      "EGS1007S",
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS2016F."
-  },
-  {
-    "code": "EGS2017S",
-    "name": "Geographies Across Time",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "EGS1003S",
-      "EGS1007S",
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS2017S."
-  },
-  {
-    "code": "EGS3012S",
-    "name": "Atmospheric Science",
-    "credits": 36,
     "nqf_level": 7,
     "prerequisites": [
-      "EGS2013F",
-      "EGS2015S",
-      "EGS2016F",
-      "EGS2017S",
-      "GEO1009F",
-      "SEA2004F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS3012S."
-  },
-  {
-    "code": "EGS3021F",
-    "name": "Sustainability & Environment",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "EGS2013F",
-      "EGS2015S",
-      "EGS2016F",
-      "EGS2017S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS3021F."
-  },
-  {
-    "code": "EGS3022S",
-    "name": "Geographic Thought",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "EGS2013F",
-      "EGS2015S",
-      "EGS2016F",
-      "EGS2017S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS3022S."
-  },
-  {
-    "code": "EGS3023F",
-    "name": "Anthropocene Environments In Perspective",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "EGS2013F",
-      "EGS2015S",
-      "EGS2016F",
-      "EGS2017S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    27",
-    "description": "Course outline for EGS3023F."
-  },
-  {
-    "code": "MCB2023S",
-    "name": "Functional Genetics",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "28    Degrees Offered In The Faculty",
-    "description": "Course outline for MCB2023S."
-  },
-  {
-    "code": "MCB3023S",
-    "name": "Molecular Evolutionary Genetics & Development",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F",
-      "MCB2022S",
-      "MCB2023S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "28    Degrees Offered In The Faculty",
-    "description": "Course outline for MCB3023S."
-  },
-  {
-    "code": "MCB3026F",
-    "name": "Molecular Genetics And Genomics",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MCB2020F",
-      "MCB2021F",
-      "MCB2022S",
-      "MCB2023S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "28    Degrees Offered In The Faculty",
-    "description": "Course outline for MCB3026F."
-  },
-  {
-    "code": "GEO1006S",
-    "name": "Introduction To Minerals, Rocks & Structure",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "28    Degrees Offered In The Faculty",
-    "description": "Course outline for GEO1006S."
-  },
-  {
-    "code": "GEO2001F",
-    "name": "Mineralogy, Crystallography And Petrography",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CEM1000W",
-      "GEO1006S",
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for GEO2001F."
-  },
-  {
-    "code": "GEO2004S",
-    "name": "Physical Geology",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "GEO2001F",
-      "PHY1031F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for GEO2004S."
-  },
-  {
-    "code": "GEO3005F",
-    "name": "Petrology & Structural Geology",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "GEO2001F",
-      "GEO2004S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for GEO3005F."
-  },
-  {
-    "code": "GEO3001S",
-    "name": "Stratigraphy & Economic Geology",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "GEO2004S",
-      "GEO3005F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for GEO3001S."
-  },
-  {
-    "code": "HUB2019F",
-    "name": "Integrated Anatomical And Physiological Sciences",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "BIO1000F",
-      "BIO1004S",
-      "CEM1000W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for HUB2019F."
-  },
-  {
-    "code": "HUB2021S",
-    "name": "Integrated Anatomical And Physiological Sciences",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CEM1000W",
-      "HUB2019F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for HUB2021S."
-  },
-  {
-    "code": "HUB3006F",
-    "name": "Applied Human Biology",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HUB2019F",
-      "HUB2021S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for HUB3006F."
-  },
-  {
-    "code": "HUB3007S",
-    "name": "Human Neurosciences",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HUB3006F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    29",
-    "description": "Course outline for HUB3007S."
-  },
-  {
-    "code": "SEA2004F",
-    "name": "Principles Of Oceanography",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CEM1000W",
-      "GEO1009F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "30    Degrees Offered In The Faculty",
-    "description": "Course outline for SEA2004F."
-  },
-  {
-    "code": "BIO3002F",
-    "name": "Marine Ecosystems",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "BIO2014F",
-      "SEA2004F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "30    Degrees Offered In The Faculty",
-    "description": "Course outline for BIO3002F."
-  },
-  {
-    "code": "STA1006S",
-    "name": "Mathematical Statistics I",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "MAM1004F",
-      "MAM1005H",
-      "MAM1006H",
-      "MAM1010F",
-      "MAM1010S",
-      "MAM1012F",
-      "MAM1012S",
-      "MAM1020F",
-      "MAM1020S",
-      "MAM1021S",
-      "MAM1031F",
-      "MAM1032S",
-      "MAM1033F",
-      "MAM1034S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "30    Degrees Offered In The Faculty",
-    "description": "Course outline for STA1006S."
-  },
-  {
-    "code": "STA2004F",
-    "name": "Statistical Theory & Inference",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
+      "CSC2001F",
+      "CSC2002S",
+      "CSC2004Z",
       "MAM1000W",
-      "MAM1006H",
-      "MAM1012S",
-      "MAM1032S",
-      "MAM1034S",
-      "STA1006S",
-      "STA1106H"
+      "MAM1004F",
+      "MAM1008S",
+      "MAM1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "106    Departments In The Faculty",
+    "description": "Course outline for CSC3024S."
+  },
+  {
+    "code": "CSC3041F",
+    "name": "Ai: Automated Planning And Control",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S"
     ],
     "offered": [
       "Semester 1"
     ],
-    "department": "30    Degrees Offered In The Faculty",
-    "description": "Course outline for STA2004F."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC3041F."
   },
   {
-    "code": "STA2005S",
-    "name": "Linear Models",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM2011F",
-      "STA2004F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "30    Degrees Offered In The Faculty",
-    "description": "Course outline for STA2005S."
-  },
-  {
-    "code": "STA3041F",
-    "name": "Stochastic Processes & Time Series",
-    "credits": 36,
+    "code": "CSC3042F",
+    "name": "Ai: Deep Learning",
+    "credits": 18,
     "nqf_level": 7,
     "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2014S",
-      "STA2004F",
-      "STA2005S"
+      "CSC2001F",
+      "CSC2042S"
     ],
     "offered": [
       "Semester 1"
     ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for STA3041F."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC3042F."
   },
   {
-    "code": "STA3047S",
-    "name": "Introduction To Machine Learning",
-    "credits": 6,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2014S",
-      "STA2004F",
-      "STA2005S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for STA3047S."
-  },
-  {
-    "code": "STA3048S",
-    "name": "Statistical Modelling & Bayesian Analysis",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2014S",
-      "STA2004F",
-      "STA2005S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for STA3048S."
-  },
-  {
-    "code": "MAM2014S",
-    "name": "Real Analysis (2Ra)",
-    "credits": 12,
-    "nqf_level": 6,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM2014S."
-  },
-  {
-    "code": "MAM3010F",
-    "name": "Metric Spaces (3Ms)",
+    "code": "CSC3043S",
+    "name": "Ai: Reasoning In Ai",
     "credits": 18,
     "nqf_level": 7,
     "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2013S",
-      "MAM2014S"
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S",
+      "CSC3042F"
     ],
     "offered": [
-      "Semester 1"
+      "Semester 2"
     ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM3010F."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC3043S."
   },
   {
-    "code": "MAM3011F",
-    "name": "Modern Abstract Algebra (3Al)",
+    "code": "CSC3044S",
+    "name": "Ai: Ai Systems",
     "credits": 18,
     "nqf_level": 7,
     "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2013S",
-      "MAM2014S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM3011F."
-  },
-  {
-    "code": "MAM3013S",
-    "name": "Topics In Algebra (3Ta)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2013S",
-      "MAM2014S"
+      "CSC2001F",
+      "CSC2041F",
+      "CSC2042S",
+      "CSC3041F",
+      "CSC3042F"
     ],
     "offered": [
       "Semester 2"
     ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM3013S."
-  },
-  {
-    "code": "MAM3014S",
-    "name": "Topics In Analysis (3Tn)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM3010F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM3014S."
-  },
-  {
-    "code": "MAM3015S",
-    "name": "Complex Analysis (3Ca)",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2010F",
-      "MAM2011F",
-      "MAM2012S",
-      "MAM2013S",
-      "MAM2014S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    31",
-    "description": "Course outline for MAM3015S."
-  },
-  {
-    "code": "SEA2005S",
-    "name": "Marine Systems",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CEM1000W",
-      "GEO1009F",
-      "SEA2004F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "32    Degrees Offered In The Faculty",
-    "description": "Course outline for SEA2005S."
-  },
-  {
-    "code": "SEA3004F",
-    "name": "Ocean & Atmosphere Dynamics",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM1031F",
-      "MAM1032S",
-      "PHY1031F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "32    Degrees Offered In The Faculty",
-    "description": "Course outline for SEA3004F."
-  },
-  {
-    "code": "PHY3004W",
-    "name": "Advanced Physics",
-    "credits": 72,
-    "nqf_level": 7,
-    "prerequisites": [
-      "MAM2000W",
-      "MAM2010F",
-      "MAM2011F",
-      "PHY2004W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    33",
-    "description": "Course outline for PHY3004W."
-  },
-  {
-    "code": "CSC4019Z",
-    "name": "Research & Innovation",
-    "credits": 16,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "38    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC4019Z."
-  },
-  {
-    "code": "CSC4020Z",
-    "name": "Functional Programming",
-    "credits": 12,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "38    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC4020Z."
-  },
-  {
-    "code": "CSC4021Z",
-    "name": "Compilers 1",
-    "credits": 12,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "38    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC4021Z."
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC3044S."
   },
   {
     "code": "CSC4002W",
@@ -2403,6 +1272,45 @@
     ],
     "department": "Degrees Offered In The Faculty    39",
     "description": "Course outline for CSC4013Z."
+  },
+  {
+    "code": "CSC4019Z",
+    "name": "Research & Innovation",
+    "credits": 16,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "38    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC4019Z."
+  },
+  {
+    "code": "CSC4020Z",
+    "name": "Functional Programming",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "38    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC4020Z."
+  },
+  {
+    "code": "CSC4021Z",
+    "name": "Compilers 1",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "38    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC4021Z."
   },
   {
     "code": "CSC4022Z",
@@ -2576,29 +1484,17 @@
     "description": "Course outline for CSC4044Z."
   },
   {
-    "code": "STA4026S",
-    "name": "Analytics",
-    "credits": 18,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    39",
-    "description": "Course outline for STA4026S."
-  },
-  {
-    "code": "CSC5020Z",
-    "name": "Research Methods In Computer Science",
-    "credits": 18,
+    "code": "CSC5000W",
+    "name": "Computer Science Dissertation",
+    "credits": 180,
     "nqf_level": 9,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "42    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC5020Z."
+    "department": "Departments In The Faculty    115",
+    "description": "Course outline for CSC5000W."
   },
   {
     "code": "CSC5002W",
@@ -2614,6 +1510,47 @@
     "description": "Course outline for CSC5002W."
   },
   {
+    "code": "CSC5004W",
+    "name": "Information Technology Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "CSC5005H",
+      "CSC5006H",
+      "CSC5007Z",
+      "CSC5010Z",
+      "CSC5011Z",
+      "CSC5012Z",
+      "CSC5013Z",
+      "CSC5014Z",
+      "CSC5015Z",
+      "CSC5016Z",
+      "CSC5017Z",
+      "INF5007Z",
+      "INF5008Z",
+      "INF5009Z"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for CSC5004W."
+  },
+  {
+    "code": "CSC5007Z",
+    "name": "Database Systems",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC5007Z."
+  },
+  {
     "code": "CSC5008Z",
     "name": "Data Visualisation",
     "credits": 12,
@@ -2625,6 +1562,84 @@
     ],
     "department": "42    Degrees Offered In The Faculty",
     "description": "Course outline for CSC5008Z."
+  },
+  {
+    "code": "CSC5009W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC5009W."
+  },
+  {
+    "code": "CSC5010Z",
+    "name": "Mit: Computer Networks",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC5010Z."
+  },
+  {
+    "code": "CSC5011Z",
+    "name": "Mit: Object-Oriented Programming In Python",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for CSC5011Z."
+  },
+  {
+    "code": "CSC5012Z",
+    "name": "Mit: Human Computer Interaction",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for CSC5012Z."
+  },
+  {
+    "code": "CSC5017Z",
+    "name": "Mit: Research Methods",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for CSC5017Z."
+  },
+  {
+    "code": "CSC5020Z",
+    "name": "Research Methods In Computer Science",
+    "credits": 18,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "42    Degrees Offered In The Faculty",
+    "description": "Course outline for CSC5020Z."
   },
   {
     "code": "CSC5021Z",
@@ -2835,6 +1850,19 @@
     "description": "Course outline for CSC5036Z."
   },
   {
+    "code": "CSC5037W",
+    "name": "Artificial Intelligence Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for CSC5037W."
+  },
+  {
     "code": "CSC5038Z",
     "name": "Artificial Life",
     "credits": 12,
@@ -2874,140 +1902,34 @@
     "description": "Course outline for CSC5042Z."
   },
   {
-    "code": "CSC5007Z",
-    "name": "Database Systems",
-    "credits": 12,
+    "code": "CSC6000W",
+    "name": "Computer Science Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    127",
+    "description": "Course outline for CSC6000W."
+  },
+  {
+    "code": "ECO5023W",
+    "name": "Minor Dissertation",
+    "credits": 60,
     "nqf_level": 9,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "42    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC5007Z."
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for ECO5023W."
   },
   {
-    "code": "CSC5010Z",
-    "name": "Mit: Computer Networks",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "42    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC5010Z."
-  },
-  {
-    "code": "CSC5011Z",
-    "name": "Mit: Object-Oriented Programming In Python",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for CSC5011Z."
-  },
-  {
-    "code": "CSC5012Z",
-    "name": "Mit: Human Computer Interaction",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for CSC5012Z."
-  },
-  {
-    "code": "INF5007Z",
-    "name": "Social Issues And Professional Practice",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for INF5007Z."
-  },
-  {
-    "code": "INF5008Z",
-    "name": "Systems Security",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for INF5008Z."
-  },
-  {
-    "code": "INF5009Z",
-    "name": "Software Engineering",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for INF5009Z."
-  },
-  {
-    "code": "CSC5017Z",
-    "name": "Mit: Research Methods",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for CSC5017Z."
-  },
-  {
-    "code": "CSC5004W",
-    "name": "Information Technology Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "CSC5005H",
-      "CSC5006H",
-      "CSC5007Z",
-      "CSC5010Z",
-      "CSC5011Z",
-      "CSC5012Z",
-      "CSC5013Z",
-      "CSC5014Z",
-      "CSC5015Z",
-      "CSC5016Z",
-      "CSC5017Z",
-      "INF5007Z",
-      "INF5008Z",
-      "INF5009Z"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for CSC5004W."
-  },
-  {
-    "code": "INF5010W",
-    "name": "Masters In It: Information Technology Minor",
+    "code": "ECO5024W",
+    "name": "Minor Dissertation (Commerce)",
     "credits": 90,
     "nqf_level": 9,
     "prerequisites": [],
@@ -3015,177 +1937,32 @@
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for INF5010W."
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for ECO5024W."
   },
   {
-    "code": "CSC5037W",
-    "name": "Artificial Intelligence Minor Dissertation",
-    "credits": 90,
+    "code": "ECO5037S",
+    "name": "Fintech And Cryptocurrencies",
+    "credits": 24,
     "nqf_level": 9,
     "prerequisites": [],
     "offered": [
-      "Semester 1",
       "Semester 2"
     ],
-    "department": "Degrees Offered In The Faculty    43",
-    "description": "Course outline for CSC5037W."
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for ECO5037S."
   },
   {
-    "code": "STA5063Z",
-    "name": "Design Of Clinical Trials",
-    "credits": 15,
+    "code": "ECO5046F",
+    "name": "Advanced Econometrics",
+    "credits": 30,
     "nqf_level": 9,
     "prerequisites": [],
     "offered": [
-      "Semester 1",
-      "Semester 2"
+      "Semester 1"
     ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5063Z."
-  },
-  {
-    "code": "STA5067Z",
-    "name": "Longitudinal Data Analysis",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5067Z."
-  },
-  {
-    "code": "STA5069Z",
-    "name": "Multivariate Statistics",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5069Z."
-  },
-  {
-    "code": "STA5072Z",
-    "name": "Survival Analysis",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5072Z."
-  },
-  {
-    "code": "STA4029Z",
-    "name": "Advanced Probability Theory",
-    "credits": 12,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA4029Z."
-  },
-  {
-    "code": "STA5061Z",
-    "name": "Bayesian Decision Modelling",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5061Z."
-  },
-  {
-    "code": "STA5064Z",
-    "name": "Ecological Statistics",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5064Z."
-  },
-  {
-    "code": "STA5066Z",
-    "name": "Mathematical Modelling For Infectious Diseases",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5066Z."
-  },
-  {
-    "code": "STA5068Z",
-    "name": "Machine Learning",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5068Z."
-  },
-  {
-    "code": "STA5071Z",
-    "name": "Simulation And Optimisation",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5071Z."
-  },
-  {
-    "code": "STA5073Z",
-    "name": "Data Science For Industry",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5073Z."
-  },
-  {
-    "code": "STA5090Z",
-    "name": "Advanced Topics In Regression",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "44    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5090Z."
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for ECO5046F."
   },
   {
     "code": "ECO5069S",
@@ -3212,1362 +1989,194 @@
     "description": "Course outline for ECO5070S."
   },
   {
-    "code": "IBS5004Z",
-    "name": "Bioinformatics For High-Throughput Biology",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    45",
-    "description": "Course outline for IBS5004Z."
-  },
-  {
-    "code": "STA5058W",
-    "name": "Biostatistics Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    45",
-    "description": "Course outline for STA5058W."
-  },
-  {
-    "code": "STA4027Z",
-    "name": "Bayesian Computational Methods",
-    "credits": 12,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "46    Degrees Offered In The Faculty",
-    "description": "Course outline for STA4027Z."
-  },
-  {
-    "code": "STA4028Z",
-    "name": "Portfolio Theory",
-    "credits": 12,
-    "nqf_level": 8,
+    "code": "EEE2041F",
+    "name": "Introduction To Electrical Engineering & Power",
+    "credits": 16,
+    "nqf_level": 6,
     "prerequisites": [
-      "STA3041F",
-      "STA3043S",
-      "STA3045F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "46    Degrees Offered In The Faculty",
-    "description": "Course outline for STA4028Z."
-  },
-  {
-    "code": "STA5086Z",
-    "name": "Advanced Portfolio Theory",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "46    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5086Z."
-  },
-  {
-    "code": "STA5091Z",
-    "name": "Data-Analysis For High-Frequency Trading",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "46    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5091Z."
-  },
-  {
-    "code": "STA5004W",
-    "name": "Statistics And Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "STA5003W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "46    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5004W."
-  },
-  {
-    "code": "EGS5031F",
-    "name": "Introduction To Climate Change & Sustainable",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS5012W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5031F."
-  },
-  {
-    "code": "EGS5032F",
-    "name": "Climate Change Adaptation & Mitigation",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS5012W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5032F."
-  },
-  {
-    "code": "EGS5032S",
-    "name": "Climate Change Adaptation & Mitigation",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS5012W"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5032S."
-  },
-  {
-    "code": "ASL5205F",
-    "name": "Rethinking Africa'S Development",
-    "credits": 24,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for ASL5205F."
-  },
-  {
-    "code": "EGS5030S",
-    "name": "Climate Modelling",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS3012S",
-      "EGS4023F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5030S."
-  },
-  {
-    "code": "EGS5038F",
-    "name": "Climate Change & Predictability",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5038F."
-  },
-  {
-    "code": "EGS5039F",
-    "name": "Urban Food Security",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5039F."
-  },
-  {
-    "code": "EGS5040F",
-    "name": "Special Topic In Human/Environment Interactions",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5040F."
-  },
-  {
-    "code": "EGS5045F",
-    "name": "Geomorphology",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5045F."
-  },
-  {
-    "code": "EGS5046F",
-    "name": "Water Resource Management",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5046F."
-  },
-  {
-    "code": "EGS5047F",
-    "name": "Policy And Governance",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5047F."
-  },
-  {
-    "code": "EGS5047S",
-    "name": "Policy And Governance",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5047S."
-  },
-  {
-    "code": "EGS5058F",
-    "name": "Critical Perspectives On The Bio-Economy",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5058F."
-  },
-  {
-    "code": "EGS5058S",
-    "name": "Critical Perspectives On The Bio-Economy",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    47",
-    "description": "Course outline for EGS5058S."
-  },
-  {
-    "code": "EGS5059S",
-    "name": "Environmental Governance In The Global South",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5059S."
-  },
-  {
-    "code": "EGS5067F",
-    "name": "Air Quality Monitoring, Management And Prediction",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5067F."
-  },
-  {
-    "code": "EGS5067S",
-    "name": "Air Quality Monitoring, Management And Prediction",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5067S."
-  },
-  {
-    "code": "EGS5068F",
-    "name": "Disaster Risk Science",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5068F."
-  },
-  {
-    "code": "EGS5068S",
-    "name": "Disaster Risk Science",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5068S."
-  },
-  {
-    "code": "EGS5069F",
-    "name": "Water Resources In A Changing Climate",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5069F."
-  },
-  {
-    "code": "EGS5069S",
-    "name": "Water Resources In A Changing Climate",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5069S."
-  },
-  {
-    "code": "EGS5070F",
-    "name": "Reading The Sea: Interdisciplinary Approaches To",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5070F."
-  },
-  {
-    "code": "EGS5070S",
-    "name": "Reading The Sea: Interdisciplinary Approaches To",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5070S."
-  },
-  {
-    "code": "EGS5071F",
-    "name": "Climate Change & Marine Ecosystems",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5071F."
-  },
-  {
-    "code": "EGS5071S",
-    "name": "Climate Change & Marine Ecosystems",
-    "credits": 23,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5071S."
-  },
-  {
-    "code": "ECO5024W",
-    "name": "Minor Dissertation (Commerce)",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for ECO5024W."
-  },
-  {
-    "code": "EGS5029H",
-    "name": "Climate Change Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS5012W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for EGS5029H."
-  },
-  {
-    "code": "GEO5005H",
-    "name": "Climate Change Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "EGS5012W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for GEO5005H."
-  },
-  {
-    "code": "END5069W",
-    "name": "Minor Dissertation (Engineering & Built Environment)",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "48    Degrees Offered In The Faculty",
-    "description": "Course outline for END5069W."
-  },
-  {
-    "code": "STA5075Z",
-    "name": "Statistical And High Performance Computing",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for STA5075Z."
-  },
-  {
-    "code": "STA5076Z",
-    "name": "Supervised Learning",
-    "credits": 18,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for STA5076Z."
-  },
-  {
-    "code": "STA5077Z",
-    "name": "Unsupervised Learning",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for STA5077Z."
-  },
-  {
-    "code": "STA5092Z",
-    "name": "Exploratory Data Analysis",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for STA5092Z."
-  },
-  {
-    "code": "AST5004Z",
-    "name": "Data Science For Astronomy",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for AST5004Z."
-  },
-  {
-    "code": "PHY5007Z",
-    "name": "Data Science For Particle Physics",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for PHY5007Z."
-  },
-  {
-    "code": "STA5074Z",
-    "name": "Decision Modelling For Prescriptive Analytics",
-    "credits": 12,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for STA5074Z."
-  },
-  {
-    "code": "FTX5040F",
-    "name": "South African Financial Markets",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for FTX5040F."
-  },
-  {
-    "code": "FTX5051S",
-    "name": "Risk Management Of Financial Instruments",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for FTX5051S."
-  },
-  {
-    "code": "FTX5028W",
-    "name": "Topics In Financial Management",
-    "credits": 30,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for FTX5028W."
-  },
-  {
-    "code": "FTX5043F",
-    "name": "Capital Markets And Financial Instruments",
-    "credits": 30,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for FTX5043F."
-  },
-  {
-    "code": "FTX5044H",
-    "name": "Empirical Finance",
-    "credits": 30,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for FTX5044H."
-  },
-  {
-    "code": "ECO5037S",
-    "name": "Fintech And Cryptocurrencies",
-    "credits": 24,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for ECO5037S."
-  },
-  {
-    "code": "INF5006S",
-    "name": "Financial Systems Design",
-    "credits": 15,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for INF5006S."
-  },
-  {
-    "code": "ECO5046F",
-    "name": "Advanced Econometrics",
-    "credits": 30,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Degrees Offered In The Faculty    49",
-    "description": "Course outline for ECO5046F."
-  },
-  {
-    "code": "AST5005W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for AST5005W."
-  },
-  {
-    "code": "IBS5005W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "BIO1000F",
-      "CEM1000W",
-      "MAM1000W",
-      "MAM1004F",
-      "STA1007S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for IBS5005W."
-  },
-  {
-    "code": "CSC5009W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for CSC5009W."
-  },
-  {
-    "code": "PHY5008W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for PHY5008W."
-  },
-  {
-    "code": "STA5079W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5079W."
-  },
-  {
-    "code": "FTX5003W",
-    "name": "Minor Dissertation In Finance",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for FTX5003W."
-  },
-  {
-    "code": "INF5005W",
-    "name": "Minor Dissertation In Is",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for INF5005W."
-  },
-  {
-    "code": "FTX5029W",
-    "name": "Minor Dissertation In Financial Management",
-    "credits": 60,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for FTX5029W."
-  },
-  {
-    "code": "ECO5023W",
-    "name": "Minor Dissertation",
-    "credits": 60,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for ECO5023W."
-  },
-  {
-    "code": "STA5093W",
-    "name": "Data Science Minor Dissertation",
-    "credits": 60,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "50    Degrees Offered In The Faculty",
-    "description": "Course outline for STA5093W."
-  },
-  {
-    "code": "AGE1005L",
-    "name": "Towards A Decolonised Science In South Africa",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "58    Departments In The Faculty",
-    "description": "Course outline for AGE1005L."
-  },
-  {
-    "code": "AGE3006H",
-    "name": "Directed Reading & Research",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "60    Departments In The Faculty",
-    "description": "Course outline for AGE3006H."
-  },
-  {
-    "code": "AGE3012S",
-    "name": "Archaeologies Of Dominance And Resistance In The",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AGE2011S",
-      "AGE2012F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "60    Departments In The Faculty",
-    "description": "Course outline for AGE3012S."
-  },
-  {
-    "code": "AGE4000W",
-    "name": "Archaeology Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    61",
-    "description": "Course outline for AGE4000W."
-  },
-  {
-    "code": "AGE4001W",
-    "name": "Archaeology & Environmental Science Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "62    Departments In The Faculty",
-    "description": "Course outline for AGE4001W."
-  },
-  {
-    "code": "AGE5000W",
-    "name": "Archaeology Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "62    Departments In The Faculty",
-    "description": "Course outline for AGE5000W."
-  },
-  {
-    "code": "AGE6000W",
-    "name": "Archaeology Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "62    Departments In The Faculty",
-    "description": "Course outline for AGE6000W."
-  },
-  {
-    "code": "AST4007W",
-    "name": "Astrophysics & Space Science Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AST3002F",
-      "AST3003S",
-      "MAM3040W",
-      "PHY3004W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    67",
-    "description": "Course outline for AST4007W."
-  },
-  {
-    "code": "AST5000W",
-    "name": "Astronomy Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "68    Departments In The Faculty",
-    "description": "Course outline for AST5000W."
-  },
-  {
-    "code": "AST5001W",
-    "name": "Astrophysics & Space Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "AST5003F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "68    Departments In The Faculty",
-    "description": "Course outline for AST5001W."
-  },
-  {
-    "code": "AST5003F",
-    "name": "Astrophysics & Space Science Coursework",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "AST4007W",
-      "PHY4000W",
-      "PHY4001W",
-      "PHY4002W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "68    Departments In The Faculty",
-    "description": "Course outline for AST5003F."
-  },
-  {
-    "code": "AST6000W",
-    "name": "Astronomy Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    69",
-    "description": "Course outline for AST6000W."
-  },
-  {
-    "code": "BIO1000H",
-    "name": "Cell Biology",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "BIO1000F",
-      "BIO1000H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "76    Departments In The Faculty",
-    "description": "Course outline for BIO1000H."
-  },
-  {
-    "code": "BIO4000W",
-    "name": "Biological Sciences Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [
-      "STA2007",
-      "STA5014Z"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "82    Departments In The Faculty",
-    "description": "Course outline for BIO4000W."
-  },
-  {
-    "code": "BIO4001W",
-    "name": "Marine Biology Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [
-      "STA2007",
-      "STA5014Z"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    83",
-    "description": "Course outline for BIO4001W."
-  },
-  {
-    "code": "BIO5007H",
-    "name": "Conservation Biology Coursework",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    83",
-    "description": "Course outline for BIO5007H."
-  },
-  {
-    "code": "BIO5008W",
-    "name": "Conservation Biology Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [
-      "BIO5007H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "84    Departments In The Faculty",
-    "description": "Course outline for BIO5008W."
-  },
-  {
-    "code": "BIO5009W",
-    "name": "Conservation Biology Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "84    Departments In The Faculty",
-    "description": "Course outline for BIO5009W."
-  },
-  {
-    "code": "BIO5010W",
-    "name": "Biological Sciences Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "84    Departments In The Faculty",
-    "description": "Course outline for BIO5010W."
-  },
-  {
-    "code": "BIO5012W",
-    "name": "Applied Ocean Sciences Coursework",
-    "credits": 0,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "84    Departments In The Faculty",
-    "description": "Course outline for BIO5012W."
-  },
-  {
-    "code": "BIO5013Z",
-    "name": "Fundamentals Of Applied Ocean Sciences",
-    "credits": 40,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    85",
-    "description": "Course outline for BIO5013Z."
-  },
-  {
-    "code": "BIO5014Z",
-    "name": "Applied Marine Biology",
-    "credits": 50,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "86    Departments In The Faculty",
-    "description": "Course outline for BIO5014Z."
-  },
-  {
-    "code": "BIO5015W",
-    "name": "Applied Ocean Sciences Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "86    Departments In The Faculty",
-    "description": "Course outline for BIO5015W."
-  },
-  {
-    "code": "BIO6002W",
-    "name": "Conservation Biology Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    87",
-    "description": "Course outline for BIO6002W."
-  },
-  {
-    "code": "BIO6003W",
-    "name": "Biological Sciences Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    87",
-    "description": "Course outline for BIO6003W."
-  },
-  {
-    "code": "CEM1009H",
-    "name": "Chemistry 1009",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    93",
-    "description": "Course outline for CEM1009H."
-  },
-  {
-    "code": "CEM1010H",
-    "name": "Chemistry 1010",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [
-      "CEM1009H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "94    Departments In The Faculty",
-    "description": "Course outline for CEM1010H."
-  },
-  {
-    "code": "CEM4000W",
-    "name": "Chemistry Honours",
-    "credits": 160,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    95",
-    "description": "Course outline for CEM4000W."
-  },
-  {
-    "code": "CEM5000W",
-    "name": "Chemistry Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "96    Departments In The Faculty",
-    "description": "Course outline for CEM5000W."
-  },
-  {
-    "code": "CEM5002W",
-    "name": "Computational Science Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "96    Departments In The Faculty",
-    "description": "Course outline for CEM5002W."
-  },
-  {
-    "code": "CEM5004W",
-    "name": "Tertiary Chemistry Education Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    97",
-    "description": "Course outline for CEM5004W."
-  },
-  {
-    "code": "CEM6000W",
-    "name": "Chemistry Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    97",
-    "description": "Course outline for CEM6000W."
-  },
-  {
-    "code": "CEM6001W",
-    "name": "Tertiary Chemistry Education Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    97",
-    "description": "Course outline for CEM6001W."
-  },
-  {
-    "code": "CEM6002W",
-    "name": "Computational Science Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "98    Departments In The Faculty",
-    "description": "Course outline for CEM6002W."
-  },
-  {
-    "code": "CSC1010H",
-    "name": "Computer Science 1010",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    101",
-    "description": "Course outline for CSC1010H."
-  },
-  {
-    "code": "CSC1011H",
-    "name": "Computer Science 1011",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    101",
-    "description": "Course outline for CSC1011H."
-  },
-  {
-    "code": "CSC2005F",
-    "name": "Independent Research In Computer Science",
-    "credits": 24,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1016S",
-      "CSC2001F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "104    Departments In The Faculty",
-    "description": "Course outline for CSC2005F."
-  },
-  {
-    "code": "CSC2005S",
-    "name": "Independent Research In Computer Science",
-    "credits": 24,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC1015F",
-      "CSC1016S",
-      "CSC2001F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "104    Departments In The Faculty",
-    "description": "Course outline for CSC2005S."
-  },
-  {
-    "code": "CSC3024S",
-    "name": "Introduction To C++ Programming",
-    "credits": 18,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CSC2001F",
-      "CSC2002S",
-      "CSC2004Z",
       "MAM1000W",
       "MAM1004F",
       "MAM1008S",
-      "MAM1031F"
+      "MAM1021S",
+      "PHY1004W",
+      "PHY1013F",
+      "PHY1013S",
+      "PHY1032S"
     ],
     "offered": [
-      "Semester 2"
+      "Semester 1"
     ],
-    "department": "106    Departments In The Faculty",
-    "description": "Course outline for CSC3024S."
+    "department": "26    Degrees Offered In The Faculty",
+    "description": "Course outline for EEE2041F."
   },
   {
-    "code": "CSC5000W",
-    "name": "Computer Science Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
+    "code": "EEE2042S",
+    "name": "Introduction To Analogue And Digital Electronics",
+    "credits": 8,
+    "nqf_level": 6,
+    "prerequisites": [
+      "EEE2041F",
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1008S",
+      "MAM1021F",
+      "MAM1021S",
+      "PHY1004W",
+      "PHY1013F",
+      "PHY1013S",
+      "PHY1032S"
+    ],
     "offered": [
-      "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    115",
-    "description": "Course outline for CSC5000W."
+    "department": "26    Degrees Offered In The Faculty",
+    "description": "Course outline for EEE2042S."
   },
   {
-    "code": "CSC6000W",
-    "name": "Computer Science Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
+    "code": "EEE2050F",
+    "name": "Embedded Systems I For Science Students",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "EEE2042S"
+    ],
     "offered": [
-      "Semester 1",
+      "Semester 1"
+    ],
+    "department": "26    Degrees Offered In The Faculty",
+    "description": "Course outline for EEE2050F."
+  },
+  {
+    "code": "EEE3095S",
+    "name": "Embedded Systems Ii For Science Students",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EEE2050F"
+    ],
+    "offered": [
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    127",
-    "description": "Course outline for CSC6000W."
+    "department": "26    Degrees Offered In The Faculty",
+    "description": "Course outline for EEE3095S."
+  },
+  {
+    "code": "EGS1007S",
+    "name": "Human & Physical Systems",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS1007S."
+  },
+  {
+    "code": "EGS2016F",
+    "name": "Geographies Across Space",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "EGS1003S",
+      "EGS1007S",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS2016F."
+  },
+  {
+    "code": "EGS2017S",
+    "name": "Geographies Across Time",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "EGS1003S",
+      "EGS1007S",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS2017S."
+  },
+  {
+    "code": "EGS3012S",
+    "name": "Atmospheric Science",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S",
+      "GEO1009F",
+      "SEA2004F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS3012S."
+  },
+  {
+    "code": "EGS3021F",
+    "name": "Sustainability & Environment",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS3021F."
+  },
+  {
+    "code": "EGS3022S",
+    "name": "Geographic Thought",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS3022S."
+  },
+  {
+    "code": "EGS3023F",
+    "name": "Anthropocene Environments In Perspective",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "EGS2013F",
+      "EGS2015S",
+      "EGS2016F",
+      "EGS2017S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    27",
+    "description": "Course outline for EGS3023F."
   },
   {
     "code": "EGS4001W",
@@ -5166,6 +2775,21 @@
     "description": "Course outline for EGS5023F."
   },
   {
+    "code": "EGS5023H",
+    "name": "Senior Research Project In Environmental &",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS5012W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    143",
+    "description": "Course outline for EGS5023H."
+  },
+  {
     "code": "EGS5023S",
     "name": "Quantitative Research Methods For Environmental",
     "credits": 23,
@@ -5180,8 +2804,8 @@
     "description": "Course outline for EGS5023S."
   },
   {
-    "code": "EGS5023H",
-    "name": "Senior Research Project In Environmental &",
+    "code": "EGS5029H",
+    "name": "Climate Change Minor Dissertation",
     "credits": 90,
     "nqf_level": 9,
     "prerequisites": [
@@ -5191,8 +2815,8 @@
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    143",
-    "description": "Course outline for EGS5023H."
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5029H."
   },
   {
     "code": "EGS5030F",
@@ -5210,6 +2834,75 @@
     "description": "Course outline for EGS5030F."
   },
   {
+    "code": "EGS5030S",
+    "name": "Climate Modelling",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS3012S",
+      "EGS4023F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5030S."
+  },
+  {
+    "code": "EGS5031F",
+    "name": "Introduction To Climate Change & Sustainable",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS5012W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5031F."
+  },
+  {
+    "code": "EGS5032F",
+    "name": "Climate Change Adaptation & Mitigation",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS5012W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5032F."
+  },
+  {
+    "code": "EGS5032S",
+    "name": "Climate Change Adaptation & Mitigation",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS5012W"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5032S."
+  },
+  {
+    "code": "EGS5038F",
+    "name": "Climate Change & Predictability",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5038F."
+  },
+  {
     "code": "EGS5038S",
     "name": "Climate Change & Predictability",
     "credits": 23,
@@ -5222,6 +2915,18 @@
     "description": "Course outline for EGS5038S."
   },
   {
+    "code": "EGS5039F",
+    "name": "Urban Food Security",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5039F."
+  },
+  {
     "code": "EGS5039S",
     "name": "Urban Food Security",
     "credits": 23,
@@ -5232,6 +2937,18 @@
     ],
     "department": "Departments In The Faculty    145",
     "description": "Course outline for EGS5039S."
+  },
+  {
+    "code": "EGS5040F",
+    "name": "Special Topic In Human/Environment Interactions",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5040F."
   },
   {
     "code": "EGS5040S",
@@ -5270,6 +2987,18 @@
     "description": "Course outline for EGS5041S."
   },
   {
+    "code": "EGS5045F",
+    "name": "Geomorphology",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5045F."
+  },
+  {
     "code": "EGS5045S",
     "name": "Geomorphology",
     "credits": 23,
@@ -5282,6 +3011,18 @@
     "description": "Course outline for EGS5045S."
   },
   {
+    "code": "EGS5046F",
+    "name": "Water Resource Management",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5046F."
+  },
+  {
     "code": "EGS5046S",
     "name": "Water Resource Management",
     "credits": 23,
@@ -5292,6 +3033,30 @@
     ],
     "department": "146    Departments In The Faculty",
     "description": "Course outline for EGS5046S."
+  },
+  {
+    "code": "EGS5047F",
+    "name": "Policy And Governance",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5047F."
+  },
+  {
+    "code": "EGS5047S",
+    "name": "Policy And Governance",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5047S."
   },
   {
     "code": "EGS5052W",
@@ -5331,6 +3096,30 @@
     "description": "Course outline for EGS5057S."
   },
   {
+    "code": "EGS5058F",
+    "name": "Critical Perspectives On The Bio-Economy",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5058F."
+  },
+  {
+    "code": "EGS5058S",
+    "name": "Critical Perspectives On The Bio-Economy",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    47",
+    "description": "Course outline for EGS5058S."
+  },
+  {
     "code": "EGS5059F",
     "name": "Environmental Governance In The Global South",
     "credits": 23,
@@ -5341,6 +3130,138 @@
     ],
     "department": "148    Departments In The Faculty",
     "description": "Course outline for EGS5059F."
+  },
+  {
+    "code": "EGS5059S",
+    "name": "Environmental Governance In The Global South",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5059S."
+  },
+  {
+    "code": "EGS5067F",
+    "name": "Air Quality Monitoring, Management And Prediction",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5067F."
+  },
+  {
+    "code": "EGS5067S",
+    "name": "Air Quality Monitoring, Management And Prediction",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5067S."
+  },
+  {
+    "code": "EGS5068F",
+    "name": "Disaster Risk Science",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5068F."
+  },
+  {
+    "code": "EGS5068S",
+    "name": "Disaster Risk Science",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5068S."
+  },
+  {
+    "code": "EGS5069F",
+    "name": "Water Resources In A Changing Climate",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5069F."
+  },
+  {
+    "code": "EGS5069S",
+    "name": "Water Resources In A Changing Climate",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5069S."
+  },
+  {
+    "code": "EGS5070F",
+    "name": "Reading The Sea: Interdisciplinary Approaches To",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5070F."
+  },
+  {
+    "code": "EGS5070S",
+    "name": "Reading The Sea: Interdisciplinary Approaches To",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5070S."
+  },
+  {
+    "code": "EGS5071F",
+    "name": "Climate Change & Marine Ecosystems",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5071F."
+  },
+  {
+    "code": "EGS5071S",
+    "name": "Climate Change & Marine Ecosystems",
+    "credits": 23,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for EGS5071S."
   },
   {
     "code": "EGS6003W",
@@ -5354,6 +3275,188 @@
     ],
     "department": "150    Departments In The Faculty",
     "description": "Course outline for EGS6003W."
+  },
+  {
+    "code": "END5069W",
+    "name": "Minor Dissertation (Engineering & Built Environment)",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for END5069W."
+  },
+  {
+    "code": "FTX1005F",
+    "name": "Managerial Finance",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for FTX1005F."
+  },
+  {
+    "code": "FTX1005S",
+    "name": "Managerial Finance",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for FTX1005S."
+  },
+  {
+    "code": "FTX5003W",
+    "name": "Minor Dissertation In Finance",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for FTX5003W."
+  },
+  {
+    "code": "FTX5028W",
+    "name": "Topics In Financial Management",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for FTX5028W."
+  },
+  {
+    "code": "FTX5029W",
+    "name": "Minor Dissertation In Financial Management",
+    "credits": 60,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for FTX5029W."
+  },
+  {
+    "code": "FTX5040F",
+    "name": "South African Financial Markets",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for FTX5040F."
+  },
+  {
+    "code": "FTX5043F",
+    "name": "Capital Markets And Financial Instruments",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for FTX5043F."
+  },
+  {
+    "code": "FTX5044H",
+    "name": "Empirical Finance",
+    "credits": 30,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for FTX5044H."
+  },
+  {
+    "code": "FTX5051S",
+    "name": "Risk Management Of Financial Instruments",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for FTX5051S."
+  },
+  {
+    "code": "GEO1006S",
+    "name": "Introduction To Minerals, Rocks & Structure",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "28    Degrees Offered In The Faculty",
+    "description": "Course outline for GEO1006S."
+  },
+  {
+    "code": "GEO1009F",
+    "name": "Geosystems: An Introduction To Earth &",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for GEO1009F."
+  },
+  {
+    "code": "GEO2001F",
+    "name": "Mineralogy, Crystallography And Petrography",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CEM1000W",
+      "GEO1006S",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for GEO2001F."
+  },
+  {
+    "code": "GEO2004S",
+    "name": "Physical Geology",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "GEO2001F",
+      "PHY1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for GEO2004S."
   },
   {
     "code": "GEO2005X",
@@ -5370,6 +3473,36 @@
     ],
     "department": "154    Departments In The Faculty",
     "description": "Course outline for GEO2005X."
+  },
+  {
+    "code": "GEO3001S",
+    "name": "Stratigraphy & Economic Geology",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "GEO2004S",
+      "GEO3005F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for GEO3001S."
+  },
+  {
+    "code": "GEO3005F",
+    "name": "Petrology & Structural Geology",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "GEO2001F",
+      "GEO2004S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for GEO3005F."
   },
   {
     "code": "GEO4000W",
@@ -5424,6 +3557,21 @@
     "description": "Course outline for GEO5003W."
   },
   {
+    "code": "GEO5005H",
+    "name": "Climate Change Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "EGS5012W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "48    Degrees Offered In The Faculty",
+    "description": "Course outline for GEO5005H."
+  },
+  {
     "code": "GEO6000W",
     "name": "Geology Thesis",
     "credits": 360,
@@ -5450,17 +3598,317 @@
     "description": "Course outline for GEO6001W."
   },
   {
-    "code": "MAM3055Z",
-    "name": "Project/Internship In Applied Mathematics",
-    "credits": 0,
+    "code": "HUB2019F",
+    "name": "Integrated Anatomical And Physiological Sciences",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "BIO1000F",
+      "BIO1004S",
+      "CEM1000W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for HUB2019F."
+  },
+  {
+    "code": "HUB2021S",
+    "name": "Integrated Anatomical And Physiological Sciences",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CEM1000W",
+      "HUB2019F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for HUB2021S."
+  },
+  {
+    "code": "HUB3006F",
+    "name": "Applied Human Biology",
+    "credits": 36,
     "nqf_level": 7,
+    "prerequisites": [
+      "HUB2019F",
+      "HUB2021S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for HUB3006F."
+  },
+  {
+    "code": "HUB3007S",
+    "name": "Human Neurosciences",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HUB3006F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    29",
+    "description": "Course outline for HUB3007S."
+  },
+  {
+    "code": "IBS5004Z",
+    "name": "Bioinformatics For High-Throughput Biology",
+    "credits": 15,
+    "nqf_level": 9,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "164    Departments In The Faculty",
-    "description": "Course outline for MAM3055Z."
+    "department": "Degrees Offered In The Faculty    45",
+    "description": "Course outline for IBS5004Z."
+  },
+  {
+    "code": "IBS5005W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "BIO1000F",
+      "CEM1000W",
+      "MAM1000W",
+      "MAM1004F",
+      "STA1007S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for IBS5005W."
+  },
+  {
+    "code": "INF2006F",
+    "name": "Business Intelligence And Analytics",
+    "credits": 6,
+    "nqf_level": 6,
+    "prerequisites": [
+      "INF1002"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF2006F."
+  },
+  {
+    "code": "INF2009F",
+    "name": "Systems Analysis",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "INF1003F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF2009F."
+  },
+  {
+    "code": "INF2011S",
+    "name": "Systems Design & Development",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CSC1016",
+      "CSC2001",
+      "INF1003",
+      "INF2007",
+      "INF2008",
+      "INF2009"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF2011S."
+  },
+  {
+    "code": "INF3011F",
+    "name": "I.T. Project Management",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F",
+      "INF2011S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF3011F."
+  },
+  {
+    "code": "INF3012S",
+    "name": "Bpm & Enterprise Systems",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F",
+      "INF2011S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF3012S."
+  },
+  {
+    "code": "INF3014F",
+    "name": "Electronic Commerce",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "INF2003F",
+      "INF2009F",
+      "INF2011S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for INF3014F."
+  },
+  {
+    "code": "INF5005W",
+    "name": "Minor Dissertation In Is",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for INF5005W."
+  },
+  {
+    "code": "INF5006S",
+    "name": "Financial Systems Design",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for INF5006S."
+  },
+  {
+    "code": "INF5007Z",
+    "name": "Social Issues And Professional Practice",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for INF5007Z."
+  },
+  {
+    "code": "INF5008Z",
+    "name": "Systems Security",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for INF5008Z."
+  },
+  {
+    "code": "INF5009Z",
+    "name": "Software Engineering",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for INF5009Z."
+  },
+  {
+    "code": "INF5010W",
+    "name": "Masters In It: Information Technology Minor",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    43",
+    "description": "Course outline for INF5010W."
+  },
+  {
+    "code": "MAM1000W",
+    "name": "Mathematics 1000",
+    "credits": 36,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1000W."
+  },
+  {
+    "code": "MAM1004F",
+    "name": "Mathematics 1004",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MAM1004F."
+  },
+  {
+    "code": "MAM1004S",
+    "name": "Mathematics 1004",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1014F",
+      "MAM1015S",
+      "MAM1022F",
+      "MAM1025F",
+      "MAM1026F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "24    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1004S."
   },
   {
     "code": "MAM1005H",
@@ -5499,6 +3947,59 @@
     "description": "Course outline for MAM1006H."
   },
   {
+    "code": "MAM1008S",
+    "name": "Introduction To Discrete Mathematics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "24    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1008S."
+  },
+  {
+    "code": "MAM1019H",
+    "name": "Fundamentals Of Mathematics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1019H."
+  },
+  {
+    "code": "MAM1031F",
+    "name": "Mathematics 1031",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1031F."
+  },
+  {
+    "code": "MAM1032S",
+    "name": "Mathematics 1032",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1031F",
+      "MAM1033F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1032S."
+  },
+  {
     "code": "MAM1033F",
     "name": "Mathematics 1033",
     "credits": 18,
@@ -5525,6 +4026,186 @@
     "description": "Course outline for MAM1034S."
   },
   {
+    "code": "MAM1043H",
+    "name": "Modelling & Applied Computing",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1043H."
+  },
+  {
+    "code": "MAM1044H",
+    "name": "Dynamics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM1044H."
+  },
+  {
+    "code": "MAM2010F",
+    "name": "Advanced Calculus (2Ac)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1012S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2010F."
+  },
+  {
+    "code": "MAM2011F",
+    "name": "Linear Algebra (2La)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1010F",
+      "MAM1012S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2011F."
+  },
+  {
+    "code": "MAM2012S",
+    "name": "Differential Equations (2De)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM2010F",
+      "MAM2011F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2012S."
+  },
+  {
+    "code": "MAM2013S",
+    "name": "Introductory Algebra (2Ia)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2013S."
+  },
+  {
+    "code": "MAM2014S",
+    "name": "Real Analysis (2Ra)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM2014S."
+  },
+  {
+    "code": "MAM2040F",
+    "name": "Ordinary Differential Equations (2Od)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1043H",
+      "MAM1044H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2040F."
+  },
+  {
+    "code": "MAM2041F",
+    "name": "Numerical Analysis (2Na)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1043H",
+      "MAM1044H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2041F."
+  },
+  {
+    "code": "MAM2042S",
+    "name": "Non-Linear Dynamics (2Nd)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1043H",
+      "MAM1044H",
+      "MAM2010F",
+      "MAM2011F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2042S."
+  },
+  {
+    "code": "MAM2043S",
+    "name": "Boundary-Value Problems (2Bp)",
+    "credits": 12,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1043H",
+      "MAM1044H",
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2040F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM2043S."
+  },
+  {
     "code": "MAM3006Z",
     "name": "Project In Mathematics",
     "credits": 0,
@@ -5536,6 +4217,208 @@
     ],
     "department": "Departments In The Faculty    171",
     "description": "Course outline for MAM3006Z."
+  },
+  {
+    "code": "MAM3010F",
+    "name": "Metric Spaces (3Ms)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM3010F."
+  },
+  {
+    "code": "MAM3011F",
+    "name": "Modern Abstract Algebra (3Al)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM3011F."
+  },
+  {
+    "code": "MAM3012F",
+    "name": "Discrete Mathematics (3Dm)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3012F."
+  },
+  {
+    "code": "MAM3013S",
+    "name": "Topics In Algebra (3Ta)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM3013S."
+  },
+  {
+    "code": "MAM3014S",
+    "name": "Topics In Analysis (3Tn)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM3010F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM3014S."
+  },
+  {
+    "code": "MAM3015S",
+    "name": "Complex Analysis (3Ca)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2013S",
+      "MAM2014S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for MAM3015S."
+  },
+  {
+    "code": "MAM3042F",
+    "name": "Advanced Numerical Methods (3An)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2040F",
+      "MAM2041F",
+      "MAM2042S",
+      "MAM2043S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3042F."
+  },
+  {
+    "code": "MAM3043S",
+    "name": "Methods Of Mathematical Physics (3Mp)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2040F",
+      "MAM2041F",
+      "MAM2042S",
+      "MAM2043S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3043S."
+  },
+  {
+    "code": "MAM3044F",
+    "name": "Functions Of A Complex Variable (3Cv)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2040F",
+      "MAM2041F",
+      "MAM2042S",
+      "MAM2043S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3044F."
+  },
+  {
+    "code": "MAM3045S",
+    "name": "Introduction To General Relativity (3Gr)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2040F",
+      "MAM2041F",
+      "MAM2042S",
+      "MAM2043S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3045S."
+  },
+  {
+    "code": "MAM3046S",
+    "name": "Fluid Dynamics (3Fd)",
+    "credits": 18,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2040F",
+      "MAM2041F",
+      "MAM2042S",
+      "MAM2043S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "20    Degrees Offered In The Faculty",
+    "description": "Course outline for MAM3046S."
+  },
+  {
+    "code": "MAM3055Z",
+    "name": "Project/Internship In Applied Mathematics",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "164    Departments In The Faculty",
+    "description": "Course outline for MAM3055Z."
   },
   {
     "code": "MAM4000W",
@@ -5556,37 +4439,6 @@
     "description": "Course outline for MAM4000W."
   },
   {
-    "code": "MAM4100W",
-    "name": "Mathematics Honours (Extended1)",
-    "credits": 80,
-    "nqf_level": 8,
-    "prerequisites": [
-      "MAM1000W",
-      "MAM1019H",
-      "MAM2000W",
-      "MAM3000W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "172    Departments In The Faculty",
-    "description": "Course outline for MAM4100W."
-  },
-  {
-    "code": "MAM4110W",
-    "name": "Mathematics Honours (Extended2)",
-    "credits": 40,
-    "nqf_level": 8,
-    "prerequisites": [
-      "MAM4100W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    173",
-    "description": "Course outline for MAM4110W."
-  },
-  {
     "code": "MAM4001W",
     "name": "Applied Mathematics Honours",
     "credits": 160,
@@ -5604,6 +4456,23 @@
     "description": "Course outline for MAM4001W."
   },
   {
+    "code": "MAM4100W",
+    "name": "Mathematics Honours (Extended1)",
+    "credits": 80,
+    "nqf_level": 8,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1019H",
+      "MAM2000W",
+      "MAM3000W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "172    Departments In The Faculty",
+    "description": "Course outline for MAM4100W."
+  },
+  {
     "code": "MAM4101W",
     "name": "Applied Mathematics Honours (Extended1)",
     "credits": 80,
@@ -5615,6 +4484,20 @@
     ],
     "department": "Departments In The Faculty    173",
     "description": "Course outline for MAM4101W."
+  },
+  {
+    "code": "MAM4110W",
+    "name": "Mathematics Honours (Extended2)",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [
+      "MAM4100W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Departments In The Faculty    173",
+    "description": "Course outline for MAM4110W."
   },
   {
     "code": "MAM4111W",
@@ -5736,6 +4619,152 @@
     "description": "Course outline for MAM6002W."
   },
   {
+    "code": "MCB2020F",
+    "name": "Biological Information Transfer",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "BIO1000F",
+      "CEM1000W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB2020F."
+  },
+  {
+    "code": "MCB2021F",
+    "name": "Molecular Bioscience",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "BIO1000F",
+      "CEM1000W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB2021F."
+  },
+  {
+    "code": "MCB2022S",
+    "name": "Metabolism & Bioengineering",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB2022S."
+  },
+  {
+    "code": "MCB2023S",
+    "name": "Functional Genetics",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "28    Degrees Offered In The Faculty",
+    "description": "Course outline for MCB2023S."
+  },
+  {
+    "code": "MCB3012Z",
+    "name": "Research Project In Molecular & Cell Biology",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MCB3023S",
+      "MCB3024S",
+      "MCB3025F",
+      "MCB3026F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB3012Z."
+  },
+  {
+    "code": "MCB3023S",
+    "name": "Molecular Evolutionary Genetics & Development",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F",
+      "MCB2022S",
+      "MCB2023S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "28    Degrees Offered In The Faculty",
+    "description": "Course outline for MCB3023S."
+  },
+  {
+    "code": "MCB3024S",
+    "name": "Defence & Disease",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F",
+      "MCB2022S",
+      "MCB2023S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB3024S."
+  },
+  {
+    "code": "MCB3025F",
+    "name": "Structural & Chemical Biology",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F",
+      "MCB2022S",
+      "MCB2023S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for MCB3025F."
+  },
+  {
+    "code": "MCB3026F",
+    "name": "Molecular Genetics And Genomics",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MCB2020F",
+      "MCB2021F",
+      "MCB2022S",
+      "MCB2023S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "28    Degrees Offered In The Faculty",
+    "description": "Course outline for MCB3026F."
+  },
+  {
     "code": "MCB4002W",
     "name": "Molecular & Cell Biology Honours",
     "credits": 160,
@@ -5773,6 +4802,305 @@
     ],
     "department": "Departments In The Faculty    183",
     "description": "Course outline for MCB6002W."
+  },
+  {
+    "code": "PHY1004W",
+    "name": "Matter & Interactions",
+    "credits": 36,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CSC1015F",
+      "CSC1015S",
+      "MAM1000W",
+      "MAM1031F",
+      "MAM1032S",
+      "PHY1023H",
+      "PHY1031F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "22    Degrees Offered In The Faculty",
+    "description": "Course outline for PHY1004W."
+  },
+  {
+    "code": "PHY1023H",
+    "name": "Principles Of Physics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PHY1004W",
+      "PHY1031F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    191",
+    "description": "Course outline for PHY1023H."
+  },
+  {
+    "code": "PHY1031F",
+    "name": "General Physics A",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PHY1023H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for PHY1031F."
+  },
+  {
+    "code": "PHY1032S",
+    "name": "General Physics B",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PHY1023H",
+      "PHY1031F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    25",
+    "description": "Course outline for PHY1032S."
+  },
+  {
+    "code": "PHY2004W",
+    "name": "Intermediate Physics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    23",
+    "description": "Course outline for PHY2004W."
+  },
+  {
+    "code": "PHY3004W",
+    "name": "Advanced Physics",
+    "credits": 72,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2000W",
+      "MAM2010F",
+      "MAM2011F",
+      "PHY2004W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    33",
+    "description": "Course outline for PHY3004W."
+  },
+  {
+    "code": "PHY4000W",
+    "name": "Physics Honours",
+    "credits": 160,
+    "nqf_level": 8,
+    "prerequisites": [
+      "MAM2000W",
+      "MAM2046W",
+      "PHY3004W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "194    Departments In The Faculty",
+    "description": "Course outline for PHY4000W."
+  },
+  {
+    "code": "PHY5000W",
+    "name": "Physics Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    195",
+    "description": "Course outline for PHY5000W."
+  },
+  {
+    "code": "PHY5001W",
+    "name": "Theoretical Physics Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    195",
+    "description": "Course outline for PHY5001W."
+  },
+  {
+    "code": "PHY5003W",
+    "name": "Astrophysics & Space Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "AST5003F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    195",
+    "description": "Course outline for PHY5003W."
+  },
+  {
+    "code": "PHY5006W",
+    "name": "Tertiary Physics Education Dissertation",
+    "credits": 180,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    195",
+    "description": "Course outline for PHY5006W."
+  },
+  {
+    "code": "PHY5007Z",
+    "name": "Data Science For Particle Physics",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for PHY5007Z."
+  },
+  {
+    "code": "PHY5008W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for PHY5008W."
+  },
+  {
+    "code": "PHY6000W",
+    "name": "Physics Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "196    Departments In The Faculty",
+    "description": "Course outline for PHY6000W."
+  },
+  {
+    "code": "PHY6001W",
+    "name": "Tertiary Physics Education Thesis",
+    "credits": 360,
+    "nqf_level": 10,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "196    Departments In The Faculty",
+    "description": "Course outline for PHY6001W."
+  },
+  {
+    "code": "PTY2001S",
+    "name": "Infectious Disease And Vaccines (Faculty Of Science)",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "BIO1000F",
+      "CEM1000W",
+      "MAM1000W",
+      "MAM1004F",
+      "STA1007S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    221",
+    "description": "Course outline for PTY2001S."
+  },
+  {
+    "code": "PTY3010F",
+    "name": "Pathogenesis And Treatment Of Infectious Diseases",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "PTY2001S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Departments In The Faculty    221",
+    "description": "Course outline for PTY3010F."
+  },
+  {
+    "code": "SEA2004F",
+    "name": "Principles Of Oceanography",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CEM1000W",
+      "GEO1009F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "30    Degrees Offered In The Faculty",
+    "description": "Course outline for SEA2004F."
+  },
+  {
+    "code": "SEA2005S",
+    "name": "Marine Systems",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CEM1000W",
+      "GEO1009F",
+      "SEA2004F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "32    Degrees Offered In The Faculty",
+    "description": "Course outline for SEA2005S."
+  },
+  {
+    "code": "SEA3004F",
+    "name": "Ocean & Atmosphere Dynamics",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "PHY1031F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "32    Degrees Offered In The Faculty",
+    "description": "Course outline for SEA3004F."
   },
   {
     "code": "SEA4001W",
@@ -5855,117 +5183,231 @@
     "description": "Course outline for SEA6000W."
   },
   {
-    "code": "PHY1023H",
-    "name": "Principles Of Physics",
+    "code": "STA1000F",
+    "name": "Introductory Statistics",
     "credits": 18,
     "nqf_level": 5,
     "prerequisites": [
-      "PHY1004W",
-      "PHY1031F"
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H"
     ],
     "offered": [
-      "Semester 1",
-      "Semester 2"
+      "Semester 1"
     ],
-    "department": "Departments In The Faculty    191",
-    "description": "Course outline for PHY1023H."
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA1000F."
   },
   {
-    "code": "PHY4000W",
-    "name": "Physics Honours",
-    "credits": 160,
-    "nqf_level": 8,
+    "code": "STA1000L",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [
-      "MAM2000W",
-      "MAM2046W",
-      "PHY3004W"
+      "STA1000F",
+      "STA1000S"
     ],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "194    Departments In The Faculty",
-    "description": "Course outline for PHY4000W."
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA1000L."
   },
   {
-    "code": "PHY5000W",
-    "name": "Physics Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    195",
-    "description": "Course outline for PHY5000W."
-  },
-  {
-    "code": "PHY5001W",
-    "name": "Theoretical Physics Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    195",
-    "description": "Course outline for PHY5001W."
-  },
-  {
-    "code": "PHY5003W",
-    "name": "Astrophysics & Space Science Minor Dissertation",
-    "credits": 90,
-    "nqf_level": 9,
+    "code": "STA1000P",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [
-      "AST5003F"
+      "STA1000F",
+      "STA1000S"
     ],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    195",
-    "description": "Course outline for PHY5003W."
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA1000P."
   },
   {
-    "code": "PHY5006W",
-    "name": "Tertiary Physics Education Dissertation",
-    "credits": 180,
-    "nqf_level": 9,
-    "prerequisites": [],
+    "code": "STA1000S",
+    "name": "Introductory Statistics",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H"
+    ],
     "offered": [
-      "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    195",
-    "description": "Course outline for PHY5006W."
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA1000S."
   },
   {
-    "code": "PHY6000W",
-    "name": "Physics Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
+    "code": "STA1006S",
+    "name": "Mathematical Statistics I",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1005H",
+      "MAM1006H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1012F",
+      "MAM1012S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1021S",
+      "MAM1031F",
+      "MAM1032S",
+      "MAM1033F",
+      "MAM1034S"
+    ],
     "offered": [
-      "Semester 1",
       "Semester 2"
     ],
-    "department": "196    Departments In The Faculty",
-    "description": "Course outline for PHY6000W."
+    "department": "30    Degrees Offered In The Faculty",
+    "description": "Course outline for STA1006S."
   },
   {
-    "code": "PHY6001W",
-    "name": "Tertiary Physics Education Thesis",
-    "credits": 360,
-    "nqf_level": 10,
-    "prerequisites": [],
+    "code": "STA1007S",
+    "name": "Introductory Statistics For Scientists",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1031F",
+      "MAM1033F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA1007S."
+  },
+  {
+    "code": "STA2004F",
+    "name": "Statistical Theory & Inference",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1006H",
+      "MAM1012S",
+      "MAM1032S",
+      "MAM1034S",
+      "STA1006S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "30    Degrees Offered In The Faculty",
+    "description": "Course outline for STA2004F."
+  },
+  {
+    "code": "STA2005S",
+    "name": "Linear Models",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM2011F",
+      "STA2004F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "30    Degrees Offered In The Faculty",
+    "description": "Course outline for STA2005S."
+  },
+  {
+    "code": "STA2007F",
+    "name": "Study Design & Data Analysis For Scientists",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2007F."
+  },
+  {
+    "code": "STA2007H",
+    "name": "Study Design & Data Analysis For Scientists",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "196    Departments In The Faculty",
-    "description": "Course outline for PHY6001W."
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2007H."
   },
   {
     "code": "STA2007P",
@@ -6002,6 +5444,216 @@
     "description": "Course outline for STA2007P."
   },
   {
+    "code": "STA2007S",
+    "name": "Study Design & Data Analysis For Scientists",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2007S."
+  },
+  {
+    "code": "STA2020F",
+    "name": "Applied Statistics",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000L",
+      "STA1000P",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2020F."
+  },
+  {
+    "code": "STA2020S",
+    "name": "Applied Statistics",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "MAM1000W",
+      "MAM1004F",
+      "MAM1004S",
+      "MAM1005H",
+      "MAM1010F",
+      "MAM1010S",
+      "MAM1020F",
+      "MAM1020S",
+      "MAM1031F",
+      "MAM1033F",
+      "MAM1110F",
+      "MAM1110H",
+      "STA1000F",
+      "STA1000L",
+      "STA1000P",
+      "STA1000S",
+      "STA1006S",
+      "STA1007S",
+      "STA1008F",
+      "STA1008S",
+      "STA1100S",
+      "STA1106H"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2020S."
+  },
+  {
+    "code": "STA2030S",
+    "name": "Statistical Theory",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "STA2004F",
+      "STA2005S",
+      "STA2007F",
+      "STA2007H",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA2030S."
+  },
+  {
+    "code": "STA3022F",
+    "name": "Applied Multivariate Data Analysis",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "STA2005S",
+      "STA2007F",
+      "STA2007H",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA3022F."
+  },
+  {
+    "code": "STA3030F",
+    "name": "Statistical Inference & Modelling",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM1006S",
+      "MAM1012F",
+      "MAM1012S",
+      "MAM1021F",
+      "MAM1021S",
+      "MAM1032",
+      "MAM1034S",
+      "MAM1112S",
+      "STA2004F",
+      "STA2005S",
+      "STA2007F",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S",
+      "STA2030S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA3030F."
+  },
+  {
+    "code": "STA3036S",
+    "name": "Operational Research Techniques",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM1031F",
+      "MAM1032S",
+      "STA2005S",
+      "STA2007F",
+      "STA2007S",
+      "STA2020F",
+      "STA2020S",
+      "STA3036S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    21",
+    "description": "Course outline for STA3036S."
+  },
+  {
+    "code": "STA3041F",
+    "name": "Stochastic Processes & Time Series",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2014S",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for STA3041F."
+  },
+  {
     "code": "STA3045F",
     "name": "Advanced Stochastic Processes & Distribution",
     "credits": 36,
@@ -6022,6 +5674,44 @@
     ],
     "department": "Departments In The Faculty    207",
     "description": "Course outline for STA3045F."
+  },
+  {
+    "code": "STA3047S",
+    "name": "Introduction To Machine Learning",
+    "credits": 6,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2014S",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for STA3047S."
+  },
+  {
+    "code": "STA3048S",
+    "name": "Statistical Modelling & Bayesian Analysis",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "MAM2010F",
+      "MAM2011F",
+      "MAM2012S",
+      "MAM2014S",
+      "STA2004F",
+      "STA2005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    31",
+    "description": "Course outline for STA3048S."
   },
   {
     "code": "STA4007W",
@@ -6050,6 +5740,61 @@
     "description": "Course outline for STA4007W."
   },
   {
+    "code": "STA4026S",
+    "name": "Analytics",
+    "credits": 18,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    39",
+    "description": "Course outline for STA4026S."
+  },
+  {
+    "code": "STA4027Z",
+    "name": "Bayesian Computational Methods",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46    Degrees Offered In The Faculty",
+    "description": "Course outline for STA4027Z."
+  },
+  {
+    "code": "STA4028Z",
+    "name": "Portfolio Theory",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [
+      "STA3041F",
+      "STA3043S",
+      "STA3045F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46    Degrees Offered In The Faculty",
+    "description": "Course outline for STA4028Z."
+  },
+  {
+    "code": "STA4029Z",
+    "name": "Advanced Probability Theory",
+    "credits": 12,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA4029Z."
+  },
+  {
     "code": "STA5000W",
     "name": "Statistics Dissertation",
     "credits": 180,
@@ -6074,6 +5819,21 @@
     ],
     "department": "210    Departments In The Faculty",
     "description": "Course outline for STA5001W."
+  },
+  {
+    "code": "STA5004W",
+    "name": "Statistics And Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [
+      "STA5003W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5004W."
   },
   {
     "code": "STA5010W",
@@ -6102,6 +5862,19 @@
     "description": "Course outline for STA5013W."
   },
   {
+    "code": "STA5014X",
+    "name": "Study Design & Data Analysis For Scientists Doing",
+    "credits": 0,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    211",
+    "description": "Course outline for STA5014X."
+  },
+  {
     "code": "STA5014Z",
     "name": "Study Design & Data Analysis For Scientists Doing",
     "credits": 0,
@@ -6115,17 +5888,17 @@
     "description": "Course outline for STA5014Z."
   },
   {
-    "code": "STA5014X",
-    "name": "Study Design & Data Analysis For Scientists Doing",
-    "credits": 0,
+    "code": "STA5058W",
+    "name": "Biostatistics Minor Dissertation",
+    "credits": 90,
     "nqf_level": 9,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    211",
-    "description": "Course outline for STA5014X."
+    "department": "Degrees Offered In The Faculty    45",
+    "description": "Course outline for STA5058W."
   },
   {
     "code": "STA5059Z",
@@ -6154,6 +5927,19 @@
     "description": "Course outline for STA5060Z."
   },
   {
+    "code": "STA5061Z",
+    "name": "Bayesian Decision Modelling",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5061Z."
+  },
+  {
     "code": "STA5062Z",
     "name": "Causal Modelling",
     "credits": 15,
@@ -6165,6 +5951,32 @@
     ],
     "department": "Departments In The Faculty    213",
     "description": "Course outline for STA5062Z."
+  },
+  {
+    "code": "STA5063Z",
+    "name": "Design Of Clinical Trials",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5063Z."
+  },
+  {
+    "code": "STA5064Z",
+    "name": "Ecological Statistics",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5064Z."
   },
   {
     "code": "STA5065Z",
@@ -6180,6 +5992,58 @@
     "description": "Course outline for STA5065Z."
   },
   {
+    "code": "STA5066Z",
+    "name": "Mathematical Modelling For Infectious Diseases",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5066Z."
+  },
+  {
+    "code": "STA5067Z",
+    "name": "Longitudinal Data Analysis",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5067Z."
+  },
+  {
+    "code": "STA5068Z",
+    "name": "Machine Learning",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5068Z."
+  },
+  {
+    "code": "STA5069Z",
+    "name": "Multivariate Statistics",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5069Z."
+  },
+  {
     "code": "STA5070Z",
     "name": "Problem Structuring And System Dynamics",
     "credits": 15,
@@ -6191,6 +6055,97 @@
     ],
     "department": "216    Departments In The Faculty",
     "description": "Course outline for STA5070Z."
+  },
+  {
+    "code": "STA5071Z",
+    "name": "Simulation And Optimisation",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5071Z."
+  },
+  {
+    "code": "STA5072Z",
+    "name": "Survival Analysis",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5072Z."
+  },
+  {
+    "code": "STA5073Z",
+    "name": "Data Science For Industry",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5073Z."
+  },
+  {
+    "code": "STA5074Z",
+    "name": "Decision Modelling For Prescriptive Analytics",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for STA5074Z."
+  },
+  {
+    "code": "STA5075Z",
+    "name": "Statistical And High Performance Computing",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for STA5075Z."
+  },
+  {
+    "code": "STA5076Z",
+    "name": "Supervised Learning",
+    "credits": 18,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for STA5076Z."
+  },
+  {
+    "code": "STA5077Z",
+    "name": "Unsupervised Learning",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for STA5077Z."
   },
   {
     "code": "STA5078Z",
@@ -6208,6 +6163,31 @@
     "description": "Course outline for STA5078Z."
   },
   {
+    "code": "STA5079W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 90,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5079W."
+  },
+  {
+    "code": "STA5086Z",
+    "name": "Advanced Portfolio Theory",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "46    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5086Z."
+  },
+  {
     "code": "STA5089F",
     "name": "Basics Of Mathematical Statistics",
     "credits": 0,
@@ -6218,6 +6198,58 @@
     ],
     "department": "Departments In The Faculty    219",
     "description": "Course outline for STA5089F."
+  },
+  {
+    "code": "STA5090Z",
+    "name": "Advanced Topics In Regression",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "44    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5090Z."
+  },
+  {
+    "code": "STA5091Z",
+    "name": "Data-Analysis For High-Frequency Trading",
+    "credits": 15,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "46    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5091Z."
+  },
+  {
+    "code": "STA5092Z",
+    "name": "Exploratory Data Analysis",
+    "credits": 12,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Degrees Offered In The Faculty    49",
+    "description": "Course outline for STA5092Z."
+  },
+  {
+    "code": "STA5093W",
+    "name": "Data Science Minor Dissertation",
+    "credits": 60,
+    "nqf_level": 9,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "50    Degrees Offered In The Faculty",
+    "description": "Course outline for STA5093W."
   },
   {
     "code": "STA6001W",
@@ -6244,37 +6276,5 @@
     ],
     "department": "Departments In The Faculty    221",
     "description": "Course outline for STA6002W."
-  },
-  {
-    "code": "PTY2001S",
-    "name": "Infectious Disease And Vaccines (Faculty Of Science)",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "BIO1000F",
-      "CEM1000W",
-      "MAM1000W",
-      "MAM1004F",
-      "STA1007S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    221",
-    "description": "Course outline for PTY2001S."
-  },
-  {
-    "code": "PTY3010F",
-    "name": "Pathogenesis And Treatment Of Infectious Diseases",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "PTY2001S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    221",
-    "description": "Course outline for PTY3010F."
   }
 ]

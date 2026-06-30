@@ -1,916 +1,27 @@
 [
   {
-    "code": "MDN3005W",
-    "name": "Scientific Principles Of Cosmetic Formulations",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3005W."
-  },
-  {
-    "code": "MDN3006W",
-    "name": "Cosmetic Formulation Technology",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3006W."
-  },
-  {
-    "code": "MDN3007W",
-    "name": "Hair And Skin Biology For The Cosmetic Formulator",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3007W."
-  },
-  {
-    "code": "MDN3008W",
-    "name": "Cosmetics: Claims, Regulation And Ethics",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3008W."
-  },
-  {
-    "code": "MDN3010W",
-    "name": "Cosmetic Formulation Science Inservice Training",
-    "credits": 0,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3010W."
-  },
-  {
-    "code": "PPH1001F",
-    "name": "Becoming A Professional",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PPH1001F."
-  },
-  {
-    "code": "PPH1002S",
-    "name": "Becoming A Health Professional",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [
-      "PPH1002S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PPH1002S."
-  },
-  {
-    "code": "AHS1003F",
-    "name": "Speech And Hearing Sciences",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1003F."
-  },
-  {
-    "code": "PSY1004F",
-    "name": "Introduction To Psychology Part 1 *",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY1004F."
-  },
-  {
-    "code": "PSY1005S",
-    "name": "Introduction To Psychology Part 2 *",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY1005S."
-  },
-  {
-    "code": "HUB1014S",
-    "name": "Anatomy For Communication Sciences",
-    "credits": 20,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB1014S."
-  },
-  {
-    "code": "AHS1025S",
-    "name": "Early Intervention",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1025S."
-  },
-  {
-    "code": "AHS1042F",
-    "name": "Human Communication Development",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1042F."
-  },
-  {
-    "code": "ASL1300F",
-    "name": "Introduction To Lan Guage Studies",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for ASL1300F."
-  },
-  {
-    "code": "AHS1045S",
-    "name": "Basis Of Hearing And Balance",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1045S."
-  },
-  {
-    "code": "ASL1301S",
-    "name": "Introduction To Sociolinguistics",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for ASL1301S."
-  },
-  {
-    "code": "PSY1006F",
-    "name": "Introduction To Psychology Part 1 +",
-    "credits": 10,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY1006F."
-  },
-  {
-    "code": "PSY1007S",
-    "name": "Introduction To Psychology Part 2 +",
-    "credits": 10,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY1007S."
-  },
-  {
-    "code": "SLL1028H",
-    "name": "Xhosa For Health And Rehabilitation Sciences",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL1028H."
-  },
-  {
-    "code": "SLL1048H",
-    "name": "Afrikaans For Health And Rehabilitation Sciences",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL1048H."
-  },
-  {
-    "code": "AHS1054W",
-    "name": "South African Sign Language",
-    "credits": 8,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1054W."
-  },
-  {
-    "code": "PSY2015F",
-    "name": "Research In Psychology I",
-    "credits": 20,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PSY1004F",
-      "PSY1005S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY2015F."
-  },
-  {
-    "code": "PSY2014S",
-    "name": "Cognitive Neuroscience And Abnormal Psychology",
-    "credits": 20,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PSY1004F",
-      "PSY1005S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY2014S."
-  },
-  {
-    "code": "AHS2047S",
-    "name": "Paediatric Rehabilitative Audiology",
-    "credits": 18,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS2106F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2047S."
-  },
-  {
-    "code": "AHS2106F",
-    "name": "Child Language",
-    "credits": 21,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS1042F",
-      "HSE1005S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2106F."
-  },
-  {
-    "code": "AHS2046F",
-    "name": "Diagnostic Audiology",
-    "credits": 18,
+    "code": "AAE2001F",
+    "name": "Special Study Module",
+    "credits": 16,
     "nqf_level": 6,
     "prerequisites": [],
     "offered": [
       "Semester 1"
     ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2046F."
+    "department": "Departments In The Faculty    71",
+    "description": "Course outline for AAE2001F."
   },
   {
-    "code": "AHS2110W",
-    "name": "Clinical Audiology I",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS2046F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2110W."
-  },
-  {
-    "code": "AHS2111S",
-    "name": "Diagnostic Audiology In Special Populations",
-    "credits": 15,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS2046F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2111S."
-  },
-  {
-    "code": "AHS2107F",
-    "name": "Child Speech",
-    "credits": 18,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2107F."
-  },
-  {
-    "code": "AHS2108W",
-    "name": "Clinical Speech Therapy 1",
-    "credits": 24,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS1025S",
-      "AHS2106F",
-      "AHS2107F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2108W."
-  },
-  {
-    "code": "AHS2109S",
-    "name": "School-Based Interventions",
-    "credits": 21,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS2106F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2109S."
-  },
-  {
-    "code": "AHS3078H",
-    "name": "Research Methods And Biostatistics I",
-    "credits": 10,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3078H."
-  },
-  {
-    "code": "AHS3008W",
-    "name": "Clinical Audiology Ii",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2046F",
-      "AHS2047S",
-      "AHS2110W",
-      "AHS2111S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3008W."
-  },
-  {
-    "code": "AHS3062F",
-    "name": "Rehabilitation Technology",
-    "credits": 22,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3062F."
-  },
-  {
-    "code": "AHS3075F",
-    "name": "Oaes And Electrophysiology",
-    "credits": 22,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2046F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3075F."
-  },
-  {
-    "code": "AHS3104S",
-    "name": "Vestibular Management",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3104S."
-  },
-  {
-    "code": "AHS3105F",
-    "name": "Public Health Audiology",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3105F."
-  },
-  {
-    "code": "AHS3005W",
-    "name": "Clinical Speech Therapy Ii",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2047S",
-      "AHS2108W",
-      "AHS2109S",
-      "AHS3071F",
-      "AHS3073F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3005W."
-  },
-  {
-    "code": "AHS3071F",
-    "name": "Acquired Neurogenic Language Disorders",
-    "credits": 22,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2106F"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3071F."
-  },
-  {
-    "code": "AHS3072S",
-    "name": "Paediatric Motor Speech Disorders And Dysphagia",
-    "credits": 22,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS3073F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3072S."
-  },
-  {
-    "code": "AHS3073F",
-    "name": "Adult Dysphagia And Motor Speech",
-    "credits": 22,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HUB1014S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3073F."
-  },
-  {
-    "code": "AHS3102S",
-    "name": "Child Language Ii",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2109S"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3102S."
-  },
-  {
-    "code": "AHS3103F",
-    "name": "Voice",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3103F."
-  },
-  {
-    "code": "AHS4000W",
-    "name": "Research Report",
-    "credits": 30,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4000W."
-  },
-  {
-    "code": "AHS4067S",
-    "name": "Seminars In Communication Sciences",
-    "credits": 4,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4067S."
-  },
-  {
-    "code": "AHS4008H",
-    "name": "Clinical Audiology Iiia",
-    "credits": 45,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3008W",
-      "AHS3065S",
-      "AHS3075S",
-      "AHS3104S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4008H."
-  },
-  {
-    "code": "AHS4009H",
-    "name": "Clinical Audiology Iiib",
-    "credits": 45,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3008W",
-      "AHS3065S",
-      "AHS3075S",
-      "AHS3104S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4009H."
-  },
-  {
-    "code": "AHS4005H",
-    "name": "Clinical Speech Therapy Iiia",
-    "credits": 45,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4005H."
-  },
-  {
-    "code": "AHS4006H",
-    "name": "Clinical Speech Therapy Iiib",
-    "credits": 45,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3004H",
-      "AHS3005W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4006H."
-  },
-  {
-    "code": "HUB1006F",
-    "name": "Introduction To Integrated Health Sciences Part I",
-    "credits": 30,
-    "nqf_level": 5,
-    "prerequisites": [
-      "HUB1006"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB1006F."
-  },
-  {
-    "code": "IBS1007S",
-    "name": "Introduction To Integrated Health Sciences Part Ii",
-    "credits": 35,
-    "nqf_level": 5,
-    "prerequisites": [
-      "CEM1011F",
-      "HUB1006F",
-      "PHY1025F",
-      "PPH1001F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for IBS1007S."
-  },
-  {
-    "code": "CEM1011F",
-    "name": "Chemistry For Medical Students",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CEM1011F."
-  },
-  {
-    "code": "PHY1025F",
-    "name": "Physics 1025",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PHY1025F."
-  },
-  {
-    "code": "SLL1044S",
-    "name": "Beginners' Afrikaans For Mbchb",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL1044S."
-  },
-  {
-    "code": "SLL1041S",
-    "name": "Beginners' Xhosa For Mbchb",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL1041S."
-  },
-  {
-    "code": "PTY2000S",
-    "name": "Integrated Health Systems Part Ib",
-    "credits": 47,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PTY2000S."
-  },
-  {
-    "code": "FCE2000W",
-    "name": "Becoming A Doctor Part 1A",
-    "credits": 21,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for FCE2000W."
-  },
-  {
-    "code": "SLL2002H",
-    "name": "Becoming A Doctor: Part Ib",
-    "credits": 18,
-    "nqf_level": 6,
-    "prerequisites": [
-      "SLL1041S",
-      "SLL1044S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL2002H."
-  },
-  {
-    "code": "HSE2000W",
-    "name": "Becoming A Doctor Part 1C",
-    "credits": 22,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HSE2000W."
-  },
-  {
-    "code": "HUB2017H",
-    "name": "Integrated Health Systems Part Ia",
-    "credits": 57,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB2017H."
-  },
-  {
-    "code": "FCE3000F",
-    "name": "Becoming A Doctor Part 2A",
-    "credits": 10,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for FCE3000F."
-  },
-  {
-    "code": "MDN3001S",
-    "name": "Introduction To Clinical Practice",
-    "credits": 68,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HSE3000F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN3001S."
-  },
-  {
-    "code": "SLL3002F",
-    "name": "Becoming A Doctor: Part 2B",
-    "credits": 30,
-    "nqf_level": 7,
-    "prerequisites": [
-      "SLL2002H"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL3002F."
-  },
-  {
-    "code": "HSE3000F",
-    "name": "Becoming A Doctor Part Iic (Clinical Skills)",
-    "credits": 15,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HSE2000W"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HSE3000F."
-  },
-  {
-    "code": "PTY3009F",
-    "name": "Integrated Health Systems Part Ii",
-    "credits": 59,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PTY3009F."
-  },
-  {
-    "code": "MDN2001S",
-    "name": "Special Study Modules",
+    "code": "AAE2001S",
+    "name": "Special Study Module",
     "credits": 16,
     "nqf_level": 6,
     "prerequisites": [],
     "offered": [
       "Semester 2"
     ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN2001S."
-  },
-  {
-    "code": "SLL3003W",
-    "name": "Clinical Language",
-    "credits": 0,
-    "nqf_level": 7,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for SLL3003W."
-  },
-  {
-    "code": "PRY4000W",
-    "name": "Clinical Psychiatry",
-    "credits": 30,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PRY4000W."
+    "department": "Departments In The Faculty    71",
+    "description": "Course outline for AAE2001S."
   },
   {
     "code": "AAE4002W",
@@ -926,9 +37,9 @@
     "description": "Course outline for AAE4002W."
   },
   {
-    "code": "OBS4003W",
-    "name": "Obstetrics",
-    "credits": 30,
+    "code": "AAE4003W",
+    "name": "Anaesthesia Part I For External Credit",
+    "credits": 8,
     "nqf_level": 8,
     "prerequisites": [],
     "offered": [
@@ -936,347 +47,20 @@
       "Semester 2"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for OBS4003W."
+    "description": "Course outline for AAE4003W."
   },
   {
-    "code": "MDN4011W",
-    "name": "Medicine: Ward Care",
-    "credits": 40,
-    "nqf_level": 8,
+    "code": "AAE5000W",
+    "name": "Anaesthesia Part Ii For External Credit",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for MDN4011W."
-  },
-  {
-    "code": "MDN4001W",
-    "name": "Medicine: Ambulatory Care",
-    "credits": 20,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN4001W."
-  },
-  {
-    "code": "MDN4015W",
-    "name": "Pharmacology And Applied Therapeutics",
-    "credits": 20,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN4015W."
-  },
-  {
-    "code": "PED4016W",
-    "name": "Neonatology",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED4016W."
-  },
-  {
-    "code": "PED4049W",
-    "name": "Introduction To Child And Adolescent Health",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED4049W."
-  },
-  {
-    "code": "PPH4056W",
-    "name": "Health In Context",
-    "credits": 40,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PPH4056W."
-  },
-  {
-    "code": "PED5005W",
-    "name": "Caring For Children: Paediatric Surgery",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED5005W."
-  },
-  {
-    "code": "PED5006W",
-    "name": "Caring For Children: Paediatric Medicine",
-    "credits": 30,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED5006W."
-  },
-  {
-    "code": "CHM5003W",
-    "name": "Surgery",
-    "credits": 40,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5003W."
-  },
-  {
-    "code": "MDN5003H",
-    "name": "Pharmacology And Applied Therapeutics",
-    "credits": 20,
-    "nqf_level": 8,
-    "prerequisites": [
-      "MDN4015W"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN5003H."
-  },
-  {
-    "code": "CHM5004H",
-    "name": "Trauma For Extern Al Credit",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5004H."
-  },
-  {
-    "code": "OBS5005W",
-    "name": "Obstetrics & Gynaecology",
-    "credits": 20,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for OBS5005W."
-  },
-  {
-    "code": "CHM5005H",
-    "name": "Orthopaedic Surgery",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5005H."
-  },
-  {
-    "code": "MDN5005W",
-    "name": "Dermatology",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN5005W."
-  },
-  {
-    "code": "MDN5006W",
-    "name": "Rheumatology",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN5006W."
-  },
-  {
-    "code": "CHM5007W",
-    "name": "Neurology And Neurosurgery",
-    "credits": 20,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5007W."
-  },
-  {
-    "code": "CHM5008W",
-    "name": "Ophthalmology",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5008W."
-  },
-  {
-    "code": "CHM5009W",
-    "name": "Otorhinolaryngology Ent",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5009W."
-  },
-  {
-    "code": "CHM5010W",
-    "name": "Urology",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5010W."
-  },
-  {
-    "code": "CHM6000W",
-    "name": "Surgery (Including Allied Disciplines)",
-    "credits": 41,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM6000W."
-  },
-  {
-    "code": "MDN6000W",
-    "name": "Medicine (Including Allied Disciplines)",
-    "credits": 41,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN6000W."
-  },
-  {
-    "code": "OBS6000W",
-    "name": "Obstetrics",
-    "credits": 41,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for OBS6000W."
-  },
-  {
-    "code": "PED6000W",
-    "name": "Paediatrics And Child Health",
-    "credits": 30,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED6000W."
-  },
-  {
-    "code": "PED6004W",
-    "name": "Neonatal Medicine",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED6004W."
-  },
-  {
-    "code": "FCE6000W",
-    "name": "Family Medicine & Palliative Care",
-    "credits": 21,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for FCE6000W."
-  },
-  {
-    "code": "PRY6000W",
-    "name": "Psychiatry And Mental Health",
-    "credits": 21,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PRY6000W."
+    "description": "Course outline for AAE5000W."
   },
   {
     "code": "AAE6000W",
@@ -1292,113 +76,8 @@
     "description": "Course outline for AAE6000W."
   },
   {
-    "code": "FCE6001W",
-    "name": "Long Elective",
-    "credits": 19,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for FCE6001W."
-  },
-  {
-    "code": "FCE6005W",
-    "name": "Short Elective",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for FCE6005W."
-  },
-  {
-    "code": "PTY6012W",
-    "name": "Forensic Medicine",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PTY6012W."
-  },
-  {
-    "code": "HSE6004W",
-    "name": "Exit Examination On Procedural Competence",
-    "credits": 0,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HSE6004W."
-  },
-  {
-    "code": "HUB3006F",
-    "name": "Applied Human Biology",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HUB2019F",
-      "HUB2021S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB3006F."
-  },
-  {
-    "code": "HUB3007S",
-    "name": "Human Neurosciences",
-    "credits": 36,
-    "nqf_level": 7,
-    "prerequisites": [
-      "HUB3006F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB3007S."
-  },
-  {
-    "code": "IBS3020W",
-    "name": "Molecular Medicine",
-    "credits": 72,
-    "nqf_level": 7,
-    "prerequisites": [
-      "CEM1011F",
-      "CEM1011X",
-      "CEM1111",
-      "HUB1006F",
-      "HUB1010S",
-      "HUB1011F",
-      "HUB2017H",
-      "LAB2000S",
-      "MDN2001S",
-      "PHY1025F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for IBS3020W."
-  },
-  {
-    "code": "HUB1019F",
-    "name": "Anatomy And Physiology Ia",
+    "code": "AHS1003F",
+    "name": "Speech And Hearing Sciences",
     "credits": 18,
     "nqf_level": 5,
     "prerequisites": [],
@@ -1406,22 +85,19 @@
       "Semester 1"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for HUB1019F."
+    "description": "Course outline for AHS1003F."
   },
   {
-    "code": "HUB1020S",
-    "name": "Anatomy And Physiology Ib",
+    "code": "AHS1025S",
+    "name": "Early Intervention",
     "credits": 18,
     "nqf_level": 5,
-    "prerequisites": [
-      "HUB1016F",
-      "HUB1019F"
-    ],
+    "prerequisites": [],
     "offered": [
       "Semester 2"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for HUB1020S."
+    "description": "Course outline for AHS1025S."
   },
   {
     "code": "AHS1032S",
@@ -1439,222 +115,6 @@
     "description": "Course outline for AHS1032S."
   },
   {
-    "code": "AHS1035F",
-    "name": "Human Occupation And Development",
-    "credits": 22,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS1035F."
-  },
-  {
-    "code": "AHS2002W",
-    "name": "Clinical Sciences I",
-    "credits": 13,
-    "nqf_level": 6,
-    "prerequisites": [
-      "HUB1019F",
-      "HUB1020S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2002W."
-  },
-  {
-    "code": "PRY2002W",
-    "name": "Psychiatry For Occupational Therapists",
-    "credits": 14,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PSY1005S",
-      "PSY1007S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PRY2002W."
-  },
-  {
-    "code": "PSY2013F",
-    "name": "Social And Developmental Psychology",
-    "credits": 20,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PSY1004F",
-      "PSY1005S"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PSY2013F."
-  },
-  {
-    "code": "HUB2015W",
-    "name": "Anatomy And Physiology Ii For Health And",
-    "credits": 36,
-    "nqf_level": 6,
-    "prerequisites": [
-      "HUB1020S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB2015W."
-  },
-  {
-    "code": "AHS2043W",
-    "name": "Occupational Therapy Ii",
-    "credits": 36,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2043W."
-  },
-  {
-    "code": "AHS3107W",
-    "name": "Occupational Therapy Theory And Practice In",
-    "credits": 38,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2002W",
-      "AHS2043W",
-      "HUB2015W",
-      "PRY2002W",
-      "PSY2013F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3107W."
-  },
-  {
-    "code": "AHS3108W",
-    "name": "Occupational Therapy Theory And Practice In",
-    "credits": 38,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2002W",
-      "AHS2043W",
-      "HUB2015W",
-      "PRY2002W",
-      "PSY2013F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3108W."
-  },
-  {
-    "code": "AHS3113W",
-    "name": "Foundation Theory For Occupational Therapy",
-    "credits": 26,
-    "nqf_level": 7,
-    "prerequisites": [
-      "AHS2002W",
-      "AHS2043W",
-      "HUB2015W",
-      "PRY2002W",
-      "PSY2013F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS3113W."
-  },
-  {
-    "code": "AHS4119W",
-    "name": "Occupational Therapy Research And Practice",
-    "credits": 48,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3078H",
-      "AHS3107W",
-      "AHS3108W",
-      "AHS3113W",
-      "SLL1028H",
-      "SLL1048H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4119W."
-  },
-  {
-    "code": "AHS4120W",
-    "name": "Foundation Theory For Occupational Therapy",
-    "credits": 48,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3078H",
-      "AHS3107W",
-      "AHS3108W",
-      "AHS3113W",
-      "SLL1028H",
-      "SLL1048H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4120W."
-  },
-  {
-    "code": "AHS4121W",
-    "name": "Occupational Therapy Practice And Service",
-    "credits": 48,
-    "nqf_level": 8,
-    "prerequisites": [
-      "AHS3078H",
-      "AHS3107W",
-      "AHS3108W",
-      "AHS3113W",
-      "SLL1028H",
-      "SLL1048H"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS4121W."
-  },
-  {
-    "code": "HUB1022F",
-    "name": "Biosciences For Physiotherapy Ia",
-    "credits": 9,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB1022F."
-  },
-  {
     "code": "AHS1033F",
     "name": "Movement Science I",
     "credits": 18,
@@ -1665,21 +125,6 @@
     ],
     "department": "University Of Cape Town",
     "description": "Course outline for AHS1033F."
-  },
-  {
-    "code": "HUB1023S",
-    "name": "Biosciences For Physiotherapy Ib",
-    "credits": 9,
-    "nqf_level": 5,
-    "prerequisites": [
-      "HSE1013F",
-      "HUB1022F"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB1023S."
   },
   {
     "code": "AHS1034S",
@@ -1694,94 +139,53 @@
     "description": "Course outline for AHS1034S."
   },
   {
-    "code": "HUB2023W",
-    "name": "Biosciences For Physiotherapy Ii",
-    "credits": 9,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS1033F",
-      "AHS1040F",
-      "HUB1023S"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for HUB2023W."
-  },
-  {
-    "code": "AHS2050H",
-    "name": "Clinical Physiotherapy I",
-    "credits": 18,
-    "nqf_level": 6,
-    "prerequisites": [
-      "AHS1033F",
-      "AHS1034S",
-      "HUB1019F",
-      "HUB1020S",
-      "HUB1022F",
-      "HUB1023S",
-      "PPH1001F",
-      "PPH1002S",
-      "PSY1004F"
-    ],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2050H."
-  },
-  {
-    "code": "AHS2052H",
-    "name": "Movement Science Ii",
-    "credits": 38,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2052H."
-  },
-  {
-    "code": "AHS2053H",
-    "name": "Applied Physiotherapy I",
-    "credits": 32,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AHS2053H."
-  },
-  {
-    "code": "HSE1001F",
-    "name": "Fundamentals Of Health Sciences",
-    "credits": 60,
+    "code": "AHS1035F",
+    "name": "Human Occupation And Development",
+    "credits": 22,
     "nqf_level": 5,
     "prerequisites": [],
     "offered": [
       "Semester 1"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for HSE1001F."
+    "description": "Course outline for AHS1035F."
   },
   {
-    "code": "HSE1001S",
-    "name": "Fundamentals Of Health Sciences",
-    "credits": 60,
+    "code": "AHS1042F",
+    "name": "Human Communication Development",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS1042F."
+  },
+  {
+    "code": "AHS1045S",
+    "name": "Basis Of Hearing And Balance",
+    "credits": 18,
     "nqf_level": 5,
     "prerequisites": [],
     "offered": [
       "Semester 2"
     ],
     "department": "University Of Cape Town",
-    "description": "Course outline for HSE1001S."
+    "description": "Course outline for AHS1045S."
+  },
+  {
+    "code": "AHS1054W",
+    "name": "South African Sign Language",
+    "credits": 8,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS1054W."
   },
   {
     "code": "AHS1060F",
@@ -1976,6 +380,23 @@
     "description": "Course outline for AHS1067S."
   },
   {
+    "code": "AHS1068W",
+    "name": "Disability Information Management And",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [
+      "AHS1063S",
+      "AHS1065S",
+      "AHS1066S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    95",
+    "description": "Course outline for AHS1068W."
+  },
+  {
     "code": "AHS1069W",
     "name": "Health And Functional Ability",
     "credits": 30,
@@ -2002,264 +423,108 @@
     "description": "Course outline for AHS1070W."
   },
   {
-    "code": "AAE4003W",
-    "name": "Anaesthesia Part I For External Credit",
-    "credits": 8,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AAE4003W."
-  },
-  {
-    "code": "MDN4017W",
-    "name": "Medicine For External Credit",
-    "credits": 15,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN4017W."
-  },
-  {
-    "code": "PED4017W",
-    "name": "Neonatology For External Credit",
-    "credits": 7,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED4017W."
-  },
-  {
-    "code": "OBS4006W",
-    "name": "Obstetrics For External Credit",
-    "credits": 15,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for OBS4006W."
-  },
-  {
-    "code": "PRY4001W",
-    "name": "Psychiatry For External Credit",
-    "credits": 15,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PRY4001W."
-  },
-  {
-    "code": "AAE5000W",
-    "name": "Anaesthesia Part Ii For External Credit",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for AAE5000W."
-  },
-  {
-    "code": "PTY5012W",
-    "name": "Forensic Medicine For External Credit",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PTY5012W."
-  },
-  {
-    "code": "OBS5006W",
-    "name": "Gynaecology For External Credit",
-    "credits": 27,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for OBS5006W."
-  },
-  {
-    "code": "MDN5000W",
-    "name": "Medicine For External Credit",
-    "credits": 24,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for MDN5000W."
-  },
-  {
-    "code": "OBS5007W",
-    "name": "Obstetrics For External Credit",
-    "credits": 41,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for OBS5007W."
-  },
-  {
-    "code": "CHM5005W",
-    "name": "Orthopaedic Surgery For External Credit",
-    "credits": 10,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5005W."
-  },
-  {
-    "code": "PED5004W",
-    "name": "General Care Of The Child For External Credit",
-    "credits": 40,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PED5004W."
-  },
-  {
-    "code": "PRY5001W",
-    "name": "Psychiatry And Mental Health For External Credit",
-    "credits": 30,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for PRY5001W."
-  },
-  {
-    "code": "CHM5011W",
-    "name": "Surgery For External Credit",
-    "credits": 19,
-    "nqf_level": 8,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5011W."
-  },
-  {
-    "code": "CHM5004W",
-    "name": "Trauma For External Credit",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1",
-      "Semester 2"
-    ],
-    "department": "University Of Cape Town",
-    "description": "Course outline for CHM5004W."
-  },
-  {
-    "code": "AAE2001F",
-    "name": "Special Study Module",
-    "credits": 16,
+    "code": "AHS2002W",
+    "name": "Clinical Sciences I",
+    "credits": 13,
     "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    71",
-    "description": "Course outline for AAE2001F."
-  },
-  {
-    "code": "AAE2001S",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    71",
-    "description": "Course outline for AAE2001S."
-  },
-  {
-    "code": "FCE2003F",
-    "name": "Special Study Module",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "80    Departments In The Faculty",
-    "description": "Course outline for FCE2003F."
-  },
-  {
-    "code": "FCE2003S",
-    "name": "Special Study Module",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "80    Departments In The Faculty",
-    "description": "Course outline for FCE2003S."
-  },
-  {
-    "code": "AHS1068W",
-    "name": "Disability Information Management And",
-    "credits": 15,
-    "nqf_level": 5,
     "prerequisites": [
-      "AHS1063S",
-      "AHS1065S",
-      "AHS1066S"
+      "HUB1019F",
+      "HUB1020S"
     ],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    95",
-    "description": "Course outline for AHS1068W."
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2002W."
+  },
+  {
+    "code": "AHS2043W",
+    "name": "Occupational Therapy Ii",
+    "credits": 36,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2043W."
+  },
+  {
+    "code": "AHS2046F",
+    "name": "Diagnostic Audiology",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2046F."
+  },
+  {
+    "code": "AHS2047S",
+    "name": "Paediatric Rehabilitative Audiology",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS2106F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2047S."
+  },
+  {
+    "code": "AHS2050H",
+    "name": "Clinical Physiotherapy I",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS1033F",
+      "AHS1034S",
+      "HUB1019F",
+      "HUB1020S",
+      "HUB1022F",
+      "HUB1023S",
+      "PPH1001F",
+      "PPH1002S",
+      "PSY1004F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2050H."
+  },
+  {
+    "code": "AHS2052H",
+    "name": "Movement Science Ii",
+    "credits": 38,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2052H."
+  },
+  {
+    "code": "AHS2053H",
+    "name": "Applied Physiotherapy I",
+    "credits": 32,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2053H."
   },
   {
     "code": "AHS2054F",
@@ -2294,6 +559,93 @@
     "description": "Course outline for AHS2054S."
   },
   {
+    "code": "AHS2106F",
+    "name": "Child Language",
+    "credits": 21,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS1042F",
+      "HSE1005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2106F."
+  },
+  {
+    "code": "AHS2107F",
+    "name": "Child Speech",
+    "credits": 18,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2107F."
+  },
+  {
+    "code": "AHS2108W",
+    "name": "Clinical Speech Therapy 1",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS1025S",
+      "AHS2106F",
+      "AHS2107F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2108W."
+  },
+  {
+    "code": "AHS2109S",
+    "name": "School-Based Interventions",
+    "credits": 21,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS2106F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2109S."
+  },
+  {
+    "code": "AHS2110W",
+    "name": "Clinical Audiology I",
+    "credits": 24,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS2046F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2110W."
+  },
+  {
+    "code": "AHS2111S",
+    "name": "Diagnostic Audiology In Special Populations",
+    "credits": 15,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS2046F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS2111S."
+  },
+  {
     "code": "AHS3004W",
     "name": "Clinical Sciences Ii",
     "credits": 10,
@@ -2308,6 +660,55 @@
     ],
     "department": "Departments In The Faculty    103",
     "description": "Course outline for AHS3004W."
+  },
+  {
+    "code": "AHS3005W",
+    "name": "Clinical Speech Therapy Ii",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2047S",
+      "AHS2108W",
+      "AHS2109S",
+      "AHS3071F",
+      "AHS3073F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3005W."
+  },
+  {
+    "code": "AHS3008W",
+    "name": "Clinical Audiology Ii",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2046F",
+      "AHS2047S",
+      "AHS2110W",
+      "AHS2111S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3008W."
+  },
+  {
+    "code": "AHS3062F",
+    "name": "Rehabilitation Technology",
+    "credits": 22,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3062F."
   },
   {
     "code": "AHS3065S",
@@ -2352,6 +753,62 @@
     "description": "Course outline for AHS3070H."
   },
   {
+    "code": "AHS3071F",
+    "name": "Acquired Neurogenic Language Disorders",
+    "credits": 22,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2106F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3071F."
+  },
+  {
+    "code": "AHS3072S",
+    "name": "Paediatric Motor Speech Disorders And Dysphagia",
+    "credits": 22,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS3073F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3072S."
+  },
+  {
+    "code": "AHS3073F",
+    "name": "Adult Dysphagia And Motor Speech",
+    "credits": 22,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HUB1014S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3073F."
+  },
+  {
+    "code": "AHS3075F",
+    "name": "Oaes And Electrophysiology",
+    "credits": 22,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2046F"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3075F."
+  },
+  {
     "code": "AHS3076H",
     "name": "Movement Science Iii",
     "credits": 24,
@@ -2386,6 +843,204 @@
     ],
     "department": "Departments In The Faculty    109",
     "description": "Course outline for AHS3077H."
+  },
+  {
+    "code": "AHS3078H",
+    "name": "Research Methods And Biostatistics I",
+    "credits": 10,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3078H."
+  },
+  {
+    "code": "AHS3102S",
+    "name": "Child Language Ii",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2109S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3102S."
+  },
+  {
+    "code": "AHS3103F",
+    "name": "Voice",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3103F."
+  },
+  {
+    "code": "AHS3104S",
+    "name": "Vestibular Management",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3104S."
+  },
+  {
+    "code": "AHS3105F",
+    "name": "Public Health Audiology",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3105F."
+  },
+  {
+    "code": "AHS3107W",
+    "name": "Occupational Therapy Theory And Practice In",
+    "credits": 38,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2002W",
+      "AHS2043W",
+      "HUB2015W",
+      "PRY2002W",
+      "PSY2013F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3107W."
+  },
+  {
+    "code": "AHS3108W",
+    "name": "Occupational Therapy Theory And Practice In",
+    "credits": 38,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2002W",
+      "AHS2043W",
+      "HUB2015W",
+      "PRY2002W",
+      "PSY2013F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3108W."
+  },
+  {
+    "code": "AHS3113W",
+    "name": "Foundation Theory For Occupational Therapy",
+    "credits": 26,
+    "nqf_level": 7,
+    "prerequisites": [
+      "AHS2002W",
+      "AHS2043W",
+      "HUB2015W",
+      "PRY2002W",
+      "PSY2013F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS3113W."
+  },
+  {
+    "code": "AHS4000W",
+    "name": "Research Report",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4000W."
+  },
+  {
+    "code": "AHS4005H",
+    "name": "Clinical Speech Therapy Iiia",
+    "credits": 45,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4005H."
+  },
+  {
+    "code": "AHS4006H",
+    "name": "Clinical Speech Therapy Iiib",
+    "credits": 45,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3004H",
+      "AHS3005W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4006H."
+  },
+  {
+    "code": "AHS4008H",
+    "name": "Clinical Audiology Iiia",
+    "credits": 45,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3008W",
+      "AHS3065S",
+      "AHS3075S",
+      "AHS3104S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4008H."
+  },
+  {
+    "code": "AHS4009H",
+    "name": "Clinical Audiology Iiib",
+    "credits": 45,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3008W",
+      "AHS3065S",
+      "AHS3075S",
+      "AHS3104S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4009H."
   },
   {
     "code": "AHS4065W",
@@ -2428,6 +1083,18 @@
     "description": "Course outline for AHS4066F."
   },
   {
+    "code": "AHS4067S",
+    "name": "Seminars In Communication Sciences",
+    "credits": 4,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4067S."
+  },
+  {
     "code": "AHS4071F",
     "name": "Applied Physiotherapy Iii",
     "credits": 20,
@@ -2456,6 +1123,66 @@
     ],
     "department": "Departments In The Faculty    119",
     "description": "Course outline for AHS4072H."
+  },
+  {
+    "code": "AHS4119W",
+    "name": "Occupational Therapy Research And Practice",
+    "credits": 48,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3078H",
+      "AHS3107W",
+      "AHS3108W",
+      "AHS3113W",
+      "SLL1028H",
+      "SLL1048H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4119W."
+  },
+  {
+    "code": "AHS4120W",
+    "name": "Foundation Theory For Occupational Therapy",
+    "credits": 48,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3078H",
+      "AHS3107W",
+      "AHS3108W",
+      "AHS3113W",
+      "SLL1028H",
+      "SLL1048H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4120W."
+  },
+  {
+    "code": "AHS4121W",
+    "name": "Occupational Therapy Practice And Service",
+    "credits": 48,
+    "nqf_level": 8,
+    "prerequisites": [
+      "AHS3078H",
+      "AHS3107W",
+      "AHS3108W",
+      "AHS3113W",
+      "SLL1028H",
+      "SLL1048H"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for AHS4121W."
   },
   {
     "code": "AHS4122X",
@@ -2513,6 +1240,385 @@
     "description": "Course outline for AHS4185S."
   },
   {
+    "code": "ASL1300F",
+    "name": "Introduction To Lan Guage Studies",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for ASL1300F."
+  },
+  {
+    "code": "ASL1301S",
+    "name": "Introduction To Sociolinguistics",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for ASL1301S."
+  },
+  {
+    "code": "ASL1302S",
+    "name": "Linguistics Foundation",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "250    Departments In The Faculty",
+    "description": "Course outline for ASL1302S."
+  },
+  {
+    "code": "ASL1303F",
+    "name": "Sociolinguistics Foundation",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "250    Departments In The Faculty",
+    "description": "Course outline for ASL1303F."
+  },
+  {
+    "code": "CEM1011F",
+    "name": "Chemistry For Medical Students",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CEM1011F."
+  },
+  {
+    "code": "CHM2001F",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CHM5003W",
+      "CHM5103X",
+      "CHM5203X",
+      "CHM5303X",
+      "CHM5403X",
+      "CHM5503X"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Departments In The Faculty    241",
+    "description": "Course outline for CHM2001F."
+  },
+  {
+    "code": "CHM2001S",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "CHM5003W",
+      "CHM5103X",
+      "CHM5203X",
+      "CHM5303X",
+      "CHM5403X",
+      "CHM5503X"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    241",
+    "description": "Course outline for CHM2001S."
+  },
+  {
+    "code": "CHM5003W",
+    "name": "Surgery",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5003W."
+  },
+  {
+    "code": "CHM5004H",
+    "name": "Trauma For Extern Al Credit",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5004H."
+  },
+  {
+    "code": "CHM5004W",
+    "name": "Trauma For External Credit",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5004W."
+  },
+  {
+    "code": "CHM5005H",
+    "name": "Orthopaedic Surgery",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5005H."
+  },
+  {
+    "code": "CHM5005W",
+    "name": "Orthopaedic Surgery For External Credit",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5005W."
+  },
+  {
+    "code": "CHM5006W",
+    "name": "Surgery External Credit",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "244    Departments In The Faculty",
+    "description": "Course outline for CHM5006W."
+  },
+  {
+    "code": "CHM5007W",
+    "name": "Neurology And Neurosurgery",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5007W."
+  },
+  {
+    "code": "CHM5008W",
+    "name": "Ophthalmology",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5008W."
+  },
+  {
+    "code": "CHM5009W",
+    "name": "Otorhinolaryngology Ent",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5009W."
+  },
+  {
+    "code": "CHM5010W",
+    "name": "Urology",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5010W."
+  },
+  {
+    "code": "CHM5011W",
+    "name": "Surgery For External Credit",
+    "credits": 19,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM5011W."
+  },
+  {
+    "code": "CHM6000W",
+    "name": "Surgery (Including Allied Disciplines)",
+    "credits": 41,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for CHM6000W."
+  },
+  {
+    "code": "CHM6020W",
+    "name": "Surgery External Credit",
+    "credits": 19,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    249",
+    "description": "Course outline for CHM6020W."
+  },
+  {
+    "code": "FCE2000W",
+    "name": "Becoming A Doctor Part 1A",
+    "credits": 21,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for FCE2000W."
+  },
+  {
+    "code": "FCE2003F",
+    "name": "Special Study Module",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "80    Departments In The Faculty",
+    "description": "Course outline for FCE2003F."
+  },
+  {
+    "code": "FCE2003S",
+    "name": "Special Study Module",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "80    Departments In The Faculty",
+    "description": "Course outline for FCE2003S."
+  },
+  {
+    "code": "FCE3000F",
+    "name": "Becoming A Doctor Part 2A",
+    "credits": 10,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for FCE3000F."
+  },
+  {
+    "code": "FCE6000W",
+    "name": "Family Medicine & Palliative Care",
+    "credits": 21,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for FCE6000W."
+  },
+  {
+    "code": "FCE6001W",
+    "name": "Long Elective",
+    "credits": 19,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for FCE6001W."
+  },
+  {
+    "code": "FCE6005W",
+    "name": "Short Elective",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for FCE6005W."
+  },
+  {
+    "code": "HSE1001F",
+    "name": "Fundamentals Of Health Sciences",
+    "credits": 60,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HSE1001F."
+  },
+  {
+    "code": "HSE1001S",
+    "name": "Fundamentals Of Health Sciences",
+    "credits": 60,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HSE1001S."
+  },
+  {
     "code": "HSE1014S",
     "name": "Fundamentals Of Movement Science And Applied",
     "credits": 0,
@@ -2523,6 +1629,19 @@
     ],
     "department": "126    Departments In The Faculty",
     "description": "Course outline for HSE1014S."
+  },
+  {
+    "code": "HSE2000W",
+    "name": "Becoming A Doctor Part 1C",
+    "credits": 22,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HSE2000W."
   },
   {
     "code": "HSE2001F",
@@ -2549,6 +1668,113 @@
     "description": "Course outline for HSE2001S."
   },
   {
+    "code": "HSE3000F",
+    "name": "Becoming A Doctor Part Iic (Clinical Skills)",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HSE2000W"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HSE3000F."
+  },
+  {
+    "code": "HSE6004W",
+    "name": "Exit Examination On Procedural Competence",
+    "credits": 0,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HSE6004W."
+  },
+  {
+    "code": "HUB1006F",
+    "name": "Introduction To Integrated Health Sciences Part I",
+    "credits": 30,
+    "nqf_level": 5,
+    "prerequisites": [
+      "HUB1006"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1006F."
+  },
+  {
+    "code": "HUB1014S",
+    "name": "Anatomy For Communication Sciences",
+    "credits": 20,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1014S."
+  },
+  {
+    "code": "HUB1019F",
+    "name": "Anatomy And Physiology Ia",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1019F."
+  },
+  {
+    "code": "HUB1020S",
+    "name": "Anatomy And Physiology Ib",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [
+      "HUB1016F",
+      "HUB1019F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1020S."
+  },
+  {
+    "code": "HUB1022F",
+    "name": "Biosciences For Physiotherapy Ia",
+    "credits": 9,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1022F."
+  },
+  {
+    "code": "HUB1023S",
+    "name": "Biosciences For Physiotherapy Ib",
+    "credits": 9,
+    "nqf_level": 5,
+    "prerequisites": [
+      "HSE1013F",
+      "HUB1022F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB1023S."
+  },
+  {
     "code": "HUB2005F",
     "name": "Introduction To Medical Engineering",
     "credits": 8,
@@ -2559,6 +1785,34 @@
     ],
     "department": "Departments In The Faculty    135",
     "description": "Course outline for HUB2005F."
+  },
+  {
+    "code": "HUB2015W",
+    "name": "Anatomy And Physiology Ii For Health And",
+    "credits": 36,
+    "nqf_level": 6,
+    "prerequisites": [
+      "HUB1020S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB2015W."
+  },
+  {
+    "code": "HUB2017H",
+    "name": "Integrated Health Systems Part Ia",
+    "credits": 57,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB2017H."
   },
   {
     "code": "HUB2019F",
@@ -2616,6 +1870,52 @@
     "description": "Course outline for HUB2021S."
   },
   {
+    "code": "HUB2023W",
+    "name": "Biosciences For Physiotherapy Ii",
+    "credits": 9,
+    "nqf_level": 6,
+    "prerequisites": [
+      "AHS1033F",
+      "AHS1040F",
+      "HUB1023S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB2023W."
+  },
+  {
+    "code": "HUB3006F",
+    "name": "Applied Human Biology",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HUB2019F",
+      "HUB2021S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB3006F."
+  },
+  {
+    "code": "HUB3007S",
+    "name": "Human Neurosciences",
+    "credits": 36,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HUB3006F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for HUB3007S."
+  },
+  {
     "code": "HUB4071F",
     "name": "Applied Electrophysiology",
     "credits": 12,
@@ -2626,6 +1926,23 @@
     ],
     "department": "140    Departments In The Faculty",
     "description": "Course outline for HUB4071F."
+  },
+  {
+    "code": "IBS1007S",
+    "name": "Introduction To Integrated Health Sciences Part Ii",
+    "credits": 35,
+    "nqf_level": 5,
+    "prerequisites": [
+      "CEM1011F",
+      "HUB1006F",
+      "PHY1025F",
+      "PPH1001F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for IBS1007S."
   },
   {
     "code": "IBS2001F",
@@ -2656,6 +1973,30 @@
     "description": "Course outline for IBS2001S."
   },
   {
+    "code": "IBS3020W",
+    "name": "Molecular Medicine",
+    "credits": 72,
+    "nqf_level": 7,
+    "prerequisites": [
+      "CEM1011F",
+      "CEM1011X",
+      "CEM1111",
+      "HUB1006F",
+      "HUB1010S",
+      "HUB1011F",
+      "HUB2017H",
+      "LAB2000S",
+      "MDN2001S",
+      "PHY1025F"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for IBS3020W."
+  },
+  {
     "code": "MDN2001F",
     "name": "Special Study Modules",
     "credits": 16,
@@ -2666,6 +2007,32 @@
     ],
     "department": "Departments In The Faculty    159",
     "description": "Course outline for MDN2001F."
+  },
+  {
+    "code": "MDN2001S",
+    "name": "Special Study Modules",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN2001S."
+  },
+  {
+    "code": "MDN3001S",
+    "name": "Introduction To Clinical Practice",
+    "credits": 68,
+    "nqf_level": 7,
+    "prerequisites": [
+      "HSE3000F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3001S."
   },
   {
     "code": "MDN3003W",
@@ -2681,6 +2048,58 @@
     "description": "Course outline for MDN3003W."
   },
   {
+    "code": "MDN3005W",
+    "name": "Scientific Principles Of Cosmetic Formulations",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3005W."
+  },
+  {
+    "code": "MDN3006W",
+    "name": "Cosmetic Formulation Technology",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3006W."
+  },
+  {
+    "code": "MDN3007W",
+    "name": "Hair And Skin Biology For The Cosmetic Formulator",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3007W."
+  },
+  {
+    "code": "MDN3008W",
+    "name": "Cosmetics: Claims, Regulation And Ethics",
+    "credits": 15,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3008W."
+  },
+  {
     "code": "MDN3009W",
     "name": "Professional Communication And Project",
     "credits": 15,
@@ -2692,6 +2111,99 @@
     ],
     "department": "Departments In The Faculty    163",
     "description": "Course outline for MDN3009W."
+  },
+  {
+    "code": "MDN3010W",
+    "name": "Cosmetic Formulation Science Inservice Training",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN3010W."
+  },
+  {
+    "code": "MDN4001W",
+    "name": "Medicine: Ambulatory Care",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN4001W."
+  },
+  {
+    "code": "MDN4011W",
+    "name": "Medicine: Ward Care",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN4011W."
+  },
+  {
+    "code": "MDN4015W",
+    "name": "Pharmacology And Applied Therapeutics",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN4015W."
+  },
+  {
+    "code": "MDN4017W",
+    "name": "Medicine For External Credit",
+    "credits": 15,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN4017W."
+  },
+  {
+    "code": "MDN5000W",
+    "name": "Medicine For External Credit",
+    "credits": 24,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN5000W."
+  },
+  {
+    "code": "MDN5003H",
+    "name": "Pharmacology And Applied Therapeutics",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [
+      "MDN4015W"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN5003H."
   },
   {
     "code": "MDN5004W",
@@ -2707,6 +2219,45 @@
     ],
     "department": "Departments In The Faculty    169",
     "description": "Course outline for MDN5004W."
+  },
+  {
+    "code": "MDN5005W",
+    "name": "Dermatology",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN5005W."
+  },
+  {
+    "code": "MDN5006W",
+    "name": "Rheumatology",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN5006W."
+  },
+  {
+    "code": "MDN6000W",
+    "name": "Medicine (Including Allied Disciplines)",
+    "credits": 41,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for MDN6000W."
   },
   {
     "code": "MDN6003W",
@@ -2760,6 +2311,509 @@
     "description": "Course outline for OBS2001S."
   },
   {
+    "code": "OBS4003W",
+    "name": "Obstetrics",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS4003W."
+  },
+  {
+    "code": "OBS4006W",
+    "name": "Obstetrics For External Credit",
+    "credits": 15,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS4006W."
+  },
+  {
+    "code": "OBS5005W",
+    "name": "Obstetrics & Gynaecology",
+    "credits": 20,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS5005W."
+  },
+  {
+    "code": "OBS5006W",
+    "name": "Gynaecology For External Credit",
+    "credits": 27,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS5006W."
+  },
+  {
+    "code": "OBS5007W",
+    "name": "Obstetrics For External Credit",
+    "credits": 41,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS5007W."
+  },
+  {
+    "code": "OBS6000W",
+    "name": "Obstetrics",
+    "credits": 41,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for OBS6000W."
+  },
+  {
+    "code": "PED4016W",
+    "name": "Neonatology",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED4016W."
+  },
+  {
+    "code": "PED4017W",
+    "name": "Neonatology For External Credit",
+    "credits": 7,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED4017W."
+  },
+  {
+    "code": "PED4049W",
+    "name": "Introduction To Child And Adolescent Health",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED4049W."
+  },
+  {
+    "code": "PED5004W",
+    "name": "General Care Of The Child For External Credit",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED5004W."
+  },
+  {
+    "code": "PED5005W",
+    "name": "Caring For Children: Paediatric Surgery",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED5005W."
+  },
+  {
+    "code": "PED5006W",
+    "name": "Caring For Children: Paediatric Medicine",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED5006W."
+  },
+  {
+    "code": "PED6000W",
+    "name": "Paediatrics And Child Health",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED6000W."
+  },
+  {
+    "code": "PED6004W",
+    "name": "Neonatal Medicine",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PED6004W."
+  },
+  {
+    "code": "PHY1025F",
+    "name": "Physics 1025",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PHY1025F."
+  },
+  {
+    "code": "PPH1001F",
+    "name": "Becoming A Professional",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PPH1001F."
+  },
+  {
+    "code": "PPH1002S",
+    "name": "Becoming A Health Professional",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PPH1002S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PPH1002S."
+  },
+  {
+    "code": "PPH2002F",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PPH4056W",
+      "PPH4156X",
+      "PPH4256X",
+      "PPH4356X",
+      "PPH4456X",
+      "PPH4556X"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Departments In The Faculty    227",
+    "description": "Course outline for PPH2002F."
+  },
+  {
+    "code": "PPH2002S",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PPH4056W",
+      "PPH4156X",
+      "PPH4256X",
+      "PPH4356X",
+      "PPH4456X",
+      "PPH4556X"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    227",
+    "description": "Course outline for PPH2002S."
+  },
+  {
+    "code": "PPH4056W",
+    "name": "Health In Context",
+    "credits": 40,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PPH4056W."
+  },
+  {
+    "code": "PRY2001F",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PRY2002W",
+      "PSY1005S",
+      "PSY1007S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "Departments In The Faculty    215",
+    "description": "Course outline for PRY2001F."
+  },
+  {
+    "code": "PRY2001S",
+    "name": "Special Study Module",
+    "credits": 16,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PRY2002W",
+      "PSY1005S",
+      "PSY1007S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "Departments In The Faculty    215",
+    "description": "Course outline for PRY2001S."
+  },
+  {
+    "code": "PRY2002W",
+    "name": "Psychiatry For Occupational Therapists",
+    "credits": 14,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1005S",
+      "PSY1007S"
+    ],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PRY2002W."
+  },
+  {
+    "code": "PRY4000W",
+    "name": "Clinical Psychiatry",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PRY4000W."
+  },
+  {
+    "code": "PRY4001W",
+    "name": "Psychiatry For External Credit",
+    "credits": 15,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PRY4001W."
+  },
+  {
+    "code": "PRY5001W",
+    "name": "Psychiatry And Mental Health For External Credit",
+    "credits": 30,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PRY5001W."
+  },
+  {
+    "code": "PRY6000W",
+    "name": "Psychiatry And Mental Health",
+    "credits": 21,
+    "nqf_level": 8,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PRY6000W."
+  },
+  {
+    "code": "PSY1004F",
+    "name": "Introduction To Psychology Part 1 *",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY1004F."
+  },
+  {
+    "code": "PSY1005S",
+    "name": "Introduction To Psychology Part 2 *",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY1005S."
+  },
+  {
+    "code": "PSY1006F",
+    "name": "Introduction To Psychology Part 1 +",
+    "credits": 10,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY1006F."
+  },
+  {
+    "code": "PSY1007S",
+    "name": "Introduction To Psychology Part 2 +",
+    "credits": 10,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY1007S."
+  },
+  {
+    "code": "PSY1009F",
+    "name": "Introduction To Psychology Part 1",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "250    Departments In The Faculty",
+    "description": "Course outline for PSY1009F."
+  },
+  {
+    "code": "PSY1010S",
+    "name": "Introduction To Psychology Part 2",
+    "credits": 15,
+    "nqf_level": 5,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1009F"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "250    Departments In The Faculty",
+    "description": "Course outline for PSY1010S."
+  },
+  {
+    "code": "PSY2013F",
+    "name": "Social And Developmental Psychology",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY2013F."
+  },
+  {
+    "code": "PSY2014S",
+    "name": "Cognitive Neuroscience And Abnormal Psychology",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1005S"
+    ],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY2014S."
+  },
+  {
+    "code": "PSY2015F",
+    "name": "Research In Psychology I",
+    "credits": 20,
+    "nqf_level": 6,
+    "prerequisites": [
+      "PSY1004F",
+      "PSY1005S"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PSY2015F."
+  },
+  {
+    "code": "PTY2000S",
+    "name": "Integrated Health Systems Part Ib",
+    "credits": 47,
+    "nqf_level": 6,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PTY2000S."
+  },
+  {
     "code": "PTY2001S",
     "name": "Infectious Disease And Vaccines (Faculty Of Science)",
     "credits": 24,
@@ -2806,6 +2860,18 @@
     "description": "Course outline for PTY2002S."
   },
   {
+    "code": "PTY3009F",
+    "name": "Integrated Health Systems Part Ii",
+    "credits": 59,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for PTY3009F."
+  },
+  {
     "code": "PTY3010F",
     "name": "Pathogenesis And Treatment Of Infectious Diseases",
     "credits": 36,
@@ -2832,74 +2898,30 @@
     "description": "Course outline for PTY4008S."
   },
   {
-    "code": "PRY2001F",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PRY2002W",
-      "PSY1005S",
-      "PSY1007S"
-    ],
+    "code": "PTY5012W",
+    "name": "Forensic Medicine For External Credit",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
     "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    215",
-    "description": "Course outline for PRY2001F."
-  },
-  {
-    "code": "PRY2001S",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PRY2002W",
-      "PSY1005S",
-      "PSY1007S"
-    ],
-    "offered": [
+      "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    215",
-    "description": "Course outline for PRY2001S."
+    "department": "University Of Cape Town",
+    "description": "Course outline for PTY5012W."
   },
   {
-    "code": "PPH2002F",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PPH4056W",
-      "PPH4156X",
-      "PPH4256X",
-      "PPH4356X",
-      "PPH4456X",
-      "PPH4556X"
-    ],
+    "code": "PTY6012W",
+    "name": "Forensic Medicine",
+    "credits": 10,
+    "nqf_level": 8,
+    "prerequisites": [],
     "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    227",
-    "description": "Course outline for PPH2002F."
-  },
-  {
-    "code": "PPH2002S",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "PPH4056W",
-      "PPH4156X",
-      "PPH4256X",
-      "PPH4356X",
-      "PPH4456X",
-      "PPH4556X"
-    ],
-    "offered": [
+      "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    227",
-    "description": "Course outline for PPH2002S."
+    "department": "University Of Cape Town",
+    "description": "Course outline for PTY6012W."
   },
   {
     "code": "RAY2001W",
@@ -2939,46 +2961,8 @@
     "description": "Course outline for RAY2004S."
   },
   {
-    "code": "CHM2001F",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CHM5003W",
-      "CHM5103X",
-      "CHM5203X",
-      "CHM5303X",
-      "CHM5403X",
-      "CHM5503X"
-    ],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "Departments In The Faculty    241",
-    "description": "Course outline for CHM2001F."
-  },
-  {
-    "code": "CHM2001S",
-    "name": "Special Study Module",
-    "credits": 16,
-    "nqf_level": 6,
-    "prerequisites": [
-      "CHM5003W",
-      "CHM5103X",
-      "CHM5203X",
-      "CHM5303X",
-      "CHM5403X",
-      "CHM5503X"
-    ],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "Departments In The Faculty    241",
-    "description": "Course outline for CHM2001S."
-  },
-  {
-    "code": "CHM5006W",
-    "name": "Surgery External Credit",
+    "code": "SLL1028H",
+    "name": "Xhosa For Health And Rehabilitation Sciences",
     "credits": 18,
     "nqf_level": 5,
     "prerequisites": [],
@@ -2986,72 +2970,88 @@
       "Semester 1",
       "Semester 2"
     ],
-    "department": "244    Departments In The Faculty",
-    "description": "Course outline for CHM5006W."
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL1028H."
   },
   {
-    "code": "CHM6020W",
-    "name": "Surgery External Credit",
-    "credits": 19,
-    "nqf_level": 8,
+    "code": "SLL1041S",
+    "name": "Beginners' Xhosa For Mbchb",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL1041S."
+  },
+  {
+    "code": "SLL1044S",
+    "name": "Beginners' Afrikaans For Mbchb",
+    "credits": 18,
+    "nqf_level": 5,
+    "prerequisites": [],
+    "offered": [
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL1044S."
+  },
+  {
+    "code": "SLL1048H",
+    "name": "Afrikaans For Health And Rehabilitation Sciences",
+    "credits": 18,
+    "nqf_level": 5,
     "prerequisites": [],
     "offered": [
       "Semester 1",
       "Semester 2"
     ],
-    "department": "Departments In The Faculty    249",
-    "description": "Course outline for CHM6020W."
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL1048H."
   },
   {
-    "code": "ASL1302S",
-    "name": "Linguistics Foundation",
+    "code": "SLL2002H",
+    "name": "Becoming A Doctor: Part Ib",
     "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 2"
-    ],
-    "department": "250    Departments In The Faculty",
-    "description": "Course outline for ASL1302S."
-  },
-  {
-    "code": "ASL1303F",
-    "name": "Sociolinguistics Foundation",
-    "credits": 18,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "250    Departments In The Faculty",
-    "description": "Course outline for ASL1303F."
-  },
-  {
-    "code": "PSY1009F",
-    "name": "Introduction To Psychology Part 1",
-    "credits": 15,
-    "nqf_level": 5,
-    "prerequisites": [],
-    "offered": [
-      "Semester 1"
-    ],
-    "department": "250    Departments In The Faculty",
-    "description": "Course outline for PSY1009F."
-  },
-  {
-    "code": "PSY1010S",
-    "name": "Introduction To Psychology Part 2",
-    "credits": 15,
-    "nqf_level": 5,
+    "nqf_level": 6,
     "prerequisites": [
-      "PSY1004F",
-      "PSY1009F"
+      "SLL1041S",
+      "SLL1044S"
     ],
     "offered": [
+      "Semester 1",
       "Semester 2"
     ],
-    "department": "250    Departments In The Faculty",
-    "description": "Course outline for PSY1010S."
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL2002H."
+  },
+  {
+    "code": "SLL3002F",
+    "name": "Becoming A Doctor: Part 2B",
+    "credits": 30,
+    "nqf_level": 7,
+    "prerequisites": [
+      "SLL2002H"
+    ],
+    "offered": [
+      "Semester 1"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL3002F."
+  },
+  {
+    "code": "SLL3003W",
+    "name": "Clinical Language",
+    "credits": 0,
+    "nqf_level": 7,
+    "prerequisites": [],
+    "offered": [
+      "Semester 1",
+      "Semester 2"
+    ],
+    "department": "University Of Cape Town",
+    "description": "Course outline for SLL3003W."
   },
   {
     "code": "SLL3103X",
