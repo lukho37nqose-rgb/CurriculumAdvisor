@@ -438,11 +438,12 @@ def get_blocked(course_code: str, faculty_key: str = "uct_humanities"):
 @app.get("/debug/student")
 def debug_student(faculty_key: str = "uct_ebe"):
     """Debug endpoint to inspect raw parsed student record and catalogue majors."""
+    import os
     from pathlib import Path
     from engine.utils import _normalise_major_keys
     
     # Search for the transcript in downloads
-    downloads_path = Path("C:/Users/Lukho Nqose/Downloads")
+    downloads_path = Path(os.environ.get("DEBUG_DOWNLOADS_DIR", "/tmp"))
     pdf_files = list(downloads_path.glob("*.pdf"))
     
     target_pdf = None
