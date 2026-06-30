@@ -18,7 +18,6 @@ from typing import Any
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
-from fastapi.staticfiles import StaticFiles
 
 from engine.catalogue import load_catalogue
 from engine.parser import parse_transcript_pdf, parse_transcript_text
