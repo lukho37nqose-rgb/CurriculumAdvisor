@@ -3,9 +3,7 @@ from pathlib import Path
 from pypdf import PdfReader
 import re
 
-import sys
-
-pdf_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("2026-hum-handbook-9a-final-web.pdf")
+pdf_path = Path(sys.argv[1] if len(sys.argv) > 1 else "2026-hum-handbook-9a-final-web.pdf")
 reader = PdfReader(str(pdf_path))
 for i, page in enumerate(reader.pages, start=1):
     text = page.extract_text() or ''
