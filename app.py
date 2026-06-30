@@ -10,7 +10,6 @@ Endpoints:
   GET  /majors           — return all major definitions
   GET  /health           — health check
 """
-import json
 import dataclasses
 from pathlib import Path
 from typing import Any
