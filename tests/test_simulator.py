@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, MagicMock
 
-from engine.models import StudentRecord, CourseResult, Catalogue, CourseFact
+from engine.models import StudentRecord, CourseResult, Catalogue, CourseFact, MajorDefinition, ProgrammeRules
 from engine.knowledge_graph import KnowledgeGraph
 from engine.simulator import SimulationEngine
 
@@ -21,9 +21,19 @@ class TestSimulationEngine(unittest.TestCase):
                 "CSC1015F": CourseFact("CSC1015F", "Computer Science 1015", 18, 5, [], ["Semester 1"], "Computer Science", ""),
                 "CSC1016S": CourseFact("CSC1016S", "Computer Science 1016", 18, 5, ["CSC1015F"], ["Semester 2"], "Computer Science", ""),
                 "CSC2001F": CourseFact("CSC2001F", "Computer Science 2001", 24, 6, ["CSC1015F", "CSC1016S"], ["Semester 1"], "Computer Science", ""),
+                "MAM1000W": CourseFact(code="MAM1000W", name="Math 1", nqf_credits=36, nqf_level=5, prerequisites=[], offered=["Full Year"], department="Math")
             },
-            majors={},
-            programmes={},
+            majors={
+                "computer_science": MajorDefinition(key="computer_science", name="Computer Science", qualification="BSc", required_courses=["CSC1015F"]),
+                "mathematics": MajorDefinition(key="mathematics", name="Mathematics", qualification="BSc", required_courses=["MAM1000W"])
+            },
+            programmes={
+                "bsc": ProgrammeRules(
+                    key="bsc", name="BSc", total_nqf_credits=360, level_7_nqf_credits=120,
+                    semester_course_equivalents=20, senior_course_equivalents=10, humanities_course_equivalents=0,
+                    required_majors=2, required_humanities_majors=0
+                )
+            },
             forbidden_combinations=[]
         )
         self.graph = KnowledgeGraph(self.catalogue)
@@ -77,7 +87,7 @@ class TestSimulationEngine(unittest.TestCase):
         self.assertEqual(len(sim_student.results), 2)
         new_course = sim_student.results[1]
         self.assertEqual(new_course.code, "MAM1000W")
-        self.assertEqual(new_course.name, "Simulated Course")
+        self.assertEqual(new_course.name, "Math 1")
         self.assertEqual(new_course.mark, 40)
         self.assertEqual(new_course.grade, "F")
 
@@ -114,6 +124,70 @@ class TestSimulationEngine(unittest.TestCase):
         self.assertEqual(report, "MockReport")
 
     @patch('engine.simulator.compute_report')
+    def test_simulate_future_semester(self, mock_compute_report):
+        mock_compute_report.return_value = "MockReport"
+
+        courses = [("CSC1016S", 65), ("MAM1000W", 78), ("CSC1015F", 55)]
+        report = self.engine.simulate_future_semester(courses)
+
+        args, _ = mock_compute_report.call_args
+        sim_student = args[0]
+
+        self.assertEqual(len(sim_student.results), 3)
+        c1 = next(r for r in sim_student.results if r.code == "CSC1016S")
+        self.assertEqual(c1.mark, 65)
+        self.assertEqual(c1.grade, "2-")
+        c2 = next(r for r in sim_student.results if r.code == "MAM1000W")
+        self.assertEqual(c2.mark, 78)
+        self.assertEqual(c2.grade, "1")
+        c3 = next(r for r in sim_student.results if r.code == "CSC1015F")
+        self.assertEqual(c3.mark, 55)
+        self.assertEqual(c3.grade, "3")
+
+    @patch('engine.simulator.compute_report')
+    def test_simulate_switch_majors_single(self, mock_compute_report):
+        mock_compute_report.return_value = "MockReport"
+        self.student.declared_majors = ["Computer Science"]
+
+        report = self.engine.simulate_switch_majors(["Mathematics"])
+
+        self.assertEqual(self.student.declared_majors, ["Computer Science"])
+
+        args, _ = mock_compute_report.call_args
+        sim_student = args[0]
+        self.assertEqual(sim_student.declared_majors, ["Mathematics"])
+        self.assertEqual(report, "MockReport")
+
+    @patch('engine.simulator.compute_report')
+    def test_simulate_switch_majors_multiple(self, mock_compute_report):
+        mock_compute_report.return_value = "MockReport"
+        self.student.declared_majors = ["Computer Science"]
+
+        report = self.engine.simulate_switch_majors(["Computer Science", "Mathematics"])
+
+        self.assertEqual(self.student.declared_majors, ["Computer Science"])
+
+        args, _ = mock_compute_report.call_args
+        sim_student = args[0]
+        self.assertEqual(sim_student.declared_majors, ["Computer Science", "Mathematics"])
+        self.assertEqual(report, "MockReport")
+
+    @patch('engine.simulator.compute_report')
+    def test_simulate_switch_majors_empty(self, mock_compute_report):
+        mock_compute_report.return_value = "MockReport"
+        self.student.declared_majors = ["Computer Science"]
+
+        report = self.engine.simulate_switch_majors([])
+
+        self.assertEqual(self.student.declared_majors, ["Computer Science"])
+
+        args, _ = mock_compute_report.call_args
+        sim_student = args[0]
+        self.assertEqual(sim_student.declared_majors, [])
+        self.assertEqual(report, "MockReport")
+
+
+    @patch('engine.simulator.compute_report')
     def test_simulate_switch_majors(self, mock_compute_report):
         mock_compute_report.return_value = "MockReport"
 
@@ -125,35 +199,5 @@ class TestSimulationEngine(unittest.TestCase):
         self.assertEqual(sim_student.declared_majors, ["Computer Science", "Mathematics"])
         self.assertEqual(report, "MockReport")
 
-    @patch('engine.simulator.compute_report')
-    def test_simulate_future_semester(self, mock_compute_report):
-        mock_compute_report.return_value = "MockReport"
-
-        courses = [("CSC1016S", 65), ("MAM1000W", 78), ("CSC1015F", 55)]
-        report = self.engine.simulate_future_semester(courses)
-
-        args, _ = mock_compute_report.call_args
-        sim_student = args[0]
-
-        # We start with 1 result (CSC1015F), which gets removed and replaced since it's in the simulated future courses list
-        # And we add CSC1016S and MAM1000W
-        # So we expect exactly 3 results total.
-        self.assertEqual(len(sim_student.results), 3)
-
-        # Check CSC1016S
-        c1 = next(r for r in sim_student.results if r.code == "CSC1016S")
-        self.assertEqual(c1.mark, 65)
-        self.assertEqual(c1.grade, "2-")
-
-        # Check MAM1000W
-        c2 = next(r for r in sim_student.results if r.code == "MAM1000W")
-        self.assertEqual(c2.mark, 78)
-        self.assertEqual(c2.grade, "1")
-
-        # Check CSC1015F (replaced)
-        c3 = next(r for r in sim_student.results if r.code == "CSC1015F")
-        self.assertEqual(c3.mark, 55)
-        self.assertEqual(c3.grade, "3")
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

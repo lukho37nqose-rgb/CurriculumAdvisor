@@ -99,24 +99,10 @@ def expand_slash_code(code: str) -> List[str]:
 def is_page_header(line: str) -> bool:
     """Check if a line is a page header or page number."""
     line_clean = line.strip()
-    # Explicitly filter noisy header strings
-    if "Degrees Offered" in line_clean:
-        return True
-    if "RULES FOR UNDERGRADUATE DEGREES" in line_clean:
-        return True
-    if "General Information" in line_clean:
-        return True
-    if "Faculty of Humanities" in line_clean:
-        return True
-    if "Faculty of Commerce" in line_clean:
-        return True
-    if "FACULTY RULES FOR UNDERGRADUATE STUDENTS" in line_clean:
-        return True
-    if "PROGRAMMES OF STUDY" in line_clean:
-        return True
-
-    if line_clean.isupper() and any(phrase in line_clean for phrase in ["BACHELOR OF", "COMMERCE", "BUSINESS SCIENCE", "AUGMENTED", "EXTENDED", "PROGRAMMES", "RULES"]):
-        return True
+    if line_clean.isupper():
+        for phrase in _HEADER_PHRASES:
+            if phrase in line_clean:
+                return True
     if re.match(r"^\d+$", line_clean):
         return True
     if re.search(r"^\d+\s+", line_clean) and line_clean.isupper():
