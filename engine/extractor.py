@@ -52,6 +52,11 @@ _OFFERED_RE = re.compile(r"(first|second|both|either|full year)\s+semester", re.
 _CODE_EXTRACT_RE = re.compile(rf"\b({_CODE_PAT})\b")
 
 
+
+def word_to_int(word: str) -> int:
+    mapping = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
+    return mapping.get(word.lower(), 1)
+
 def clean_text(text: str) -> str:
     """Clean up whitespace and common PDF artifacts."""
     text = re.sub(r"\s+", " ", text)
@@ -93,6 +98,16 @@ def expand_slash_code(code: str) -> List[str]:
 def is_page_header(line: str) -> bool:
     """Check if a line is a page header or page number."""
     line_clean = line.strip()
+    # Explicitly filter noisy header strings
+    if "Degrees Offered" in line_clean:
+        return True
+    if "RULES FOR UNDERGRADUATE DEGREES" in line_clean:
+        return True
+    if "General Information" in line_clean:
+        return True
+    if "Faculty of Humanities" in line_clean:
+        return True
+
     if line_clean.isupper() and any(phrase in line_clean for phrase in ["BACHELOR OF", "COMMERCE", "BUSINESS SCIENCE", "AUGMENTED", "EXTENDED"]):
         return True
     if re.match(r"^\d+$", line_clean):
@@ -171,9 +186,12 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
     _PROG_CODE_RE = re.compile(r"\[([A-Z0-9/]{5,20})\]")
     
     print("Parsing pages...")
-    for page_num, page in enumerate(reader.pages, start=1):
-        text = page.extract_text() or ""
-        lines = text.splitlines()
+    all_text = "\n".join((p.extract_text() or "") for p in reader.pages)
+    all_lines = all_text.splitlines()
+    page_num = 1
+    # Process globally to allow multi-page lookahead
+    if True:
+        lines = all_lines
         
         # Determine if we are in the undergraduate curriculum section based on page number
         is_undergrad_section = True
@@ -308,22 +326,81 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
                     major_name = major_name_match.group(1).strip().title()
                     major_key = major_name.lower().replace(" ", "_").replace("&", "and")
                     
-                    # Collect next 20 lines to find course codes
-                    major_lookahead = " ".join(lines[i+1:i+21])
-                    major_courses = _CODE_EXTRACT_RE.findall(major_lookahead.upper())
+                    # Parse the requirements blocks dynamically
+                    required_courses = []
+                    choice_groups = []
                     
-                    expanded_major_courses = []
-                    for mc in major_courses:
-                        expanded_major_courses.extend(expand_slash_code(mc))
+                    current_mode = "required"
+                    current_choice = None
+
+                    for look_idx in range(i + 1, len(lines)):
+                        look_line = lines[look_idx].strip()
+                        if not look_line:
+                            continue
+
+                        look_lower = look_line.lower()
+                        # Stop conditions
+                        if any(phrase in look_lower for phrase in [
+                            "course outlines:", "note on sub-minima",
+                            "note on re-examination", "requirements for a specialisation",
+                            "course outline:"
+                        ]) or look_lower.startswith("prerequisites"):
+                            break
+                        # Only stop if it's ANOTHER major requirements block
+                        if "requirements for a major in" in look_lower and look_idx > i + 1:
+                            break
+
+                        # Check for choice mode
+                        choice_match = re.search(r"(one|two|three|four|five)\s+of(\s+the\s+following)?:", look_lower, re.IGNORECASE)
+                        if choice_match:
+                            current_mode = "choice"
+                            current_choice = {
+                                "label": look_line,
+                                "required": word_to_int(choice_match.group(1)),
+                                "courses": []
+                            }
+                            choice_groups.append(current_choice)
+                            continue
+
+                        # Check for year headers to reset mode
+                        if "year courses" in look_lower or look_lower in ["first year", "second year", "third year"]:
+                            current_mode = "required"
+                            continue
+
+                        # Extract codes from this line
+                        line_courses = _CODE_EXTRACT_RE.findall(look_line.upper())
+                        expanded_courses = []
+                        for mc in line_courses:
+                            expanded_courses.extend(expand_slash_code(mc))
+
+                        if expanded_courses:
+                            if current_mode == "choice" and current_choice is not None:
+                                current_choice["courses"].extend(expanded_courses)
+                            else:
+                                required_courses.extend(expanded_courses)
+
+                    # Clean up choice groups
+                    valid_choice_groups = []
+                    for cg in choice_groups:
+                        cg["courses"] = sorted(list(set(cg["courses"])))
+                        if len(cg["courses"]) >= cg["required"] and len(cg["courses"]) > 0:
+                            valid_choice_groups.append(cg)
+
+                    required_courses = sorted(list(set(required_courses)))
                     
-                    if expanded_major_courses:
+                    # Ignore garbage major names
+                    if len(major_name.split()) > 6 or "." in major_name:
+                        pass
+                    elif major_key.startswith("requirements_for_a_major"):
+                        pass
+                    elif required_courses or valid_choice_groups:
                         majors[major_key] = {
                             "name": major_name,
                             "department": current_dept,
                             "category": "bcom" if "commerce" in str(pdf_path).lower() else "bsc",
                             "humanities_major": True,
-                            "required_courses": sorted(list(set(expanded_major_courses))),
-                            "choice_groups": []
+                            "required_courses": required_courses,
+                            "choice_groups": valid_choice_groups
                         }
 
             # 2b. Check for Specialisation Requirements (Commerce, EBE, Law, Science, Health)

@@ -1,5 +1,5 @@
 {
-  "source": "UCT Handbook Extracted from 2026-hum-handbook-9a-final-web.pdf",
+  "source": "UCT Handbook Extracted from handbook.pdf",
   "programmes": {
     "regular_programme": {
       "name": "Regular Programme",
@@ -13,19 +13,513 @@
       "minimum_senior_semester_courses": 10,
       "minimum_majors": 2,
       "minimum_humanities_semester_courses": 12,
+      "minimum_humanities_majors": 1,
       "required_courses": []
     }
   },
   "majors": {
+    "additional_language": {
+      "name": "Additional Language",
+      "code": "EDN31",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [
+        "EDN2500W",
+        "EDN2501W",
+        "EDN2502W",
+        "EDN2503W",
+        "EDN2504W",
+        "EDN2505W",
+        "EDN2506W"
+      ],
+      "choice_groups": []
+    },
+    "advanced_certificate_in_senior_phase_teaching_specialising_in_mathematics": {
+      "name": "Advanced Certificate In Senior Phase Teaching Specialising In Mathematics",
+      "code": "EDN32",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [
+        "EDN2507W",
+        "EDN2508W",
+        "EDN2509W",
+        "EDN2510W",
+        "EDN2511W",
+        "EDN2512W",
+        "EDN2513W"
+      ],
+      "choice_groups": []
+    },
+    "advanced_certificate_in_senior_phase_teaching_specialising_in_natural_sciences": {
+      "name": "Advanced Certificate In Senior Phase Teaching Specialising In Natural Sciences",
+      "code": "EDN33",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [
+        "EDN2514W",
+        "EDN2515W",
+        "EDN2516W",
+        "EDN2517W",
+        "EDN2518W",
+        "EDN2519W",
+        "EDN2520W",
+        "POL2002F",
+        "POL2039F",
+        "POL2042S",
+        "POL2043S",
+        "ECO2008S",
+        "PHI2012F",
+        "PHI2016S",
+        "PHI2037F",
+        "PHI2040S",
+        "PHI2043F",
+        "PHI2043S",
+        "PHI2044F",
+        "PHI2045S",
+        "PHI3023F",
+        "PHI3024S",
+        "POL3029F",
+        "POL3030F",
+        "POL3037F",
+        "POL3038S",
+        "POL3045S",
+        "POL3046S",
+        "ECO3009F",
+        "ECO3016F",
+        "ECO3020F",
+        "ECO3021S",
+        "ECO3022S",
+        "ECO3023S",
+        "ECO3024F",
+        "PSY3005F",
+        "PSY3011S",
+        "SOC3007F",
+        "SOC3027F",
+        "SOC3031S",
+        "SOC3029S",
+        "FIN2011W",
+        "FIN2012W",
+        "FIN2013W",
+        "FIN2024W",
+        "FIN2025W",
+        "FIN3011W",
+        "FIN3012W",
+        "FIN3013W",
+        "FIN3024W",
+        "FIN3025W",
+        "FIN3028F",
+        "FIN3029S"
+      ],
+      "choice_groups": []
+    },
+    "have_reached_a_standard_equivalent_to_a_pass_in_jazz_piano_d1_._students": {
+      "name": "Have Reached A Standard Equivalent To A Pass In Jazz Piano D1 . Students",
+      "code": "MUZ1255H",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "stream_1_world_music": {
+      "name": "Stream 1: World Music",
+      "code": "MUZ14",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1399H",
+        "MUZ1374H",
+        "MUZ1281H"
+      ],
+      "choice_groups": []
+    },
+    "stream_2_african_music": {
+      "name": "Stream 2: African Music",
+      "code": "MUZ02",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1374H",
+        "MUZ1281H",
+        "MUZ2281H",
+        "MUZ2374H"
+      ],
+      "choice_groups": []
+    },
+    "stream_3_classical": {
+      "name": "Stream 3: Classical",
+      "code": "MUZ27",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1309H",
+        "MUZ1207H",
+        "MUZ1211H",
+        "MUZ1215H",
+        "MUZ1386H",
+        "MUZ1223H",
+        "MUZ1229H",
+        "MUZ1233H",
+        "MUZ1237H",
+        "MUZ1241H",
+        "MUZ1245H",
+        "MUZ1249H",
+        "MUZ1257H",
+        "MUZ1261H",
+        "MUZ1265H",
+        "MUZ1269H",
+        "MUZ1274H",
+        "MUZ1283H",
+        "MUZ1287H",
+        "MUZ1291H",
+        "MUZ1294H",
+        "MUZ1298H",
+        "MUZ1302H",
+        "MUZ1333H",
+        "MUZ1320H"
+      ],
+      "choice_groups": []
+    },
+    "stream_4_jazz_studies": {
+      "name": "Stream 4: Jazz Studies",
+      "code": "MUZ07",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1385H",
+        "MUZ1204H",
+        "MUZ1226H",
+        "MUZ1391H",
+        "MUZ1389H",
+        "MUZ1393H",
+        "MUZ1252H",
+        "MUZ1254H",
+        "MUZ1306H",
+        "MUZ1395H",
+        "MUZ1397H",
+        "MUZ1278H",
+        "MUZ1363H",
+        "MUZ1322F",
+        "MUZ1350H",
+        "MUZ1367F",
+        "MUZ1381H"
+      ],
+      "choice_groups": []
+    },
+    "stream_5_opera": {
+      "name": "Stream 5: Opera",
+      "code": "MUZ23",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1322F",
+        "MUZ1367F",
+        "MUZ1381H"
+      ],
+      "choice_groups": []
+    },
+    "stream_1_general": {
+      "name": "Stream 1: General",
+      "code": "MUZ33",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1399H",
+        "SLL1093H",
+        "MUZ1367F",
+        "MUZ1322F",
+        "MUZ1381H",
+        "MUZ1340H",
+        "MUZ1351H",
+        "MUZ1375H",
+        "MUZ1309H",
+        "MUZ1201H",
+        "MUZ1207H",
+        "MUZ1211H",
+        "MUZ1215H",
+        "MUZ1386H",
+        "MUZ1219H",
+        "MUZ1223H",
+        "MUZ1229H",
+        "MUZ1233H",
+        "MUZ1237H",
+        "MUZ1241H",
+        "MUZ1245H",
+        "MUZ1249H",
+        "MUZ1257H",
+        "MUZ1261H",
+        "MUZ1265H",
+        "MUZ1269H",
+        "MUZ1274H",
+        "MUZ1283H",
+        "MUZ1287H",
+        "MUZ1291H",
+        "MUZ1294H",
+        "MUZ1298H",
+        "MUZ1302H",
+        "MUZ1380H",
+        "MUZ1324H",
+        "MUZ1320H",
+        "MUZ1323H",
+        "MUZ1333H",
+        "MUZ1404H",
+        "MUZ1281H",
+        "MUZ1374H",
+        "SLL1092H"
+      ],
+      "choice_groups": []
+    },
+    "stream_2_african_music_performance": {
+      "name": "Stream 2: African Music Performance",
+      "code": "MUZ44",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1281H",
+        "MUZ1374H",
+        "MUZ1323H",
+        "MUZ1366H",
+        "MUZ2281H",
+        "MUZ2374H"
+      ],
+      "choice_groups": []
+    },
+    "stream_3_classical_performance": {
+      "name": "Stream 3: Classical Performance",
+      "code": "MUZ42",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "SLL1093H",
+        "MUZ1322F",
+        "MUZ1367F",
+        "MUZ1381H",
+        "MUZ1309H",
+        "MUZ1207H",
+        "MUZ1211H",
+        "MUZ1215H",
+        "MUZ1386H",
+        "MUZ1219H",
+        "MUZ1223H",
+        "MUZ1229H",
+        "MUZ1233H",
+        "MUZ1237H",
+        "MUZ1241H",
+        "MUZ1245H",
+        "MUZ1249H",
+        "MUZ1257H",
+        "MUZ1261H",
+        "MUZ1265H",
+        "MUZ1269H",
+        "MUZ1274H",
+        "MUZ1283H",
+        "MUZ1287H",
+        "MUZ1291H",
+        "MUZ1294H",
+        "MUZ1298H",
+        "MUZ1302H",
+        "MUZ1320H",
+        "MUZ1333H",
+        "MUZ1404H",
+        "SLL1092H",
+        "MUZ1340H",
+        "MUZ1351H"
+      ],
+      "choice_groups": []
+    },
+    "stream_6_classical_composition": {
+      "name": "Stream 6: Classical Composition",
+      "code": "MUZ45",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1322F",
+        "MUZ1367F",
+        "MUZ1381H",
+        "SLL1093H",
+        "MUZ1309H",
+        "MUZ1207H",
+        "MUZ1211H",
+        "MUZ1215H",
+        "MUZ1386H",
+        "MUZ1219H",
+        "MUZ1223H",
+        "MUZ1229H",
+        "MUZ1233H",
+        "MUZ1237H",
+        "MUZ1241H",
+        "MUZ1245H",
+        "MUZ1249H",
+        "MUZ1257H",
+        "MUZ1261H",
+        "MUZ1265H",
+        "MUZ1269H",
+        "MUZ1274H",
+        "MUZ1283H",
+        "MUZ1287H",
+        "MUZ1291H",
+        "MUZ1294H",
+        "MUZ1298H",
+        "MUZ1302H",
+        "MUZ1320H",
+        "MUZ1333H",
+        "MUZ1404H",
+        "MUZ1340H",
+        "MUZ1351H",
+        "SLL1092H"
+      ],
+      "choice_groups": []
+    },
+    "stream_7_music_technology": {
+      "name": "Stream 7: Music Technology",
+      "code": "MUZ41",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [
+        "MUZ1399H",
+        "MUZ1400H",
+        "MUZ1322F",
+        "MUZ1367F",
+        "MUZ1381H",
+        "SLL1093H",
+        "MUZ1340H",
+        "MUZ1351H",
+        "MUZ1375H",
+        "MUZ1309H",
+        "MUZ1201H",
+        "MUZ1207H",
+        "MUZ1211H",
+        "MUZ1215H",
+        "MUZ1386H",
+        "MUZ1219H",
+        "MUZ1223H",
+        "MUZ1229H",
+        "MUZ1233H",
+        "MUZ1237H",
+        "MUZ1241H",
+        "MUZ1245H",
+        "MUZ1249H",
+        "MUZ1257H",
+        "MUZ1261H",
+        "MUZ1265H",
+        "MUZ1269H",
+        "MUZ1274H",
+        "MUZ1283H",
+        "MUZ1287H",
+        "MUZ1291H",
+        "MUZ1294H",
+        "MUZ1298H",
+        "MUZ1302H",
+        "MUZ1380H",
+        "MUZ1324H",
+        "MUZ1320H",
+        "MUZ1323H",
+        "MUZ1333H",
+        "MUZ1404H",
+        "MUZ1281H",
+        "MUZ1374H",
+        "TDP3043W",
+        "TDP3047W",
+        "TDP3041W",
+        "TDP3050W",
+        "TDP3051W",
+        "TDP3042W",
+        "TDP3046W",
+        "TDP3040W",
+        "TDP3048W",
+        "TDP3049W",
+        "TDP4040W",
+        "TDP4045W",
+        "TDP4041W",
+        "TDP4046W",
+        "TDP4047W"
+      ],
+      "choice_groups": []
+    },
+    "african_music_performance": {
+      "name": "African Music Performance",
+      "code": "MUZ44",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "general": {
+      "name": "General",
+      "code": "MUZ33",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "jazz_studies": {
+      "name": "Jazz Studies",
+      "code": "MUZ07",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "music_technology": {
+      "name": "Music Technology",
+      "code": "MUZ41",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "music_technology_[muz41]": {
+      "name": "Music Technology [Muz41]",
+      "code": "MUZ23",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "classical_composition": {
+      "name": "Classical Composition",
+      "code": "MUZ45",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "classical_performance": {
+      "name": "Classical Performance",
+      "code": "MUZ42",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "gender_studies": {
       "name": "Gender Studies",
-      "department": "African Feminist Studies    126",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "AFS1100S",
         "AFS2100F",
-        "AFS2102S",
         "AFS3100F",
         "AFS3101S",
         "ANS2401F",
@@ -33,62 +527,157 @@
         "REL2047F",
         "SOC2004S"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "AFS2102S",
+            "ANS2401F",
+            "ANS2402S",
+            "REL2047F",
+            "SOC2004S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_gender_studies": {
+      "name": "Requirements For A Major In Gender Studies",
+      "code": "AFS01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "african_studies": {
       "name": "African Studies",
-      "department": "African Studies And Linguistics    129",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "ASL1201S",
-        "ASL2202F"
+        "ASL2202F",
+        "ASL3200F",
+        "ASL3201S"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "AFS2100F",
+            "AFS2102S",
+            "ASL2200S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_african_studies": {
+      "name": "Requirements For A Major In African Studies",
+      "code": "ASL01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "linguistics": {
       "name": "Linguistics",
-      "department": "African Studies And Linguistics    130",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "ASL1300F",
         "ASL1301S",
         "ASL2300F",
-        "ASL2301S"
+        "ASL2301S",
+        "ASL3300F",
+        "ASL3301S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_linguistics": {
+      "name": "Requirements For A Major In Linguistics",
+      "code": "ASL02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "anthropology": {
       "name": "Anthropology",
-      "department": "Anthropology    137",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "ANS1400F",
-        "ANS1401S"
+        "ANS2400Z",
+        "ANS2402S",
+        "ANS3400F",
+        "ANS3401S"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "ANS1400F",
+            "ANS1401S"
+          ]
+        },
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "ANS2401F",
+            "ANS2404S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_anthropology": {
+      "name": "Requirements For A Major In Anthropology",
+      "code": "ANS01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "archaeology": {
       "name": "Archaeology",
-      "department": "Archaeology    143",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "AGE1002S",
         "AGE2011S",
         "AGE2012F",
-        "AGE3011F",
-        "AGE3012S",
-        "AGE3013H",
-        "AXL1400F"
+        "AGE3013H"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "AGE3011F",
+            "AGE3012S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_archaeology": {
+      "name": "Requirements For A Major In Archaeology",
+      "code": "AGE01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "computer_science": {
       "name": "Computer Science",
-      "department": "Computer Science    153",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -96,6 +685,9 @@
         "CSC2001F",
         "CSC2002S",
         "CSC2004Z",
+        "CSC2042S",
+        "CSC3002F",
+        "CSC3003S",
         "INF2009F",
         "MAM1004F",
         "MAM1008S",
@@ -104,9 +696,18 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_computer_science": {
+      "name": "Requirements For A Major In Computer Science",
+      "code": "CSC05",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "economics": {
       "name": "Economics",
-      "department": "Economics, School Of    160",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -116,17 +717,46 @@
         "ECO1011S",
         "ECO2003F",
         "ECO2004S",
-        "ECO2007S",
-        "ECO2008S",
         "ECO3020F",
         "MAM1010F",
         "STA1000S"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "ECO2007S",
+            "ECO2008S"
+          ]
+        },
+        {
+          "label": "TWO of the following:",
+          "required": 2,
+          "courses": [
+            "ECO3009F",
+            "ECO3016F",
+            "ECO3021S",
+            "ECO3022S",
+            "ECO3023S",
+            "ECO3024F",
+            "ECO3025S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_economics": {
+      "name": "Requirements For A Major In Economics",
+      "code": "ECO01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "literary_studies": {
       "name": "Literary Studies",
-      "department": "English Literary Studies    189",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -139,26 +769,51 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_literary_studies": {
+      "name": "Requirements For A Major In Literary Studies",
+      "code": "ELL10",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "environmental_and_geographical_science": {
       "name": "Environmental And Geographical Science",
-      "department": "Environmental And Geographical Science    196",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "EGS1007S",
         "EGS2016F",
         "EGS2017S",
-        "EGS3012S",
-        "EGS3021F",
-        "EGS3022S",
-        "EGS3023F",
         "GEO1009F"
       ],
+      "choice_groups": [
+        {
+          "label": "Two of the following:",
+          "required": 2,
+          "courses": [
+            "EGS3012S",
+            "EGS3021F",
+            "EGS3022S",
+            "EGS3023F"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_environmental_and_geographical_science": {
+      "name": "Requirements For A Major In Environmental And Geographical Science",
+      "code": "EGS02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "film_and_television_studies": {
       "name": "Film And Television Studies",
-      "department": "Film And Media Studies, Centre For    202",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -170,21 +825,51 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_film_and_television_studies": {
+      "name": "Requirements For A Major In Film And Television Studies",
+      "code": "FAM01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "media_and_writing": {
       "name": "Media And Writing",
-      "department": "Film And Media Studies, Centre For    202",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "FAM1001F",
         "FAM2000F",
-        "FAM2003S"
+        "FAM2003S",
+        "FAM3000F",
+        "FAM3001S",
+        "REL3042S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_media_and_writing": {
+      "name": "Requirements For A Major In Media And Writing",
+      "code": "FAM07",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_art_history_and_discourse_of_art": {
+      "name": "Requirements For A Major In Art History And Discourse Of Art",
+      "code": "FIN05",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "history": {
       "name": "History",
-      "department": "Historical Studies     226",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -192,11 +877,30 @@
         "HST1014S",
         "HST3043F"
       ],
+      "choice_groups": [
+        {
+          "label": "and ONE of the following:",
+          "required": 1,
+          "courses": [
+            "HST3037S",
+            "HST3045S",
+            "HST3046S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_history": {
+      "name": "Requirements For A Major In History",
+      "code": "HST04",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "informatics": {
       "name": "Informatics",
-      "department": "Information Systems      234",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -206,13 +910,34 @@
         "INF2003F",
         "INF2008F",
         "INF2009F",
-        "INF2011S"
+        "INF2010S",
+        "INF2011S",
+        "INF3014F"
       ],
+      "choice_groups": [
+        {
+          "label": "and ONE of the following:",
+          "required": 1,
+          "courses": [
+            "INF2003F",
+            "INF3003W",
+            "INF3011F"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_informatics": {
+      "name": "Requirements For A Major In Informatics",
+      "code": "INF09",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "xhosa_communication": {
       "name": "Xhosa Communication",
-      "department": "Languages And Literatures, School Of      243",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -223,14 +948,21 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_xhosa_communication": {
+      "name": "Requirements For A Major In Xhosa Communication",
+      "code": "SLL15",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "african_languages_and_literatures": {
       "name": "African Languages & Literatures",
-      "department": "Languages And Literatures, School Of      244",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "SLL1101F",
-        "SLL1102S",
         "SLL1131F",
         "SLL1132S",
         "SLL2131F",
@@ -240,25 +972,43 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_african_languages_and_literatures": {
+      "name": "Requirements For A Major In African Languages & Literatures",
+      "code": "SLL01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "afrikaans": {
       "name": "Afrikaans",
-      "department": "Languages And Literatures, School Of      253",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SLL2040F",
         "SLL2041S",
-        "SLL3040F"
+        "SLL3040F",
+        "SLL3041S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_afrikaans": {
+      "name": "Requirements For A Major In Afrikaans",
+      "code": "SLL02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "arabic_language_and_literature": {
       "name": "Arabic Language And Literature",
-      "department": "Languages And Literatures, School Of      256",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "SLL1059S",
         "SLL2080F",
         "SLL2081S",
         "SLL3080F",
@@ -266,9 +1016,18 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_arabic_language_and_literature": {
+      "name": "Requirements For A Major In Arabic Language And Literature",
+      "code": "SLL03",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "chinese_studies": {
       "name": "Chinese Studies",
-      "department": "Languages And Literatures, School Of       259",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -281,47 +1040,113 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_chinese_studies": {
+      "name": "Requirements For A Major In Chinese Studies",
+      "code": "SLL21",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "classical_studies": {
       "name": "Classical Studies",
-      "department": "Languages And Literatures, School Of       262",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
-      "required_courses": [
-        "SLL2050F",
-        "SLL2051S",
-        "SLL2052F",
-        "SLL2053S",
-        "SLL2055S",
-        "SLL2056S",
-        "SLL2057F",
-        "SLL2058F",
-        "SLL2059F",
-        "SLL3001F",
-        "SLL3057F",
-        "SLL3059F"
-      ],
+      "required_courses": [],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SLL2050F",
+            "SLL2052F",
+            "SLL2057F",
+            "SLL2058F",
+            "SLL2059F"
+          ]
+        },
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SLL2051S",
+            "SLL2053S",
+            "SLL2055S",
+            "SLL2056S"
+          ]
+        },
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SLL3001F",
+            "SLL3050F",
+            "SLL3052F",
+            "SLL3057F",
+            "SLL3059F"
+          ]
+        },
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SLL3051S",
+            "SLL3053S",
+            "SLL3055S",
+            "SLL3056S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_classical_studies": {
+      "name": "Requirements For A Major In Classical Studies",
+      "code": "SLL05",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "french": {
       "name": "French",
-      "department": "Languages And Literatures, School Of       271",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SLL2060F",
         "SLL2061S",
         "SLL3060F",
-        "SLL3061S"
+        "SLL3061S",
+        "SLL3070W"
       ],
+      "choice_groups": []
+    },
+    "for_non-francophone_students": {
+      "name": "For Non-Francophone Students",
+      "code": "SLL06",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "for_francophone_students": {
+      "name": "For Francophone Students",
+      "code": "SLL06",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "business_french": {
       "name": "Business French",
-      "department": "Languages And Literatures, School Of       272",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "SLL1061S",
         "SLL2060F",
         "SLL2061S",
         "SLL3084F",
@@ -329,58 +1154,130 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_business_french": {
+      "name": "Requirements For A Major In Business French",
+      "code": "SLL04",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "german": {
       "name": "German",
-      "department": "Languages And Literatures, School Of       277",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SLL2062F",
-        "SLL2063S"
+        "SLL2063S",
+        "SLL3062F",
+        "SLL3063S",
+        "SLL3071F",
+        "SLL3072S"
       ],
+      "choice_groups": []
+    },
+    "for_students_studying_german_as_a_foreign_language": {
+      "name": "For Students Studying German As A Foreign Language",
+      "code": "SLL08",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "for_students_with_german_as_a_home_or_second_language": {
+      "name": "For Students With German As A Home Or Second Language",
+      "code": "SLL08",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "hebrew_language_and_literature": {
       "name": "Hebrew Language And Literature",
-      "department": "Languages And Literatures, School Of       281",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "SLL2082F"
+        "SLL2082F",
+        "SLL2083S",
+        "SLL3082F",
+        "SLL3083S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_hebrew_language_and_literature": {
+      "name": "Requirements For A Major In Hebrew Language And Literature",
+      "code": "SLL09",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "italian": {
       "name": "Italian",
-      "department": "Languages And Literatures, School Of       283",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SLL2064F",
-        "SLL2065S"
+        "SLL2065S",
+        "SLL3064F",
+        "SLL3065S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_italian": {
+      "name": "Requirements For A Major In Italian",
+      "code": "SLL10",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "portuguese": {
       "name": "Portuguese",
-      "department": "Languages And Literatures, School Of       286",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SLL2075F",
         "SLL2076S",
         "SLL3075F",
-        "SLL3076S"
+        "SLL3076S",
+        "SLL3077W"
       ],
+      "choice_groups": []
+    },
+    "for_students_studying_portuguese_as_a_foreign_language": {
+      "name": "For Students Studying Portuguese As A Foreign Language",
+      "code": "SLL20",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "for_students_with_portuguese_as_a_home_or_second_language": {
+      "name": "For Students With Portuguese As A Home Or Second Language",
+      "code": "SLL20",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "spanish": {
       "name": "Spanish",
-      "department": "Languages And Literatures, School Of       289",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "SLL1074S",
         "SLL2073F",
         "SLL2074S",
         "SLL3073F",
@@ -388,35 +1285,67 @@
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_spanish": {
+      "name": "Requirements For A Major In Spanish",
+      "code": "SLL13",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "law": {
       "name": "Law",
-      "department": "Law       293",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
+        "PBL2000W",
         "PVL1003W",
         "PVL1004F",
-        "PVL1008H"
+        "PVL1008H",
+        "PVL2002H",
+        "PVL2003H"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_law": {
+      "name": "Requirements For A Major In Law",
+      "code": "PVL06",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "industrial_and_organisational_psychology": {
       "name": "Industrial And Organisational Psychology",
-      "department": "Management Studies, School Of       297",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "BUS1007S",
         "BUS2023S",
         "BUS2024F",
+        "BUS3003F",
+        "BUS3004S",
         "PSY1009F",
         "PSY1010S"
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_industrial_and_organisational_psychology": {
+      "name": "Requirements For A Major In Industrial And Organisational Psychology",
+      "code": "BUS28",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "applied_mathematics": {
       "name": "Applied Mathematics",
-      "department": "Mathematics And Applied Mathematics        301",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -428,46 +1357,100 @@
         "MAM2010F",
         "MAM2011F",
         "MAM2013S",
+        "MAM2014S",
+        "MAM2040F",
+        "MAM2041F",
+        "MAM2042S",
+        "MAM2043S",
+        "MAM3012F",
+        "MAM3042F",
+        "MAM3043S",
+        "MAM3044F",
+        "MAM3045S",
+        "MAM3046S",
         "MAM3055Z"
       ],
       "choice_groups": []
     },
+    "requirements_for_a_major_in_applied_mathematics": {
+      "name": "Requirements For A Major In Applied Mathematics",
+      "code": "MAM01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "mathematics": {
       "name": "Mathematics",
-      "department": "Mathematics And Applied Mathematics        302",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
+        "MAM1004F",
+        "MAM1004S",
+        "MAM1005H",
+        "MAM1006H",
+        "MAM1010F",
+        "MAM1010S",
+        "MAM1012F",
+        "MAM1012S",
+        "MAM1014F",
+        "MAM1014S",
+        "MAM1016S",
         "MAM1019H",
+        "MAM1020F",
+        "MAM1020S",
+        "MAM1021F",
+        "MAM1021S",
         "MAM1031F",
         "MAM1032S",
+        "MAM1033F",
+        "MAM1034S",
         "MAM2010F",
         "MAM2011F",
         "MAM2013S",
-        "MAM2014S"
+        "MAM2014S",
+        "MAM3010F",
+        "MAM3011F",
+        "MAM3012F",
+        "MAM3013S",
+        "MAM3014S",
+        "MAM3015S",
+        "STA1001F"
       ],
       "choice_groups": []
     },
-    "music_within_the_bachelor_of_arts_degree": {
-      "name": "Music Within The Bachelor Of Arts Degree",
-      "department": "Music, South African College Of         318",
-      "category": "bsc",
-      "humanities_major": true,
-      "required_courses": [
-        "MUZ1201H",
-        "MUZ1207H",
-        "MUZ1309H",
-        "MUZ1322F",
-        "MUZ1340H",
-        "MUZ1351H",
-        "MUZ1367F",
-        "MUZ1381H"
-      ],
+    "requirements_for_a_major_in_mathematics": {
+      "name": "Requirements For A Major In Mathematics",
+      "code": "MAM02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "entrance_requirements_for_a_major_in_music_within_the_bachelor_of_arts": {
+      "name": "Entrance Requirements For A Major In Music  Within The Bachelor Of Arts",
+      "code": "MUZ08",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_music_within_the_bachelor_of_arts_degree": {
+      "name": "Requirements For A Major In Music Within The Bachelor Of Arts Degree",
+      "code": "MUZ08",
+      "department": "Unknown",
+      "category": "health",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "philosophy": {
       "name": "Philosophy",
-      "department": "Philosophy         363",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -479,7 +1462,7 @@
       ],
       "choice_groups": [
         {
-          "label": "ONE of the following:",
+          "label": "And ONE of the following:",
           "required": 1,
           "courses": [
             "PHI2012F",
@@ -493,25 +1476,62 @@
         }
       ]
     },
+    "requirements_for_a_major_in_philosophy": {
+      "name": "Requirements For A Major In Philosophy",
+      "code": "PHI01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
+      "choice_groups": []
+    },
     "politics_and_governance": {
       "name": "Politics & Governance",
-      "department": "Political Studies         370",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "POL1004F",
-        "POL1005S",
-        "POL2002F",
-        "POL2038F",
-        "POL2039F",
-        "POL2042S",
-        "POL2043S"
+        "POL1005S"
       ],
+      "choice_groups": [
+        {
+          "label": "Any TWO of the following:",
+          "required": 2,
+          "courses": [
+            "POL2002F",
+            "POL2038F",
+            "POL2039F",
+            "POL2042S",
+            "POL2043S"
+          ]
+        },
+        {
+          "label": "Any TWO of the following:",
+          "required": 2,
+          "courses": [
+            "POL3029F",
+            "POL3030F",
+            "POL3037F",
+            "POL3038S",
+            "POL3045S",
+            "POL3046S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_politics_and_governance": {
+      "name": "Requirements For A Major In Politics & Governance",
+      "code": "POL10",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "psychology": {
       "name": "Psychology",
-      "department": "Psychology         379",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -522,62 +1542,142 @@
         "PSY2013F",
         "PSY2014S",
         "PSY2015F",
-        "PSY3005F",
-        "PSY3007S",
-        "PSY3009F"
+        "PSY3007S"
       ],
+      "choice_groups": [
+        {
+          "label": "TWO of the following:",
+          "required": 2,
+          "courses": [
+            "PSY3005F",
+            "PSY3009F",
+            "PSY3010S",
+            "PSY3011S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_psychology": {
+      "name": "Requirements For A Major In Psychology",
+      "code": "PSY01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "social_development": {
       "name": "Social Development",
-      "department": "Social Work And Social Development         387",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "SWK1006S",
-        "SWK1013F"
+        "SWK1013F",
+        "SWK2001F",
+        "SWK2013S",
+        "SWK3001F",
+        "SWK3066S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_social_development": {
+      "name": "Requirements For A Major In Social Development",
+      "code": "SWK03",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "industrial_sociology": {
       "name": "Industrial Sociology",
-      "department": "Sociology         399",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "PBL2800F",
-        "SOC1001F",
-        "SOC1005S",
-        "SOC2004S",
         "SOC2015S",
-        "SOC2019S",
-        "SOC2030F",
-        "SOC2032F",
-        "SOC2036F"
+        "SOC3007F",
+        "SOC3027F",
+        "SOC3029S"
       ],
+      "choice_groups": [
+        {
+          "label": "At least ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SOC1001F",
+            "SOC1005S"
+          ]
+        },
+        {
+          "label": "AND at least ONE of the following:",
+          "required": 1,
+          "courses": [
+            "PBL2800F",
+            "SOC2004S",
+            "SOC2019S",
+            "SOC2030F",
+            "SOC2032F",
+            "SOC2036F"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_industrial_sociology": {
+      "name": "Requirements For A Major In Industrial Sociology",
+      "code": "SOC02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "sociology": {
       "name": "Sociology",
-      "department": "Sociology         399",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "PBL2800F",
-        "SOC1001F",
-        "SOC1005S",
-        "SOC2004S",
-        "SOC2015S",
-        "SOC2019S",
-        "SOC2030F",
-        "SOC2032F",
-        "SOC2036F"
+        "SOC3007F",
+        "SOC3031S"
       ],
+      "choice_groups": [
+        {
+          "label": "At least ONE of the following:",
+          "required": 1,
+          "courses": [
+            "SOC1001F",
+            "SOC1005S"
+          ]
+        },
+        {
+          "label": "At least TWO of the following:",
+          "required": 2,
+          "courses": [
+            "PBL2800F",
+            "SOC2004S",
+            "SOC2015S",
+            "SOC2019S",
+            "SOC2030F",
+            "SOC2032F",
+            "SOC2036F"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_sociology": {
+      "name": "Requirements For A Major In Sociology",
+      "code": "SOC01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "applied_statistics": {
       "name": "Applied Statistics",
-      "department": "Statistical Sciences          407",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
@@ -586,53 +1686,114 @@
         "MAM1031F",
         "MAM1032S",
         "STA1007S",
-        "STA2007H"
+        "STA2007H",
+        "STA2030S",
+        "STA3030F",
+        "STA3036S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_applied_statistics": {
+      "name": "Requirements For A Major In Applied Statistics",
+      "code": "STA01",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "mathematical_statistics": {
       "name": "Mathematical Statistics",
-      "department": "Statistical Sciences          407",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
         "MAM1031F",
         "MAM1032S",
+        "MAM2000W",
+        "MAM2010F",
+        "MAM2011F",
+        "MAM2013S",
+        "MAM2014S",
         "STA1006S",
         "STA2004F",
         "STA2005S",
-        "STA3041F"
+        "STA3041F",
+        "STA3043S"
       ],
+      "choice_groups": []
+    },
+    "requirements_for_a_major_in_mathematical_statistics": {
+      "name": "Requirements For A Major In Mathematical Statistics",
+      "code": "STA02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "theatre_and_dance_studies": {
       "name": "Theatre And Dance Studies",
-      "department": "Statistical Sciences          416",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "TDP1027F",
-        "TDP1045S",
         "TDP2010F",
-        "TDP2014S"
+        "TDP2014S",
+        "TDP3010F",
+        "TDP3018S"
       ],
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "TDP1027F",
+            "TDP1045S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_theatre_and_dance_studies": {
+      "name": "Requirements For A Major In Theatre And Dance Studies",
+      "code": "TDP09",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     },
     "the_study_of_religions": {
       "name": "The Study Of Religions",
-      "department": "Statistical Sciences          416",
+      "department": "Unknown",
       "category": "bsc",
       "humanities_major": true,
       "required_courses": [
-        "REL1002F",
-        "REL1006S",
-        "REL1017S",
         "REL2040F",
         "REL2047F",
         "REL2048S",
         "REL3037F",
         "REL3042S"
       ],
+      "choice_groups": [
+        {
+          "label": "At least ONE of the following:",
+          "required": 1,
+          "courses": [
+            "REL1002F",
+            "REL1006S",
+            "REL1017S"
+          ]
+        }
+      ]
+    },
+    "requirements_for_a_major_in_the_study_of_religions": {
+      "name": "Requirements For A Major In The Study Of Religions",
+      "code": "REL02",
+      "department": "Unknown",
+      "category": "science",
+      "humanities_major": false,
+      "required_courses": [],
       "choice_groups": []
     }
   }
