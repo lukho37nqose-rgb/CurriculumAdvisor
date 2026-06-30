@@ -196,6 +196,7 @@ def load_faculty_data(faculty_dir):
 
 courses_data, rules, courses_by_code = load_faculty_data(st.session_state.faculty_dir)
 majors = rules.get("majors", {})
+programmes = rules.get("programmes", {})
 
 
 
