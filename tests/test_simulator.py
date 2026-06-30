@@ -186,5 +186,18 @@ class TestSimulationEngine(unittest.TestCase):
         self.assertEqual(sim_student.declared_majors, [])
         self.assertEqual(report, "MockReport")
 
+
+    @patch('engine.simulator.compute_report')
+    def test_simulate_switch_majors(self, mock_compute_report):
+        mock_compute_report.return_value = "MockReport"
+
+        report = self.engine.simulate_switch_majors(["Computer Science", "Mathematics"])
+
+        args, _ = mock_compute_report.call_args
+        sim_student = args[0]
+
+        self.assertEqual(sim_student.declared_majors, ["Computer Science", "Mathematics"])
+        self.assertEqual(report, "MockReport")
+
 if __name__ == "__main__":
     unittest.main()
