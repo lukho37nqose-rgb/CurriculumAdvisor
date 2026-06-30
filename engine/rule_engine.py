@@ -226,7 +226,10 @@ def _compute_exclusion_risk(
 
     passed = student.passed_codes()
     passed_count = len(passed)
-    senior_passed = sum(1 for c in passed if _is_senior(c))
+    senior_passed = 0
+    for c in passed:
+        if _is_senior(c):
+            senior_passed += 1
 
     # Infer year from number of courses attempted (rough heuristic)
     attempted = len(student.attempted_codes())
