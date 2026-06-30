@@ -172,7 +172,7 @@ st.markdown(
 )
 
 # ── Data loading ───────────────────────────────────────────────────────────────
-BASE = Path(__file__).parent
+BASE = Path("data")
 
 
 def load_json(path):
@@ -184,9 +184,17 @@ def load_json(path):
         return None
 
 
-courses_data = load_json(BASE / "courses.json") or []
-rules = load_json(BASE / "degree_requirements.json") or {}
-courses_by_code = {c["code"]: c for c in courses_data}
+# Initialize session state for faculty
+if "faculty_dir" not in st.session_state:
+    st.session_state.faculty_dir = "uct_humanities"
+
+def load_faculty_data(faculty_dir):
+    c_data = load_json(BASE / faculty_dir / "courses.json") or []
+    r_data = load_json(BASE / faculty_dir / "degree_requirements.json") or {}
+    c_by_code = {c["code"]: c for c in c_data}
+    return c_data, r_data, c_by_code
+
+courses_data, rules, courses_by_code = load_faculty_data(st.session_state.faculty_dir)
 majors = rules.get("majors", {})
 programmes = rules.get("programmes", {})
 
@@ -365,9 +373,35 @@ def step_1():
     render_steps()
     st.markdown('<p class="page-title">Build your student profile</p>', unsafe_allow_html=True)
     st.markdown(
-        '<p class="page-subtitle">Start with the degree, majors, and electives that belong to this student.</p>',
+        '<p class="page-subtitle">Start with the faculty, degree, majors, and electives that belong to this student.</p>',
         unsafe_allow_html=True,
     )
+
+    st.markdown("**Faculty**")
+    faculties = ["uct_commerce", "uct_ebe", "uct_health", "uct_humanities", "uct_law", "uct_science"]
+    fac_names = {
+        "uct_commerce": "Commerce",
+        "uct_ebe": "Engineering & Built Environment",
+        "uct_health": "Health Sciences",
+        "uct_humanities": "Humanities",
+        "uct_law": "Law",
+        "uct_science": "Science"
+    }
+
+    selected_fac = st.selectbox(
+        "Faculty",
+        options=faculties,
+        index=faculties.index(st.session_state.faculty_dir),
+        format_func=lambda k: fac_names[k],
+        label_visibility="collapsed"
+    )
+
+    if selected_fac != st.session_state.faculty_dir:
+        st.session_state.faculty_dir = selected_fac
+        st.session_state.programme_key = list(programmes.keys())[0] if programmes else "regular_programme"
+        st.session_state.selected_majors = []
+        st.session_state.completed_codes = set()
+        st.rerun()
 
     prog_keys = list(programmes.keys())
     current_idx = prog_keys.index(st.session_state.programme_key) \
