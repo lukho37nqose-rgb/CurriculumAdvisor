@@ -199,7 +199,6 @@ majors = rules.get("majors", {})
 programmes = rules.get("programmes", {})
 
 
-
 # ── Helpers ────────────────────────────────────────────────────────────────────
 def get_nqf_level(course):
     if "nqf_level" in course:
@@ -399,7 +398,7 @@ def step_1():
 
     if selected_fac != st.session_state.faculty_dir:
         st.session_state.faculty_dir = selected_fac
-        st.session_state.programme_key = "regular_programme"
+        st.session_state.programme_key = list(programmes.keys())[0] if programmes else "regular_programme"
         st.session_state.selected_majors = []
         st.session_state.completed_codes = set()
         st.rerun()
