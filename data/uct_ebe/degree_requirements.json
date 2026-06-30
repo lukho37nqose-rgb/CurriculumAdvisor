@@ -1,5 +1,5 @@
 {
-  "source": "UCT Handbook Extracted from 2026-ebe-handbook-7a-final-web.pdf",
+  "source": "UCT Handbook Extracted from ebe_handbook.pdf",
   "programmes": {
     "regular_programme": {
       "name": "EBE Undergraduate Programme",
@@ -26,7 +26,7 @@
     "bachelor_of_architectural_studies": {
       "name": "Bachelor Of Architectural Studies",
       "code": "EB012APG01",
-      "department": "Programmes Of Study    22",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -57,7 +57,7 @@
     "bachelor_of_science_in_geomatics": {
       "name": "Bachelor Of Science In Geomatics",
       "code": "EB019",
-      "department": "Programmes Of Study    24",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [],
@@ -66,7 +66,7 @@
     "bachelor_of_science_in_geomatics_surveying_stream_4-year_curriculum": {
       "name": "Bachelor Of Science In Geomatics: Surveying Stream 4-Year Curriculum",
       "code": "EB019APG09",
-      "department": "Programmes Of Study    25",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -108,7 +108,7 @@
     "bachelor_of_science_in_geomatics_surveying_stream_5-year_curriculum": {
       "name": "Bachelor Of Science In Geomatics: Surveying Stream 5-Year Curriculum",
       "code": "EB819APG09",
-      "department": "Programmes Of Study    26",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -149,7 +149,7 @@
     "computer_science_specialisation": {
       "name": "Computer Science Specialisation",
       "code": "EB819APG11",
-      "department": "Programmes Of Study    29",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -191,7 +191,7 @@
     "environmental_and_geographical_science_specialisation": {
       "name": "Environmental And Geographical Science Specialisation",
       "code": "EB819APG11",
-      "department": "Programmes Of Study    32",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -235,7 +235,7 @@
     "bscengineeringchemical_engineering": {
       "name": "Bsc(Engineering)(Chemical Engineering)",
       "code": "EB801CHE01",
-      "department": "Programmes Of Study    37",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -260,10 +260,10 @@
       ],
       "choice_groups": []
     },
-    "chemical_engineering": {
-      "name": "Chemical Engineering",
+    "programmes_of_study_39_three-year_programme_for_transferees_into_bachelor_of_science_in_engineering_in_chemical_engineering": {
+      "name": "Programmes Of Study 39 Three-Year Programme For Transferees Into Bachelor Of Science In Engineering In Chemical Engineering",
       "code": "EB001CHE06",
-      "department": "Programmes Of Study    39",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [],
@@ -272,16 +272,16 @@
     "of_science_in_engineering_in_chemical_engineering": {
       "name": "Of Science In Engineering In Chemical Engineering",
       "code": "EB001CHE06",
-      "department": "Programmes Of Study    39",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [],
       "choice_groups": []
     },
-    "access_programme_for_university_of_technology_transferees": {
-      "name": "Access Programme For University Of Technology Transferees",
+    "programmes_of_study_40_access_programme_for_university_of_technology_transferees": {
+      "name": "Programmes Of Study 40 Access Programme For University Of Technology Transferees",
       "code": "EB001CHE01",
-      "department": "Programmes Of Study    40",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [],
@@ -290,7 +290,7 @@
     "bscengineeringcivil_engineering": {
       "name": "Bsc(Engineering)(Civil Engineering)",
       "code": "EB802CIV01",
-      "department": "Programmes Of Study    43",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -336,7 +336,7 @@
     "bsc_construction_studies": {
       "name": "Bsc (Construction Studies)",
       "code": "EB015CON04",
-      "department": "Programmes Of Study    45",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -373,7 +373,7 @@
     "bscproperty_studies": {
       "name": "Bsc(Property Studies)",
       "code": "EB017CON03",
-      "department": "Programmes Of Study    46",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -410,7 +410,7 @@
     "bscengineeringelectrical_engineering": {
       "name": "Bsc(Engineering)(Electrical Engineering)",
       "code": "EB809EEE01",
-      "department": "Programmes Of Study    50",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -460,7 +460,7 @@
     "bscengineeringelectrical_and_computer_engineering": {
       "name": "Bsc(Engineering)(Electrical And Computer Engineering)",
       "code": "EB822EEE02",
-      "department": "Programmes Of Study    54",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -510,7 +510,7 @@
     "bscengineeringmechatronics": {
       "name": "Bsc(Engineering)(Mechatronics)",
       "code": "EB811EEE05",
-      "department": "Programmes Of Study    59",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -560,7 +560,7 @@
     "bscengineeringmechanical_engineering": {
       "name": "Bsc(Engineering)(Mechanical Engineering)",
       "code": "EB805MEC01",
-      "department": "Programmes Of Study    63",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [
@@ -609,7 +609,7 @@
     "bscengineeringmechanical_and_mechatronic_engineering": {
       "name": "Bsc(Engineering)(Mechanical & Mechatronic Engineering)",
       "code": "EB810MEC05",
-      "department": "Programmes Of Study    67",
+      "department": "Unknown",
       "category": "ebe",
       "humanities_major": false,
       "required_courses": [

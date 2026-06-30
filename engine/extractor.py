@@ -196,16 +196,8 @@ def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]
         # Determine if we are in the undergraduate curriculum section based on page number
         is_undergrad_section = True
         pdf_name_lower = pdf_path.name.lower()
-        if "sci" in pdf_name_lower and page_num > 34:
-            is_undergrad_section = False
-        elif "ebe" in pdf_name_lower and page_num > 71:
-            is_undergrad_section = False
-        elif "law" in pdf_name_lower and page_num > 53:
-            is_undergrad_section = False
-        elif "fhs" in pdf_name_lower and page_num > 70:
-            is_undergrad_section = False
-        elif "commerce" in pdf_name_lower and page_num > 137:
-            is_undergrad_section = False
+        # Ignore page_num checks since we flattened the document
+        pass
             
         if not is_undergrad_section:
             current_major_key = None
