@@ -13,36 +13,37 @@ from engine.reasoning import (
 from engine.rule_engine import compute_report
 
 
-class ReasoningTraceTests(unittest.TestCase):
-    def _student(self) -> StudentRecord:
-        return StudentRecord(
-            student_id="TST001",
-            name="Test Student",
-            programme="Bachelor of Social Science",
-            declared_majors=[],
-            results=[
-                CourseResult(
-                    code="PHI1024F",
-                    name="Introduction To Philosophy",
-                    nqf_level=5,
-                    nqf_credits=18,
-                    mark=65,
-                    grade="2-",
-                ),
-                CourseResult(
-                    code="POL1004F",
-                    name="Introduction To Politics",
-                    nqf_level=5,
-                    nqf_credits=18,
-                    mark=45,
-                    grade="F",
-                ),
-            ],
-        )
+def _create_test_student() -> StudentRecord:
+    return StudentRecord(
+        student_id="TST001",
+        name="Test Student",
+        programme="Bachelor of Social Science",
+        declared_majors=[],
+        results=[
+            CourseResult(
+                code="PHI1024F",
+                name="Introduction To Philosophy",
+                nqf_level=5,
+                nqf_credits=18,
+                mark=65,
+                grade="2-",
+            ),
+            CourseResult(
+                code="POL1004F",
+                name="Introduction To Politics",
+                nqf_level=5,
+                nqf_credits=18,
+                mark=45,
+                grade="F",
+            ),
+        ],
+    )
 
+
+class TotalNQFCreditsTests(unittest.TestCase):
     def test_total_nqf_credit_reasoning_keeps_rule_and_transcript_evidence(self):
         conclusion = evaluate_total_nqf_credits(
-            student=self._student(),
+            student=_create_test_student(),
             required_credits=360,
             programme_key="regular_programme",
             programme_name="Regular Programme",
@@ -64,7 +65,7 @@ class ReasoningTraceTests(unittest.TestCase):
 
     def test_total_credit_requirement_lives_in_reasoning_graph(self):
         graph = build_total_nqf_credits_graph(
-            student=self._student(),
+            student=_create_test_student(),
             required_credits=360,
             programme_key="regular_programme",
             programme_name="Regular Programme",
@@ -78,8 +79,10 @@ class ReasoningTraceTests(unittest.TestCase):
         self.assertEqual(len(graph.by_layer("academic_fact")), 4)
         self.assertEqual(graph.by_layer("requirement"), [requirement])
 
+
+class CreditReasoningGraphTests(unittest.TestCase):
     def test_credit_reasoning_graph_composes_course_pass_into_credit_awarded(self):
-        graph = build_credit_reasoning_graph(self._student())
+        graph = build_credit_reasoning_graph(_create_test_student())
 
         self.assertTrue(graph.conclusions["course_pass:PHI1024F"].result)
         self.assertEqual(graph.conclusions["course_pass:PHI1024F"].layer, "academic_fact")
@@ -94,6 +97,8 @@ class ReasoningTraceTests(unittest.TestCase):
         self.assertFalse(graph.conclusions["course_pass:POL1004F"].result)
         self.assertEqual(graph.conclusions["credit_awarded:POL1004F"].current, 0)
 
+
+class CourseCompletionConflictTests(unittest.TestCase):
     def test_conflicting_course_completion_sources_require_manual_verification(self):
         transcript_pass = build_credit_reasoning_graph(
             StudentRecord(
@@ -142,6 +147,8 @@ class ReasoningTraceTests(unittest.TestCase):
             ],
         )
 
+
+class MajorCompletionGraphTests(unittest.TestCase):
     def test_major_completion_graph_explains_required_and_choice_requirements(self):
         major = MajorDefinition(
             key="test_major",
@@ -191,9 +198,11 @@ class ReasoningTraceTests(unittest.TestCase):
         )
         self.assertIn("1 requirement(s) outstanding", major_complete.explanation)
 
+
+class ReportCreditsRequirementTests(unittest.TestCase):
     def test_report_credits_requirement_includes_reasoning_trace(self):
         catalogue = load_catalogue("uct_humanities")
-        report = compute_report(self._student(), catalogue)
+        report = compute_report(_create_test_student(), catalogue)
         credits_req = next(r for r in report.requirements if r.id == "credits")
 
         self.assertFalse(credits_req.complete)
