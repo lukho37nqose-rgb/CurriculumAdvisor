@@ -18,6 +18,9 @@ except ImportError:
     print("Error: pypdf is required. Run: pip install pypdf")
     sys.exit(1)
 
+# --- Constants ---
+_HEADER_PHRASES = ("BACHELOR OF", "COMMERCE", "BUSINESS SCIENCE", "AUGMENTED", "EXTENDED")
+
 # --- Regex Patterns ---
 
 # Course code pattern: 2-4 uppercase letters + 4 digits + optional letter + optional slash suffixes
@@ -96,8 +99,10 @@ def expand_slash_code(code: str) -> List[str]:
 def is_page_header(line: str) -> bool:
     """Check if a line is a page header or page number."""
     line_clean = line.strip()
-    if line_clean.isupper() and any(phrase in line_clean for phrase in ["BACHELOR OF", "COMMERCE", "BUSINESS SCIENCE", "AUGMENTED", "EXTENDED"]):
-        return True
+    if line_clean.isupper():
+        for phrase in _HEADER_PHRASES:
+            if phrase in line_clean:
+                return True
     if re.match(r"^\d+$", line_clean):
         return True
     if re.search(r"\s+\d+$", line_clean) and line_clean.isupper():
