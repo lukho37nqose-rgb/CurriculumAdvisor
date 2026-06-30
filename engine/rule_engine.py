@@ -12,7 +12,7 @@ No conclusions are stored in the JSON. Everything is derived here.
 from dataclasses import dataclass, field
 from typing import Optional
 from .models import StudentRecord, Catalogue, MajorDefinition, CourseFact
-from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph
+from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph, ReasoningGraph, build_credit_reasoning_graph
 from .utils import _course_weight, _is_senior, _is_humanities, _normalise_major_keys, _infer_programme_key
 
 
@@ -103,10 +103,11 @@ class Report:
 def _compute_major_progress(
     major_def: MajorDefinition,
     student: StudentRecord,
+    base_graph: Optional[ReasoningGraph] = None,
 ) -> MajorProgress:
     completed_reqs: list[str] = []
     outstanding_reqs: list[str] = []
-    graph = build_major_completion_graph(student, major_def)
+    graph = build_major_completion_graph(student, major_def, base_graph)
 
     # Required courses
     for code in major_def.required_courses:
@@ -228,7 +229,10 @@ def _compute_exclusion_risk(
 
     passed = student.passed_codes()
     passed_count = len(passed)
-    senior_passed = sum(1 for c in passed if _is_senior(c))
+    senior_passed = 0
+    for c in passed:
+        if _is_senior(c):
+            senior_passed += 1
 
     # Infer year from number of courses attempted (rough heuristic)
     attempted = len(student.attempted_codes())
@@ -439,10 +443,13 @@ def _compute_course_equivalents(student: StudentRecord, catalogue: Catalogue) ->
 
 def _compute_all_major_progresses(student: StudentRecord, catalogue: Catalogue, major_keys: list[str]) -> tuple[list[MajorProgress], int, int]:
     major_progresses = []
+    base_graph = None
     for key in major_keys:
         major_def = catalogue.majors.get(key)
         if major_def:
-            major_progresses.append(_compute_major_progress(major_def, student))
+            if base_graph is None:
+                base_graph = build_credit_reasoning_graph(student)
+            major_progresses.append(_compute_major_progress(major_def, student, base_graph))
 
     majors_complete = sum(1 for m in major_progresses if m.complete)
     humanities_majors_complete = sum(

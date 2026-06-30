@@ -31,6 +31,7 @@ class TestParseGrade(unittest.TestCase):
         self.assertIsNone(_parse_grade("pa"))
         self.assertIsNone(_parse_grade("f"))
         self.assertIsNone(_parse_grade("Fs"))
+from engine.parser import parse_transcript_pdf
 
 class TestParserPdf(unittest.TestCase):
     def test_parse_transcript_pdf_missing_pypdf(self):

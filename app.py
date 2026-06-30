@@ -17,22 +17,28 @@ from typing import Any
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
-from fastapi.staticfiles import StaticFiles
 
 from engine.catalogue import load_catalogue
 from engine.parser import parse_transcript_pdf, parse_transcript_text
-from engine.rule_engine import compute_report, Report
+from engine.rule_engine import compute_report
 from engine.models import StudentRecord, CourseResult, Catalogue
 from engine.knowledge_graph import KnowledgeGraph
-from engine.reasoner import GraduateGoal, HonoursReadinessGoal, CompleteMajorGoal
+from engine.reasoner import GraduateGoal, HonoursReadinessGoal
 from engine.simulator import SimulationEngine
 from engine.utils import _infer_faculty_key
+import os
 
 app = FastAPI(title="CurriculumAdvisor API", version="2.0")
 
+allowed_origins_env = os.environ.get(
+    "ALLOWED_ORIGINS",
+    "http://localhost:3000,http://localhost:8000,http://127.0.0.1:3000,http://127.0.0.1:8000"
+)
+allowed_origins = [origin.strip() for origin in allowed_origins_env.split(",") if origin.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -438,11 +444,12 @@ def get_blocked(course_code: str, faculty_key: str = "uct_humanities"):
 @app.get("/debug/student")
 def debug_student(faculty_key: str = "uct_ebe"):
     """Debug endpoint to inspect raw parsed student record and catalogue majors."""
+    import os
     from pathlib import Path
     from engine.utils import _normalise_major_keys
     
     # Search for the transcript in downloads
-    downloads_path = Path("C:/Users/Lukho Nqose/Downloads")
+    downloads_path = Path(os.environ.get("DEBUG_DOWNLOADS_DIR", "/tmp"))
     pdf_files = list(downloads_path.glob("*.pdf"))
     
     target_pdf = None
