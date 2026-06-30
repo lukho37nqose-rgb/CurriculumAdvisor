@@ -137,7 +137,12 @@ async def analyse_text(body: dict):
     student = parse_transcript_text(text)
     faculty_key = _infer_faculty_key(student.programme)
     catalogue, _ = get_catalogue_and_graph(faculty_key)
+    print(f"[DEBUG /analyse/text] Raw programme: {student.programme!r}")
+    print(f"[DEBUG /analyse/text] Inferred faculty: {faculty_key!r}")
+    print(f"[DEBUG /analyse/text] Loaded catalogue courses: {len(catalogue.courses)}")
+    print(f"[DEBUG /analyse/text] Raw declared majors: {student.declared_majors!r}")
     report = compute_report(student, catalogue)
+    print(f"[DEBUG /analyse/text] Computed majors: {[m.name for m in report.majors]}")
     return JSONResponse(_to_dict(report))
 
 
