@@ -105,6 +105,8 @@ def is_page_header(line: str) -> bool:
                 return True
     if re.match(r"^\d+$", line_clean):
         return True
+    if re.search(r"^\d+\s+", line_clean) and line_clean.isupper():
+        return True
     if re.search(r"\s+\d+$", line_clean) and line_clean.isupper():
         return True
     return False
@@ -112,6 +114,8 @@ def is_page_header(line: str) -> bool:
 
 def reconstruct_specialisation_name(lines: List[str], index: int) -> str:
     """Reconstruct specialisation name from lines preceding the code."""
+    if index == 0:
+        return "Unknown"
     # If the line immediately preceding starts with a full degree name, just use it
     prev_line = lines[index - 1].strip()
     if re.match(r"^(Bachelor of|BCom|BBusSc)", prev_line, re.IGNORECASE):
@@ -452,11 +456,50 @@ def main():
     
     courses, majors = parse_handbook(pdf_path)
     
-    # Save courses.json
+    # --- Merge Logic for Courses ---
     courses_file = output_dir / "courses.json"
+    final_courses = []
+
+    if courses_file.exists():
+        with open(courses_file, "r", encoding="utf-8") as f:
+            existing_courses = json.load(f)
+
+        existing_map = {c["code"]: c for c in existing_courses}
+
+        # Update existing courses with new data or add new ones
+        for parsed_course in courses:
+            code = parsed_course["code"]
+            if code in existing_map:
+                existing = existing_map[code]
+                # Preserve existing fields if parsed fields are empty/default
+                if not parsed_course.get("prerequisites") and existing.get("prerequisites"):
+                    parsed_course["prerequisites"] = existing["prerequisites"]
+                if not parsed_course.get("offered") and existing.get("offered"):
+                    parsed_course["offered"] = existing["offered"]
+                if not parsed_course.get("description") and existing.get("description"):
+                    parsed_course["description"] = existing["description"]
+                if parsed_course.get("credits", 18) == 18 and existing.get("credits", 18) != 18:
+                    parsed_course["credits"] = existing["credits"]
+                # Keep other existing fields that might not be in parsed_course
+                for k, v in existing.items():
+                    if k not in parsed_course:
+                        parsed_course[k] = v
+
+                final_courses.append(parsed_course)
+                del existing_map[code]
+            else:
+                final_courses.append(parsed_course)
+
+        # Add any remaining existing courses that weren't in the new PDF
+        final_courses.extend(existing_map.values())
+    else:
+        final_courses = courses
+
+    final_courses.sort(key=lambda x: x["code"])
+
     with open(courses_file, "w", encoding="utf-8") as f:
-        json.dump(courses, f, indent=2, ensure_ascii=False)
-    print(f"Saved {len(courses)} courses to {courses_file}")
+        json.dump(final_courses, f, indent=2, ensure_ascii=False)
+    print(f"Saved {len(final_courses)} courses to {courses_file} (merged with existing)")
     
     # Determine faculty-specific programme rules
     pdf_name_lower = pdf_path.name.lower()
@@ -546,18 +589,49 @@ def main():
             "required_courses": []
         }
 
-    # Save degree_requirements.json template
+    # --- Merge Logic for Majors ---
     reqs_file = output_dir / "degree_requirements.json"
-    reqs_data = {
-        "source": f"UCT Handbook Extracted from {pdf_path.name}",
-        "programmes": {
-            "regular_programme": prog_rules
-        },
-        "majors": majors
-    }
+
+    if reqs_file.exists():
+        with open(reqs_file, "r", encoding="utf-8") as f:
+            existing_reqs = json.load(f)
+
+        existing_majors = existing_reqs.get("majors", {})
+
+        # For any major we successfully parsed out of the PDF, overwrite the existing one.
+        # But if the existing one has valid choice groups and the new one doesn't, keep the old one (to preserve manual fixes).
+        for key, new_m in majors.items():
+            if key in existing_majors:
+                old_m = existing_majors[key]
+                # If old has choice groups but new parsed one doesn't, maybe we failed to parse choice groups. Preserve old.
+                if old_m.get("choice_groups") and not new_m.get("choice_groups"):
+                    majors[key] = old_m
+                # Also preserve manual tweaks to required_courses
+                elif set(old_m.get("required_courses", [])) != set(new_m.get("required_courses", [])):
+                    # We will trust the new parsed version if it successfully extracted choice_groups, else trust old.
+                    if not new_m.get("choice_groups"):
+                         majors[key] = old_m
+
+        # Add any old majors that we didn't see in the new PDF
+        for key, old_m in existing_majors.items():
+            if key not in majors:
+                majors[key] = old_m
+
+        reqs_data = existing_reqs
+        reqs_data["majors"] = majors
+        reqs_data["source"] = f"UCT Handbook Extracted from {pdf_path.name} (Merged)"
+    else:
+        reqs_data = {
+            "source": f"UCT Handbook Extracted from {pdf_path.name}",
+            "programmes": {
+                "regular_programme": prog_rules
+            },
+            "majors": majors
+        }
+
     with open(reqs_file, "w", encoding="utf-8") as f:
         json.dump(reqs_data, f, indent=2, ensure_ascii=False)
-    print(f"Saved degree requirements template to {reqs_file}")
+    print(f"Saved merged degree requirements to {reqs_file}")
 
 
 if __name__ == "__main__":
