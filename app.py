@@ -109,7 +109,7 @@ def get_majors():
 
 
 @app.post("/analyse")
-async def analyse_pdf(file: UploadFile = File(...)):
+async def analyse_pdf(faculty: str = "uct_humanities", file: UploadFile = File(...)):
     """Upload a UCT transcript PDF and receive a full graduation report."""
     if not file.filename.endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are accepted.")
@@ -122,8 +122,8 @@ async def analyse_pdf(file: UploadFile = File(...)):
     except Exception as e:
         raise HTTPException(status_code=422, detail=f"Could not parse transcript: {e}")
 
-    faculty_key = _infer_faculty_key(student.programme)
-    catalogue, _ = get_catalogue_and_graph(faculty_key)
+    # Use the passed-in faculty parameter instead of inferring it
+    catalogue, _ = get_catalogue_and_graph(faculty)
     report = compute_report(student, catalogue)
     return JSONResponse(_to_dict(report))
 
@@ -135,7 +135,7 @@ async def analyse_text(body: dict):
     if not text.strip():
         raise HTTPException(status_code=400, detail="No transcript text provided.")
     student = parse_transcript_text(text)
-    faculty_key = _infer_faculty_key(student.programme)
+    faculty_key = body.get("faculty", _infer_faculty_key(student.programme))
     catalogue, _ = get_catalogue_and_graph(faculty_key)
     print(f"[DEBUG /analyse/text] Raw programme: {student.programme!r}")
     print(f"[DEBUG /analyse/text] Inferred faculty: {faculty_key!r}")
@@ -185,7 +185,7 @@ async def analyse_json(body: dict):
     except (KeyError, ValueError) as e:
         raise HTTPException(status_code=422, detail=f"Invalid student record: {e}")
 
-    faculty_key = _infer_faculty_key(student.programme)
+    faculty_key = body.get("faculty", _infer_faculty_key(student.programme))
     catalogue, _ = get_catalogue_and_graph(faculty_key)
     report = compute_report(student, catalogue)
     return JSONResponse(_to_dict(report))

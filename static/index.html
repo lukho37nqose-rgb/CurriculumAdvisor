@@ -550,6 +550,20 @@
       <div class="section-title">Upload your UCT transcript</div>
       <div class="section-body">We read your official academic record and tell you exactly where you stand — what's done, what's still needed, and what to register for next semester.</div>
 
+      <!-- Faculty Selector -->
+      <div style="margin-bottom: 24px; padding: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px;">
+        <label for="faculty-select" style="display: block; font-weight: 600; margin-bottom: 8px; color: var(--uct);">Select your Faculty:</label>
+        <select id="faculty-select" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border); font-family: inherit; font-size: 15px; outline: none; background: #f9f9f8;">
+          <option value="uct_commerce">Commerce</option>
+          <option value="uct_ebe">Engineering & Built Environment</option>
+          <option value="uct_health">Health Sciences</option>
+          <option value="uct_humanities" selected>Humanities</option>
+          <option value="uct_law">Law</option>
+          <option value="uct_science">Science</option>
+        </select>
+        <p style="margin-top: 8px; font-size: 13px; color: var(--ghost);">This ensures we check your transcript against the correct faculty's rulebook.</p>
+      </div>
+
       <!-- PDF Upload -->
       <div class="upload-zone" id="pdf-zone">
         <input type="file" accept=".pdf" id="pdf-input" />
@@ -802,7 +816,8 @@ document.getElementById('pdf-input').addEventListener('change', function(e) {
   const formData = new FormData();
   formData.append('file', file);
 
-  fetch('/analyse', { method: 'POST', body: formData })
+  const faculty = document.getElementById('faculty-select').value;
+  fetch(`/analyse?faculty=${faculty}`, { method: 'POST', body: formData })
     .then(res => {
       if (!res.ok) return res.json().then(e => { throw new Error(e.detail || 'Server error'); });
       return res.json();
