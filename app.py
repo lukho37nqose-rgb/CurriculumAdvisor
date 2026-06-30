@@ -25,7 +25,7 @@ from engine.parser import parse_transcript_pdf, parse_transcript_text
 from engine.rule_engine import compute_report, Report
 from engine.models import StudentRecord, CourseResult, Catalogue
 from engine.knowledge_graph import KnowledgeGraph
-from engine.reasoner import GraduateGoal, HonoursReadinessGoal, CompleteMajorGoal
+from engine.reasoner import GraduateGoal, HonoursReadinessGoal
 from engine.simulator import SimulationEngine
 from engine.utils import _infer_faculty_key
 
