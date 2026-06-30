@@ -9,11 +9,10 @@ exclusion risk, distinction eligibility, and warnings.
 
 No conclusions are stored in the JSON. Everything is derived here.
 """
-import re
 from dataclasses import dataclass, field
 from typing import Optional
 from .models import StudentRecord, Catalogue, MajorDefinition, CourseFact
-from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph
+from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph, ReasoningGraph, build_credit_reasoning_graph
 from .utils import _course_weight, _is_senior, _is_humanities, _normalise_major_keys, _infer_programme_key
 
 
@@ -104,10 +103,11 @@ class Report:
 def _compute_major_progress(
     major_def: MajorDefinition,
     student: StudentRecord,
+    base_graph: Optional[ReasoningGraph] = None,
 ) -> MajorProgress:
     completed_reqs: list[str] = []
     outstanding_reqs: list[str] = []
-    graph = build_major_completion_graph(student, major_def)
+    graph = build_major_completion_graph(student, major_def, base_graph)
 
     # Required courses
     for code in major_def.required_courses:
@@ -155,6 +155,12 @@ def _compute_eligible_courses(
     passed = student.passed_codes()
     major_keys = _normalise_major_keys(student.declared_majors, catalogue)
 
+    major_defs = []
+    for m_key in major_keys:
+        m_def = catalogue.majors.get(m_key)
+        if m_def:
+            major_defs.append((m_key, m_def))
+
     eligible = []
     for code, course in catalogue.courses.items():
         if code in passed:
@@ -168,10 +174,7 @@ def _compute_eligible_courses(
         major_name = None
         reason = ""
 
-        for m_key in major_keys:
-            m_def = catalogue.majors.get(m_key)
-            if not m_def:
-                continue
+        for m_key, m_def in major_defs:
             if code in m_def.required_courses:
                 is_major = True
                 major_key = m_key
@@ -226,7 +229,10 @@ def _compute_exclusion_risk(
 
     passed = student.passed_codes()
     passed_count = len(passed)
-    senior_passed = sum(1 for c in passed if _is_senior(c))
+    senior_passed = 0
+    for c in passed:
+        if _is_senior(c):
+            senior_passed += 1
 
     # Infer year from number of courses attempted (rough heuristic)
     attempted = len(student.attempted_codes())
@@ -404,18 +410,7 @@ def _compute_failed_attempts(student: StudentRecord) -> dict[str, int]:
 # Main entry point
 # ---------------------------------------------------------------------------
 
-def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
-    """
-    Compute the full graduation report from raw facts.
-    This is the only place where conclusions are drawn.
-    """
-    programme_key = _infer_programme_key(student.programme)
-    prog = catalogue.programmes.get(programme_key)
-
-    passed = student.passed_codes()
-    major_keys = _normalise_major_keys(student.declared_majors, catalogue)
-
-    # --- Credit accounting ---
+def _compute_credits(student: StudentRecord) -> tuple[int, int]:
     credits_completed = sum(
         r.nqf_credits for r in student.results
         if r.mark is not None and r.mark >= 50
@@ -424,8 +419,10 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         r.nqf_credits for r in student.results
         if r.mark is not None and r.mark >= 50 and r.nqf_level == 7
     )
+    return credits_completed, level_7_credits
 
-    # --- Semester course equivalents ---
+
+def _compute_course_equivalents(student: StudentRecord, catalogue: Catalogue) -> tuple[float, float, float]:
     sce_total = sum(
         _course_weight(r.code)
         for r in student.results
@@ -441,13 +438,18 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         for r in student.results
         if r.mark is not None and r.mark >= 50 and _is_humanities(r.code, catalogue)
     )
+    return sce_total, senior_sce, humanities_sce
 
-    # --- Major progress ---
+
+def _compute_all_major_progresses(student: StudentRecord, catalogue: Catalogue, major_keys: list[str]) -> tuple[list[MajorProgress], int, int]:
     major_progresses = []
+    base_graph = None
     for key in major_keys:
         major_def = catalogue.majors.get(key)
         if major_def:
-            major_progresses.append(_compute_major_progress(major_def, student))
+            if base_graph is None:
+                base_graph = build_credit_reasoning_graph(student)
+            major_progresses.append(_compute_major_progress(major_def, student, base_graph))
 
     majors_complete = sum(1 for m in major_progresses if m.complete)
     humanities_majors_complete = sum(
@@ -455,23 +457,30 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         if m.complete and catalogue.majors.get(m.key) and
         catalogue.majors[m.key].qualification in ("BA", "BSocSc")
     )
+    return major_progresses, majors_complete, humanities_majors_complete
 
-    # --- Forbidden combination check ---
-    forbidden_ok = True
+
+def _check_forbidden_combinations(catalogue: Catalogue, major_keys: list[str]) -> bool:
     for (a, b) in catalogue.forbidden_combinations:
         if a in major_keys and b in major_keys:
-            forbidden_ok = False
-            break
+            return False
+    return True
 
-    # --- Qualification match (degree type consistency) ---
-    qual_types = set()
-    for key in major_keys:
-        md = catalogue.majors.get(key)
-        if md:
-            qual_types.add(md.qualification)
-    qualification_match = len(qual_types) <= 1  # all same type, or mixed (allowed)
 
-    # --- Duration (inferred from years of study) ---
+def _build_requirements(
+    student: StudentRecord,
+    catalogue: Catalogue,
+    programme_key: str,
+    prog,
+    sce_total: float,
+    senior_sce: float,
+    humanities_sce: float,
+    credits_completed: int,
+    level_7_credits: int,
+    majors_complete: int,
+    humanities_majors_complete: int,
+    forbidden_ok: bool
+) -> list[Requirement]:
     # We infer years from the number of courses attempted
     attempted_count = len(student.attempted_codes())
     inferred_years = max(1, (attempted_count + 7) // 8)  # ~8 courses/year
@@ -509,7 +518,6 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         f"{programme_key.upper()}_TOTAL_NQF_CREDITS"
     ]
 
-    # --- Requirements list ---
     requirements = [
         Requirement(
             id="duration",
@@ -603,28 +611,45 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         Requirement(
             id="qualification_match",
             label="Qualification type",
-            complete=True,  # mixed BA/BSocSc is allowed (student chooses)
+            complete=True,
             current=1.0,
             required=1.0,
             detail="BA, BSocSc, or mixed (student may choose)",
         ),
     ])
 
+    return requirements
+
+
+def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
+    """
+    Compute the full graduation report from raw facts.
+    This is the only place where conclusions are drawn.
+    """
+    programme_key = _infer_programme_key(student.programme)
+    prog = catalogue.programmes.get(programme_key)
+
+    major_keys = _normalise_major_keys(student.declared_majors, catalogue)
+
+    credits_completed, level_7_credits = _compute_credits(student)
+    sce_total, senior_sce, humanities_sce = _compute_course_equivalents(student, catalogue)
+    major_progresses, majors_complete, humanities_majors_complete = _compute_all_major_progresses(student, catalogue, major_keys)
+    forbidden_ok = _check_forbidden_combinations(catalogue, major_keys)
+
+    requirements = _build_requirements(
+        student, catalogue, programme_key, prog,
+        sce_total, senior_sce, humanities_sce,
+        credits_completed, level_7_credits,
+        majors_complete, humanities_majors_complete,
+        forbidden_ok
+    )
+
     graduation_eligible = all(r.complete for r in requirements)
 
-    # --- Eligible courses ---
     eligible_courses = _compute_eligible_courses(student, catalogue)
-
-    # --- Exclusion risk ---
     exclusion_risk = _compute_exclusion_risk(student, catalogue, programme_key)
-
-    # --- Distinction ---
     distinction = _compute_distinction(student, catalogue, major_keys)
-
-    # --- Warnings ---
     warnings = _compute_warnings(student, catalogue, major_keys)
-
-    # --- Failed attempts ---
     failed_attempts = _compute_failed_attempts(student)
 
     return Report(

@@ -175,6 +175,7 @@ st.markdown(
 BASE = Path(__file__).parent
 
 
+@st.cache_data
 def load_json(path):
     try:
         with open(path, "r", encoding="utf-8") as f:
