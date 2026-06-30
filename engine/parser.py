@@ -124,14 +124,17 @@ def parse_transcript_text(text: str) -> StudentRecord:
     )
 
 
-def parse_transcript_pdf(pdf_path) -> StudentRecord:
+def parse_transcript_pdf(pdf_path_or_file) -> StudentRecord:
     """Extract text from a UCT transcript PDF and parse it."""
     try:
         from pypdf import PdfReader
     except ImportError:
         raise ImportError("pypdf is required: pip install pypdf")
 
-    reader = PdfReader(str(pdf_path))
+    if hasattr(pdf_path_or_file, "read"):
+        reader = PdfReader(pdf_path_or_file)
+    else:
+        reader = PdfReader(str(pdf_path_or_file))
     full_text = ""
     for page in reader.pages:
         full_text += (page.extract_text() or "") + "\n"
