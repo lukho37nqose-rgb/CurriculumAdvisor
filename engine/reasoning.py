@@ -5,7 +5,7 @@ This layer keeps facts, rules, and explanations together so the engine can
 show why it reached a conclusion instead of only returning a boolean result.
 """
 from dataclasses import dataclass, field
-from typing import Any, Optional
+from typing import Any
 
 from .models import CourseResult, MajorDefinition, StudentRecord
 
@@ -538,18 +538,9 @@ def major_completion_conclusion(
 def build_major_completion_graph(
     student: StudentRecord,
     major: MajorDefinition,
-    base_graph: Optional[ReasoningGraph] = None,
 ) -> ReasoningGraph:
     """Build Layer 2 facts and Layer 3 requirements for a major."""
-    if base_graph is None:
-        graph = build_credit_reasoning_graph(student)
-    else:
-        # A shallow copy of the conclusions dict is sufficient and much faster than deepcopy.
-        # ReasonedConclusion objects are treated as immutable, and ReasoningGraph only has
-        # the `conclusions` dict. We only append new conclusions for this major.
-        graph = ReasoningGraph()
-        graph.conclusions = base_graph.conclusions.copy()
-
+    graph = build_credit_reasoning_graph(student)
     course_passes = {
         conclusion.id.split(":", 1)[1]: conclusion
         for conclusion in graph.conclusions.values()

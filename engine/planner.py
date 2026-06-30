@@ -7,7 +7,7 @@ Uses backward chaining: start from graduation goal, work backwards
 to find what's needed now.
 """
 from dataclasses import dataclass
-from .models import StudentRecord, Catalogue
+from .models import StudentRecord, Catalogue, MajorDefinition
 from .rule_engine import _prereqs_met, _is_senior, _course_weight
 
 
