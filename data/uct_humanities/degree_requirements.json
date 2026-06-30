@@ -473,16 +473,25 @@
       "required_courses": [
         "PHI1010S",
         "PHI1024F",
-        "PHI2012F",
-        "PHI2016S",
-        "PHI2037F",
-        "PHI2040S",
         "PHI2041S",
-        "PHI2042F",
-        "PHI2044F",
-        "PHI2045S"
+        "PHI3023F",
+        "PHI3024S"
       ],
-      "choice_groups": []
+      "choice_groups": [
+        {
+          "label": "ONE of the following:",
+          "required": 1,
+          "courses": [
+            "PHI2012F",
+            "PHI2016S",
+            "PHI2037F",
+            "PHI2040S",
+            "PHI2042F",
+            "PHI2044F",
+            "PHI2045S"
+          ]
+        }
+      ]
     },
     "politics_and_governance": {
       "name": "Politics & Governance",

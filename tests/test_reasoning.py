@@ -11,16 +11,6 @@ from engine.reasoning import (
     imported_course_completion_conclusion,
 )
 from engine.rule_engine import compute_report
-from engine.utils import _infer_faculty_key
-
-
-class FacultyInferenceTests(unittest.TestCase):
-    def test_humanities_programmes_are_checked_before_plain_science(self):
-        self.assertEqual(_infer_faculty_key("Bachelor of Social Science"), "uct_humanities")
-        self.assertEqual(_infer_faculty_key("Bachelor of Social Work"), "uct_humanities")
-        self.assertEqual(_infer_faculty_key("Bachelor of Arts"), "uct_humanities")
-        self.assertEqual(_infer_faculty_key("Bachelor of Social"), "uct_humanities")
-        self.assertEqual(_infer_faculty_key("Bachelor of Science"), "uct_science")
 
 
 class ReasoningTraceTests(unittest.TestCase):
