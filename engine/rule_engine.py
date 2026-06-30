@@ -13,7 +13,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Optional
 from .models import StudentRecord, Catalogue, MajorDefinition, CourseFact
-from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph
+from .reasoning import Evidence, build_major_completion_graph, build_total_nqf_credits_graph, ReasoningGraph, build_credit_reasoning_graph
 from .utils import _course_weight, _is_senior, _is_humanities, _normalise_major_keys, _infer_programme_key
 
 
@@ -104,10 +104,11 @@ class Report:
 def _compute_major_progress(
     major_def: MajorDefinition,
     student: StudentRecord,
+    base_graph: Optional[ReasoningGraph] = None,
 ) -> MajorProgress:
     completed_reqs: list[str] = []
     outstanding_reqs: list[str] = []
-    graph = build_major_completion_graph(student, major_def)
+    graph = build_major_completion_graph(student, major_def, base_graph)
 
     # Required courses
     for code in major_def.required_courses:
@@ -444,10 +445,13 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
 
     # --- Major progress ---
     major_progresses = []
+    base_graph = None
     for key in major_keys:
         major_def = catalogue.majors.get(key)
         if major_def:
-            major_progresses.append(_compute_major_progress(major_def, student))
+            if base_graph is None:
+                base_graph = build_credit_reasoning_graph(student)
+            major_progresses.append(_compute_major_progress(major_def, student, base_graph))
 
     majors_complete = sum(1 for m in major_progresses if m.complete)
     humanities_majors_complete = sum(
