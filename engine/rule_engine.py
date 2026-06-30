@@ -155,6 +155,12 @@ def _compute_eligible_courses(
     passed = student.passed_codes()
     major_keys = _normalise_major_keys(student.declared_majors, catalogue)
 
+    major_defs = []
+    for m_key in major_keys:
+        m_def = catalogue.majors.get(m_key)
+        if m_def:
+            major_defs.append((m_key, m_def))
+
     eligible = []
     for code, course in catalogue.courses.items():
         if code in passed:
@@ -168,10 +174,7 @@ def _compute_eligible_courses(
         major_name = None
         reason = ""
 
-        for m_key in major_keys:
-            m_def = catalogue.majors.get(m_key)
-            if not m_def:
-                continue
+        for m_key, m_def in major_defs:
             if code in m_def.required_courses:
                 is_major = True
                 major_key = m_key
