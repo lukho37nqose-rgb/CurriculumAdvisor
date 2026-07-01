@@ -17,6 +17,7 @@ env/
 # Local data / PDFs
 *.pdf
 *.txt
+!requirements-dev.txt
 *.jsonl
 tmp/
 temp/
