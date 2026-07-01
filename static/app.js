@@ -19,6 +19,7 @@ const state = {
     recommendationLimit: MAX_RECOMMENDATIONS_PER_BATCH,
     file: null,
     report: null,
+    analysing: false,
 };
 
 const $ = id => document.getElementById(id);
@@ -102,6 +103,7 @@ function resetRouteState({ clearYears = true } = {}) {
     state.recommendationLimit = MAX_RECOMMENDATIONS_PER_BATCH;
     state.file = null;
     state.report = null;
+    state.analysing = false;
 
     for (const id of ["majorOne", "majorTwo", "majorThree"]) {
         if ($(id)) $(id).value = "";
@@ -643,7 +645,7 @@ function showAnalysisError(message) {
     announce(message);
 }
 
-function chooseFile(file, { announceError = true } = {}) {
+function chooseFile(file, { announceError = true, autoAnalyse = true } = {}) {
     $("analysisError").classList.add("hidden");
     clearElement("analysisError");
     if (!file) {
@@ -681,12 +683,18 @@ function chooseFile(file, { announceError = true } = {}) {
         && Boolean(state.programme)
         && (!state.programme.pathway_required || Boolean(selectedPathway()));
     $("analyseBtn").disabled = !routeReady;
-    if (announceError) announce(`${filename} selected.`);
+    if (routeReady && autoAnalyse) {
+        announce(`${filename} selected. Analysis starting.`);
+        window.setTimeout(() => analyse(), 0);
+    } else if (announceError) {
+        announce(`${filename} selected.`);
+    }
     return true;
 }
 
 async function analyse() {
-    if (!state.file || !state.programme || !state.routeLoaded) return;
+    if (!state.file || !state.programme || !state.routeLoaded || state.analysing) return;
+    state.analysing = true;
     $("analysisError").classList.add("hidden");
     clearElement("analysisError");
     $("processingText").textContent = `Reading transcript and applying ${state.context?.short_name || "faculty"} rules…`;
@@ -721,9 +729,10 @@ async function analyse() {
             : "";
         showAnalysisError(`${error.message}${suffix}`);
     } finally {
+        state.analysing = false;
         $("processing").classList.add("hidden");
         $("uploadBox").setAttribute("aria-busy", "false");
-        chooseFile(state.file, { announceError: false });
+        chooseFile(state.file, { announceError: false, autoAnalyse: false });
     }
 }
 
@@ -868,6 +877,71 @@ function renderRecommendations() {
     });
 }
 
+function formatPercent(value) {
+    const number = Number(value);
+    return Number.isFinite(number) ? `${number.toFixed(1)}%` : "n/a";
+}
+
+function transcriptStatusClass(status) {
+    if (status === "passed") return "complete";
+    if (status === "failed") return "failed";
+    return "provisional";
+}
+
+function transcriptCourseRow(course) {
+    const mark = course.mark === null || course.mark === undefined
+        ? (course.grade || "No mark")
+        : `${course.mark}%`;
+    const year = course.academic_year || "Year not read";
+    return `
+        <article class="transcript-course">
+            <div>
+                <strong>${esc(course.code)} · ${esc(course.name || "Course name not read")}</strong>
+                <small>${esc(year)} · NQF ${esc(course.nqf_level || "?")} · ${esc(course.nqf_credits || 0)} credits</small>
+            </div>
+            <div class="transcript-course-result">
+                <b>${esc(mark)}</b>
+                <span class="badge ${transcriptStatusClass(course.status)}">${esc(course.status || "pending")}</span>
+            </div>
+        </article>
+    `;
+}
+
+function transcriptSummarySection(summary = {}) {
+    const courses = summary.courses || [];
+    const attempted = Number(summary.attempted_courses || 0);
+    const passed = Number(summary.passed_courses || 0);
+    const meta = [
+        summary.student_id ? `Student number ${summary.student_id}` : "",
+        summary.programme || "",
+        summary.declared_majors?.length ? `Majors: ${summary.declared_majors.join(", ")}` : "",
+    ].filter(Boolean).join(" · ");
+    const courseRows = courses.length
+        ? courses.map(transcriptCourseRow).join("")
+        : '<div class="empty">No individual course rows were read from the transcript.</div>';
+    return `
+        <section class="result-section transcript-summary">
+            <h3>Transcript read from PDF</h3>
+            ${meta ? `<p class="transcript-meta">${esc(meta)}</p>` : ""}
+            <div class="metrics">
+                <div class="metric"><b>${esc(passed)}/${esc(attempted)}</b><span>courses passed</span></div>
+                <div class="metric"><b>${esc(formatPercent(summary.credit_weighted_average))}</b><span>credit-weighted average</span></div>
+                <div class="metric"><b>${esc(formatPercent(summary.simple_average))}</b><span>simple mark average</span></div>
+            </div>
+            <div class="transcript-counts">
+                <span>${esc(summary.total_results || 0)} transcript rows</span>
+                <span>${esc(summary.numeric_results || 0)} numeric marks</span>
+                <span>${esc(summary.failed_courses || 0)} failed</span>
+                <span>${esc(summary.pending_courses || 0)} pending</span>
+            </div>
+            <details class="transcript-details" open>
+                <summary>Uploaded course data</summary>
+                <div class="transcript-list">${courseRows}</div>
+            </details>
+        </section>
+    `;
+}
+
 function renderReport(report) {
     const completedBlocking = report.requirements.filter(requirement => requirement.complete && requirement.blocking).length;
     const totalBlocking = report.requirements.filter(requirement => requirement.blocking).length;
@@ -901,6 +975,7 @@ function renderReport(report) {
                 <div class="metric"><b>${esc(report.semester_course_equivalents)}</b><span>course equivalents</span></div>
             </div>
         </section>
+        ${transcriptSummarySection(report.transcript_summary)}
         <section class="result-section"><h3>Qualification requirements</h3><div class="requirement-list">${report.requirements.map(requirementCard).join("")}</div></section>
         ${majorSection}
         ${distinctionSection(report.distinction)}

@@ -105,6 +105,34 @@ class Distinction:
 
 
 @dataclass
+class TranscriptCourse:
+    code: str
+    name: str
+    nqf_level: int
+    nqf_credits: int
+    mark: int | None
+    grade: str
+    academic_year: int | None
+    status: str
+
+
+@dataclass
+class TranscriptSummary:
+    student_id: str
+    programme: str
+    declared_majors: list[str]
+    total_results: int
+    attempted_courses: int
+    passed_courses: int
+    failed_courses: int
+    pending_courses: int
+    numeric_results: int
+    simple_average: float | None
+    credit_weighted_average: float | None
+    courses: list[TranscriptCourse]
+
+
+@dataclass
 class Report:
     """The complete computed view for a student. Matches the app_2.py DEMO contract."""
     graduation_eligible: bool
@@ -118,6 +146,7 @@ class Report:
     distinction: Distinction
     warnings: list[str]
     failed_attempts: dict[str, int]   # code -> number of failures
+    transcript_summary: TranscriptSummary
     student_name: str = ""            # for display in the UI
     graduation_status: str = "not_eligible"
     verification_messages: list[str] = field(default_factory=list)
@@ -1445,6 +1474,60 @@ def _compute_failed_attempts(student: StudentRecord) -> dict[str, int]:
     return counts
 
 
+def _transcript_course_status(result: CourseResult) -> str:
+    if result.is_passed():
+        return "passed"
+    if result.is_failed():
+        return "failed"
+    return "pending"
+
+
+def _mean(values: list[int]) -> float | None:
+    return round(sum(values) / len(values), 1) if values else None
+
+
+def _compute_transcript_summary(student: StudentRecord) -> TranscriptSummary:
+    courses = [
+        TranscriptCourse(
+            code=result.code,
+            name=result.name,
+            nqf_level=result.nqf_level,
+            nqf_credits=result.nqf_credits,
+            mark=result.mark,
+            grade=result.grade or "",
+            academic_year=result.academic_year,
+            status=_transcript_course_status(result),
+        )
+        for result in student.results
+    ]
+    attempted = [result for result in student.results if not result.is_pending()]
+    passed = [result for result in student.results if result.is_passed()]
+    failed = [result for result in student.results if result.is_failed()]
+    pending = [result for result in student.results if result.is_pending()]
+    numeric = [result for result in attempted if result.mark is not None]
+    weighted = [result for result in numeric if result.nqf_credits > 0]
+    denominator = sum(result.nqf_credits for result in weighted)
+    credit_weighted_average = (
+        round(sum((result.mark or 0) * result.nqf_credits for result in weighted) / denominator, 1)
+        if denominator
+        else None
+    )
+    return TranscriptSummary(
+        student_id=student.student_id,
+        programme=student.programme,
+        declared_majors=list(student.declared_majors),
+        total_results=len(student.results),
+        attempted_courses=len(attempted),
+        passed_courses=len(passed),
+        failed_courses=len(failed),
+        pending_courses=len(pending),
+        numeric_results=len(numeric),
+        simple_average=_mean([result.mark for result in numeric if result.mark is not None]),
+        credit_weighted_average=credit_weighted_average,
+        courses=courses,
+    )
+
+
 # ---------------------------------------------------------------------------
 # Programme key inference
 # ---------------------------------------------------------------------------
@@ -1942,6 +2025,7 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         )
 
     failed_attempts = _compute_failed_attempts(student)
+    transcript_summary = _compute_transcript_summary(student)
 
     verification_messages = [
         r.detail or r.label
@@ -1961,6 +2045,7 @@ def compute_report(student: StudentRecord, catalogue: Catalogue) -> Report:
         distinction=distinction,
         warnings=warnings,
         failed_attempts=failed_attempts,
+        transcript_summary=transcript_summary,
         student_name=student.name,
         graduation_status=graduation_status,
         verification_messages=verification_messages,

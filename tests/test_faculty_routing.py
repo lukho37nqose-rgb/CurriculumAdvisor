@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 
 from app import app, get_catalogue
-from engine.models import Catalogue, CourseFact, MajorDefinition, ProgrammeRules, StudentRecord
+from engine.models import Catalogue, CourseFact, CourseResult, MajorDefinition, ProgrammeRules, StudentRecord
 from engine.rule_engine import _compute_eligible_courses, compute_report
 from engine.scope import build_programme_scope
 
@@ -121,6 +121,38 @@ def test_verified_scope_metadata_is_carried_into_report():
     assert report.programme_key == "degree_a"
     assert report.programme_name == "Degree A"
     assert report.scope_status == "verified"
+
+
+def test_report_carries_transcript_course_rows_and_averages():
+    scoped, _ = build_programme_scope("test_faculty", _catalogue_for_scope(), "degree_a")
+    student = StudentRecord(
+        "T4",
+        "Transcript Student",
+        "Degree A",
+        ["Major A"],
+        [
+            CourseResult("AAA1001F", "Major A Intro", 5, 18, 65, "2-", 2024),
+            CourseResult("AAA2001S", "Major A Senior", 6, 18, 40, "F", 2025),
+            CourseResult("ELE1001S", "Approved Elective", 5, 18, None, "ATT", 2026),
+        ],
+        faculty_key="test_faculty",
+        programme_key="degree_a",
+    )
+    report = compute_report(student, scoped)
+    summary = report.transcript_summary
+    assert summary.student_id == "T4"
+    assert summary.total_results == 3
+    assert summary.passed_courses == 1
+    assert summary.failed_courses == 1
+    assert summary.pending_courses == 1
+    assert summary.numeric_results == 2
+    assert summary.simple_average == 52.5
+    assert summary.credit_weighted_average == 52.5
+    assert [(course.code, course.status) for course in summary.courses] == [
+        ("AAA1001F", "passed"),
+        ("AAA2001S", "failed"),
+        ("ELE1001S", "pending"),
+    ]
 
 
 def test_2026_humanities_catalogue_has_verified_programme_scope():

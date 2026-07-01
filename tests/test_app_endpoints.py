@@ -35,6 +35,23 @@ def test_simulate_fail_valid():
     assert "report" in data
     assert "blocked_courses" in data
 
+
+def test_analyse_json_returns_transcript_summary():
+    payload = _valid_student()
+    payload.update({
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular",
+    })
+    response = client.post("/analyse/json", json=payload)
+    assert response.status_code == 200
+    summary = response.json()["transcript_summary"]
+    assert summary["student_id"] == "TST001"
+    assert summary["passed_courses"] == 1
+    assert summary["credit_weighted_average"] == 65.0
+    assert summary["courses"][0]["code"] == "PHI1024F"
+    assert summary["courses"][0]["status"] == "passed"
+
+
 def test_simulate_fail_invalid_student():
     payload = {
         "student": {
