@@ -13,3 +13,4 @@ ignore = ["E701", "E702"]
 [tool.bandit]
 exclude_dirs = ["tests", "tools"]
 skips = ["B101"]
+
