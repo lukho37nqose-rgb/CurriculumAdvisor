@@ -1,0 +1,18 @@
+[
+  {
+    "course_code": "PHI1024F",
+    "term": "2026-S1",
+    "campus": "Upper Campus",
+    "venue": "DLC 7",
+    "lecturer": "Dr. Ada Example",
+    "capacity": 120
+  },
+  {
+    "course_code": "POL1004F",
+    "term": "2026-S1",
+    "campus": "Upper Campus",
+    "venue": "Meme 1",
+    "lecturer": "Prof. Mbali Test",
+    "capacity": 90
+  }
+]
