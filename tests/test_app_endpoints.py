@@ -1,5 +1,5 @@
-import pytest
 from fastapi.testclient import TestClient
+
 from app import app
 
 client = TestClient(app)
@@ -25,7 +25,9 @@ def _valid_student():
 def test_simulate_fail_valid():
     payload = {
         "student": _valid_student(),
-        "course_code": "PHI1024F"
+        "course_code": "PHI1024F",
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/fail", json=payload)
     assert response.status_code == 200
@@ -43,7 +45,9 @@ def test_simulate_fail_invalid_student():
                 }
             ]
         },
-        "course_code": "PHI1024F"
+        "course_code": "PHI1024F",
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/fail", json=payload)
     assert response.status_code == 422
@@ -52,7 +56,9 @@ def test_simulate_pass_valid():
     payload = {
         "student": _valid_student(),
         "course_code": "POL1004F",
-        "mark": 75
+        "mark": 75,
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/pass", json=payload)
     assert response.status_code == 200
@@ -66,7 +72,9 @@ def test_simulate_pass_invalid_student():
         "student": {
             "results": [{"name": "Missing code"}]
         },
-        "course_code": "POL1004F"
+        "course_code": "POL1004F",
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/pass", json=payload)
     assert response.status_code == 422
@@ -74,7 +82,9 @@ def test_simulate_pass_invalid_student():
 def test_simulate_switch_valid():
     payload = {
         "student": _valid_student(),
-        "new_majors": ["Test Major"]
+        "new_majors": ["Test Major"],
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/switch", json=payload)
     assert response.status_code == 200
@@ -87,7 +97,9 @@ def test_simulate_switch_invalid_student():
         "student": {
             "results": [{"name": "Missing code"}]
         },
-        "new_majors": ["Test Major"]
+        "new_majors": ["Test Major"],
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/switch", json=payload)
     assert response.status_code == 422
@@ -95,7 +107,9 @@ def test_simulate_switch_invalid_student():
 def test_simulate_semester_valid():
     payload = {
         "student": _valid_student(),
-        "courses": [["POL1004F", 75], ["SOC1001F", 70]]
+        "courses": [["POL1004F", 75], ["SOC1001F", 70]],
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/semester", json=payload)
     assert response.status_code == 200
@@ -108,14 +122,18 @@ def test_simulate_semester_invalid_student():
         "student": {
             "results": [{"name": "Missing code"}]
         },
-        "courses": [["POL1004F", 75]]
+        "courses": [["POL1004F", 75]],
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/simulate/semester", json=payload)
     assert response.status_code == 422
 
 def test_evaluate_goals_valid():
     payload = {
-        "student": _valid_student()
+        "student": _valid_student(),
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/goals", json=payload)
     assert response.status_code == 200
@@ -127,7 +145,9 @@ def test_evaluate_goals_invalid_student():
     payload = {
         "student": {
             "results": [{"name": "Missing code"}]
-        }
+        },
+        "faculty": "uct_humanities",
+        "programme_key": "bsocsc_regular"
     }
     response = client.post("/goals", json=payload)
     assert response.status_code == 422

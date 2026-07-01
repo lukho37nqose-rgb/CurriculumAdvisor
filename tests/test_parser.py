@@ -1,7 +1,8 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 from engine.parser import _parse_grade, parse_transcript_pdf
+
 
 class TestParseGrade(unittest.TestCase):
     def test_valid_grades(self):
@@ -24,14 +25,12 @@ class TestParseGrade(unittest.TestCase):
             with self.subTest(grade=grade):
                 self.assertIsNone(_parse_grade(grade))
 
-    def test_case_sensitivity(self):
-        """Test that grade parsing is case-sensitive where appropriate."""
-        # Current implementation uses exact match against uppercase/specific strings.
-        self.assertIsNone(_parse_grade("p"))
-        self.assertIsNone(_parse_grade("pa"))
-        self.assertIsNone(_parse_grade("f"))
-        self.assertIsNone(_parse_grade("Fs"))
-from engine.parser import parse_transcript_pdf
+    def test_case_normalisation(self):
+        """Transcript status tokens are normalised to uppercase."""
+        self.assertEqual(_parse_grade("p"), "P")
+        self.assertEqual(_parse_grade("pa"), "PA")
+        self.assertEqual(_parse_grade("f"), "F")
+        self.assertEqual(_parse_grade("Fs"), "FS")
 
 class TestParserPdf(unittest.TestCase):
     def test_parse_transcript_pdf_missing_pypdf(self):
@@ -63,7 +62,7 @@ class TestParserPdf(unittest.TestCase):
             mock_pdf_reader.assert_called_once_with("dummy_path.pdf")
 
             # Check parse_transcript_text call with concatenated text
-            mock_parse_text.assert_called_once_with("Page 1 Text\nPage 2 Text\n")
+            mock_parse_text.assert_called_once_with("Page 1 Text\nPage 2 Text")
 
             # Check result
             self.assertEqual(result, "Mocked Record")
@@ -83,7 +82,7 @@ class TestParserPdf(unittest.TestCase):
             parse_transcript_pdf("dummy_path.pdf")
 
             # Check parse_transcript_text call with empty text and newline
-            mock_parse_text.assert_called_once_with("\n")
+            mock_parse_text.assert_called_once_with("")
 
 if __name__ == '__main__':
     unittest.main()

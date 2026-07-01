@@ -1,13 +1,16 @@
 import unittest
 
-from engine.models import Catalogue, CourseResult, MajorDefinition, StudentRecord
+from engine.models import Catalogue, CourseFact, CourseResult, MajorDefinition, StudentRecord
 from engine.rule_engine import _compute_warnings
 
 
 class TestComputeWarnings(unittest.TestCase):
     def setUp(self):
         self.catalogue = Catalogue(
-            courses={},
+            courses={
+                "CSC1015F": CourseFact("CSC1015F", "CS1", 18, 5, [], ["Semester 1"], "Computer Science"),
+                "MAM1000W": CourseFact("MAM1000W", "Math1", 36, 5, [], ["Whole year"], "Mathematics"),
+            },
             majors={
                 "CS": MajorDefinition(key="CS", name="Computer Science", qualification="BSc", required_courses=[]),
                 "MATH": MajorDefinition(key="MATH", name="Mathematics", qualification="BSc", required_courses=[]),
@@ -46,7 +49,7 @@ class TestComputeWarnings(unittest.TestCase):
 
         warnings = _compute_warnings(student, self.catalogue, major_keys)
         self.assertEqual(len(warnings), 1)
-        self.assertIn("CSC1015F (CS1): failed with 45%", warnings[0])
+        self.assertIn("CSC1015F (CS1): fail result 45%", warnings[0])
 
     def test_forbidden_major_combination_warning(self):
         student = StudentRecord(

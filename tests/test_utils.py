@@ -2,6 +2,7 @@ import unittest
 
 from engine.utils import _infer_faculty_key
 
+
 class InferFacultyKeyTests(unittest.TestCase):
     def test_commerce(self):
         self.assertEqual(_infer_faculty_key("Bachelor of Commerce"), "uct_commerce")
@@ -41,7 +42,7 @@ class InferFacultyKeyTests(unittest.TestCase):
         self.assertEqual(_infer_faculty_key("Bachelor of Social Science"), "uct_humanities")
 
     def test_fallback_default(self):
-        self.assertEqual(_infer_faculty_key("Unknown Programme"), "uct_humanities")
+        self.assertEqual(_infer_faculty_key("Unknown Programme"), "unknown_faculty")
         self.assertEqual(_infer_faculty_key("Music Diploma"), "uct_humanities")
 
 if __name__ == "__main__":

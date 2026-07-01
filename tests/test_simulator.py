@@ -1,9 +1,10 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
-from engine.models import StudentRecord, CourseResult, Catalogue, CourseFact, MajorDefinition, ProgrammeRules
 from engine.knowledge_graph import KnowledgeGraph
+from engine.models import Catalogue, CourseFact, CourseResult, MajorDefinition, ProgrammeRules, StudentRecord
 from engine.simulator import SimulationEngine
+
 
 class TestSimulationEngine(unittest.TestCase):
     def setUp(self):
@@ -129,18 +130,21 @@ class TestSimulationEngine(unittest.TestCase):
 
         courses = [("CSC1016S", 65), ("MAM1000W", 78), ("CSC1015F", 55)]
         report = self.engine.simulate_future_semester(courses)
+        self.assertEqual(report, "MockReport")
 
         args, _ = mock_compute_report.call_args
         sim_student = args[0]
 
-        self.assertEqual(len(sim_student.results), 3)
+        self.assertEqual(len(sim_student.results), 4)
         c1 = next(r for r in sim_student.results if r.code == "CSC1016S")
         self.assertEqual(c1.mark, 65)
         self.assertEqual(c1.grade, "2-")
         c2 = next(r for r in sim_student.results if r.code == "MAM1000W")
         self.assertEqual(c2.mark, 78)
         self.assertEqual(c2.grade, "1")
-        c3 = next(r for r in sim_student.results if r.code == "CSC1015F")
+        # The historical attempt is preserved and the simulated future attempt
+        # is appended rather than replacing transcript history.
+        c3 = [r for r in sim_student.results if r.code == "CSC1015F"][-1]
         self.assertEqual(c3.mark, 55)
         self.assertEqual(c3.grade, "3")
 

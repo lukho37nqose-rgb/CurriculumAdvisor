@@ -3,8 +3,9 @@ Knowledge Graph — represents courses and their relationships explicitly.
 Supports dependency traversal, finding prerequisites, corequisites,
 and what courses are unlocked or blocked by passing/failing a course.
 """
-from typing import Set, List, Dict, Tuple, Optional
-from .models import Catalogue, CourseFact
+import re
+
+from .models import Catalogue
 
 
 class KnowledgeGraph:
@@ -12,20 +13,39 @@ class KnowledgeGraph:
         self.catalogue = catalogue
         self.courses = catalogue.courses
         # Build adjacency lists
-        self.prereq_of: Dict[str, Set[str]] = {code: set() for code in self.courses}
-        self.depends_on: Dict[str, Set[str]] = {code: set() for code in self.courses}
+        self.prereq_of: dict[str, set[str]] = {code: set() for code in self.courses}
+        self.depends_on: dict[str, set[str]] = {code: set() for code in self.courses}
 
         for code, course in self.courses.items():
             for prereq in course.prerequisites:
+                prereq = prereq.upper()
                 if prereq in self.courses:
                     self.prereq_of[prereq].add(code)
                     self.depends_on[code].add(prereq)
+                    continue
 
-    def get_prerequisites(self, course_code: str) -> Set[str]:
+                # Handbook prerequisite text often omits semester suffixes.
+                # Link each matching transcript variant as an unlock edge, but
+                # preserve the raw stem as the dependency when several variants
+                # exist so one failed variant is not treated as proof that every
+                # route is blocked.
+                match = re.fullmatch(r"([A-Z]{2,4}\d{4})", prereq)
+                variants = (
+                    sorted(c for c in self.courses if c.startswith(match.group(1)))
+                    if match else []
+                )
+                for variant in variants:
+                    self.prereq_of[variant].add(code)
+                if len(variants) == 1:
+                    self.depends_on[code].add(variants[0])
+                else:
+                    self.depends_on[code].add(prereq)
+
+    def get_prerequisites(self, course_code: str) -> set[str]:
         """Return the direct prerequisites of a course."""
         return self.depends_on.get(course_code, set())
 
-    def get_all_prerequisites(self, course_code: str, visited: Optional[Set[str]] = None) -> Set[str]:
+    def get_all_prerequisites(self, course_code: str, visited: set[str] | None = None) -> set[str]:
         """Return all direct and indirect prerequisites of a course (transitive closure)."""
         if visited is None:
             visited = set()
@@ -37,11 +57,11 @@ class KnowledgeGraph:
                 result.update(self.get_all_prerequisites(p, visited))
         return result
 
-    def get_unlocked_courses(self, course_code: str) -> Set[str]:
+    def get_unlocked_courses(self, course_code: str) -> set[str]:
         """Return courses that directly require this course."""
         return self.prereq_of.get(course_code, set())
 
-    def get_all_unlocked_courses(self, course_code: str, visited: Optional[Set[str]] = None) -> Set[str]:
+    def get_all_unlocked_courses(self, course_code: str, visited: set[str] | None = None) -> set[str]:
         """Return all courses that directly or indirectly require this course (transitive closure)."""
         if visited is None:
             visited = set()
@@ -53,12 +73,12 @@ class KnowledgeGraph:
                 result.update(self.get_all_unlocked_courses(u, visited))
         return result
 
-    def get_dependency_path(self, start_code: str, end_code: str) -> List[str]:
+    def get_dependency_path(self, start_code: str, end_code: str) -> list[str]:
         """Find a path of prerequisites from start_code to end_code using BFS."""
         if start_code == end_code:
             return [start_code]
         
-        queue: List[List[str]] = [[start_code]]
+        queue: list[list[str]] = [[start_code]]
         visited = {start_code}
         
         while queue:
@@ -73,7 +93,7 @@ class KnowledgeGraph:
                     queue.append(path + [neighbor])
         return []
 
-    def get_blocked_courses(self, failed_courses: Set[str]) -> Set[str]:
+    def get_blocked_courses(self, failed_courses: set[str]) -> set[str]:
         """Return all courses that are blocked because one of their prerequisites is failed/not passed."""
         blocked = set()
         for code in self.courses:
