@@ -7,8 +7,11 @@ Uses backward chaining: start from graduation goal, work backwards
 to find what's needed now.
 """
 from dataclasses import dataclass
-from .models import StudentRecord, Catalogue
-from .rule_engine import _prereqs_met, _is_senior, _course_weight
+
+from .models import Catalogue, StudentRecord
+from .recognition import recognised_credited_pairs
+from .rule_engine import _prereqs_met
+from .utils import _course_weight, _infer_programme_key, _normalise_major_keys
 
 
 @dataclass
@@ -20,6 +23,11 @@ class CourseRecommendation:
     credits: int
     reason: str          # Why this course is recommended
     priority: int        # 1=critical (required for major), 2=important, 3=optional
+    status: str = "provisional"
+    limitations: tuple[str, ...] = (
+        "Recorded prerequisites and semester offering only.",
+        "Timetable, co-requisites, class limits, and faculty approval are not verified.",
+    )
 
 
 def plan_next_semester(
@@ -37,10 +45,21 @@ def plan_next_semester(
     3. Any senior course to meet senior-course requirement
     4. Any available course to meet total-course requirement
     """
-    from .rule_engine import _normalise_major_keys
-
     passed = student.passed_codes()
     major_keys = _normalise_major_keys(student.declared_majors, catalogue)
+    programme = catalogue.programmes.get(student.programme_key or _infer_programme_key(student.programme))
+    selected_major_codes: set[str] = set()
+    for key in major_keys:
+        major = catalogue.majors.get(key)
+        if not major:
+            continue
+        selected_major_codes.update(major.required_courses)
+        for group in major.choice_groups:
+            selected_major_codes.update(group.courses)
+    route_codes = selected_major_codes | set(catalogue.elective_course_codes)
+    if programme:
+        route_codes.update(programme.required_courses)
+        route_codes.update(programme.support_course_codes)
 
     recommendations: list[CourseRecommendation] = []
     seen_codes: set[str] = set()
@@ -50,6 +69,12 @@ def plan_next_semester(
             return
         course = catalogue.courses.get(code)
         if not course:
+            return
+        if code not in route_codes:
+            return
+        if course.nqf_credits <= 0 or course.nqf_level <= 0:
+            return
+        if not course.offering_verified:
             return
         if not _prereqs_met(course, passed):
             return
@@ -69,6 +94,11 @@ def plan_next_semester(
             reason=reason,
             priority=priority,
         ))
+
+    # --- Priority 1: Compulsory programme courses ---
+    if programme:
+        for code in programme.required_courses:
+            add(code, f"Compulsory for {programme.name}", 1)
 
     # --- Priority 1: Required courses for majors ---
     for key in major_keys:
@@ -91,17 +121,30 @@ def plan_next_semester(
                     add(code, f"{group.label} ({major_def.name} major)", 2)
 
     # --- Priority 3: Senior courses to meet senior-course requirement ---
+    recognised, _ = recognised_credited_pairs(student, catalogue)
     senior_passed = sum(
-        _course_weight(c) for c in passed if _is_senior(c)
+        _course_weight(result.code)
+        for result, fact in recognised
+        if fact.nqf_level >= 6 and fact.counts_towards_course_equivalents
     )
-    if senior_passed < 10:
+    senior_required = programme.senior_course_equivalents if programme else 0
+    if senior_required and senior_passed < senior_required:
         for code, course in catalogue.courses.items():
-            if _is_senior(code) and code not in passed:
-                add(code, "Counts toward senior-course requirement (10 needed)", 3)
+            if (
+                code in route_codes
+                and course.nqf_level >= 6
+                and course.prerequisites
+                and code not in passed
+            ):
+                add(
+                    code,
+                    f"May count toward the senior-course requirement ({senior_required:g} needed)",
+                    3,
+                )
 
-    # --- Priority 4: Any available course ---
-    for code, course in catalogue.courses.items():
-        add(code, "Available elective", 4)
+    # --- Priority 4: Explicit programme electives only ---
+    for code in sorted(catalogue.elective_course_codes):
+        add(code, "Verified elective for the selected programme", 4)
 
     # Sort by priority, then by course code
     recommendations.sort(key=lambda r: (r.priority, r.code))
@@ -117,28 +160,26 @@ def explain_requirement(
     Backward-chaining explanation: given a requirement that is NOT met,
     explain what the student needs to do to satisfy it.
     """
-    from .rule_engine import _normalise_major_keys, _course_weight, _is_senior
+    from .rule_engine import compute_report
 
     passed = student.passed_codes()
     major_keys = _normalise_major_keys(student.declared_majors, catalogue)
 
-    if requirement_id == "credits":
-        completed = sum(
-            r.nqf_credits for r in student.results
-            if r.mark is not None and r.mark >= 50
-        )
-        needed = 360 - completed
+    report = compute_report(student, catalogue)
+    requirement = next((r for r in report.requirements if r.id == requirement_id), None)
+
+    if requirement_id == "credits" and requirement:
+        needed = max(requirement.required - requirement.current, 0)
         return (
             f"You need {needed} more NQF credits. "
-            f"1000-level courses give 18 credits, 2000-level give 24, 3000-level give 30."
+            "Credit values differ by course, so use the catalogue value for each planned course."
         )
 
-    if requirement_id == "senior":
-        senior_done = sum(_course_weight(c) for c in passed if _is_senior(c))
-        needed = 10 - senior_done
+    if requirement_id == "senior" and requirement:
+        needed = max(requirement.required - requirement.current, 0)
         return (
-            f"You need {needed:.1f} more senior (2000/3000-level) semester-course equivalents. "
-            f"Register for 2000- or 3000-level courses."
+            f"You need {needed:.1f} more senior semester-course equivalents. "
+            "Confirm that each planned course is recognised as senior in your programme."
         )
 
     if requirement_id == "majors":
@@ -161,16 +202,14 @@ def explain_requirement(
                 lines.append(f"{major_def.name}: still need {', '.join(outstanding)}")
         return "\n".join(lines) if lines else "Both majors are complete."
 
-    if requirement_id == "level7":
-        level7_done = sum(
-            r.nqf_credits for r in student.results
-            if r.mark is not None and r.mark >= 50 and r.nqf_level == 7
-        )
-        needed = 120 - level7_done
+    if requirement_id == "level7" and requirement:
+        needed = max(requirement.required - requirement.current, 0)
         return (
             f"You need {needed} more NQF Level 7 credits. "
-            f"These come from 3000-level courses (30 credits each). "
-            f"You need at least {needed // 30} more 3000-level courses."
+            "Use the explicit NQF level and credit value in the catalogue; course-code year is not sufficient proof."
         )
+
+    if requirement:
+        return requirement.detail or f"{requirement.label} is not yet met."
 
     return f"Requirement '{requirement_id}' is not yet met. See your faculty advisor for details."

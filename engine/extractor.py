@@ -6,11 +6,11 @@ and formats them into the JSON structure required by CurriculumAdvisor.
 Usage:
   python engine/extractor.py <path_to_handbook.pdf> <output_directory>
 """
-import re
 import json
+import re
 import sys
 from pathlib import Path
-from typing import List, Dict, Any, Tuple, Optional
+from typing import Any
 
 try:
     from pypdf import PdfReader
@@ -64,7 +64,7 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
-def extract_prerequisites(prereq_text: str) -> List[str]:
+def extract_prerequisites(prereq_text: str) -> list[str]:
     """
     Extract course codes from prerequisite text.
     E.g., "INF1002F/S or equivalent" -> ["INF1002F", "INF1002S"]
@@ -85,7 +85,7 @@ def extract_prerequisites(prereq_text: str) -> List[str]:
     return sorted(list(set(expanded)))
 
 
-def expand_slash_code(code: str) -> List[str]:
+def expand_slash_code(code: str) -> list[str]:
     """Expand slash suffixes: ACC1015F/S -> [ACC1015F, ACC1015S]"""
     if "/" in code:
         match = re.match(r"([A-Z]{2,4}\d{4})", code)
@@ -112,7 +112,7 @@ def is_page_header(line: str) -> bool:
     return False
 
 
-def reconstruct_specialisation_name(lines: List[str], index: int) -> str:
+def reconstruct_specialisation_name(lines: list[str], index: int) -> str:
     """Reconstruct specialisation name from lines preceding the code."""
     if index == 0:
         return "Unknown"
@@ -155,7 +155,7 @@ def reconstruct_specialisation_name(lines: List[str], index: int) -> str:
     return full_name.strip()
 
 
-def infer_semester(code: str) -> List[str]:
+def infer_semester(code: str) -> list[str]:
     """Infer semester from course code suffix."""
     if "/" in code:
         return ["Semester 1", "Semester 2"]
@@ -184,8 +184,8 @@ def _is_undergrad_section(pdf_name_lower: str, page_num: int) -> bool:
 
 
 def _process_tabular_row(
-    line: str, current_dept: str, current_major_key: Optional[str],
-    courses: List[Dict[str, Any]], seen_codes: set, majors: Dict[str, Any]
+    line: str, current_dept: str, current_major_key: str | None,
+    courses: list[dict[str, Any]], seen_codes: set, majors: dict[str, Any]
 ) -> bool:
     """Parse tabular course row (curriculum tables)."""
     tm = _TABLE_ROW_RE.match(line)
@@ -219,9 +219,9 @@ def _process_tabular_row(
 
 
 def _process_prose_header(
-    line: str, i: int, lines: List[str], current_dept: str,
-    courses: List[Dict[str, Any]], seen_codes: set
-) -> Tuple[bool, bool]:
+    line: str, i: int, lines: list[str], current_dept: str,
+    courses: list[dict[str, Any]], seen_codes: set
+) -> tuple[bool, bool]:
     """
     Parse prose course header (description pages).
     Returns (handled, clear_major_key).
@@ -237,9 +237,10 @@ def _process_prose_header(
     if not any(c.isupper() for c in name):
         return True, True
 
-    # Look ahead for NQF credits, level, and prerequisites
-    nqf_credits = 18
-    nqf_level = 5
+    # Look ahead for NQF credits, level, and prerequisites.  Unknown values
+    # remain unknown; fabricating first-year defaults poisons later advice.
+    nqf_credits = 0
+    nqf_level = 0
     prereqs = []
 
     # Scan next 15 lines for details
@@ -253,6 +254,7 @@ def _process_prose_header(
     prereq_match = _PREREQ_RE.search(lookahead)
     if prereq_match:
         prereqs = extract_prerequisites(prereq_match.group(1))
+    prerequisites_verified = prereq_match is not None
 
     offered_match = _OFFERED_RE.search(lookahead)
 
@@ -280,6 +282,7 @@ def _process_prose_header(
                     c["credits"] = nqf_credits
                     c["nqf_level"] = nqf_level
                     c["prerequisites"] = prereqs
+                    c["prerequisites_verified"] = prerequisites_verified
                     c["offered"] = offered
                     break
         else:
@@ -290,6 +293,7 @@ def _process_prose_header(
                 "credits": nqf_credits,
                 "nqf_level": nqf_level,
                 "prerequisites": prereqs,
+                "prerequisites_verified": prerequisites_verified,
                 "offered": offered,
                 "department": current_dept,
                 "description": f"Course outline for {code}."
@@ -298,8 +302,8 @@ def _process_prose_header(
 
 
 def _process_humanities_major(
-    line: str, i: int, lines: List[str], current_dept: str,
-    pdf_path_str: str, majors: Dict[str, Any]
+    line: str, i: int, lines: list[str], current_dept: str,
+    pdf_path_str: str, majors: dict[str, Any]
 ) -> None:
     """Check for Humanities Major Requirements and extract them."""
     if "Requirements for a major in" not in line:
@@ -330,9 +334,9 @@ def _process_humanities_major(
 
 
 def _process_specialisation(
-    line: str, i: int, lines: List[str], current_dept: str,
-    is_undergrad_section: bool, pdf_path_str: str, majors: Dict[str, Any]
-) -> Optional[str]:
+    line: str, i: int, lines: list[str], current_dept: str,
+    is_undergrad_section: bool, pdf_path_str: str, majors: dict[str, Any]
+) -> str | None:
     """
     Check for Specialisation Requirements and extract them.
     Returns the new major key if one is found, else None.
@@ -384,14 +388,14 @@ def _process_specialisation(
     return major_key
 
 
-def parse_handbook(pdf_path: Path) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+def parse_handbook(pdf_path: Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Parse the PDF and extract courses and major requirements."""
     print(f"Reading {pdf_path.name}...")
     reader = PdfReader(str(pdf_path))
     
-    courses: List[Dict[str, Any]] = []
+    courses: list[dict[str, Any]] = []
     seen_codes: set = set()  # Deduplicate across table + prose
-    majors: Dict[str, Any] = {}
+    majors: dict[str, Any] = {}
     
     current_dept = "Unknown"
     current_major_key = None
@@ -461,7 +465,7 @@ def main():
     final_courses = []
 
     if courses_file.exists():
-        with open(courses_file, "r", encoding="utf-8") as f:
+        with open(courses_file, encoding="utf-8") as f:
             existing_courses = json.load(f)
 
         existing_map = {c["code"]: c for c in existing_courses}
@@ -593,7 +597,7 @@ def main():
     reqs_file = output_dir / "degree_requirements.json"
 
     if reqs_file.exists():
-        with open(reqs_file, "r", encoding="utf-8") as f:
+        with open(reqs_file, encoding="utf-8") as f:
             existing_reqs = json.load(f)
 
         existing_majors = existing_reqs.get("majors", {})

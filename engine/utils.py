@@ -3,12 +3,12 @@ Utility functions for course weight, level, department, and major key normalisat
 Shared between rule_engine.py and reasoner.py to avoid circular imports.
 """
 import re
-from typing import List, Optional
-from .models import Catalogue, StudentRecord
+
+from .models import Catalogue
 
 _SUFFIX_WEIGHTS = {
     "F": 1.0, "S": 1.0, "FS": 1.0, "SF": 1.0,
-    "H": 0.5, "W": 2.0,
+    "H": 1.0, "W": 2.0,
     "P": 1.0, "U": 1.0, "L": 1.0, "Z": 1.0,
 }
 
@@ -57,19 +57,12 @@ def _is_senior(code: str) -> bool:
 
 
 def _is_humanities(code: str, catalogue: Catalogue) -> bool:
-    """
-    True if the course is offered by a Humanities department.
-    We treat all courses in our catalogue as Humanities unless
-    they are explicitly non-humanities (e.g. MAM, STA).
-    """
-    non_humanities_prefixes = {"MAM", "STA"}
-    prefix = re.match(r"[A-Z]+", code)
-    if prefix and prefix.group() in non_humanities_prefixes:
-        return False
-    return True
+    """Use the handbook-derived course flag rather than prefix inference."""
+    fact = catalogue.courses.get(code)
+    return bool(fact and fact.counts_as_humanities)
 
 
-def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str]:
+def _normalise_major_keys(declared: list[str], catalogue: Catalogue) -> list[str]:
     """Convert declared major names to catalogue keys using a multi-tiered matching strategy."""
     keys = []
     for name in declared:
@@ -101,7 +94,24 @@ def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str
         if found_code:
             continue
             
-        # Tier 4: Word overlap matching (prioritizes highest similarity to avoid substring collisions)
+        # Tier 4: Exact match against the catalogue display name.
+        for m_key, m_def in catalogue.majors.items():
+            m_name_clean = re.sub(
+                r"\s+(specialisation|specialization|major|stream|programme)\b",
+                "",
+                m_def.name.lower(),
+            ).strip()
+            if name_clean == m_name_clean:
+                keys.append(m_key)
+                break
+        else:
+            m_key = None
+        if m_key is not None:
+            continue
+
+        # Tier 5: Conservative word-overlap matching.  A low threshold can map
+        # an unknown major to an unrelated catalogue entry and silently award
+        # progress, so fuzzy matches must be near-exact.
         best_key = None
         best_score = 0.0
         # Clean up special characters to ensure words are split correctly
@@ -119,7 +129,7 @@ def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str
                     best_score = score
                     best_key = m_key
                     
-        if best_score >= 0.3:  # Match threshold
+        if best_score >= 0.8:
             keys.append(best_key)
         else:
             # Fallback: skip (will generate a warning in the report)
@@ -129,51 +139,105 @@ def _normalise_major_keys(declared: List[str], catalogue: Catalogue) -> List[str
 
 
 def _infer_programme_key(programme_name: str) -> str:
-    """Map the student's programme string to a key in the catalogue."""
-    name = programme_name.lower()
+    """Map common UCT transcript programme labels to catalogue routes."""
+    name = programme_name.lower().strip()
+    # Commerce transcripts commonly expose the official programme/plan code.
+    # Preserve that exact route rather than guessing from a broad BCom or
+    # BBusSci label.  Some printed material omits a leading zero in CB25 codes.
+    commerce_code = re.search(r"\b(c[bu]\d{2,3}[a-z]{3}\d{2})\b", name, re.I)
+    if commerce_code:
+        key = commerce_code.group(1).lower()
+        prefix = re.match(r"(c[bu])(\d{2,3})([a-z]{3}\d{2})", key, re.I)
+        if prefix and len(prefix.group(2)) == 2:
+            key = prefix.group(1).lower() + "0" + prefix.group(2) + prefix.group(3).lower()
+        return key
+    if ("bachelor of science" in name or re.search(r"\bbsc\b", name)) and "engineering" not in name and "bsc(eng)" not in name and "bsc (eng)" not in name:
+        return "bsc_science_edp" if ("extended" in name or "sb016" in name) else "bsc_science"
+    if "bachelor of laws" in name or re.search(r"\bllb\b", name):
+        if "five" in name or "5-year" in name or "lb003" in name:
+            return "llb_five_year_continuing"
+        if "two-year" in name or "2-year" in name or "combined" in name:
+            return "llb_two_year_combined"
+        if "three-year" in name or "3-year" in name or "graduate" in name:
+            return "llb_three_year_graduate"
+        return "llb_four_year_undergraduate"
+    extended = "extended" in name
     if "philosophy, politics and economics" in name or "ppe" in name:
         return "bsocsc_ppe"
-    elif "screen production" in name:
-        return "ba_screen_production"
-    elif "social work" in name or "bsw" in name:
+    if "social work" in name or "bsw" in name:
         return "bsw"
-    elif "fine art" in name:
+    if "screen production" in name:
+        return "ba_screen_production"
+    if "fine art" in name:
         return "ba_fine_art"
-    elif "music" in name or "bmus" in name:
-        if "diploma" in name:
-            return "diploma_music_performance"
-        return "bmus"
-    elif "theatre" in name or "performance" in name:
-        if "diploma" in name:
-            return "diploma_theatre_performance"
-        return "ba_theatre_performance"
-    elif "adult and community" in name or "acet" in name:
-        return "higher_certificate_acet"
-    elif "foundation phase" in name:
-        return "advanced_certificate_fp"
-    elif "intermediate phase" in name:
-        return "advanced_certificate_ip"
-    elif "extended" in name:
-        return "extended_ba_bsocsc"
-    return "regular_programme"
+    if "music" in name or "bmus" in name:
+        return "diploma_music_performance" if "diploma" in name else "bmus"
+    if "theatre" in name or "performance" in name:
+        return "diploma_theatre_performance" if "diploma" in name else "ba_theatre_performance"
+    if "bachelor of social science" in name or "bsocsc" in name:
+        return "bsocsc_extended" if extended else "bsocsc_regular"
+    if "bachelor of arts" in name or re.search(r"\bba\b", name):
+        return "ba_extended" if extended else "ba_regular"
+    if "extended" in name:
+        return "bsocsc_extended"
+    return "unknown_programme"
 
 
 def _infer_faculty_key(programme_name: str) -> str:
     """Map the student's programme string to the correct faculty key."""
     name = programme_name.lower()
-    if "commerce" in name or "bcom" in name:
+    if (
+        "commerce" in name
+        or "bcom" in name
+        or "business science" in name
+        or "actuarial science" in name
+    ):
         return "uct_commerce"
-    elif "engineering" in name or "bsc(eng)" in name or "bsc (eng)" in name:
+    elif (
+        "engineering" in name
+        or "bsc(eng)" in name
+        or "bsc (eng)" in name
+        or "architectural studies" in name
+        or "architecture" in name
+        or "geomatics" in name
+        or "construction studies" in name
+        or "property studies" in name
+        or "city and regional planning" in name
+    ):
         return "uct_ebe"
+    elif (
+        "medicine" in name
+        or "surgery" in name
+        or "mbchb" in name
+        or "health science" in name
+        or "occupational therapy" in name
+        or "physiotherapy" in name
+        or "audiology" in name
+        or "speech-language pathology" in name
+    ):
+        return "uct_health"
+    elif (
+        "bachelor of laws" in name
+        or re.search(r"\bllb\b", name)
+        or "law faculty" in name
+    ):
+        return "uct_law"
     elif (
         "social science" in name
         or "social work" in name
         or "bachelor of arts" in name
         or "bachelor of social" in name
+        or "music" in name
+        or "fine art" in name
+        or "theatre" in name
+        or "performance" in name
+        or "adult and community education" in name
+        or "foundation phase" in name
+        or "intermediate phase" in name
     ):
         return "uct_humanities"
     elif "science" in name or "bsc" in name:
         return "uct_science"
     elif "law" in name or "llb" in name:
         return "uct_law"
-    return "uct_humanities"
+    return "unknown_faculty"

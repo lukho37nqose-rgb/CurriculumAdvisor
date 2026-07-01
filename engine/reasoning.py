@@ -5,9 +5,10 @@ This layer keeps facts, rules, and explanations together so the engine can
 show why it reached a conclusion instead of only returning a boolean result.
 """
 from dataclasses import dataclass, field
-from typing import Any, Optional
+from typing import Any
 
-from .models import CourseResult, MajorDefinition, StudentRecord
+from .models import Catalogue, CourseResult, MajorDefinition, StudentRecord
+from .recognition import recognised_credited_pairs
 
 
 @dataclass
@@ -119,27 +120,26 @@ def _combine_status(
 
 def course_pass_conclusion(result: CourseResult) -> ReasonedConclusion:
     """Represent a transcript result as a pass/fail academic conclusion."""
-    passed = result.mark is not None and result.mark >= 50
-    if result.mark is None:
+    passed = result.is_passed()
+    failed = result.is_failed()
+    recorded = result.mark if result.mark is not None else (result.grade or "no result")
+    if passed:
+        status = "verified"
+        confidence = 1.0
+        explanation = f"Transcript verifies that {result.code} was passed ({recorded})."
+    elif failed:
+        status = "verified"
+        confidence = 1.0
+        explanation = f"Transcript records a fail result for {result.code} ({recorded})."
+    else:
         status = "unverified"
         confidence = 0.0
-        explanation = f"No mark is recorded for {result.code}, so a pass cannot be verified."
-    elif passed:
-        status = "verified"
-        confidence = 1.0
-        explanation = f"Transcript verifies that {result.code} was passed with {result.mark}%."
-    else:
-        status = "verified"
-        confidence = 1.0
-        explanation = f"Transcript verifies that {result.code} was not passed ({result.mark}%)."
+        explanation = f"The recorded result for {result.code} is pending or does not verify a pass ({recorded})."
 
     evidence = Evidence(
         source_type="transcript",
         source_id=result.code,
-        claim=(
-            f"{result.code} result: "
-            f"{result.mark if result.mark is not None else 'no mark'}"
-        ),
+        claim=f"{result.code} result: {recorded}",
         confidence=confidence,
     )
 
@@ -190,7 +190,14 @@ def credit_awarded_conclusion(
 def build_credit_reasoning_graph(student: StudentRecord) -> ReasoningGraph:
     """Build the pass -> credit-awarded portion of the reasoning graph."""
     graph = ReasoningGraph()
-    for result in student.results:
+    # One academic fact per course code.  Prefer a passing attempt because a
+    # course completed once continues to award its credits; otherwise use the
+    # latest recorded attempt.
+    ordered_codes = list(dict.fromkeys(result.code for result in student.results))
+    for code in ordered_codes:
+        result = student.passed_result_for(code) or student.result_for(code)
+        if result is None:
+            continue
         course_pass = graph.add(course_pass_conclusion(result))
         graph.add(credit_awarded_conclusion(result, course_pass))
     return graph
@@ -386,8 +393,15 @@ def build_total_nqf_credits_graph(
     programme_key: str,
     programme_name: str,
     assumptions: list[str] | None = None,
+    catalogue: Catalogue | None = None,
+    provisional_results: list[CourseResult] | None = None,
 ) -> ReasoningGraph:
-    """Build Layer 2 credit facts and the Layer 3 total-credit requirement."""
+    """Build Layer 2 credit facts and the Layer 3 total-credit requirement.
+
+    When a selected catalogue is supplied, its recognition rules and credit
+    values are authoritative. Transcript-extracted values remain evidence of
+    the attempt, but cannot alter the programme total.
+    """
     graph = build_credit_reasoning_graph(student)
     supporting = [
         conclusion for conclusion in graph.conclusions.values()
@@ -396,16 +410,50 @@ def build_total_nqf_credits_graph(
     evidence: list[Evidence] = []
     total = 0.0
 
+    provisional_results = provisional_results or []
+    provisional_codes = {result.code for result in provisional_results}
+    if catalogue is not None:
+        recognised, _ = recognised_credited_pairs(student, catalogue)
+        recognised_codes = {result.code for result, _ in recognised} | provisional_codes
+        facts_by_code = {result.code: fact for result, fact in recognised}
+    else:
+        recognised_codes = {
+            conclusion.id.split(":", 1)[1] for conclusion in supporting
+        }
+        facts_by_code = {}
+
+    used_supporting = []
     for conclusion in supporting:
-        total += conclusion.current
+        code = conclusion.id.split(":", 1)[1]
+        if code not in recognised_codes:
+            continue
+        fact = facts_by_code.get(code)
+        awarded = float(fact.nqf_credits) if fact is not None else conclusion.current
+        total += awarded
+        used_supporting.append(conclusion)
         evidence.extend(conclusion.evidence)
+        if fact is not None:
+            evidence.append(Evidence(
+                source_type="catalogue", source_id=code,
+                claim=f"{code} carries {fact.nqf_credits} NQF credits at level {fact.nqf_level}.",
+                confidence=1.0 if fact.verification_status == "verified" else 0.6,
+            ))
+        elif code in provisional_codes:
+            evidence.append(Evidence(
+                source_type="transcript", source_id=code,
+                claim=(
+                    f"{code} contributes {awarded:g} transcript credits provisionally under an "
+                    "approved/open elective pool; faculty approval is not verified."
+                ),
+                confidence=0.35,
+            ))
 
     metric = MetricResult(
         id="passed_nqf_credits",
         label="Passed NQF credits",
         value=total,
         evidence=evidence,
-        supporting_conclusions=supporting,
+        supporting_conclusions=used_supporting,
     )
     rule = total_nqf_credits_rule(required_credits, programme_key, programme_name)
     graph.add(evaluate_threshold_rule(metric, rule, assumptions=assumptions))
@@ -466,7 +514,8 @@ def major_choice_group_conclusion(
         course_passes[course_code] for course_code in group.courses
         if course_code in course_passes
     ]
-    complete = len(passed_options) >= group.required
+    definition_valid = group.required > 0 and group.required <= len(group.courses)
+    complete = definition_valid and len(passed_options) >= group.required
     label = group.label or f"Choice group {group_index + 1}"
     evidence = []
     for dependency in dependencies:
@@ -489,15 +538,19 @@ def major_choice_group_conclusion(
         evidence=evidence,
         applied_rules=["MAJOR_CHOICE_GROUP_REQUIRES_N_PASSED_OPTIONS"],
         explanation=(
-            f"{label} complete for {major.name}: "
-            f"{len(passed_options)}/{group.required} options passed."
-            if complete
-            else f"{label} incomplete for {major.name}: "
-            f"{len(passed_options)}/{group.required} options passed."
+            f"{label} has an invalid catalogue definition and requires manual verification."
+            if not definition_valid
+            else (
+                f"{label} complete for {major.name}: "
+                f"{len(passed_options)}/{group.required} options passed."
+                if complete
+                else f"{label} incomplete for {major.name}: "
+                f"{len(passed_options)}/{group.required} options passed."
+            )
         ),
         missing=max(float(group.required - len(passed_options)), 0.0),
-        status=_combine_status(dependencies),
-        confidence=_combine_confidence(dependencies),
+        status=_combine_status(dependencies) if definition_valid else "unverified",
+        confidence=_combine_confidence(dependencies) if definition_valid else 0.0,
         depends_on=[d.id for d in dependencies],
     )
 
@@ -507,8 +560,15 @@ def major_completion_conclusion(
     requirement_conclusions: list[ReasonedConclusion],
 ) -> ReasonedConclusion:
     """Evaluate the whole major from its requirement conclusions."""
-    complete = all(conclusion.result for conclusion in requirement_conclusions)
-    missing = sum(1 for conclusion in requirement_conclusions if not conclusion.result)
+    has_requirements = bool(requirement_conclusions)
+    complete = has_requirements and all(
+        conclusion.result and conclusion.status == "verified"
+        for conclusion in requirement_conclusions
+    )
+    missing = sum(
+        1 for conclusion in requirement_conclusions
+        if not conclusion.result or conclusion.status != "verified"
+    )
     evidence = []
     for conclusion in requirement_conclusions:
         evidence.extend(conclusion.evidence)
@@ -524,13 +584,23 @@ def major_completion_conclusion(
         evidence=evidence,
         applied_rules=["MAJOR_COMPLETE_WHEN_ALL_MAJOR_REQUIREMENTS_COMPLETE"],
         explanation=(
-            f"{major.name} major complete."
-            if complete
-            else f"{major.name} major incomplete: {missing} requirement(s) outstanding."
+            f"{major.name} major has no encoded requirements and cannot be verified."
+            if not has_requirements
+            else (
+                f"{major.name} major complete."
+                if complete
+                else f"{major.name} major incomplete or unverified: {missing} requirement(s) outstanding."
+            )
         ),
         missing=float(missing),
-        status=_combine_status(requirement_conclusions),
-        confidence=_combine_confidence(requirement_conclusions),
+        status=(
+            "unverified" if not has_requirements
+            else _combine_status(requirement_conclusions)
+        ),
+        confidence=(
+            0.0 if not has_requirements
+            else _combine_confidence(requirement_conclusions)
+        ),
         depends_on=[conclusion.id for conclusion in requirement_conclusions],
     )
 
@@ -538,7 +608,7 @@ def major_completion_conclusion(
 def build_major_completion_graph(
     student: StudentRecord,
     major: MajorDefinition,
-    base_graph: Optional[ReasoningGraph] = None,
+    base_graph: ReasoningGraph | None = None,
 ) -> ReasoningGraph:
     """Build Layer 2 facts and Layer 3 requirements for a major."""
     if base_graph is None:
