@@ -49,4 +49,5 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .verification-note{display:block;color:var(--muted);font-size:12px;margin-top:8px}
 .privacy-note{align-items:flex-start}
 .status-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.error-box{line-height:1.45}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.spinner{animation:none}.faculty-card{transition:none}}

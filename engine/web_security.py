@@ -36,10 +36,12 @@ class RequestSizeLimitMiddleware(BaseHTTPMiddleware):
         app: ASGIApp,
         *,
         upload_limit_bytes: int,
+        upload_limit_detail: str | None = None,
         json_limit_bytes: int,
     ) -> None:
         super().__init__(app)
         self.upload_limit_bytes = upload_limit_bytes
+        self.upload_limit_detail = upload_limit_detail or "Request body exceeds the permitted size."
         self.json_limit_bytes = json_limit_bytes
 
     async def dispatch(self, request: Request, call_next):
@@ -63,8 +65,13 @@ class RequestSizeLimitMiddleware(BaseHTTPMiddleware):
             else self.json_limit_bytes
         )
         if declared_length > limit:
+            detail = (
+                self.upload_limit_detail
+                if request.url.path == "/analyse"
+                else "Request body exceeds the permitted size."
+            )
             return JSONResponse(
-                {"detail": "Request body exceeds the permitted size."},
+                {"detail": detail},
                 status_code=413,
             )
         return await call_next(request)

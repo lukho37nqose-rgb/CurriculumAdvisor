@@ -46,7 +46,9 @@ from engine.web_security import (
 
 LOGGER = logging.getLogger("curriculum_advisor")
 
-MAX_UPLOAD_BYTES = 10 * 1024 * 1024
+MAX_UPLOAD_MEGABYTES = 20
+MAX_UPLOAD_LABEL = f"{MAX_UPLOAD_MEGABYTES} MB"
+MAX_UPLOAD_BYTES = MAX_UPLOAD_MEGABYTES * 1024 * 1024
 MAX_UPLOAD_REQUEST_BYTES = MAX_UPLOAD_BYTES + 1024 * 1024
 UPLOAD_CHUNK_BYTES = 64 * 1024
 MAX_PDF_PAGES = 60
@@ -58,6 +60,14 @@ MAX_RESULTS = 500
 MAX_DECLARED_MAJORS = 10
 MAX_SIMULATED_COURSES = 24
 PDF_PARSE_TIMEOUT_SECONDS = 20
+PDF_RETRY_GUIDANCE = (
+    "What you can try: download a fresh official UCT transcript PDF, make sure it is not "
+    "password-protected, and upload the PDF file itself rather than a screenshot or scanned image."
+)
+PDF_UPLOAD_LIMIT_GUIDANCE = (
+    "What you can try: export or download a smaller official transcript PDF, or remove extra pages "
+    "before uploading."
+)
 
 app = FastAPI(title="CurriculumAdvisor API", version="10.0")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
@@ -75,6 +85,10 @@ if allowed_origins:
 app.add_middleware(
     RequestSizeLimitMiddleware,
     upload_limit_bytes=MAX_UPLOAD_REQUEST_BYTES,
+    upload_limit_detail=(
+        f"What happened: the transcript PDF is larger than the {MAX_UPLOAD_LABEL} upload limit. "
+        f"{PDF_UPLOAD_LIMIT_GUIDANCE}"
+    ),
     json_limit_bytes=MAX_JSON_REQUEST_BYTES,
 )
 app.add_middleware(
@@ -355,12 +369,19 @@ async def _read_upload_limited(file: UploadFile) -> bytes:
             if total > MAX_UPLOAD_BYTES:
                 raise HTTPException(
                     status_code=413,
-                    detail="Transcript PDF exceeds the 10 MB upload limit.",
+                    detail=(
+                        f"What happened: the transcript PDF is larger than the {MAX_UPLOAD_LABEL} "
+                        f"upload limit. {PDF_UPLOAD_LIMIT_GUIDANCE}"
+                    ),
                 )
             chunks.append(chunk)
     finally:
         await file.close()
     return b"".join(chunks)
+
+
+def _pdf_processing_error_detail(reason: str, guidance: str = PDF_RETRY_GUIDANCE) -> str:
+    return f"What happened: {reason} {guidance}"
 
 
 def _parse_public_transcript(content: bytes) -> StudentRecord:
@@ -700,9 +721,18 @@ async def analyse_pdf(
 
     content = await _read_upload_limited(file)
     if not content:
-        raise HTTPException(status_code=400, detail="The uploaded PDF is empty.")
+        raise HTTPException(
+            status_code=400,
+            detail=_pdf_processing_error_detail(
+                "the uploaded PDF is empty.",
+                "What you can try: download a fresh official UCT transcript PDF and upload that file again.",
+            ),
+        )
     if b"%PDF-" not in content[:1024]:
-        raise HTTPException(status_code=400, detail="The uploaded file is not a valid PDF.")
+        raise HTTPException(
+            status_code=400,
+            detail=_pdf_processing_error_detail("the uploaded file is not a valid PDF."),
+        )
 
     parse_started = time.perf_counter()
     try:
@@ -711,7 +741,7 @@ async def analyse_pdf(
             timeout=PDF_PARSE_TIMEOUT_SECONDS,
         )
     except TranscriptPdfError as exc:
-        raise HTTPException(status_code=422, detail=str(exc)) from exc
+        raise HTTPException(status_code=422, detail=_pdf_processing_error_detail(str(exc))) from exc
     except TimeoutError as exc:
         LOGGER.warning(
             "transcript_parse_timeout duration_ms=%.1f bytes=%s",
@@ -720,9 +750,9 @@ async def analyse_pdf(
         )
         raise HTTPException(
             status_code=422,
-            detail=(
-                "The PDF took too long to process safely. Please export a "
-                "fresh, simplified transcript PDF and try again."
+            detail=_pdf_processing_error_detail(
+                "the PDF took too long to process safely.",
+                "What you can try: export a fresh, simplified transcript PDF and upload that version.",
             ),
         ) from exc
     except Exception as exc:
@@ -733,10 +763,7 @@ async def analyse_pdf(
         )
         raise HTTPException(
             status_code=422,
-            detail=(
-                "The transcript could not be read reliably. Please download "
-                "a fresh UCT transcript PDF and try again."
-            ),
+            detail=_pdf_processing_error_detail("the transcript could not be read reliably."),
         ) from exc
 
     LOGGER.info(
@@ -747,7 +774,14 @@ async def analyse_pdf(
     )
     if not student.results and not student.student_id:
         raise HTTPException(
-            status_code=422, detail="The PDF did not contain recognisable UCT transcript data."
+            status_code=422,
+            detail=_pdf_processing_error_detail(
+                "the PDF was readable, but it did not contain recognisable UCT transcript data.",
+                (
+                    "What you can try: upload the official academic transcript that lists your UCT "
+                    "course results, or paste the transcript text manually if the PDF export is unusual."
+                ),
+            ),
         )
 
     catalogue, _, _ = _scope_or_422(faculty, programme, pathway)

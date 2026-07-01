@@ -1,6 +1,7 @@
 "use strict";
 
-const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
+const MAX_UPLOAD_MB = 20;
+const MAX_UPLOAD_BYTES = MAX_UPLOAD_MB * 1024 * 1024;
 const MAX_RECOMMENDATIONS_PER_BATCH = 20;
 const state = {
     faculty: null,
@@ -57,12 +58,25 @@ async function api(url, options = {}) {
         }
     }
     if (!response.ok) {
-        const error = new Error(data.detail || "Request failed.");
+        const error = new Error(detailToMessage(data.detail));
         error.status = response.status;
         error.retryAfter = response.headers.get("Retry-After");
         throw error;
     }
     return data;
+}
+
+function detailToMessage(detail) {
+    if (typeof detail === "string" && detail.trim()) {
+        return detail;
+    }
+    if (Array.isArray(detail)) {
+        const parts = detail
+            .map(item => item?.msg || item?.detail || "")
+            .filter(Boolean);
+        if (parts.length) return parts.join(" ");
+    }
+    return "The request could not be completed. Please check the transcript file and try again.";
 }
 
 function setView(name, { scroll = true } = {}) {
@@ -652,7 +666,13 @@ function chooseFile(file, { announceError = true } = {}) {
         state.file = null;
         $("transcriptFile").value = "";
         clearElement("selectedFile");
-        if (announceError) showAnalysisError("The transcript exceeds the 10 MB upload limit.");
+        if (announceError) {
+            const sizeMb = (file.size / 1024 / 1024).toFixed(2);
+            showAnalysisError(
+                `What happened: this PDF is ${sizeMb} MB, which is larger than the ${MAX_UPLOAD_MB} MB upload limit. `
+                + "What you can try: export or download a smaller official transcript PDF, or remove extra pages before uploading."
+            );
+        }
         return false;
     }
     state.file = file;

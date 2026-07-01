@@ -140,6 +140,8 @@ def test_pdf_upload_rejects_encrypted_and_excessively_long_documents():
     )
     assert encrypted.status_code == 422
     assert "Encrypted" in encrypted.json()["detail"]
+    assert "What happened" in encrypted.json()["detail"]
+    assert "What you can try" in encrypted.json()["detail"]
 
     too_many_pages = client.post(
         "/analyse?faculty=uct_humanities&programme=bsocsc_regular",
@@ -155,13 +157,27 @@ def test_pdf_upload_rejects_encrypted_and_excessively_long_documents():
     assert "pages" in too_many_pages.json()["detail"]
 
 
+def test_pdf_processing_errors_explain_what_to_try_next():
+    response = client.post(
+        "/analyse?faculty=uct_humanities&programme=bsocsc_regular",
+        files={"file": ("malformed.pdf", b"%PDF-1.7\nnot a complete pdf", "application/pdf")},
+    )
+    assert response.status_code == 422
+    detail = response.json()["detail"]
+    assert "What happened" in detail
+    assert "What you can try" in detail
+
+
 def test_streaming_upload_limit_rejects_oversized_file():
+    assert app_module.MAX_UPLOAD_MEGABYTES == 20
     content = b"%PDF-1.7\n" + b"0" * app_module.MAX_UPLOAD_BYTES
     response = client.post(
         "/analyse?faculty=uct_humanities&programme=bsocsc_regular",
         files={"file": ("too-large.pdf", content, "application/pdf")},
     )
     assert response.status_code == 413
+    assert "20 MB" in response.json()["detail"]
+    assert "What you can try" in response.json()["detail"]
 
 
 def test_rate_limiter_returns_retry_after_without_touching_get_requests():

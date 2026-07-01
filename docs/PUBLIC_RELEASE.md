@@ -18,7 +18,7 @@ This release implements the software changes identified in the 1 July 2026 audit
 
 ### Public-input boundaries
 
-- Multipart uploads are read in chunks and stopped at 10 MB.
+- Multipart uploads are read in chunks and stopped at 20 MB.
 - PDFs are limited to 60 pages, 20,000 indirect objects, and 2,000,000 extracted text characters.
 - Encrypted PDFs and non-PDF payloads are rejected with stable user-facing errors.
 - PDF parsing runs in a threadpool and is bounded by a 20-second application timeout.
@@ -65,7 +65,7 @@ This release implements the software changes identified in the 1 July 2026 audit
 
 The built-in limiter is deliberately suitable for the recommended single-instance Railway deployment. Before adding replicas, replace it with an edge or shared-store limiter so one client cannot obtain a separate allowance from every instance.
 
-The application enforces body limits even when requests are chunked. Where the hosting provider or an upstream WAF supports an additional request-body cap, set it slightly above 10 MB so multipart overhead is accepted but oversized payloads are rejected before reaching Python.
+The application enforces body limits even when requests are chunked. Where the hosting provider or an upstream WAF supports an additional request-body cap, set it slightly above 20 MB so multipart overhead is accepted but oversized payloads are rejected before reaching Python.
 
 ## Verification boundary
 
